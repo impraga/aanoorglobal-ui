@@ -7,7 +7,7 @@ import circleGreen from '../../../../public/assets/icons/circle-green.svg'
 
 function Stats() {
   return (
-    <div className='bg-db br-1 overflow-hidden position-relative stats-cont'>
+    <div className='bg-db br-1 overflow-hidden position-relative stats-cont bs'>
       <div className='d-flex flex-column align-items-center justify-content-evenly text-white text-center px-5 h-100 position-relative'>
         <div>
           <div className='count bebas'>10+</div>

@@ -1,72 +1,212 @@
 [
-    {
-        "category":"Startup Centre",
-        "serviceCount":"9 Services available",
-        "imgUrl":"",
-        "colorCode":"#0090BA",
-        "child": [
-            {
-                "title":"Sole Proprietorship Registration",
-                "design":"step-tocreate",
-                "price":{
-                    "isAvailable":true,
-                    "value":"2,800",
-                    "note":"with in *5 working days"
-                },
-                "url":"",
-                "benefits":[
-                    "One person required as a Single Entrepreneur.",
-                    "Easy to start as well close with fewer formalities.",
-                    "Lower cost of compliance and formation.",
-                    "Single owner of the business",
-                    "Complete control.",
-                    "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
-                ]
-            },
-            {
-                "title":"One Person Company Registration",
-                "price":{
-                    "isAvailable":true,
-                    "value":"9,000",
-                    "note":"with in *5 working days"
-                },
-                "url":"",
-                "benefits":[
-                    "Limited Liability Protection to the personal assets of the director.",
-                    "Easy to raise loans and funds.",
-                    "Complete company control with a single owner.",
-                    "Better credibility and image in the market.",
-                    "Enables funding and helps for business model testing."
-                ]
-            }
+  {
+    "category": "Startup Centre",
+    "serviceCount": "9 Services available",
+    "imgUrl": "",
+    "colorCode": "#0090BA",
+    "child": [
+      {
+        "title": "Sole Proprietorship Registration",
+        "design": "step-tocreate",
+        "price": {
+          "isAvailable": true,
+          "value": "2,800",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "One person required as a Single Entrepreneur.",
+          "Easy to start as well close with fewer formalities.",
+          "Lower cost of compliance and formation.",
+          "Single owner of the business",
+          "Complete control.",
+          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
         ]
-    },
-    {
-        "category":"Intellectual Property",
-        "serviceCount":"8 Services available",
-        "imgUrl":"",
-        "colorCode":"#9FDB0E",
-        "child": []
-    },
-    {
-        "category":"Registration",
-        "serviceCount":"6 Services available",
-        "imgUrl":"",
-        "colorCode":"#F89500",
-        "child": []
-    },
-    {
-        "category":"Certification",
-        "serviceCount":"10 Services available",
-        "imgUrl":"",
-        "colorCode":"#7300BA",
-        "child": []
-    },
-    {
-        "category":"Statutory Compliance",
-        "serviceCount":"4 Services available",
-        "imgUrl":"",
-        "colorCode":"#E20000",
-        "child": []
-    }
+      },
+      {
+        "title": "One Person Company Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "9,000",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "Limited Liability Protection to the personal assets of the director.",
+          "Easy to raise loans and funds.",
+          "Complete company control with a single owner.",
+          "Better credibility and image in the market.",
+          "Enables funding and helps for business model testing."
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Intellectual Property",
+    "serviceCount": "8 Services available",
+    "imgUrl": "",
+    "colorCode": "#9FDB0E",
+    "child": [
+      {
+        "title": "Property Registration",
+        "design": "step-tocreate",
+        "price": {
+          "isAvailable": true,
+          "value": "2,800",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "One person required as a Single Entrepreneur.",
+          "Easy to start as well close with fewer formalities.",
+          "Lower cost of compliance and formation.",
+          "Single owner of the business",
+          "Complete control.",
+          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+        ]
+      },
+      {
+        "title": "House Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "9,000",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "Limited Liability Protection to the personal assets of the director.",
+          "Easy to raise loans and funds.",
+          "Complete company control with a single owner.",
+          "Better credibility and image in the market.",
+          "Enables funding and helps for business model testing."
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Registration",
+    "serviceCount": "6 Services available",
+    "imgUrl": "",
+    "colorCode": "#F89500",
+    "child": [
+      {
+        "title": "Trademark Registration",
+        "design": "step-tocreate",
+        "price": {
+          "isAvailable": true,
+          "value": "2,800",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "One person required as a Single Entrepreneur.",
+          "Easy to start as well close with fewer formalities.",
+          "Lower cost of compliance and formation.",
+          "Single owner of the business",
+          "Complete control.",
+          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+        ]
+      },
+      {
+        "title": "Copyrights Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "9,000",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "Limited Liability Protection to the personal assets of the director.",
+          "Easy to raise loans and funds.",
+          "Complete company control with a single owner.",
+          "Better credibility and image in the market.",
+          "Enables funding and helps for business model testing."
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Certification",
+    "serviceCount": "10 Services available",
+    "imgUrl": "",
+    "colorCode": "#7300BA",
+    "child": [
+      {
+        "title": "80 C Registration",
+        "design": "step-tocreate",
+        "price": {
+          "isAvailable": true,
+          "value": "2,800",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "One person required as a Single Entrepreneur.",
+          "Easy to start as well close with fewer formalities.",
+          "Lower cost of compliance and formation.",
+          "Single owner of the business",
+          "Complete control.",
+          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+        ]
+      },
+      {
+        "title": "80F Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "9,000",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "Limited Liability Protection to the personal assets of the director.",
+          "Easy to raise loans and funds.",
+          "Complete company control with a single owner.",
+          "Better credibility and image in the market.",
+          "Enables funding and helps for business model testing."
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Statutory Compliance",
+    "serviceCount": "4 Services available",
+    "imgUrl": "",
+    "colorCode": "#E20000",
+    "child": [
+      {
+        "title": "Legal Action",
+        "design": "step-tocreate",
+        "price": {
+          "isAvailable": true,
+          "value": "2,800",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "One person required as a Single Entrepreneur.",
+          "Easy to start as well close with fewer formalities.",
+          "Lower cost of compliance and formation.",
+          "Single owner of the business",
+          "Complete control.",
+          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+        ]
+      },
+      {
+        "title": "Some action",
+        "price": {
+          "isAvailable": true,
+          "value": "9,000",
+          "note": "with in *5 working days"
+        },
+        "url": "",
+        "benefits": [
+          "Limited Liability Protection to the personal assets of the director.",
+          "Easy to raise loans and funds.",
+          "Complete company control with a single owner.",
+          "Better credibility and image in the market.",
+          "Enables funding and helps for business model testing."
+        ]
+      }
+    ]
+  }
 ]

@@ -88,7 +88,7 @@ function ServiceSection() {
         </p>
       </div>
       <div className="container services-cont px-0">
-        <div className="d-flex overflow-cont">
+        <div className="d-flex overflow-cont br-1 bs">
           {cat.map((category) => (
             <div key={category.category} className="service-cat-cont d-flex align-items-stretch">
               <ServiceCategory data={category} />
@@ -96,12 +96,12 @@ function ServiceSection() {
           ))}
         </div>
       </div>
-      <div className="container bg-white p-4 pb-0 br-1">
+      <div className="container bg-white p-4 pb-0 br-1 bs">
         <div className="row">
           {services.map((service) => (
             <div
               key={service.title}
-              className="col-md-6 col-lg-4 d-flex align-items-stretch mb-4"
+              className="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 "
             >
               <ServiceContainer key={service.title} data={service} />
             </div>

@@ -28,6 +28,28 @@
     justify-content: center;
     z-index: 201;
   }
+  .result-cont {
+    margin-top: 20px;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    top: 60px;
+    // transition: 0.3s ease-in;
+    transform: translateY(20px);
+
+    &.active {
+      opacity: 1;
+      transform: translateY(0px);
+      height: 400px;
+      overflow-y: hidden;
+      > div {
+        height: 400px;
+        overflow-y: auto;
+      }
+    }
+  }
 }
 .blur-bg {
   width: 0px;
