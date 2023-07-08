@@ -1,8 +1,9 @@
 import React from 'react'
 
-import './ServiceSection.scss'
 import ServiceCategory from '../../molecules/ServiceCategory/ServiceCategory'
 import ServiceContainer from '../../molecules/ServiceContainer/ServiceContainer'
+
+import './ServiceSection.scss'
 
 const cat = [
   {
@@ -78,38 +79,36 @@ const services = [
   }
 ]
 
-function ServiceSection() {
-  return (
-    <div className='px-2'>
-      <div className="header-cont my-5">
-        <h2 className="section-title">Our Services</h2>
-        <p className="section-text">
-          <b>Save Time</b> Managing your business with our <b>best services</b>
-        </p>
-      </div>
-      <div className="container services-cont px-0">
-        <div className="d-flex overflow-cont br-1 bs">
-          {cat.map((category) => (
-            <div key={category.category} className="service-cat-cont d-flex align-items-stretch">
-              <ServiceCategory data={category} />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="container bg-white p-4 pb-0 br-1 bs">
-        <div className="row">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 "
-            >
-              <ServiceContainer key={service.title} data={service} />
-            </div>
-          ))}
-        </div>
+const ServiceSection = () => (
+  <div className='px-2'>
+    <div className="header-cont my-5">
+      <h2 className="section-title">Our Services</h2>
+      <p className="section-text">
+        <b>Save Time</b> Managing your business with our <b>best services</b>
+      </p>
+    </div>
+    <div className="container services-cont px-0">
+      <div className="d-flex overflow-cont br-1 bs">
+        {cat.map((category) => (
+          <div key={category.category} className="service-cat-cont d-flex align-items-stretch">
+            <ServiceCategory service={category} />
+          </div>
+        ))}
       </div>
     </div>
-  )
-}
+    <div className="container bg-white p-4 pb-0 br-1 bs">
+      <div className="row">
+        {services.map((service) => (
+          <div
+            key={service.title}
+            className="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 "
+          >
+            <ServiceContainer title={service.title} service={service} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+)
 
 export default ServiceSection

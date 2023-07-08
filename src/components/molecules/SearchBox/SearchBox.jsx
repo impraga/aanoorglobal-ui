@@ -7,7 +7,7 @@ import search from '../../../../public/assets/icons/search.svg'
 import category from '../../../../public/assets/json/service.json'
 import SearchResult from '../../atoms/SearchResult/SearchResult'
 
-function SearchBox() {
+const SearchBox = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchResult, setSearchResult] = useState([])
   const flatCategory = []
@@ -25,8 +25,7 @@ function SearchBox() {
     return objectArray.filter(obj => Object.values(obj).some(val => val ? val.toString().toLowerCase().includes(quickCriteria) : false))
   }
 
-  // Function to update the search result
-  function searchValue(event) {
+  const searchValue = (event) => {
     const { value } = event.target
     if (value) {
       setIsSearchOpen(true)

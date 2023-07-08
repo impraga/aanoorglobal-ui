@@ -4,15 +4,13 @@ import ServiceSection from '../../components/organisms/ServiceSection/ServiceSec
 import WhyUsSection from '../../components/organisms/WhyUsSection/WhyUsSection'
 import ContactSection from '../../components/organisms/ContactSection/ContactSection'
 
-function HomePage() {
-  return (
-    <div>
-      <LandingSection/>
-      <ServiceSection/>
-      <WhyUsSection/>
-      <ContactSection/>
-    </div>
-  )
-}
+const HomePage = () => (
+  <div>
+    <LandingSection />
+    <ServiceSection />
+    <WhyUsSection />
+    <ContactSection />
+  </div>
+)
 
 export default HomePage
