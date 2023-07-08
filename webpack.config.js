@@ -14,13 +14,13 @@ module.exports = {
     filename: "[name]-[contenthash].js",
     publicPath: IS_DEV ? "" : "/"
   },
-  // devServer: {
-  //   port: 8080,
-  //   historyApiFallback: true,
-  //   contentBase: path.join(__dirname, "public"),
-  //   hot: true
-  //   // proxy: {}
-  // },
+  devServer: {
+    // port: 8080,
+    historyApiFallback: true
+    // contentBase: path.join(__dirname, "public"),
+    // hot: true
+    // proxy: {}
+  },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
