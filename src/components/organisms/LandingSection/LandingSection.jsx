@@ -8,7 +8,7 @@ import SearchBox from '../../molecules/SearchBox/SearchBox'
 
 const LandingSection = () => (
   <div className="landing-cont bg-db py-3 w-100">
-    <div className="inner-landing-cont container bg-gray br-1 position-relative d-flex align-items-end p-4 pb-0">
+    <div className="inner-landing-cont container bg-gray-dark br-1 position-relative d-flex align-items-end p-4 pb-0">
       <div className="container">
         <div className="row">
           <div className="l-cont col-md-6 d-flex flex-column justify-content-center">
