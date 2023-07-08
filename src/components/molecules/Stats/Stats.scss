@@ -1,0 +1,25 @@
+.stats-cont {
+  > div{
+      min-height: 550px;
+      z-index: 1;
+      .count {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+      }
+      .count-name {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+    }
+    .whites-stripes {
+      position: absolute;
+      top: 30px;
+      right: 0;
+    }
+    .circle-green {
+      position: absolute;
+      bottom: 30px;
+      left: -10px;
+      transform: translateX(-50%);
+    }
+}

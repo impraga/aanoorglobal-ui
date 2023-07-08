@@ -1,0 +1,60 @@
+.category-cont {
+  > div {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    .cat-img-cont {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+      img {
+        z-index: 12;
+        width: 30px;
+        height: auto;
+      }
+    }
+    .cat-img-bg {
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
+      opacity: 0.2;
+      top: 0;
+      transition: 0.3s ease-in-out;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 3px;
+      transition: 0.3s ease-in;
+    }
+    p {
+      transition: 0.3s ease-in;
+    }
+  }
+  .hov-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+  }
+  &:hover {
+    h3,
+    p {
+      color: white !important;
+    }
+    .cat-img-bg {
+      opacity: 0.8;
+      background-color: white !important;
+    }
+    .hov-circle {
+      transform: translate(20%, -25%);
+      width: 500px;
+      height: 500px;
+    }
+  }
+}

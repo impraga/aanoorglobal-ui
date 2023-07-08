@@ -1,8 +1,13 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
+import HomePage from './pages/HomePage/HomePage'
 
 function App() {
-  return <div className="App">Routing</div>
+  return (
+    <div className="App position-relative">
+      <HomePage />
+    </div>
+  )
 }
 
 export default App

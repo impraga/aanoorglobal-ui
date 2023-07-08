@@ -1,0 +1,22 @@
+.header-cont {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.services-cont {
+  padding-bottom: 10px;
+  .overflow-cont {
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+    .service-cat-cont {
+      scroll-snap-align: start ;
+      min-width: 220px;
+      margin-right: 10px;
+      width: 100%;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
