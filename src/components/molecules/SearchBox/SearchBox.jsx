@@ -29,7 +29,7 @@ const SearchBox = () => {
     const { value } = event.target
     if (value) {
       setIsSearchOpen(true)
-      setSearchResult(searchService(flatCategory, value))
+      setSearchResult(searchService(flatCategory, value.toLowerCase()))
     } else {
       setIsSearchOpen(false)
       setSearchResult([])

@@ -15,7 +15,7 @@ function SearchResult(props) {
               <div className='category'>{value.category}</div>
             </div>
             <div className='searchresult-btn'>
-              <button type='button'>View more</button>
+              <button type='button' className='text-green'>View more</button>
             </div>
           </div>
         </div>

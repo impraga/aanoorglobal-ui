@@ -42,8 +42,10 @@
     z-index: 3;
     width: 95%;
     max-width: 720px;
+    transition: 0.3s ease-in-out;
   }
   .subtitle-cont {
+    margin-top: 50px;
     font-size: 1.1rem;
   }
 }

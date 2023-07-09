@@ -13,7 +13,7 @@ const WhyUsSection = () => (
         Its simple! we are <b>the best</b>
       </p>
     </div>
-    <div className="container mb-5">
+    <div className="container mb-5 px-0">
       <div className="row">
         <div className="col-md-4">
           <Stats />

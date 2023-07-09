@@ -5,3 +5,11 @@
 .category {
   font-size: 1rem;
 }
+.searchresult-btn {
+  button {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
