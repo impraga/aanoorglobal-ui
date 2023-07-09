@@ -8,9 +8,7 @@ $ag-gray-dark: #eeeeee;
 $ag-orange: #f89500;
 $ag-purple: #7300ba;
 $ag-red: #e20000;
-:root {
-  scrollbar-color: transparent transparent;
-}
+
 .text-db {
   color: $ag-darkblue;
 }
@@ -44,6 +42,9 @@ $ag-red: #e20000;
 .bg-gray {
   background-color: $ag-gray;
 }
+.bg-gray-dark {
+  background-color: $ag-gray-dark;
+}
 .bg-white {
   background-color: #fff;
 }
@@ -53,14 +54,20 @@ $ag-red: #e20000;
 .br-1 {
   border-radius: 20px;
 }
+.br-tl-0 {
+  border-top-left-radius: 0;
+}
+.br-tr-o {
+  border-top-right-radius: 0;
+}
+.bs {
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.1);
+}
 .o-05 {
   opacity: 0.5;
 }
 .bebas {
   font-family: 'Bebas Neue', sans-serif !important;
-}
-.bs {
-  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.1);
 }
 body {
   color: $ag-blue;
