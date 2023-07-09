@@ -60,6 +60,9 @@ $ag-red: #e20000;
 .br-tr-o {
   border-top-right-radius: 0;
 }
+.bs {
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.1);
+}
 .o-05 {
   opacity: 0.5;
 }
@@ -96,6 +99,24 @@ a {
     color: $ag-green !important;
   }
 }
+
+// Scroll Bar css
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: none;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: $ag-green;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $ag-darkgreen;
+}
+
 @media (max-width: 767.98px) {
   .section-text {
     font-size: 1.8rem;
