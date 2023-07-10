@@ -34,7 +34,8 @@ const ServiceSection = () => {
       <div className="row">
         {selectedService.map((service, index) => (
           <div
-            key={service.title}
+            // key={service.title} removed this till content comes from client
+            key={index}
             className="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 "
             data-aos="fade-up" data-aos-delay={index * 50 + 200}
           >
