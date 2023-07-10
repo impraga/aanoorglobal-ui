@@ -2,7 +2,7 @@ $ag-darkblue: #001b29;
 $ag-blue: #0a527a;
 $ag-lightblue: #0090ba;
 $ag-green: #9fdb0e;
-$ag-darkgreen: #81b309;
+$ag-darkgreen: #97d20e;
 $ag-gray: #f8f8f8;
 $ag-gray-dark: #eeeeee;
 $ag-orange: #f89500;
@@ -103,13 +103,16 @@ a {
 // Scroll Bar css
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
+  border-radius: 10px;
   background: rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: none;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 10px;
   background: $ag-green;
   border: 1px solid rgba(0, 0, 0, 0);
 }

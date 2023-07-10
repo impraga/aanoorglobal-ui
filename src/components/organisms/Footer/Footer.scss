@@ -1,0 +1,88 @@
+@import './../../../index.scss';
+
+.footer-cont {
+  min-height: 400px;
+  height: 100%;
+  overflow: hidden;
+  .primary-links-cont {
+    .logo-cont {
+      width: 110px;
+      background-color: white;
+      border-radius: 8px;
+      text-align: center;
+      padding: 3px 0;
+      img {
+        height: 40px;
+      }
+    }
+    .primary-link {
+      font-weight: bold;
+    }
+    .social-link-cont {
+      img {
+        width: 35px;
+      }
+    }
+  }
+  .service-links-cont {
+    .cat-cont {
+      min-width: 190px;
+      .title {
+        margin-bottom: 8px;
+      }
+      ul {
+        padding-left: 0;
+        li {
+          font-size: 0.8rem;
+          margin-bottom: 5px;
+          &::marker {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  hr {
+    border-top: 1px $ag-green solid;
+    opacity: 1;
+  }
+  .copyright-cont {
+    .copyright {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .love {
+      color: red;
+    }
+  }
+
+  .stripes {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  .rings {
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 10%;
+    transform: translateX(50%);
+    img {
+      opacity: 0.4;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer-cont {
+    .service-links-cont {
+      .cat-cont {
+        text-align: center;
+        min-width: 250px;
+      }
+    }
+  }
+}

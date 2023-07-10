@@ -39,7 +39,7 @@ const SearchBox = () => {
   return (
     <div>
       <div className={`search-main-cont  ${isSearchOpen ? "active" : ""}`}>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="450">
           <input onChange={event => searchValue(event)} type="text" className="form-control search-input br-1 bs" id="" placeholder="Search Service" />
           <button type='submit' className='search-btn bg-green'>
             <img src={search} alt="search button" />

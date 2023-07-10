@@ -4,6 +4,7 @@ import curve from '../../../../public/assets/icons/curve-bg-white.svg'
 import ContactContainer from '../../molecules/ContactContainer/ContactContainer'
 
 import './ContactSection.scss'
+import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 const contactDetails = [
   {
@@ -37,17 +38,17 @@ const contactDetails = [
 
 const ContactSection = () => (
   <div>
-    <div className="contact-cont px-2 pb-4">
+    <div className="contact-cont px-2 pb-4 overflow-hidden">
       <div className="container header-cont position-relative text-white d-flex flex-column justify-content-center">
         <div className="row">
           <div className="col-sm-6 position-relative">
-            <h3>Contact Us</h3>
+            <h3 data-aos="fade-up">Contact Us</h3>
             <div className="circle-bg" />
           </div>
           <div className="col-sm-6">
-            <div className=" d-flex align-items-center justify-content-end">
-              <div className="button-cont">
-                <button type="button">Call the experts</button>
+            <div className="d-flex align-items-center justify-content-sm-end justify-content-center">
+              <div className="button-cont" data-aos="fade-up" data-aos-delay="50">
+                <ExpertButton />
               </div>
               <div className="curve-bg">
                 <img src={curve} alt="Curve" />
@@ -58,12 +59,16 @@ const ContactSection = () => (
       </div>
       <div className="container">
         <div className="row mt-4">
-          {contactDetails.map((contact) => (
+          {contactDetails.map((contact, index) => (
             <div
               key={contact.city}
               className="col-sm-8 col-md-6 col-lg-4 mx-auto mt-4 cc-cont "
+              data-aos="fade-up"
+              data-aos-delay={50 * index}
             >
+              {/* <ScrollAnimation animateIn="fadeInUp" delay={index * 100}> */}
               <ContactContainer contactInfo={contact} />
+              {/* </ScrollAnimation> */}
             </div>
           ))}
         </div>

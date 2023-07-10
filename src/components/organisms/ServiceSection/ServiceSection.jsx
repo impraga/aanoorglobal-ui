@@ -1,107 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import ServiceCategory from '../../molecules/ServiceCategory/ServiceCategory'
 import ServiceContainer from '../../molecules/ServiceContainer/ServiceContainer'
-
 import './ServiceSection.scss'
+import serviceData from '../../../../public/assets/json/service.json'
 
-const cat = [
-  {
-    category: 'Startup Centre',
-    serviceCount: '9 Services available',
-    imgUrl: 'startup.png',
-    colorCode: 'bg-lb'
-  },
-  {
-    category: 'Intellectual Property',
-    serviceCount: '8 Services available',
-    imgUrl: 'property.png',
-    colorCode: 'bg-green',
-    child: []
-  },
-  {
-    category: 'Registration',
-    serviceCount: '6 Services available',
-    imgUrl: 'registration.png',
-    colorCode: 'bg-orange',
-    child: []
-  },
-  {
-    category: 'Certification',
-    serviceCount: '10 Services available',
-    imgUrl: 'certificate.png',
-    colorCode: 'bg-purple',
-    child: []
-  },
-  {
-    category: 'Statutory Compliance',
-    serviceCount: '4 Services available',
-    imgUrl: 'statutory.png',
-    colorCode: 'bg-red',
-    child: []
+const ServiceSection = () => {
+  const [selectedService, SetSelectedService] = useState(serviceData[0].child)
+  const [selectedCategory, SetSelectedCategory] = useState(serviceData[0].category)
+
+  function changeCategory(e, index) {
+    SetSelectedService(serviceData[index].child)
+    SetSelectedCategory(serviceData[index].category)
   }
-]
 
-const services = [
-  {
-    title: 'Sole Proprietorship Registration',
-    design: 'step-tocreate',
-    price: {
-      isAvailable: true,
-      value: '2,800',
-      note: 'with in *5 working days'
-    },
-    url: '',
-    benefits: [
-      'One person required as a Single Entrepreneur.',
-      'Easy to start as well close with fewer formalities.',
-      'Lower cost of compliance and formation.',
-      'Single owner of the business',
-      'Complete control.',
-      'The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax.'
-    ]
-  },
-  {
-    title: 'One Person Company Registration',
-    price: {
-      isAvailable: true,
-      value: '9,000',
-      note: 'with in *5 working days'
-    },
-    url: '',
-    benefits: [
-      'Limited Liability Protection to the personal assets of the director.',
-      'Easy to raise loans and funds.',
-      'Complete company control with a single owner.',
-      'Better credibility and image in the market.',
-      'Enables funding and helps for business model testing.'
-    ]
-  }
-]
-
-const ServiceSection = () => (
-  <div className='px-2'>
+  return <div className='px-2'>
     <div className="header-cont my-5">
-      <h2 className="section-title">Our Services</h2>
-      <p className="section-text">
+      <h2 className="section-title" data-aos="fade-up" data-aos-delay="0">Our Services</h2>
+      <p className="section-text" data-aos="fade-up" data-aos-delay="100">
         <b>Save Time</b> Managing your business with our <b>best services</b>
       </p>
     </div>
     <div className="container services-cont px-0">
-      <div className="d-flex overflow-cont br-1 bs">
-        {cat.map((category) => (
-          <div key={category.category} className="service-cat-cont d-flex align-items-stretch">
-            <ServiceCategory service={category} />
-          </div>
+      <div className="d-flex overflow-cont br-1 bs" data-aos="fade-up" data-aos-delay="200">
+        {serviceData.map((category, index) => (
+          <button type='button' key={category.category} className="service-cat-cont br-1 text-db d-flex align-items-stretch" onClick={event => changeCategory(event, index)}>
+            <ServiceCategory service={category} selectedCategory={selectedCategory} />
+          </button>
         ))}
       </div>
     </div>
-    <div className="container bg-white p-4 pb-0 br-1 bs">
+    <div className="container bg-white p-4 pb-0 br-1 bs" data-aos="fade-up" data-aos-delay="200">
       <div className="row">
-        {services.map((service) => (
+        {selectedService.map((service, index) => (
           <div
             key={service.title}
             className="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 "
+            data-aos="fade-up" data-aos-delay={index * 50 + 200}
           >
             <ServiceContainer title={service.title} service={service} />
           </div>
@@ -109,6 +44,6 @@ const ServiceSection = () => (
       </div>
     </div>
   </div>
-)
+}
 
 export default ServiceSection
