@@ -10,12 +10,13 @@
           "children": [
             { "pageUrl": "/sole", "title": "Sole Proprietorship" },
             { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" }
+            { "pageUrl": "/sole", "title": "One Person Company" },
+            { "pageUrl": "/sole", "title": "Private Limited Company" },
+            { "pageUrl": "/sole", "title": "Public Limited Company" },
+            { "pageUrl": "/sole", "title": "Limited Liability Partnership" },
+            { "pageUrl": "/sole", "title": "Nidhi Company" },
+            { "pageUrl": "/sole", "title": "Producer Company" },
+            { "pageUrl": "/sole", "title": "Section 8 Company" }
           ]
         },
         [
@@ -23,23 +24,22 @@
             "title": "Intellectual Property",
             "icon": "path",
             "children": [
-              { "pageUrl": "/sole", "title": "Sole Proprietorship" },
-              { "pageUrl": "/sole", "title": "Partnership firm" },
-              { "pageUrl": "/sole", "title": "Partnership firm" },
-              { "pageUrl": "/sole", "title": "Partnership firm" },
-              { "pageUrl": "/sole", "title": "Partnership firm" }
+              { "pageUrl": "/sole", "title": "Trademark Registration" },
+              { "pageUrl": "/sole", "title": "Trademark Objection" },
+              { "pageUrl": "/sole", "title": "Trademark Renewal" },
+              { "pageUrl": "/sole", "title": "Copyright Registration" },
+              { "pageUrl": "/sole", "title": "Design Registration" },
+              { "pageUrl": "/sole", "title": "Patent Registration" }
             ]
           },
           {
             "title": "Statuary Compliance",
             "icon": "path",
             "children": [
-              { "pageUrl": "/sole", "title": "Sole Proprietorship" },
-              { "pageUrl": "/sole", "title": "Sole Proprietorship" },
-              { "pageUrl": "/sole", "title": "Partnership firm" },
-              { "pageUrl": "/sole", "title": "Partnership firm" },
-              { "pageUrl": "/sole", "title": "Partnership firm" },
-              { "pageUrl": "/sole", "title": "Partnership firm" }
+              { "pageUrl": "/sole", "title": "Income Tax Filing" },
+              { "pageUrl": "/sole", "title": "GST Filing" },
+              { "pageUrl": "/sole", "title": "TDS Returns" },
+              { "pageUrl": "/sole", "title": "ROC Annual Compliance" }
             ]
           }
         ],
@@ -47,28 +47,33 @@
           "title": "Registration",
           "icon": "path",
           "children": [
-            { "pageUrl": "/sole", "title": "Sole Proprietorship" },
-            { "pageUrl": "/sole", "title": "Sole Proprietorship" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" }
+            { "pageUrl": "/sole", "title": "SSI/MSME Registration" },
+            { "pageUrl": "/sole", "title": "Goods & Service Tax Registration" },
+            { "pageUrl": "/sole", "title": "Professional Tax Registration" },
+            { "pageUrl": "/sole", "title": "Trust/NGO Registration" },
+            {
+              "pageUrl": "/sole",
+              "title": "Import Export Code (IEC) Registration"
+            },
+            { "pageUrl": "/sole", "title": "FSSAI Registration" },
+            { "pageUrl": "/sole", "title": "PAN Registration" },
+            { "pageUrl": "/sole", "title": "TAN Registration" }
           ]
         },
         {
           "title": "Certification",
           "icon": "path",
           "children": [
-            { "pageUrl": "/sole", "title": "Sole Proprietorship" },
-            { "pageUrl": "/sole", "title": "Sole Proprietorship" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" },
-            { "pageUrl": "/sole", "title": "Partnership firm" }
+            { "pageUrl": "/sole", "title": "ISO 9001:2015 QMS" },
+            { "pageUrl": "/sole", "title": "ISO 14001:2004 EMS" },
+            { "pageUrl": "/sole", "title": "ISO 22000:2005 / HACCP" },
+            { "pageUrl": "/sole", "title": "ISO 13485:2003 Medical devices" },
+            { "pageUrl": "/sole", "title": "ISO/TS 16949:2009" },
+            { "pageUrl": "/sole", "title": "OHSAS 18001:2007" },
+            { "pageUrl": "/sole", "title": "ISO/IEC 20000" },
+            { "pageUrl": "/sole", "title": "ISO 27001:2005 ISMS" },
+            { "pageUrl": "/sole", "title": "ISO 29990:2010" },
+            { "pageUrl": "/sole", "title": "ISO 50001:2011" }
           ]
         }
       ]

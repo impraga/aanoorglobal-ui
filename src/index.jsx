@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import ReactDOM from 'react-dom/client'
 
+// Components
 import App from './App'
 import ErrorBoundary from './components/organisms/ErrorBoundary/ErrorBoundary'
 import HomePage from './pages/HomePage/HomePage'

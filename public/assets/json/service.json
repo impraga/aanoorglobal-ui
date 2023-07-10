@@ -2,8 +2,8 @@
   {
     "category": "Startup Centre",
     "serviceCount": "9 Services available",
-    "imgUrl": "",
-    "colorCode": "#0090BA",
+    "imgUrl": "startup.png",
+    "colorCode": "bg-lb",
     "child": [
       {
         "title": "Sole Proprietorship Registration",
@@ -44,8 +44,8 @@
   {
     "category": "Intellectual Property",
     "serviceCount": "8 Services available",
-    "imgUrl": "",
-    "colorCode": "#9FDB0E",
+    "imgUrl": "property.png",
+    "colorCode": "bg-green",
     "child": [
       {
         "title": "Property Registration",
@@ -86,8 +86,8 @@
   {
     "category": "Registration",
     "serviceCount": "6 Services available",
-    "imgUrl": "",
-    "colorCode": "#F89500",
+    "imgUrl": "registration.png",
+    "colorCode": "bg-orange",
     "child": [
       {
         "title": "Trademark Registration",
@@ -128,8 +128,8 @@
   {
     "category": "Certification",
     "serviceCount": "10 Services available",
-    "imgUrl": "",
-    "colorCode": "#7300BA",
+    "imgUrl": "certificate.png",
+    "colorCode": "bg-purple",
     "child": [
       {
         "title": "80 C Registration",
@@ -170,8 +170,8 @@
   {
     "category": "Statutory Compliance",
     "serviceCount": "4 Services available",
-    "imgUrl": "",
-    "colorCode": "#E20000",
+    "imgUrl": "statutory.png",
+    "colorCode": "bg-red",
     "child": [
       {
         "title": "Legal Action",

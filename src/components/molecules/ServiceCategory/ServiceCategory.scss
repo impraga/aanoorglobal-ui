@@ -42,7 +42,8 @@
     transition: 0.3s ease-in-out;
     z-index: 1;
   }
-  &:hover {
+  &:hover,
+  &.active {
     h3,
     p {
       color: white !important;

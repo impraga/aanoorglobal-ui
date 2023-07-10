@@ -22,13 +22,15 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-animate-on-scroll": "^2.1.7",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-reveal": "^1.2.2",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
     "react-table": "^7.8.0",
     "regenerator-runtime": "^0.13.11",
-    "swiper": "^10.0.3"
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",

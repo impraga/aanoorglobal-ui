@@ -10,9 +10,12 @@
     scroll-snap-type: x mandatory;
     overflow: auto;
     .service-cat-cont {
-      scroll-snap-align: start ;
+      border: none;
+      padding: 0;
+      scroll-snap-align: start;
       min-width: 220px;
       margin-right: 10px;
+      text-align: left;
       width: 100%;
       &:last-child {
         margin-right: 0px;

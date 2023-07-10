@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import './ServiceCategory.scss'
 
-const ServiceCategory = ({ service }) => (
-  <div className="category-cont bg-white br-1 bs p-3 w-100 overflow-hidden position-relative">
+const ServiceCategory = ({ service, selectedCategory }) => (
+  <div className={`category-cont bg-white br-1 bs p-3 w-100 overflow-hidden position-relative ${selectedCategory === service.category ? " active " : ""}`}>
     <div className="d-flex h-100 flex-column justify-content-between">
       <div className="position-relative">
         <div className="cat-img-cont d-flex align-items-center justify-content-center">
@@ -25,7 +25,8 @@ const ServiceCategory = ({ service }) => (
 )
 
 ServiceCategory.propTypes = {
-  service: PropTypes.shape().isRequired
+  service: PropTypes.shape().isRequired,
+  selectedCategory: PropTypes.string.isRequired
 }
 
 export default ServiceCategory
