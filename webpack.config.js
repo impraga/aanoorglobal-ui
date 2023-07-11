@@ -47,7 +47,9 @@ module.exports = {
               injectType: "styleTag"
             }
           },
-          "css-loader",
+          {
+            loader: 'css-loader'
+          },
           {
             loader: "sass-loader",
             options: {
@@ -57,11 +59,16 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(woff|woff2|eot|ttf)$/,
         use: {
           loader: "url-loader"
         }
+      },
+      {
+        test: /\.(png|svg|jpg)$/,
+        type: "asset"
       }
+
     ]
   },
   plugins: [

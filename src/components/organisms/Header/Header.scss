@@ -30,31 +30,40 @@
               color: $ag-green;
 
               .first-level {
-                display: flex;
-                flex-wrap: wrap;
+                display: block;
               }
-              .show-experts-menu-wrapper {
+              .show-experts-menu {
                 display: block;
               }
             }
             .first-level {
-              display: none;
+              // display: none;
               position: absolute;
+              background-image: url(/public/assets/images/semi-circle.png);
+              background-repeat: no-repeat;
+              background-position: bottom left;
               width: 100%;
-              background: $ag-gray;
+              background-color: $ag-gray;
               left: 0;
               right: 0;
               max-width: 1150px;
               top: 70px;
               z-index: 5;
-              padding: 30px;
               border-radius: 20px;
+              padding-bottom: 0;
+
+              .menu-wrapper {
+                display: flex;
+                padding: 30px;
+                flex-wrap: wrap;
+                padding-bottom: 0;
+              }
 
               .first-level-menu {
                 width: 25%;
                 > span {
-                  color: $ag-darkblue;
-                  font-weight: 600;
+                  color: $ag-blue;
+                  font-weight: 900;
                   display: inline-block;
                   margin-bottom: 0.75rem;
                 }
@@ -73,9 +82,41 @@
                 }
               }
             }
-            .show-experts-menu-wrapper {
-              display: none;
+            .show-experts-menu {
+              // display: none;
               width: 100%;
+              background-image: url(/public/assets/images/expert-bg.png);
+              background-repeat: no-repeat;
+              background-position: right;
+              // padding: 10px;
+              min-height: 80px;
+
+              .show-experts-menu-wrapper {
+                float: right;
+                width: 45%;
+
+                .left-section {
+                  float: left;
+                  padding-top: 1rem;
+                  .title {
+                    font-size: 1rem;
+                    color: $ag-gray;
+                    margin-bottom: 0;
+                  }
+                  .desc {
+                    font-size: 0.75rem;
+                    color: $ag-white;
+                    font-weight: 600;
+                  }
+                }
+                .expert-button {
+                  margin-top: 20px;
+                  float: right;
+                  margin-right: 20px;
+                  height: 40px;
+                  font-weight: 700;
+                }
+              }
             }
           }
         }
