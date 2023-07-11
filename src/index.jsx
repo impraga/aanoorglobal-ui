@@ -26,6 +26,10 @@ const router = createBrowserRouter([
         path: 'contact',
         lazy: () =>
           import('./components/organisms/ContactSection/ContactSection')
+      },
+      {
+        path: 'sole',
+        element: <HomePage />
       }
     ]
   },
