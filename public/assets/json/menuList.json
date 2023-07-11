@@ -6,7 +6,7 @@
       "children": [
         {
           "title": "Startup Center",
-          "icon": "path",
+          "icon": "startup.png",
           "children": [
             { "pageUrl": "/sole", "title": "Sole Proprietorship" },
             { "pageUrl": "/sole", "title": "Partnership firm" },
@@ -22,7 +22,7 @@
         [
           {
             "title": "Intellectual Property",
-            "icon": "path",
+            "icon": "property.png",
             "children": [
               { "pageUrl": "/sole", "title": "Trademark Registration" },
               { "pageUrl": "/sole", "title": "Trademark Objection" },
@@ -34,7 +34,7 @@
           },
           {
             "title": "Statuary Compliance",
-            "icon": "path",
+            "icon": "statutory.png",
             "children": [
               { "pageUrl": "/sole", "title": "Income Tax Filing" },
               { "pageUrl": "/sole", "title": "GST Filing" },
@@ -45,7 +45,7 @@
         ],
         {
           "title": "Registration",
-          "icon": "path",
+          "icon": "registration.png",
           "children": [
             { "pageUrl": "/sole", "title": "SSI/MSME Registration" },
             { "pageUrl": "/sole", "title": "Goods & Service Tax Registration" },
@@ -62,7 +62,7 @@
         },
         {
           "title": "Certification",
-          "icon": "path",
+          "icon": "certificate.png",
           "children": [
             { "pageUrl": "/sole", "title": "ISO 9001:2015 QMS" },
             { "pageUrl": "/sole", "title": "ISO 14001:2004 EMS" },

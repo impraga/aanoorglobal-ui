@@ -64,3 +64,15 @@
     }
   }
 }
+.modal {
+  .modal-cont {
+    width: 95vw !important;
+    max-width: 1150px !important;
+    height: auto;
+    .modal-content {
+      min-height: 560px;
+      height: auto !important;
+      border-radius: 20px;
+    }
+  }
+}

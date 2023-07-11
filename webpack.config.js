@@ -1,18 +1,18 @@
-const webpack = require("webpack")
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const sassLoader = require("sass")
+const webpack = require('webpack')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const sassLoader = require('sass')
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const IS_DEV = process.env.NODE_ENV === "development"
+const IS_DEV = process.env.NODE_ENV === 'development'
 // const IS_ANALYZE = typeof process.env.BUNDLE_ANALYZE !== 'undefined';
 
 module.exports = {
-  entry: "./src/index.jsx",
+  entry: './src/index.jsx',
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "[name]-[contenthash].js",
-    publicPath: IS_DEV ? "" : "/"
+    path: path.join(__dirname, '/dist'),
+    filename: '[name]-[contenthash].js',
+    publicPath: IS_DEV ? '' : '/'
   },
   devServer: {
     // port: 8080,
@@ -22,7 +22,7 @@ module.exports = {
     // proxy: {}
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".jsx"]
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
   module: {
     rules: [
@@ -30,28 +30,27 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         resolve: {
-          extensions: [".js", ".jsx"]
+          extensions: ['.js', '.jsx']
         },
-        loader: "babel-loader",
+        loader: 'babel-loader',
         options: {
-          presets: ["@babel/preset-react"]
+          presets: ['@babel/preset-react']
         }
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        exclude: /node_modules/,
         use: [
           {
-            loader: "style-loader",
+            loader: 'style-loader',
             options: {
-              injectType: "styleTag"
+              injectType: 'styleTag'
             }
           },
           {
             loader: 'css-loader'
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               implementation: sassLoader
             }
@@ -61,28 +60,27 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf)$/,
         use: {
-          loader: "url-loader"
+          loader: 'url-loader'
         }
       },
       {
         test: /\.(png|svg|jpg)$/,
-        type: "asset"
+        type: 'asset'
       }
-
     ]
   },
   plugins: [
     new webpack.ProvidePlugin({
-      process: "process/browser"
+      process: 'process/browser'
     }),
     new webpack.DefinePlugin({
       __IS_DEV__: IS_DEV,
-      ...(IS_DEV && { "process.env.NODE_ENV": JSON.stringify("development") })
+      ...(IS_DEV && { 'process.env.NODE_ENV': JSON.stringify('development') })
     }),
 
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "index.html"),
-      filename: "index.html"
+      template: path.resolve(__dirname, 'index.html'),
+      filename: 'index.html'
     })
     // new CopyWebpackPlugin({
     //   patterns: [{ from: 'public/json' }],
