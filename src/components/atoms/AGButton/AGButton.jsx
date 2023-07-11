@@ -8,6 +8,14 @@ const AGButton = ({ buttonObj, handleClick }) => (
     onClick={handleClick}
   >
     {buttonObj.text}
+    {buttonObj.imageDetails && (
+      <img
+        src={buttonObj.imageDetails.path}
+        alt={buttonObj.imageDetails.alt}
+        onClick={handleClick}
+        aria-hidden
+      />
+    )}
   </button>
 )
 
