@@ -37,20 +37,15 @@ const Carousel = () => {
         `
       ],
       // array with CSS urls
-      injectStylesUrls: ['/Carousel.scss'],
+      injectStylesUrls: [''],
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev'
       }
     }
     Object.assign(swiperContainer, params)
     swiperContainer.initialize()
   }, [])
-
-  function movePrev() {
-    console.log(swiperElRef.current)
-  }
-
 
   return (<div className='carousel-cont h-100'>
     <swiper-container ref={swiperElRef}
@@ -70,10 +65,10 @@ const Carousel = () => {
       )}
     </swiper-container>
     <div className='btn-cont'>
-      <button type='button' className='bg-green' onClick={movePrev}>
+      <button type='button' className='bg-green swiper-prev'>
         <img src={arrowleft} alt="arrow left" />
       </button>
-      <button type='button' className='bg-green' onClick={movePrev}>
+      <button type='button' className='bg-green swiper-next'>
         <img src={arrowright} alt="arrow right" />
       </button>
     </div>

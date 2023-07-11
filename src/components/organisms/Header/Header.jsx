@@ -8,6 +8,7 @@ import menu from '../../../../public/assets/images/menu.png'
 import menuClose from '../../../../public/assets/images/menu-close.png'
 import menuList from '../../../../public/assets/json/menuList.json'
 import AGButton from '../../atoms/AGButton/AGButton'
+import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 import './Header.scss'
 
@@ -93,14 +94,15 @@ const Header = () => {
       <div className="show-experts-menu-wrapper">
         <div className="left-section">
           <p className="title">Still Confused</p>
-          <p className="desc">Lets connect and get your work done!</p>
+          <p className="desc o-05">Lets connect and get your work done!</p>
         </div>
-        <AGButton
+        <ExpertButton />
+        {/* <AGButton
           buttonObj={{
             className: 'expert-button bg-green',
             text: 'CONNECT WITH EXPERTS'
           }}
-        />
+        /> */}
       </div>
     </div>
   )
