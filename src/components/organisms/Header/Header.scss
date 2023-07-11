@@ -6,12 +6,24 @@
     max-width: 1400px !important;
     margin: 0 auto;
     background-color: $ag-gray;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
     header {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       position: relative;
 
+      .logo-wrapper {
+        height: 70px;
+        img {
+          height: 100%;
+        }
+      }
       nav {
         width: 100%;
         > ul {
@@ -37,7 +49,7 @@
               }
             }
             .first-level {
-              // display: none;
+              display: none;
               position: absolute;
               background-image: url(/public/assets/images/semi-circle.png);
               background-repeat: no-repeat;
@@ -67,6 +79,9 @@
                   display: inline-block;
                   margin-bottom: 0.75rem;
                 }
+                img {
+                  width: 18px;
+                }
                 .first-level-menu {
                   margin-bottom: 30px;
                   width: 100%;
@@ -87,7 +102,8 @@
               width: 100%;
               background-image: url(/public/assets/images/expert-bg.png);
               background-repeat: no-repeat;
-              background-position: right;
+              background-position: top right;
+              background-size: auto 100%;
               // padding: 10px;
               min-height: 80px;
 
@@ -106,14 +122,14 @@
                   .desc {
                     font-size: 0.75rem;
                     color: $ag-white;
-                    font-weight: 600;
+                    font-weight: 400;
                   }
                 }
                 .expert-button {
-                  margin-top: 20px;
+                  margin-top: 13px;
                   float: right;
-                  margin-right: 20px;
-                  height: 40px;
+                  margin-right: 13px;
+                  // height: 40px;
                   font-weight: 700;
                 }
               }

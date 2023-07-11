@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button'
 
-import logo from '../../../../public/assets/images/logo.png'
+import logo from '../../../../public/assets/icons/aanoor-logo.svg'
 import menuList from '../../../../public/assets/json/menuList.json'
 import AGButton from '../../atoms/AGButton/AGButton'
+import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 import './Header.scss'
 
@@ -28,7 +29,7 @@ const Header = () => {
             ) : (
               // eslint-disable-next-line react/no-array-index-key
               <div className="first-level-menu" key={`${item.title}_${index}`}>
-                <img src={item.icon} alt="icon" />
+                <img src={`/assets/images/${item.icon}`} alt="icon" />
                 {item.title && <span>{item.title}</span>}
                 {item.children && (
                   <ul>
@@ -51,21 +52,22 @@ const Header = () => {
       <div className="show-experts-menu-wrapper">
         <div className="left-section">
           <p className="title">Still Confused</p>
-          <p className="desc">Lets connect and get your work done!</p>
+          <p className="desc o-05">Lets connect and get your work done!</p>
         </div>
-        <AGButton
+        <ExpertButton />
+        {/* <AGButton
           buttonObj={{
             className: 'expert-button bg-green',
             text: 'CONNECT WITH EXPERTS'
           }}
-        />
+        /> */}
       </div>
     </div>
   )
 
   return (
     <div className="header-bg">
-      <div className="lg-container br-1 br-tl-0 br-tr-o">
+      <div className="lg-container br-1 br-tl-0 br-tr-o bss">
         <header className="container">
           <div className="logo-wrapper">
             <Link to="/">
