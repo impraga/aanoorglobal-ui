@@ -5,13 +5,13 @@ import Button from 'react-bootstrap/Button'
 
 import logo from '../../../../public/assets/images/logo.png'
 import menuList from '../../../../public/assets/json/menuList.json'
-
-import './Header.scss'
 import AGButton from '../../atoms/AGButton/AGButton'
 
+import './Header.scss'
+
 const Header = () => {
-  const menuWithLink = (item) => (
-    <li>
+  const menuWithLink = (item, index) => (
+    <li key={`${item.title}_${index}`}>
       {item.pageUrl && <Link to={item.pageUrl}>{item.title}</Link>}
       {item.children && menuWithChildren(item.children, item.title, null, true)}
     </li>
@@ -21,33 +21,45 @@ const Header = () => {
     <>
       {title}
       <div className={clsName || 'first-level'}>
-        {list?.map((item) =>
-          Array.isArray(item) ? (
-            menuWithChildren(item, null, 'first-level-menu')
-          ) : (
-            <div className="first-level-menu">
-              <img src={item.icon} alt="icon" />
-              {item.title && <span>{item.title}</span>}
-              {item.children && (
-                <ul>
-                  {item.children.map((secondMenu) => menuWithLink(secondMenu))}
-                </ul>
-              )}
-            </div>
-          )
-        )}
+        <div className={clsName ? '' : 'menu-wrapper'}>
+          {list?.map((item, index) =>
+            Array.isArray(item) ? (
+              menuWithChildren(item, null, 'first-level-menu')
+            ) : (
+              // eslint-disable-next-line react/no-array-index-key
+              <div className="first-level-menu" key={`${item.title}_${index}`}>
+                <img src={item.icon} alt="icon" />
+                {item.title && <span>{item.title}</span>}
+                {item.children && (
+                  <ul>
+                    {item.children.map((secondMenu, i) =>
+                      menuWithLink(secondMenu, i)
+                    )}
+                  </ul>
+                )}
+              </div>
+            )
+          )}
+        </div>
         {displayExpertBtn && showExpertsButton()}
       </div>
     </>
   )
 
   const showExpertsButton = () => (
-    <div className="show-experts-menu-wrapper">
-      <h3>Still Confused</h3>
-      <p>Lets connect and get your work done!</p>
-      <AGButton
-        buttonObj={{ className: 'expert-button', text: 'CONNECT WITH EXPERTS' }}
-      />
+    <div className="show-experts-menu">
+      <div className="show-experts-menu-wrapper">
+        <div className="left-section">
+          <p className="title">Still Confused</p>
+          <p className="desc">Lets connect and get your work done!</p>
+        </div>
+        <AGButton
+          buttonObj={{
+            className: 'expert-button bg-green',
+            text: 'CONNECT WITH EXPERTS'
+          }}
+        />
+      </div>
     </div>
   )
 
@@ -62,7 +74,7 @@ const Header = () => {
           </div>
           <nav>
             <ul>
-              {menuList?.data.map((item) => menuWithLink(item))}
+              {menuList?.data.map((item, index) => menuWithLink(item, index))}
 
               <li>
                 <Button className="blog-btn" variant="success">

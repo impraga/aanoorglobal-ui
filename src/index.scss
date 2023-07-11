@@ -8,6 +8,7 @@ $ag-gray-dark: #eeeeee;
 $ag-orange: #f89500;
 $ag-purple: #7300ba;
 $ag-red: #e20000;
+$ag-white: #fff;
 
 .text-db {
   color: $ag-darkblue;
@@ -46,7 +47,7 @@ $ag-red: #e20000;
   background-color: $ag-gray-dark;
 }
 .bg-white {
-  background-color: #fff;
+  background-color: $ag-white;
 }
 .sec-text {
   opacity: 0.5;
