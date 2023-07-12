@@ -17,7 +17,7 @@ const Services = () => {
     <div className='container serivce-details-cont'>
       <div className='row'>
         <div className='col-md-4'>
-          {/* <ServicePageSidePanel /> */}
+          <ServicePageSidePanel template={serviceDetails.template} />
         </div>
         <div className='col-md-8'>
           <ServicePageContent template={serviceDetails.template} />

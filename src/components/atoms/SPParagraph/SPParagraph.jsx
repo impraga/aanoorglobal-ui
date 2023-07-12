@@ -6,9 +6,9 @@ import PropTypes from 'prop-types'
 import './SPParagraph.scss'
 
 const SPParagraph = ({ data }) => (
-  <div className="container pb-2" id={data.id}>
+  <div className="container mb-4" id={data.id}>
     <h3>{data.header}</h3>
-    <p>{data.value}</p>
+    <p className='mb-0'>{data.value}</p>
   </div>
 )
 

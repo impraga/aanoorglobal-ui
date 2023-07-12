@@ -15,10 +15,10 @@ const ContactForm = () => {
     <div className="container px-0 contform-cont">
       <div className="row h-100 w-100">
         <div className="col-md-5 d-md-block d-none">
-          <div className="artbord-cont bg-db h-100" data-aos="fade-up" />
+          <div className="artbord-cont bg-db h-100" />
         </div>
         <div className="col form-cont">
-          <div className="header mt-4" data-aos="fade-up">
+          <div className="header-form mt-4" data-aos="fade-up">
             <h2>
               Get in <span>touch with us</span> for more information
             </h2>
@@ -72,9 +72,8 @@ const ContactForm = () => {
                         onClick={() => {
                           changeService(service)
                         }}
-                        className={`${
-                          selectedService === service ? ' active' : ''
-                        }`}
+                        className={`${selectedService === service ? ' active' : ''
+                          }`}
                         tabIndex="-1"
                         aria-hidden
                       >

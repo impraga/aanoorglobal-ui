@@ -48,9 +48,8 @@ const Header = () => {
               menuWithChildren(item, null, 'first-level-menu')
             ) : (
               <div
-                className={`first-level-menu ${
-                  serviceOpen === index ? 'show-service' : ''
-                }`}
+                className={`first-level-menu ${serviceOpen === index ? 'show-service' : ''
+                  }`}
                 key={item.id}
               >
                 <img src={`/assets/images/${item.icon}`} alt="icon" />
@@ -110,9 +109,7 @@ const Header = () => {
   return (
     <div className="header">
       <div
-        className={`lg-container br-1 br-tl-0 br-tr-o ${
-          isMenuOpen ? 'remove-radius' : ''
-        }`}
+        className={`lg-container bs br-1 br-tl-0 br-tr-o ${isMenuOpen ? 'remove-radius' : ''}`}
       >
         <header className="container">
           <div className="logo-wrapper">
