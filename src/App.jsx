@@ -15,7 +15,7 @@ import HandBar from './components/molecules/HandBar/HandBar'
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 600,
+      duration: 400,
       useClassNames: false,
       once: true
     })

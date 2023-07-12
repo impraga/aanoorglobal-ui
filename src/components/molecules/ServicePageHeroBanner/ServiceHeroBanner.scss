@@ -1,0 +1,39 @@
+.hero-banner-cont {
+  width: 100%;
+  min-height: 450px;
+  background: linear-gradient(to right, #001b29, #001b29),
+    url(/public/assets/images/service-cover.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-top: 90px;
+
+  .title-cont {
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .price-cont {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.1rem;
+    .just {
+      line-height: 1.3rem;
+    }
+    .price {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    .note {
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.7;
+      line-height: 0.5rem;
+    }
+  }
+}

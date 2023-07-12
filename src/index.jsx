@@ -9,6 +9,7 @@ import ErrorBoundary from './components/organisms/ErrorBoundary/ErrorBoundary'
 import HomePage from './pages/HomePage/HomePage'
 import NotFound from './pages/NotFound/NotFound'
 import './index.scss'
+import Services from './pages/Services/Services'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -24,12 +25,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'contact',
-        lazy: () =>
-          import('./components/organisms/ContactSection/ContactSection')
+        lazy: () => import('./components/organisms/ContactSection/ContactSection')
       },
       {
-        path: 'sole',
-        element: <HomePage />
+        path: 'services',
+        element: <Services />
       }
     ]
   },
