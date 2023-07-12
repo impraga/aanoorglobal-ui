@@ -35,6 +35,21 @@
         "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
       },
       {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
         "id": "Steps to register",
         "header": "How to register a Trademark and Logo Registration?",
         "type": "SPStep",

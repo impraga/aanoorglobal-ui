@@ -8,13 +8,15 @@ import SPParagraph from '../../atoms/SPParagraph/SPParagraph'
 import SPIncludes from '../../atoms/SPIncludes/SPIncludes'
 import SPBenefits from '../../atoms/SPBenefits/SPBenefits'
 import SPStep from '../../atoms/SPStep/SPStep'
+import SPDocuments from '../../atoms/SPDocuments/SPDocuments'
 
 const components = {
   SPBullet,
   SPParagraph,
   SPIncludes,
   SPBenefits,
-  SPStep
+  SPStep,
+  SPDocuments
 }
 
 const ServicePageContent = ({ template }) => (
