@@ -10,6 +10,8 @@ import HomePage from './pages/HomePage/HomePage'
 import NotFound from './pages/NotFound/NotFound'
 import './index.scss'
 import Services from './pages/Services/Services'
+import About from './pages/About/About'
+import Sitemap from './pages/Sitemap/Sitemap'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: 'services',
         element: <Services />
+      },
+      {
+        path: 'about',
+        element: <About />
+      },
+      {
+        path: 'sitemap',
+        element: <Sitemap />
       }
     ]
   },
