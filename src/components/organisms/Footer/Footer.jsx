@@ -117,12 +117,12 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div className='w-100 d-flex text-white justify-content-end o-05'>
-            <div className='mx-3'>
-              <Link to='/sitemap'>Sitemap</Link>
+          <div className="w-100 d-flex text-white justify-content-lg-end justify-content-center o-05">
+            <div className="mx-3">
+              <Link to="/sitemap">Sitemap</Link>
             </div>
             <div>
-              <Link to='/privacy-policy'>Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
           <hr />

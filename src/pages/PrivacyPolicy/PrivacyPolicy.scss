@@ -1,6 +1,9 @@
 .privacy-cont {
   margin-top: -60px;
-
+  .privacy-header-cont h2 {
+    position: sticky;
+    top: 90px;
+  }
   h2 {
     font-size: 1.5rem;
     font-weight: 700;

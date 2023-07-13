@@ -1,0 +1,36 @@
+@import '../../../index.scss';
+.accordion-cont {
+  .accordion-item {
+    border: none;
+    margin-bottom: 5px;
+    .accordion-button {
+      background-color: $ag-darkblue;
+      border-radius: 20px;
+      color: white;
+      font-weight: 600;
+      &.collapsed {
+        color: $ag-blue;
+        background-color: $ag-gray;
+        border-radius: 20px;
+        &::after {
+          background-image: url(../../../../public//assets//icons/accordion-plus.svg);
+          transform: none;
+        }
+      }
+      &:focus,
+      &:active,
+      &:focus-visible,
+      &:focus-within {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+      &::after {
+        background-image: url(../../../../public//assets//icons/accordion-minus.svg);
+      }
+    }
+    .accordion-body {
+      color: $ag-blue;
+    }
+  }
+}

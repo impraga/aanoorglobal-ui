@@ -7,7 +7,7 @@ import clip from '../../../../public/assets/icons/clip-icon.svg'
 import './SPDocuments.scss'
 
 const SPDocuments = ({ data }) => (
-  <div className="mt-5 mb-4 p-3 bg-gray br-1 position-relative document-cont" id={data.id}>
+  <div className="mb-4 p-3 bg-gray br-1 position-relative document-cont" id={data.id}>
     <div className='position-relative title-cont d-flex align-item-center mb-4'>
       <div className='img-cont bg-db br-1'>
         <img src={folderIcon} alt="" />

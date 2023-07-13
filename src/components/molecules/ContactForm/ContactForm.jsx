@@ -50,7 +50,7 @@ const ContactForm = () => {
                   <input type="email" placeholder="E-Mail" />
                 </div>
                 <div
-                  className='col-sm-6'
+                  className="col-sm-6"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
@@ -73,7 +73,9 @@ const ContactForm = () => {
                           onClick={() => {
                             changeService(service)
                           }}
-                          className={`${selectedService === service ? ' active' : ''}`}
+                          className={`${
+                            selectedService === service ? ' active' : ''
+                          }`}
                           tabIndex="-1"
                           aria-hidden
                         >

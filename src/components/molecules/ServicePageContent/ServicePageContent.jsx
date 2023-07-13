@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -9,6 +8,7 @@ import SPIncludes from '../../atoms/SPIncludes/SPIncludes'
 import SPBenefits from '../../atoms/SPBenefits/SPBenefits'
 import SPStep from '../../atoms/SPStep/SPStep'
 import SPDocuments from '../../atoms/SPDocuments/SPDocuments'
+import SPAccordion from '../../atoms/SPAccordion/SPAccordion'
 
 const components = {
   SPBullet,
@@ -16,21 +16,23 @@ const components = {
   SPIncludes,
   SPBenefits,
   SPStep,
-  SPDocuments
+  SPDocuments,
+  SPAccordion
 }
 
 const ServicePageContent = ({ template }) => (
   <div className="container bg-white br-1 bs px-3 py-4">
-    {template && template.map(value =>
-      components[value.type] &&
-      React.createElement(components[value.type], {
-        key: value.id,
-        data: value
-      })
-    )}
+    {template &&
+      template.map(
+        (value) =>
+          components[value.type] &&
+          React.createElement(components[value.type], {
+            key: value.id,
+            data: value
+          })
+      )}
   </div>
 )
-
 
 ServicePageContent.propTypes = {
   template: PropTypes.arrayOf(PropTypes.shape())
