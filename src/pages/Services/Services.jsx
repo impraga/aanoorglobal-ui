@@ -1,19 +1,20 @@
 import React from 'react'
+import { useParams } from 'react-router'
 import './Services.scss'
-// import { useParams } from "react-router"
 
 import serviceList from '../../../public/assets/json/serviceDetails.json'
 import ServiceHeroBanner from '../../components/molecules/ServicePageHeroBanner/ServiceHeroBanner'
 import ServicePageContent from '../../components/molecules/ServicePageContent/ServicePageContent'
 import ServicePageSidePanel from '../../components/molecules/ServicePageSidePanel/ServicePageSidePanel'
+import NotFound from '../NotFound/NotFound'
 
 const Services = () => {
-  const selectedService = 'trademark-registration'
+  const { serviceName } = useParams()
   const serviceDetails = serviceList.filter(
-    (service) => service.service === selectedService
+    (service) => service.service === serviceName
   )[0]
 
-  return (
+  return serviceDetails ? (
     <div>
       <ServiceHeroBanner
         title={serviceDetails.title}
@@ -26,12 +27,22 @@ const Services = () => {
             <ServicePageSidePanel template={serviceDetails.template} />
           </div>
           <div className="col-md-8">
-            <ServicePageContent template={serviceDetails.template} />
+            <div className="container bg-white br-1 bs px-3 py-4">
+              {serviceDetails.template?.map((data) => (
+                <ServicePageContent
+                  key={data.id}
+                  template={data.type}
+                  data={data}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </div>
+  ) : (
+    <NotFound />
   )
 }
 
-export default Services
+export default React.memo(Services)

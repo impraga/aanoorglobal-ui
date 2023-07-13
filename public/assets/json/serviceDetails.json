@@ -163,5 +163,1160 @@
         ]
       }
     ]
+  },
+  {
+    "service": "trademark-objection",
+    "title": "Trademark Objection",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/trademark-objection",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is Logo Trademark Registration?",
+        "type": "SPParagraph",
+        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+      },
+      {
+        "id": "includes",
+        "header": "Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "what can be trademarked?",
+        "header": "What can be trademarked?",
+        "type": "SPParagraph",
+        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+      },
+      {
+        "id": "bullets",
+        "header": "Bullets",
+        "type": "SPBullet",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "benefits",
+        "header": "Benefits",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "Form TM-A",
+              "Power of Attorney Copy",
+              "User Affidavit Copy",
+              "Government Fees",
+              "TM Search Report and Consultation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "benefits Multi",
+        "header": "Benefits with multiple values",
+        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "No return Filing",
+            "value": [
+              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+            ]
+          },
+          {
+            "title": "Proprietors with IE Code",
+            "value": [
+              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+            ]
+          },
+          {
+            "title": "Exporters with IE Code",
+            "value": [
+              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to register a Trademark and Logo Registration?",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "steps": [
+            {
+              "heading": "Apply for Trademark Registration fill our Form",
+              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            },
+            {
+              "heading": "Check your trademark search",
+              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            },
+            {
+              "heading": "Choose the appropriate class for best trademark Registration Company",
+              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            },
+            {
+              "heading": "Trademark application filing",
+              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            },
+            {
+              "heading": "Trademark Registration Online",
+              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "FAQs",
+        "header": "FAQs on Trademark Registration Online",
+        "type": "SPAccordion",
+        "value": [
+          {
+            "heading": "Apply for Trademark Registration fill our Form",
+            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+          },
+          {
+            "heading": "Check your trademark search",
+            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+          },
+          {
+            "heading": "Choose the appropriate class for best trademark Registration Company",
+            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+          },
+          {
+            "heading": "Trademark application filing",
+            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+          },
+          {
+            "heading": "Trademark Registration Online",
+            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "service": "sole-proprietorship",
+    "title": "Sole Proprietorship",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/sole-proprietorship",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is Logo Trademark Registration?",
+        "type": "SPParagraph",
+        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+      },
+      {
+        "id": "includes",
+        "header": "Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "what can be trademarked?",
+        "header": "What can be trademarked?",
+        "type": "SPParagraph",
+        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+      },
+      {
+        "id": "bullets",
+        "header": "Bullets",
+        "type": "SPBullet",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "benefits",
+        "header": "Benefits",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "Form TM-A",
+              "Power of Attorney Copy",
+              "User Affidavit Copy",
+              "Government Fees",
+              "TM Search Report and Consultation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "benefits Multi",
+        "header": "Benefits with multiple values",
+        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "No return Filing",
+            "value": [
+              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+            ]
+          },
+          {
+            "title": "Proprietors with IE Code",
+            "value": [
+              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+            ]
+          },
+          {
+            "title": "Exporters with IE Code",
+            "value": [
+              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to register a Trademark and Logo Registration?",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "steps": [
+            {
+              "heading": "Apply for Trademark Registration fill our Form",
+              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            },
+            {
+              "heading": "Check your trademark search",
+              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            },
+            {
+              "heading": "Choose the appropriate class for best trademark Registration Company",
+              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            },
+            {
+              "heading": "Trademark application filing",
+              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            },
+            {
+              "heading": "Trademark Registration Online",
+              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "FAQs",
+        "header": "FAQs on Trademark Registration Online",
+        "type": "SPAccordion",
+        "value": [
+          {
+            "heading": "Apply for Trademark Registration fill our Form",
+            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+          },
+          {
+            "heading": "Check your trademark search",
+            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+          },
+          {
+            "heading": "Choose the appropriate class for best trademark Registration Company",
+            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+          },
+          {
+            "heading": "Trademark application filing",
+            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+          },
+          {
+            "heading": "Trademark Registration Online",
+            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "service": "partnership-firm",
+    "title": "Partnership Firm",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/partnership-firm",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is Logo Trademark Registration?",
+        "type": "SPParagraph",
+        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+      },
+      {
+        "id": "includes",
+        "header": "Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "what can be trademarked?",
+        "header": "What can be trademarked?",
+        "type": "SPParagraph",
+        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+      },
+      {
+        "id": "bullets",
+        "header": "Bullets",
+        "type": "SPBullet",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "benefits",
+        "header": "Benefits",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "Form TM-A",
+              "Power of Attorney Copy",
+              "User Affidavit Copy",
+              "Government Fees",
+              "TM Search Report and Consultation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "benefits Multi",
+        "header": "Benefits with multiple values",
+        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "No return Filing",
+            "value": [
+              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+            ]
+          },
+          {
+            "title": "Proprietors with IE Code",
+            "value": [
+              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+            ]
+          },
+          {
+            "title": "Exporters with IE Code",
+            "value": [
+              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to register a Trademark and Logo Registration?",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "steps": [
+            {
+              "heading": "Apply for Trademark Registration fill our Form",
+              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            },
+            {
+              "heading": "Check your trademark search",
+              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            },
+            {
+              "heading": "Choose the appropriate class for best trademark Registration Company",
+              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            },
+            {
+              "heading": "Trademark application filing",
+              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            },
+            {
+              "heading": "Trademark Registration Online",
+              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "FAQs",
+        "header": "FAQs on Trademark Registration Online",
+        "type": "SPAccordion",
+        "value": [
+          {
+            "heading": "Apply for Trademark Registration fill our Form",
+            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+          },
+          {
+            "heading": "Check your trademark search",
+            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+          },
+          {
+            "heading": "Choose the appropriate class for best trademark Registration Company",
+            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+          },
+          {
+            "heading": "Trademark application filing",
+            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+          },
+          {
+            "heading": "Trademark Registration Online",
+            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "service": "income-tax-filing",
+    "title": "Income Tax Filing",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/income-tax-filing",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is Logo Trademark Registration?",
+        "type": "SPParagraph",
+        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+      },
+      {
+        "id": "includes",
+        "header": "Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "what can be trademarked?",
+        "header": "What can be trademarked?",
+        "type": "SPParagraph",
+        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+      },
+      {
+        "id": "bullets",
+        "header": "Bullets",
+        "type": "SPBullet",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "benefits",
+        "header": "Benefits",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "Form TM-A",
+              "Power of Attorney Copy",
+              "User Affidavit Copy",
+              "Government Fees",
+              "TM Search Report and Consultation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "benefits Multi",
+        "header": "Benefits with multiple values",
+        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "No return Filing",
+            "value": [
+              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+            ]
+          },
+          {
+            "title": "Proprietors with IE Code",
+            "value": [
+              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+            ]
+          },
+          {
+            "title": "Exporters with IE Code",
+            "value": [
+              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to register a Trademark and Logo Registration?",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "steps": [
+            {
+              "heading": "Apply for Trademark Registration fill our Form",
+              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            },
+            {
+              "heading": "Check your trademark search",
+              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            },
+            {
+              "heading": "Choose the appropriate class for best trademark Registration Company",
+              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            },
+            {
+              "heading": "Trademark application filing",
+              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            },
+            {
+              "heading": "Trademark Registration Online",
+              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "FAQs",
+        "header": "FAQs on Trademark Registration Online",
+        "type": "SPAccordion",
+        "value": [
+          {
+            "heading": "Apply for Trademark Registration fill our Form",
+            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+          },
+          {
+            "heading": "Check your trademark search",
+            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+          },
+          {
+            "heading": "Choose the appropriate class for best trademark Registration Company",
+            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+          },
+          {
+            "heading": "Trademark application filing",
+            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+          },
+          {
+            "heading": "Trademark Registration Online",
+            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "service": "gst-filing",
+    "title": "GST Filing",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/gst-filing",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is Logo Trademark Registration?",
+        "type": "SPParagraph",
+        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+      },
+      {
+        "id": "includes",
+        "header": "Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "what can be trademarked?",
+        "header": "What can be trademarked?",
+        "type": "SPParagraph",
+        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+      },
+      {
+        "id": "bullets",
+        "header": "Bullets",
+        "type": "SPBullet",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "benefits",
+        "header": "Benefits",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "Form TM-A",
+              "Power of Attorney Copy",
+              "User Affidavit Copy",
+              "Government Fees",
+              "TM Search Report and Consultation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "benefits Multi",
+        "header": "Benefits with multiple values",
+        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "No return Filing",
+            "value": [
+              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+            ]
+          },
+          {
+            "title": "Proprietors with IE Code",
+            "value": [
+              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+            ]
+          },
+          {
+            "title": "Exporters with IE Code",
+            "value": [
+              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to register a Trademark and Logo Registration?",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "steps": [
+            {
+              "heading": "Apply for Trademark Registration fill our Form",
+              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            },
+            {
+              "heading": "Check your trademark search",
+              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            },
+            {
+              "heading": "Choose the appropriate class for best trademark Registration Company",
+              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            },
+            {
+              "heading": "Trademark application filing",
+              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            },
+            {
+              "heading": "Trademark Registration Online",
+              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "FAQs",
+        "header": "FAQs on Trademark Registration Online",
+        "type": "SPAccordion",
+        "value": [
+          {
+            "heading": "Apply for Trademark Registration fill our Form",
+            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+          },
+          {
+            "heading": "Check your trademark search",
+            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+          },
+          {
+            "heading": "Choose the appropriate class for best trademark Registration Company",
+            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+          },
+          {
+            "heading": "Trademark application filing",
+            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+          },
+          {
+            "heading": "Trademark Registration Online",
+            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "service": "ssi-msme-registration",
+    "title": "SSI/MSME Registration",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/ssi-msme-registration",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is Logo Trademark Registration?",
+        "type": "SPParagraph",
+        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+      },
+      {
+        "id": "includes",
+        "header": "Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "what can be trademarked?",
+        "header": "What can be trademarked?",
+        "type": "SPParagraph",
+        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+      },
+      {
+        "id": "bullets",
+        "header": "Bullets",
+        "type": "SPBullet",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "benefits",
+        "header": "Benefits",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "Form TM-A",
+              "Power of Attorney Copy",
+              "User Affidavit Copy",
+              "Government Fees",
+              "TM Search Report and Consultation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "benefits Multi",
+        "header": "Benefits with multiple values",
+        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "No return Filing",
+            "value": [
+              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+            ]
+          },
+          {
+            "title": "Proprietors with IE Code",
+            "value": [
+              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+            ]
+          },
+          {
+            "title": "Exporters with IE Code",
+            "value": [
+              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to register a Trademark and Logo Registration?",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "steps": [
+            {
+              "heading": "Apply for Trademark Registration fill our Form",
+              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            },
+            {
+              "heading": "Check your trademark search",
+              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            },
+            {
+              "heading": "Choose the appropriate class for best trademark Registration Company",
+              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            },
+            {
+              "heading": "Trademark application filing",
+              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            },
+            {
+              "heading": "Trademark Registration Online",
+              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "FAQs",
+        "header": "FAQs on Trademark Registration Online",
+        "type": "SPAccordion",
+        "value": [
+          {
+            "heading": "Apply for Trademark Registration fill our Form",
+            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+          },
+          {
+            "heading": "Check your trademark search",
+            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+          },
+          {
+            "heading": "Choose the appropriate class for best trademark Registration Company",
+            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+          },
+          {
+            "heading": "Trademark application filing",
+            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+          },
+          {
+            "heading": "Trademark Registration Online",
+            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "service": "goods-service-tax-registration",
+    "title": "Goods & Service Tax Registration",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/goods-service-tax-registration",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is Logo Trademark Registration?",
+        "type": "SPParagraph",
+        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+      },
+      {
+        "id": "includes",
+        "header": "Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "what can be trademarked?",
+        "header": "What can be trademarked?",
+        "type": "SPParagraph",
+        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+      },
+      {
+        "id": "bullets",
+        "header": "Bullets",
+        "type": "SPBullet",
+        "value": [
+          "Form TM-A",
+          "Power of Attorney Copy",
+          "User Affidavit Copy",
+          "Government Fees",
+          "TM Search Report and Consultation"
+        ]
+      },
+      {
+        "id": "benefits",
+        "header": "Benefits",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "Form TM-A",
+              "Power of Attorney Copy",
+              "User Affidavit Copy",
+              "Government Fees",
+              "TM Search Report and Consultation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "benefits Multi",
+        "header": "Benefits with multiple values",
+        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "No return Filing",
+            "value": [
+              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+            ]
+          },
+          {
+            "title": "Proprietors with IE Code",
+            "value": [
+              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+            ]
+          },
+          {
+            "title": "Exporters with IE Code",
+            "value": [
+              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "Documents required for Trademark and Logo Registration?",
+        "type": "SPDocuments",
+        "value": [
+          "Aadhar card",
+          "Address proof and identity proof of directors and promoters with photographs.",
+          "Cancelled cheque and bank account statement.",
+          "Board resolution for authorized signatory and letter of authorization.",
+          "PAN of the application",
+          "Proof of Incorporation certificate and business registration.",
+          "Address proof of the business place.",
+          "Digital Signatures."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to register a Trademark and Logo Registration?",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "steps": [
+            {
+              "heading": "Apply for Trademark Registration fill our Form",
+              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            },
+            {
+              "heading": "Check your trademark search",
+              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            },
+            {
+              "heading": "Choose the appropriate class for best trademark Registration Company",
+              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            },
+            {
+              "heading": "Trademark application filing",
+              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            },
+            {
+              "heading": "Trademark Registration Online",
+              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "FAQs",
+        "header": "FAQs on Trademark Registration Online",
+        "type": "SPAccordion",
+        "value": [
+          {
+            "heading": "Apply for Trademark Registration fill our Form",
+            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+          },
+          {
+            "heading": "Check your trademark search",
+            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+          },
+          {
+            "heading": "Choose the appropriate class for best trademark Registration Company",
+            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+          },
+          {
+            "heading": "Trademark application filing",
+            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+          },
+          {
+            "heading": "Trademark Registration Online",
+            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+          }
+        ]
+      }
+    ]
   }
 ]

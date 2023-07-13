@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from "react"
+import React, { useEffect, useLayoutEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 // importing aos
 import AOS from 'aos'
@@ -26,12 +26,14 @@ const App = () => {
     })
   }, [])
 
-  return <div className="App position-relative">
-    <Header />
-    <Outlet />
-    <Footer />
-    <HandBar />
-  </div>
+  return (
+    <div className="App position-relative">
+      <Header />
+      <Outlet />
+      <Footer />
+      <HandBar />
+    </div>
+  )
 }
 
 export default App
