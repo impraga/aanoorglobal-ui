@@ -1,6 +1,6 @@
 {
   "data": [
-    { "pageUrl": "/about", "title": "About us", "id": "about" },
+    { "pageUrl": "/about", "title": "About", "id": "about" },
     {
       "title": "Services",
       "id": "services",
@@ -229,6 +229,6 @@
         }
       ]
     },
-    { "pageUrl": "/contact", "title": "Contact us", "id": "contact" }
+    { "pageUrl": "/contact", "title": "Contact", "id": "contact" }
   ]
 }

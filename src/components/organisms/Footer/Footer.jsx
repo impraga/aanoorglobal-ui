@@ -117,6 +117,14 @@ const Footer = () => {
               </div>
             ))}
           </div>
+          <div className='w-100 d-flex text-white justify-content-end o-05'>
+            <div className='mx-3'>
+              <Link to='/sitemap'>Sitemap</Link>
+            </div>
+            <div>
+              <Link to='/privacy-policy'>Privacy Policy</Link>
+            </div>
+          </div>
           <hr />
           <div className="copyright-cont d-flex flex-md-row flex-column flex-wrap text-white align-items-center justify-content-center justify-content-md-between ">
             <div className="copyright mb-2">

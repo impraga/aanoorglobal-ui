@@ -1,7 +1,5 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React, { useEffect } from "react"
-
-import { Outlet } from 'react-router-dom'
+import React, { useEffect, useLayoutEffect } from "react"
+import { Outlet, useLocation } from 'react-router-dom'
 // importing aos
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -13,6 +11,12 @@ import './App.scss'
 import HandBar from './components/molecules/HandBar/HandBar'
 
 const App = () => {
+  const location = useLocation()
+  // Scroll to top if path changes
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   useEffect(() => {
     AOS.init({
       duration: 400,

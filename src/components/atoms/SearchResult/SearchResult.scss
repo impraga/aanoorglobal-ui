@@ -11,5 +11,17 @@
     background-color: transparent;
     font-weight: bold;
     text-decoration: underline;
+    min-width: 100px;
+    padding-right: 0;
+  }
+}
+.noresult-cont {
+  // margin-top: 20px;
+  p {
+    font-weight: bold;
+  }
+  img {
+    width: 200px;
+    margin-left: 15px;
   }
 }

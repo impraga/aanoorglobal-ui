@@ -48,8 +48,7 @@ const Header = () => {
               menuWithChildren(item, null, 'first-level-menu')
             ) : (
               <div
-                className={`first-level-menu ${serviceOpen === index ? 'show-service' : ''
-                  }`}
+                className={`first-level-menu ${serviceOpen === index ? 'show-service' : ''}`}
                 key={item.id}
               >
                 <img src={`/assets/images/${item.icon}`} alt="icon" />
