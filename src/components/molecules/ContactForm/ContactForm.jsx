@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import './ContactForm.scss'
+import { services } from '../../../constants'
 
 const ContactForm = () => {
-  // const formValue = []
-  const services = ['General', 'Other']
   const [selectActive, setSelectActive] = useState(false)
   const [selectedService, setSelectedService] = useState(services[0])
 
@@ -11,6 +10,7 @@ const ContactForm = () => {
     setSelectedService(service)
     setSelectActive(false)
   }
+
   return (
     <div className="container px-0 contform-cont">
       <div className="row h-100 w-100">

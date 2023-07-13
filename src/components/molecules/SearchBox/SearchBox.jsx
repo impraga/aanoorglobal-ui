@@ -77,4 +77,4 @@ const SearchBox = () => {
   )
 }
 
-export default SearchBox
+export default React.memo(SearchBox)

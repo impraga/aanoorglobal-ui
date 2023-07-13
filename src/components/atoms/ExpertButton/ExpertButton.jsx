@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
-import './ExpertButton.scss'
 import supportIcon from '../../../../public/assets/icons/support.png'
 import ContactForm from '../../molecules/ContactForm/ContactForm'
+
+import './ExpertButton.scss'
 
 const ExpertButton = () => {
   const [show, setShow] = useState(false)
@@ -35,4 +36,4 @@ const ExpertButton = () => {
   )
 }
 
-export default ExpertButton
+export default React.memo(ExpertButton)

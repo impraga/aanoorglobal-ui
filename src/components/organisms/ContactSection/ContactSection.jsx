@@ -3,38 +3,10 @@ import React from 'react'
 import curve from '../../../../public/assets/icons/curve-bg-white.svg'
 import ContactContainer from '../../molecules/ContactContainer/ContactContainer'
 
-import './ContactSection.scss'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
-const contactDetails = [
-  {
-    city: 'Chennai',
-    img: 'chennai.png',
-    address:
-      '117/2, Sai Bhanvan, Habibullah Rd, T. Nagar, Chennai - 600017, TamilNadu, India',
-    phone: '+91 44 4355 4445',
-    gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
-    callto: '+914443554445'
-  },
-  {
-    city: 'Erode',
-    img: 'erode.png',
-    address:
-      '117/2, Sai Bhanvan, Habibullah Rd, T. Nagar, Chennai - 600017, TamilNadu, India',
-    phone: '+91 44 4355 4445',
-    gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
-    callto: '+914443554445'
-  },
-  {
-    city: 'Pune',
-    img: 'pune.svg',
-    address:
-      '117/2, Sai Bhanvan, Habibullah Rd, T. Nagar, Chennai - 600017, TamilNadu, India',
-    phone: '+91 44 4355 4445',
-    gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
-    callto: '+914443554445'
-  }
-]
+import './ContactSection.scss'
+import { contactDetails } from '../../../constants'
 
 const ContactSection = () => (
   <div>
@@ -47,7 +19,11 @@ const ContactSection = () => (
           </div>
           <div className="col-sm-6">
             <div className="d-flex align-items-center justify-content-sm-end justify-content-center">
-              <div className="button-cont" data-aos="fade-up" data-aos-delay="50">
+              <div
+                className="button-cont"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
                 <ExpertButton />
               </div>
               <div className="curve-bg">

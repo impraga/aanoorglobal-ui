@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import './ContactContainer.scss'
 
 const ContactContainer = ({ contactInfo }) => (
-  <div className="bg-white br-1 h-100 contact-container position-relative overflow-hidden" >
+  <div className="bg-white br-1 h-100 contact-container position-relative overflow-hidden">
     <div className="info-cont d-flex flex-row align-items-center p-3 position-relative">
       <div className="img-cont">
         <img src={`/assets/icons/${contactInfo.img}`} alt="" />

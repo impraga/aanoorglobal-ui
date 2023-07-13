@@ -1,31 +1,11 @@
 /* eslint-disable import/no-unresolved */
 import React, { useRef, useEffect } from 'react'
 import { register } from 'swiper/element/bundle'
+import { testimonial } from '../../../constants'
 
 import arrowleft from '../../../../public/assets/icons/arrow-blue-left.svg'
 import arrowright from '../../../../public/assets/icons/arrow-blue-right.svg'
 import './Carousel.scss'
-
-const testimonial = [
-  {
-    author: 'TCNOM Engineers',
-    city: 'Chennai-56',
-    value:
-      'Really we are very much happy about your guidance and support. We always have a good relationship with Aanoor and share / refer with our friends circle about your prompt work all under one roof'
-  },
-  {
-    author: 'Brassy Technologies',
-    city: 'Chennai-96',
-    value:
-      'Really we are very much happy about your guidance and support. We always have a good relationship with Aanoor and share / refer with our friends circle about your prompt work all under one roof'
-  },
-  {
-    author: 'TradeSter wholesale & retail Pvt Ltd ',
-    city: 'Chennai-04',
-    value:
-      'Really we are very much happy about your guidance and support. We always have a good relationship with Aanoor and share / refer with our friends circle about your prompt work all under one roof'
-  }
-]
 
 const Carousel = () => {
   const swiperElRef = useRef(null)
