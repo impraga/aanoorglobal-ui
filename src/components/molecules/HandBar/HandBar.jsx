@@ -16,18 +16,18 @@ const HandBar = () => (
         <span className="hamburger hamburger-3" />
       </label>
 
-      <a href="https://api.whatsapp.com/send?phone=919884046456=&text=Hello" className="menu-item bs  whatsapp">
+      <a href="https://api.whatsapp.com/send?phone=919884046456=&text=Hello" target="_blank" rel="noreferrer" className="menu-item bs  whatsapp">
         <img src={whatsapp} alt="Whatsapp" />
       </a>
-      <a href="mailto:admin@aanoorglobal.com" className="menu-item bs">
+      <a href="mailto:admin@aanoorglobal.com" target="_blank" rel="noreferrer" className="menu-item bs">
         <img src={mail} alt="" />
       </a>
-      <a href="tel:+914443554445" className="menu-item bs">
+      <a href="tel:+914443554445" target="_blank" rel="noreferrer" className="menu-item bs">
         <img src={phone} alt="" />
       </a>
 
     </nav>
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <svg className='d-none' xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
         <filter id="shadowed-goo">
 

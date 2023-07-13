@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import './SPStep.scss'
 
 const SPStep = ({ data }) => (
-  <div className="p-2 mb-4" id={data.id}>
+  <div className="p-2 mb-2" id={data.id}>
     <h3 className='mb-2'>{data.header}</h3>
     <div>{data.value && <div >
       <div><p className='mb-4'>{data.value.subHeading}</p></div>

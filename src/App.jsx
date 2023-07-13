@@ -20,6 +20,7 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       duration: 400,
+      offset: 80,
       useClassNames: false,
       once: true
     })
