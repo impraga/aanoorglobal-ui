@@ -19,9 +19,9 @@ const ContactForm = () => {
         </div>
         <div className="col form-cont">
           <div className="header-form mt-4" data-aos="fade-up">
-            <h2>
+            <h1>
               Get in <span>touch with us</span> for more information
-            </h2>
+            </h1>
           </div>
           <div className="container form px-0">
             <form>
@@ -50,37 +50,38 @@ const ContactForm = () => {
                   <input type="email" placeholder="E-Mail" />
                 </div>
                 <div
-                  className={`col-sm-6 select ${selectActive ? ' active' : ''}`}
+                  className='col-sm-6'
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  <button
-                    type="button"
-                    className="ng-binding"
-                    onClick={() => {
-                      setSelectActive(true)
-                    }}
-                  >
-                    {selectedService}
-                  </button>
-                  <ul className="md-whiteframe-z1" name="ul-id">
-                    {services.map((service) => (
-                      <li
-                        // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
-                        role="option"
-                        key={service}
-                        onClick={() => {
-                          changeService(service)
-                        }}
-                        className={`${selectedService === service ? ' active' : ''
-                          }`}
-                        tabIndex="-1"
-                        aria-hidden
-                      >
-                        {service}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className={`select ${selectActive ? ' active' : ''}`}>
+                    <button
+                      type="button"
+                      className="ng-binding"
+                      onClick={() => {
+                        setSelectActive(true)
+                      }}
+                    >
+                      {selectedService}
+                    </button>
+                    <ul className="md-whiteframe-z1" name="ul-id">
+                      {services.map((service) => (
+                        <li
+                          // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
+                          role="option"
+                          key={service}
+                          onClick={() => {
+                            changeService(service)
+                          }}
+                          className={`${selectedService === service ? ' active' : ''}`}
+                          tabIndex="-1"
+                          aria-hidden
+                        >
+                          {service}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div className="row">

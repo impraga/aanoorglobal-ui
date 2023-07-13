@@ -1,0 +1,41 @@
+.hero-banner-cont {
+  min-height: 350px;
+}
+.sitemap-cont {
+  margin-top: -60px;
+  ul {
+    list-style-type: none;
+    // ::before {
+    //   content: '';
+    // }
+    li {
+      position: relative;
+    }
+  }
+  h2,
+  h3,
+  h4 {
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 15px;
+    a {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}

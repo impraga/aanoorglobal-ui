@@ -1,6 +1,5 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
 import ReactDOM from 'react-dom/client'
 
 // Components
@@ -12,6 +11,8 @@ import './index.scss'
 import Services from './pages/Services/Services'
 import About from './pages/About/About'
 import Sitemap from './pages/Sitemap/Sitemap'
+import Contact from './pages/Contact/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'contact',
-        lazy: () => import('./components/organisms/ContactSection/ContactSection')
+        element: <Contact />
+        // lazy: () => import('./components/organisms/ContactSection/ContactSection')
       },
       {
         path: 'services',
@@ -40,13 +42,21 @@ const router = createBrowserRouter([
       {
         path: 'sitemap',
         element: <Sitemap />
+      },
+      {
+        path: 'privacy-policy',
+        element: <PrivacyPolicy />
+      },
+      {
+        path: '*',
+        element: <NotFound />
       }
     ]
-  },
-  {
-    path: '*',
-    element: <NotFound />
   }
+  // {
+  //   path: '*',
+  //   element: <NotFound />
+  // }
 ])
 
 root.render(
