@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         // lazy: () => import('./components/organisms/ContactSection/ContactSection')
       },
       {
-        path: 'services',
+        path: 'services/:serviceName',
         element: <Services />
       },
       {
@@ -53,10 +53,6 @@ const router = createBrowserRouter([
       }
     ]
   }
-  // {
-  //   path: '*',
-  //   element: <NotFound />
-  // }
 ])
 
 root.render(

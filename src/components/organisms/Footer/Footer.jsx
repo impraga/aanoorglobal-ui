@@ -6,6 +6,8 @@ import ContactSection from '../ContactSection/ContactSection'
 
 import sortArray from '../../../utils/tools'
 
+import { footerOrder } from '../../../constants'
+
 import menuList from '../../../../public/assets/json/menuList.json'
 import whiteStripes from '../../../../public/assets/icons/lines-white.svg'
 import rings from '../../../../public/assets/icons/ring.svg'
@@ -21,13 +23,6 @@ let primarylist = []
 
 const Footer = () => {
   useMemo(() => {
-    const footerOrder = [
-      'Startup Centre',
-      'Intellectual Property',
-      'Registration',
-      'Certification',
-      'Statuary Compliance'
-    ]
     servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
       ?.children
     primarylist = menuList?.data.filter((menu) => menu.title !== 'Services')

@@ -32,7 +32,7 @@ const ServiceContainer = ({ service, title }) => (
         </div>
       </div>
       <div className="view-btn">
-        <button type="button" className='ag-primary-btn' href={service.url}>
+        <button type="button" className="ag-primary-btn" href={service.url}>
           View Details
         </button>
       </div>

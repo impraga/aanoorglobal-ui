@@ -1,45 +1,39 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import PropTypes from 'prop-types'
 
 import './ServicePageContent.scss'
-import SPBullet from '../../atoms/SPBullet/SPBullet'
-import SPParagraph from '../../atoms/SPParagraph/SPParagraph'
-import SPIncludes from '../../atoms/SPIncludes/SPIncludes'
-import SPBenefits from '../../atoms/SPBenefits/SPBenefits'
-import SPStep from '../../atoms/SPStep/SPStep'
-import SPDocuments from '../../atoms/SPDocuments/SPDocuments'
-import SPAccordion from '../../atoms/SPAccordion/SPAccordion'
 
-const components = {
-  SPBullet,
-  SPParagraph,
-  SPIncludes,
-  SPBenefits,
-  SPStep,
-  SPDocuments,
-  SPAccordion
+const TemplateLoader = {
+  SPBullet: () => import('../../atoms/SPBullet/SPBullet'),
+  SPParagraph: () => import('../../atoms/SPParagraph/SPParagraph'),
+  SPIncludes: () => import('../../atoms/SPIncludes/SPIncludes'),
+  SPBenefits: () => import('../../atoms/SPBenefits/SPBenefits'),
+  SPStep: () => import('../../atoms/SPStep/SPStep'),
+  SPDocuments: () => import('../../atoms/SPDocuments/SPDocuments'),
+  SPAccordion: () => import('../../atoms/SPAccordion/SPAccordion')
 }
 
-const ServicePageContent = ({ template }) => (
-  <div className="container bg-white br-1 bs px-3 py-4">
-    {template &&
-      template.map(
-        (value) =>
-          components[value.type] &&
-          React.createElement(components[value.type], {
-            key: value.id,
-            data: value
-          })
-      )}
-  </div>
-)
+const loadTemplate = (temp) =>
+  lazy(TemplateLoader[temp], {
+    ssr: false
+  })
+
+const ServicePageContent = ({ template, data }) => {
+  const ComponentLoader = loadTemplate(template)
+  return (
+    <Suspense fallback="loading">
+      <ComponentLoader data={data} />
+    </Suspense>
+  )
+}
 
 ServicePageContent.propTypes = {
-  template: PropTypes.arrayOf(PropTypes.shape())
+  template: PropTypes.string,
+  data: PropTypes.shape().isRequired
 }
 
 ServicePageContent.defaultProps = {
-  template: [{}]
+  template: ''
 }
 
 export default ServicePageContent

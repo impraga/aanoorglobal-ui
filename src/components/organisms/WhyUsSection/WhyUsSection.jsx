@@ -8,7 +8,9 @@ import './WhyUsSection.scss'
 const WhyUsSection = () => (
   <div className="px-2">
     <div className="header-cont my-5">
-      <h2 className="section-title" data-aos="fade-up" data-aos-delay="0">Why Us</h2>
+      <h2 className="section-title" data-aos="fade-up" data-aos-delay="0">
+        Why Us
+      </h2>
       <p className="section-text" data-aos="fade-up" data-aos-delay="100">
         Its simple! we are <b>the best</b>
       </p>

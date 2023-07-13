@@ -1,21 +1,16 @@
 import React, { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import sortArray from '../../utils/tools'
-import './Sitemap.scss'
 import menuList from '../../../public/assets/json/menuList.json'
+import { footerOrder } from '../../constants'
+
+import './Sitemap.scss'
 
 let servicelist = []
 let primarylist = []
 
 const Sitemap = () => {
   useMemo(() => {
-    const footerOrder = [
-      'Startup Centre',
-      'Intellectual Property',
-      'Registration',
-      'Certification',
-      'Statuary Compliance'
-    ]
     servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
       ?.children
     primarylist = menuList?.data.filter((menu) => menu.title !== 'Services')
