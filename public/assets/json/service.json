@@ -13,7 +13,7 @@
           "value": "2,800",
           "note": "with in *5 working days"
         },
-        "url": "/services/name",
+        "url": "/services/sole-proprietorship",
         "benefits": [
           "One person required as a Single Entrepreneur.",
           "Easy to start as well close with fewer formalities.",
@@ -40,7 +40,7 @@
         ]
       },
       {
-        "title": "Sole Proprietorship Registration",
+        "title": "Sole Proprietorship Registration2",
         "design": "step-tocreate",
         "price": {
           "isAvailable": true,
@@ -58,7 +58,7 @@
         ]
       },
       {
-        "title": "One Person Company Registration",
+        "title": "One Person Company Registration2",
         "price": {
           "isAvailable": true,
           "value": "9,000",
@@ -158,7 +158,7 @@
         ]
       },
       {
-        "title": "Trademark Registration",
+        "title": "Trademark Registration2",
         "design": "step-tocreate",
         "price": {
           "isAvailable": true,
@@ -176,7 +176,7 @@
         ]
       },
       {
-        "title": "Copyrights Registration",
+        "title": "Copyrights Registration2",
         "price": {
           "isAvailable": true,
           "value": "9,000",
@@ -192,7 +192,7 @@
         ]
       },
       {
-        "title": "Trademark Registration",
+        "title": "Trademark Registration3",
         "design": "step-tocreate",
         "price": {
           "isAvailable": true,
@@ -210,7 +210,7 @@
         ]
       },
       {
-        "title": "Copyrights Registration",
+        "title": "Copyrights Registration3",
         "price": {
           "isAvailable": true,
           "value": "9,000",

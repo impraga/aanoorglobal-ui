@@ -19,7 +19,7 @@ export const testimonial = [
   }
 ]
 
-export const services = ['General', 'Other']
+export const services = [{ title: 'General' }, { title: 'Other' }]
 
 export const contactDetails = [
   {
