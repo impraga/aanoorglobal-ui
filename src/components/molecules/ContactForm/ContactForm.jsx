@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import './ContactForm.scss'
 import { services } from '../../../constants'
+
+import './ContactForm.scss'
 
 const ContactForm = () => {
   const [selectActive, setSelectActive] = useState(false)

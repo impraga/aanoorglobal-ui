@@ -1,14 +1,16 @@
 import React, { useEffect, useLayoutEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
+
+import { HelmetProvider } from 'react-helmet-async'
 // importing aos
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import Header from './components/organisms/Header/Header'
 import Footer from './components/organisms/Footer/Footer'
+import HandBar from './components/molecules/HandBar/HandBar'
 
 import './App.scss'
-import HandBar from './components/molecules/HandBar/HandBar'
 
 const App = () => {
   const location = useLocation()
@@ -27,12 +29,14 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App position-relative">
-      <Header />
-      <Outlet />
-      <Footer />
-      <HandBar />
-    </div>
+    <HelmetProvider>
+      <div className="App position-relative">
+        <Header />
+        <Outlet />
+        <Footer />
+        <HandBar />
+      </div>
+    </HelmetProvider>
   )
 }
 
