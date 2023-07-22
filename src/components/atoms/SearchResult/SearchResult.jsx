@@ -13,7 +13,7 @@ const SearchResult = ({ data }) => (
     {data.length > 0 &&
       data?.map((value, keyName) => (
         // eslint-disable-next-line react/no-array-index-key
-        <div className="p-2 pb-0" key={`${value.title}_${keyName}`}>
+        <div className="px-2 pb-0" key={`${value.title}_${keyName}`}>
           <div className="bg-white text-blue br-1 h-100 d-flex flex-row align-items-center justify-content-between py-3 px-2 px-md-3 mb-2 bs">
             <div>
               <div className="title">{value.title}</div>

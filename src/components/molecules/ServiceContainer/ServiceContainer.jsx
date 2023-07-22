@@ -22,6 +22,18 @@ const ServiceContainer = ({ service, title }) => (
           </div>
         )}
         <hr className="text-green" />
+        {service.includes.length > 0 && (
+          <>
+            <p className="benfit-text">Includes</p>
+            <div className="benifts-ul includes-ul mb-3">
+              <ul>
+                {service.includes.map((includes) => (
+                  <li key={includes}>{includes}</li>
+                ))}
+              </ul>
+            </div>
+          </>
+        )}
         <p className="benfit-text">Benefits</p>
         <div className="benifts-ul">
           <ul>
