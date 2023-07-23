@@ -689,7 +689,7 @@
         ]
       },
       {
-        "id": "what can be trademarked?",
+        "id": "trademarked",
         "header": "What can be trademarked?",
         "type": "SPParagraph",
         "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
@@ -725,7 +725,7 @@
         ]
       },
       {
-        "id": "benefits Multi",
+        "id": "multi-benefits",
         "header": "Benefits with multiple values",
         "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
         "type": "SPBenefits",
@@ -751,7 +751,7 @@
         ]
       },
       {
-        "id": "Required documents",
+        "id": "required-documents",
         "header": "Documents required for Trademark and Logo Registration?",
         "type": "SPDocuments",
         "value": [
@@ -766,7 +766,7 @@
         ]
       },
       {
-        "id": "Steps to register",
+        "id": "registeration-steps",
         "header": "How to register a Trademark and Logo Registration?",
         "type": "SPStep",
         "value": {

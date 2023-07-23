@@ -4,9 +4,12 @@
   position: sticky;
   top: 90px;
   .selector {
-    padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
+    a {
+      padding: 10px 20px;
+      display: block;
+    }
     &:hover {
       background-color: $ag-gray;
     }

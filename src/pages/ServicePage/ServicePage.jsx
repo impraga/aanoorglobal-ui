@@ -16,6 +16,8 @@ const ServicePage = () => {
     (service) => service.service === serviceName
   )[0]
 
+  const inputRefs = React.useRef([])
+
   const metaDetails = {
     title: `Services | ${serviceDetails.title} | Aanoor Global`,
     canonicalUrl: `www.aanoorglobal.com/services/${serviceName}`,
@@ -36,16 +38,21 @@ const ServicePage = () => {
         <div className="container serivce-details-cont">
           <div className="row">
             <div className="col-md-4  d-md-block d-none">
-              <ServicePageSidePanel template={serviceDetails.template} />
+              <ServicePageSidePanel
+                template={serviceDetails.template}
+                reference={inputRefs.current}
+              />
             </div>
             <div className="col-md-8">
               <div className="container bg-white br-1 bs px-3 py-4">
                 {serviceDetails.template?.map((data) => (
-                  <ServicePageContent
+                  <div
+                    className={data.id}
+                    ref={(ref) => inputRefs.current.push(ref)}
                     key={data.id}
-                    template={data.type}
-                    data={data}
-                  />
+                  >
+                    <ServicePageContent template={data.type} data={data} />
+                  </div>
                 ))}
               </div>
             </div>
