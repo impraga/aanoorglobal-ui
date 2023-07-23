@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button'
 
-import logo from '../../../../public/assets/images/logo.png'
+import logo from '../../../../public/assets/icons/aanoor-logo.svg'
 import menu from '../../../../public/assets/images/menu.png'
 import menuClose from '../../../../public/assets/images/menu-close.png'
 import menuList from '../../../../public/assets/json/menuList.json'
@@ -48,7 +48,9 @@ const Header = () => {
               menuWithChildren(item, null, 'first-level-menu')
             ) : (
               <div
-                className={`first-level-menu ${serviceOpen === index ? 'show-service' : ''}`}
+                className={`first-level-menu ${
+                  serviceOpen === index ? 'show-service' : ''
+                }`}
                 key={item.id}
               >
                 <img src={`/assets/images/${item.icon}`} alt="icon" />
@@ -108,7 +110,9 @@ const Header = () => {
   return (
     <div className="header">
       <div
-        className={`lg-container bs br-1 br-tl-0 br-tr-o ${isMenuOpen ? 'remove-radius' : ''}`}
+        className={`lg-container bs br-1 br-tl-0 br-tr-o ${
+          isMenuOpen ? 'remove-radius' : ''
+        }`}
       >
         <header className="container">
           <div className="logo-wrapper">

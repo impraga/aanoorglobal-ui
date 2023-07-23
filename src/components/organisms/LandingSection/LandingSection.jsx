@@ -23,7 +23,7 @@ const LandingSection = () => (
                 data-aos="fade-up"
                 data-aos-delay="50"
               >
-                Welcome
+                Start your Entrepreneurial
               </span>
               <br />
               <span
@@ -31,26 +31,26 @@ const LandingSection = () => (
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Entrepreneurs.
+                journey with Aanoor.
               </span>
             </h1>
             <p
-              className="text-blue mb-4"
+              className="text-blue mb-5"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <b>Aanoor Global</b> is solely operating with the dynamic,
-              enterprising environment for all your
+              <b>Aanoor</b> is the best place for startups to meet their
+              requirements to start their own company. We offer a wide range of
+              services, including company registration, patent registration,
+              trademark registration, and business consulting. We also have a
+              team of
               <b>
-                <span className="text-green"> business registrations</span>
+                <span className="text-green"> experienced professionals </span>
               </b>
-              . Smart & quick work ability, professionals, and the pragmatic
-              approach are considered to be some essential stream of our
-              business services. We have developed an outstanding reputation
-              among multiple companies through our <b>excellent services</b>.
+              who can help you with every step of the process.
             </p>
           </div>
-          <div className="r-cont col-md-6 d-flex justify-content-center position-relative">
+          <div className="r-cont col-md-6 d-flex justify-content-center align-items-end position-relative">
             <div
               className="rightimg-cont"
               data-aos="fade-up"
@@ -83,11 +83,10 @@ const LandingSection = () => (
         data-aos-delay="550"
       >
         <p>
-          We incorporate different businesses like Private Banks, Non-Profit
-          companies, Information Technologies, Financial Institutions,
-          International companies, Societies, Trusts, E-commerce, and more. Our
-          business approach is to follow the friendliness and formal business
-          efficiency in all the works we perform.
+          A startup centre is a place where entrepreneurs can go to get help
+          with starting and growing their businesses. They often offer a variety
+          of services, such as business advice, networking opportunities, and
+          access to funding.
         </p>
       </div>
     </div>

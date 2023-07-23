@@ -1,76 +1,73 @@
 [
   {
     "category": "Startup Centre",
-    "serviceCount": "9 Services available",
+    "serviceCount": "12 Services available",
     "imgUrl": "startup.png",
     "colorCode": "bg-lb",
     "child": [
       {
-        "title": "Sole Proprietorship Registration",
-        "design": "step-tocreate",
+        "title": "Sole Proprietorship",
         "price": {
           "isAvailable": true,
-          "value": "2,800",
+          "value": "1,800",
           "note": "with in *5 working days"
         },
         "url": "/services/sole-proprietorship",
+        "includes": [
+          "Udyam Registration",
+          "GST Registration",
+          "Shop & Establishment"
+        ],
         "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
+          "One person required.",
+          "Easy to start and close.",
           "Lower cost of compliance and formation.",
-          "Single owner of the business",
           "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+          "Less than 2 lakhs income, no tax."
         ]
       },
       {
         "title": "One Person Company Registration",
         "price": {
           "isAvailable": true,
-          "value": "9,000",
-          "note": "with in *5 working days"
+          "value": "6,300",
+          "note": "with in *10 working days"
         },
         "url": "/services/name",
+        "includes": [
+          "Certificate of Incorporation",
+          "Memorandum & Articles",
+          "ePAN & TAN",
+          "ESI & EPF Code"
+        ],
         "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
+          "Limited liability protection.",
           "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
+          "Complete company control.",
+          "Better credibility and image.",
+          "Enables funding and business model testing."
         ]
       },
       {
-        "title": "Sole Proprietorship Registration2",
-        "design": "step-tocreate",
+        "title": "Private Limited Company Registration",
         "price": {
           "isAvailable": true,
-          "value": "2,800",
-          "note": "with in *5 working days"
+          "value": "7,200",
+          "note": "with in *10 working days"
         },
         "url": "/services/name",
+        "includes": [
+          "Certificate of Incorporation",
+          "Memorandum & Articles",
+          "ePAN & TAN",
+          "ESI & EPF Code"
+        ],
         "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
-          "Lower cost of compliance and formation.",
-          "Single owner of the business",
-          "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
-        ]
-      },
-      {
-        "title": "One Person Company Registration2",
-        "price": {
-          "isAvailable": true,
-          "value": "9,000",
-          "note": "with in *5 working days"
-        },
-        "url": "/services/name",
-        "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
-          "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
+          "Easy to redistribute shares.",
+          "Provides flexibility and benefits.",
+          "Easy to wind-up.",
+          "Preferred by investors.",
+          "Separate legal entity."
         ]
       }
     ]
@@ -82,189 +79,203 @@
     "colorCode": "bg-green",
     "child": [
       {
-        "title": "Property Registration",
-        "design": "step-tocreate",
+        "title": "Trademark Registration",
         "price": {
           "isAvailable": true,
-          "value": "2,800",
+          "value": "6,300",
           "note": "with in *5 working days"
         },
         "url": "/services/name",
+        "includes": [
+          "Form TM-A",
+          "PoA & User Affidavit Copy",
+          "Government Fees",
+          "TM search Report & Consultation"
+        ],
         "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
-          "Lower cost of compliance and formation.",
-          "Single owner of the business",
-          "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+          "Unique identity.",
+          "Goodwill or Trust.",
+          "Creation of Asset.",
+          "Legal Protection.",
+          "Helps to popularize your brand and logo."
         ]
       },
       {
-        "title": "House Registration",
+        "title": "Copyright Registration",
         "price": {
           "isAvailable": true,
-          "value": "9,000",
+          "value": "9,900",
           "note": "with in *5 working days"
         },
         "url": "/services/name",
+        "includes": [
+          "Consultation and Guidance",
+          "Application Drafting and Filing",
+          "Government Fees",
+          "Copyright Diary Number"
+        ],
         "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
-          "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
+          "Intangible Asset",
+          "Legal Protection",
+          "Various Legal Rights",
+          "Branding and Goodwill",
+          "Global protection",
+          "Restricts unauthorized reproduction"
+        ]
+      },
+      {
+        "title": "Patent Registration",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [
+          "Application drafting",
+          "Prior Art Search",
+          "Government Fees",
+          "Application Filing"
+        ],
+        "benefits": [
+          "Sell or transfer patent right.",
+          "Patent secures invention.",
+          "Patent valid for 20 years.",
+          "Get royalty by patent licensing.",
+          "You can then make use of your invention.",
+          "Stop others from making use of your invention without your permission."
         ]
       }
     ]
   },
   {
-    "category": "Registration",
+    "category": "Registration & Liaison Works",
     "serviceCount": "6 Services available",
     "imgUrl": "registration.png",
     "colorCode": "bg-orange",
     "child": [
       {
-        "title": "Trademark Registration",
-        "design": "step-tocreate",
+        "title": "GST Registration",
         "price": {
           "isAvailable": true,
-          "value": "2,800",
+          "value": "1,800",
           "note": "with in *5 working days"
         },
         "url": "/services/name",
+        "includes": [
+          "GST Certificate",
+          "Consultation and Guidance",
+          "GST Invoice & Filing Tool"
+        ],
         "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
-          "Lower cost of compliance and formation.",
-          "Single owner of the business",
-          "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+          "Elimination of Multiple taxes",
+          "Saving more money",
+          "Ease of business",
+          "Cascading effect reduction",
+          "Reduction in Tax Evasion",
+          "More competitive Product"
         ]
       },
       {
-        "title": "Copyrights Registration",
+        "title": "Trust/NGO Registration",
         "price": {
           "isAvailable": true,
-          "value": "9,000",
-          "note": "with in *5 working days"
+          "value": "14,500",
+          "note": "with in *10 working days"
         },
         "url": "/services/name",
+        "includes": [
+          "Registered Documents",
+          "Deed of the Trust",
+          "Consultation and Guidance",
+          "Trust PAN Copy"
+        ],
         "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
-          "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
+          "Registered NGO works in a systematic manner",
+          "Stays within the social parameters of the society",
+          "Legal organization status",
+          "Ethical parameters of the society",
+          "Exemption from tax",
+          "Suitable for all donations and funds"
         ]
       },
       {
-        "title": "Trademark Registration2",
-        "design": "step-tocreate",
+        "title": "IE Code",
         "price": {
           "isAvailable": true,
-          "value": "2,800",
+          "value": "2,500",
           "note": "with in *5 working days"
         },
         "url": "/services/name",
+        "includes": [
+          "Import & Export License",
+          "DGFT Portal Credentials",
+          "Expert Guidance"
+        ],
         "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
-          "Lower cost of compliance and formation.",
-          "Single owner of the business",
-          "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
-        ]
-      },
-      {
-        "title": "Copyrights Registration2",
-        "price": {
-          "isAvailable": true,
-          "value": "9,000",
-          "note": "with in *5 working days"
-        },
-        "url": "/services/name",
-        "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
-          "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
-        ]
-      },
-      {
-        "title": "Trademark Registration3",
-        "design": "step-tocreate",
-        "price": {
-          "isAvailable": true,
-          "value": "2,800",
-          "note": "with in *5 working days"
-        },
-        "url": "/services/name",
-        "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
-          "Lower cost of compliance and formation.",
-          "Single owner of the business",
-          "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
-        ]
-      },
-      {
-        "title": "Copyrights Registration3",
-        "price": {
-          "isAvailable": true,
-          "value": "9,000",
-          "note": "with in *5 working days"
-        },
-        "url": "/services/name",
-        "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
-          "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
+          "No Return Filing",
+          "Independent persons who are business proprietors can acquire this IE code in their own name",
+          "Lifetime-No Renewal",
+          "IEC assist you in taking any products or services to the universe and helps in business growth"
         ]
       }
     ]
   },
   {
-    "category": "Certification",
+    "category": "Certification & SEC Audits",
     "serviceCount": "10 Services available",
     "imgUrl": "certificate.png",
     "colorCode": "bg-purple",
     "child": [
       {
-        "title": "80 C Registration",
-        "design": "step-tocreate",
+        "title": "ISO 9001:2015",
         "price": {
           "isAvailable": true,
-          "value": "2,800",
-          "note": "with in *5 working days"
+          "value": "11,700",
+          "note": ""
         },
         "url": "/services/name",
+        "includes": [],
         "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
-          "Lower cost of compliance and formation.",
-          "Single owner of the business",
-          "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+          "Continuous improvement & Customer satisfaction",
+          "International recognition & Operational efficiency",
+          "Brand reputation, Improved compliance with regulations",
+          "Marketing and sales opportunities",
+          "Increased productivity, Reduced risk of product recalls"
         ]
       },
       {
-        "title": "80F Registration",
+        "title": "ISO 22000:2018 FSMS",
         "price": {
-          "isAvailable": true,
-          "value": "9,000",
-          "note": "with in *5 working days"
+          "isAvailable": false,
+          "value": "",
+          "note": ""
         },
         "url": "/services/name",
+        "includes": [],
         "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
-          "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
+          "Improved food safety",
+          "Increased customer confidence",
+          "Reduced costs",
+          "Improved compliance",
+          "Enhanced employee morale"
+        ]
+      },
+      {
+        "title": "ISO 45001:2018 OHSMS",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Improves workplace safety.",
+          "Reduces accidents and injuries.",
+          "Comply with regulatory requirements.",
+          "Improves company reputation.",
+          "Improves employee morale and satisfaction."
         ]
       }
     ]
@@ -276,37 +287,54 @@
     "colorCode": "bg-red",
     "child": [
       {
-        "title": "Legal Action",
-        "design": "step-tocreate",
+        "title": "Bookkeeping",
         "price": {
-          "isAvailable": true,
-          "value": "2,800",
-          "note": "with in *5 working days"
+          "isAvailable": false,
+          "value": "",
+          "note": ""
         },
         "url": "/services/name",
+        "includes": [],
         "benefits": [
-          "One person required as a Single Entrepreneur.",
-          "Easy to start as well close with fewer formalities.",
-          "Lower cost of compliance and formation.",
-          "Single owner of the business",
-          "Complete control.",
-          "The Proprietorship who has less than Rs 2 Lakhs of income is not required to pay income tax."
+          "Track your income and expenses.",
+          "Improve your cash flow.",
+          "Plan for the future.",
+          "Make better decisions.",
+          "Identify errors and fraud"
         ]
       },
       {
-        "title": "Some action",
+        "title": "Income Tax Returns",
         "price": {
-          "isAvailable": true,
-          "value": "9,000",
-          "note": "with in *5 working days"
+          "isAvailable": false,
+          "value": "",
+          "note": ""
         },
         "url": "/services/name",
+        "includes": [],
         "benefits": [
-          "Limited Liability Protection to the personal assets of the director.",
-          "Easy to raise loans and funds.",
-          "Complete company control with a single owner.",
-          "Better credibility and image in the market.",
-          "Enables funding and helps for business model testing."
+          "Plan your finances for the future.",
+          "Claim deductions and exemptions.",
+          "Get a refund of excess tax paid.",
+          "Stay compliant with the law.",
+          "Claim benefits from the government."
+        ]
+      },
+      {
+        "title": "GST Filing",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Reduced compliance burden.",
+          "Improved transparency.",
+          "Claim input tax credit, Improve their cash flow.",
+          "Increased trade, efficiency.",
+          "Get a better understanding of their finances."
         ]
       }
     ]
