@@ -28,7 +28,7 @@ const ExpertButton = () => {
         dialogClassName="modal-cont"
       >
         {/* <Modal.Header closeButton /> */}
-        <Modal.Body className="h-100 position-relative">
+        <Modal.Body className="h-100 position-relative p-0  overflow-hidden">
           <ContactForm />
         </Modal.Body>
       </Modal>

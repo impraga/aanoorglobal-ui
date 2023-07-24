@@ -34,13 +34,13 @@ const ServicePageSidePanel = ({ template, reference }) => {
     <div className="p-2 bg-white br-1 bs side-panel-cont">
       <div>
         {template.map((list, index) => (
-          <div className="selector" key={list.id}>
+          <div
+            className={`selector ${activeIndex === index ? ' active' : ''}`}
+            key={list.id}
+          >
             <a
               key={list.id}
               className="navlink"
-              style={{
-                color: activeIndex === index ? 'red' : 'green'
-              }}
               onClick={(e) => {
                 e.preventDefault()
                 window.scrollTo({

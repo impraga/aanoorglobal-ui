@@ -9,7 +9,7 @@ import noresult from '../../../../public/assets/icons/noresult.svg'
 import './SearchResult.scss'
 
 const SearchResult = ({ data }) => (
-  <div className="h-100">
+  <div className="h-100 pt-2">
     {data.length > 0 &&
       data?.map((value, keyName) => (
         // eslint-disable-next-line react/no-array-index-key
