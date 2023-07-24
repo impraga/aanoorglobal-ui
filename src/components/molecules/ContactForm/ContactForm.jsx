@@ -36,7 +36,21 @@ const ContactForm = () => {
   }
 
   const onSubmit = (data) => {
-    console.log(data)
+    const url = 'http://localhost/Aanoor/aanoor-server/api/updateContact'
+    fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: 'post',
+      body: JSON.stringify({ ...data, service: selectedService })
+    }).then((res) => {
+      if (res.status === 200) {
+        console.log('contact added')
+      } else {
+        console.log('error in uploading')
+      }
+    })
   }
 
   return (
