@@ -16,7 +16,8 @@ const ContactForm = () => {
   const {
     register,
     formState: { errors },
-    handleSubmit
+    handleSubmit,
+    reset
   } = useForm()
 
   const serviceCategory = useMemo(() => {
@@ -39,8 +40,11 @@ const ContactForm = () => {
 
   const onSubmit = (data) => {
     setOnSubmitForm('onclick')
+
     setTimeout(() => {
+      reset()
       setOnSubmitForm('Validated')
+
       setTimeout(() => {
         setOnSubmitForm('empty')
       }, 2000)
@@ -50,12 +54,17 @@ const ContactForm = () => {
 
   return (
     <div className="container px-0 contform-cont">
-      <div className="row w-100">
-        <div className="col-md-5 d-md-block d-none">
-          <div className="artbord-cont bg-db h-100" />
+      <div className="row w-100 mx-0">
+        <div className="col-md-5 d-md-block d-none left-cont">
+          <div className="artbord-cont bg-db h-100 d-flex flex-column justify-content-center">
+            <div data-aos="fade-up" data-aos-delay="50">
+              Just <span className="text-green">one step away</span>
+              <br /> from connecting
+            </div>
+          </div>
         </div>
-        <div className="col form-cont">
-          <div className="header-form mt-4" data-aos="fade-up">
+        <div className="col form-cont d-flex flex-column justify-content-center">
+          <div className="header-form" data-aos="fade-up">
             <h1>
               Get in <span>touch with us</span> for more information
             </h1>
