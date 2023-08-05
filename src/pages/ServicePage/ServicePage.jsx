@@ -9,9 +9,10 @@ import NotFound from '../NotFound/NotFound'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 import './ServicePage.scss'
+import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 
 const ServicePage = () => {
-  const { serviceName } = useParams()
+  const { category, serviceName } = useParams()
   const serviceDetails = serviceList.filter(
     (service) => service.service === serviceName
   )[0]
@@ -20,7 +21,7 @@ const ServicePage = () => {
 
   const metaDetails = {
     title: `Services | ${serviceDetails?.title} | Aanoor Global`,
-    canonicalUrl: `www.aanoorglobal.com/services/${serviceName}`,
+    canonicalUrl: `www.aanoorglobal.com/services/${category}/${serviceName}`,
     metaDesc:
       'Aanoor Global provide multiple services like GST, Income tax filing',
     metaKeywords: 'gst filing, income tax filing'
@@ -29,11 +30,12 @@ const ServicePage = () => {
   return serviceDetails ? (
     <>
       <HelmetWrapper data={metaDetails} />
-      <div>
+      <div className={category}>
         <ServiceHeroBanner
           title={serviceDetails.title}
           desc={serviceDetails.description}
           price={serviceDetails.price}
+          category={category}
         />
         <div className="container serivce-details-cont">
           <div className="row">
@@ -59,6 +61,7 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
+      <RelatedBlogSection />
     </>
   ) : (
     <NotFound />

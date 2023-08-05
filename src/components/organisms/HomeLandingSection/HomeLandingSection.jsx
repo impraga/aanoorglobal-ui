@@ -8,9 +8,9 @@ import dotted from '../../../../public/assets/icons/dotted-icon.svg'
 import SearchBox from '../../molecules/SearchBox/SearchBox'
 import clipIcon from '../../../../public/assets/icons/clip-icon.svg'
 
-import './LandingSection.scss'
+import './HomeLandingSection.scss'
 
-const LandingSection = () => {
+const HomeLandingSection = () => {
   const landingContainer = useRef(null)
 
   // Landing Container Animation
@@ -127,4 +127,4 @@ const LandingSection = () => {
   )
 }
 
-export default LandingSection
+export default HomeLandingSection
