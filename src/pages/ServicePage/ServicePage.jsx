@@ -46,7 +46,7 @@ const ServicePage = () => {
               />
             </div>
             <div className="col-md-8">
-              <div className="container bg-white br-1 bs px-3 py-4">
+              <div className="container service-content-cont px-3 py-4">
                 {serviceDetails.template?.map((data) => (
                   <div
                     className={data.id}

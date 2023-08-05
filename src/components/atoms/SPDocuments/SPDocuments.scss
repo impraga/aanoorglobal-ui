@@ -31,6 +31,9 @@
           opacity: 0.1;
           margin: 3px 0px 3px -20px;
         }
+        &:last-child hr {
+          display: none;
+        }
       }
     }
   }
@@ -64,6 +67,17 @@
   &:hover {
     .clip-img {
       top: -28px !important;
+    }
+  }
+}
+.intellectual-property {
+  .document-cont {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    background-color: white !important;
+    .clip-img,
+    .clip-blocker {
+      display: none;
     }
   }
 }
