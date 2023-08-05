@@ -18,8 +18,8 @@ const ServicePageSidePanel = ({ template, reference }) => {
   const handleScroll = () => {
     const pageYOffset = window.scrollY
     reference.forEach((section, index) => {
-      const sectionOffsetTop = section.offsetTop
-      const sectionHeight = section.offsetHeight
+      const sectionOffsetTop = section?.offsetTop || 0
+      const sectionHeight = section?.offsetHeight || 0
 
       if (
         pageYOffset >= sectionOffsetTop - headerHeight &&

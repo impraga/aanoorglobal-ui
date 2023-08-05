@@ -19,7 +19,7 @@ const ServicePage = () => {
   const inputRefs = React.useRef([])
 
   const metaDetails = {
-    title: `Services | ${serviceDetails.title} | Aanoor Global`,
+    title: `Services | ${serviceDetails?.title} | Aanoor Global`,
     canonicalUrl: `www.aanoorglobal.com/services/${serviceName}`,
     metaDesc:
       'Aanoor Global provide multiple services like GST, Income tax filing',

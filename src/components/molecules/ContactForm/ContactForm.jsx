@@ -1,41 +1,25 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-console */
-import React, { useMemo, useState } from 'react'
+import React, { useState } from 'react'
 
 import { useForm } from 'react-hook-form'
-import category from '../../../../public/assets/json/service.json'
-import { services } from '../../../constants'
 
 import './ContactForm.scss'
+import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
 
 const ContactForm = () => {
-  const currentUrl = document.location.pathname
-  const [selectActive, setSelectActive] = useState(false)
   const [onSubmitForm, setOnSubmitForm] = useState('empty')
-  const [selectedService, setSelectedService] = useState(null)
+
   const {
     register,
     formState: { errors },
     handleSubmit,
-    reset
+    reset,
+    setValue
   } = useForm()
 
-  const serviceCategory = useMemo(() => {
-    const flatCategory = [...services]
-    category.forEach((value) => {
-      value.child.forEach((service) => {
-        flatCategory.push({ title: service.title, url: service.url })
-      })
-    })
-    setSelectedService(
-      flatCategory.find((d) => currentUrl === d.url)?.title || services[0].title
-    )
-    return flatCategory
-  }, [])
-
-  const changeService = (service) => {
-    setSelectedService(service)
-    setSelectActive(false)
+  const updateServiceValue = (value) => {
+    if (value) setValue('services', value, { shouldValidate: true })
   }
 
   const onSubmit = (data) => {
@@ -64,12 +48,12 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="col form-cont d-flex flex-column justify-content-center">
-          <div className="header-form" data-aos="fade-up">
+          <div className="header-form mt-2" data-aos="fade-up">
             <h1>
               Get in <span>touch with us</span> for more information
             </h1>
           </div>
-          <div className="container form px-0 d-flex flex-column justify-content-between">
+          <div className="container form ag-form px-0 d-flex flex-column justify-content-between">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <div className="row">
@@ -152,49 +136,11 @@ const ContactForm = () => {
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
-                    <div className={`select ${selectActive ? ' active' : ''}`}>
-                      <input
-                        type="text"
-                        className={
-                          errors.services?.type === 'required' ? 'error' : ' '
-                        }
-                        placeholder="Services looking for?"
-                        onClick={() => {
-                          setSelectActive(true)
-                        }}
-                        value={selectedService}
-                        // eslint-disable-next-line react/jsx-props-no-spreading
-                        {...register('services', {
-                          required: 'Select atleast one services'
-                        })}
-                        aria-invalid={errors.services ? 'true' : 'false'}
-                      />
-                      {/* {errors.services && (
-                      <p className="form-error text-danger">
-                        {errors.services?.message}
-                      </p>
-                    )} */}
-                      {/* {selectedService} */}
-                      <ul className="md-whiteframe-z1" name="ul-id">
-                        {serviceCategory.map((service) => (
-                          <li
-                            // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
-                            role="option"
-                            key={service.title}
-                            onClick={() => {
-                              changeService(service.title)
-                            }}
-                            className={`${
-                              selectedService === service.title ? ' active' : ''
-                            }`}
-                            tabIndex="-1"
-                            aria-hidden
-                          >
-                            {service.title}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <ServiceDropDown
+                      errors={errors}
+                      register={register}
+                      updateValue={updateServiceValue}
+                    />
                   </div>
                 </div>
                 <div className="row">
@@ -225,7 +171,11 @@ const ContactForm = () => {
                     value="Cancel"
                   />
                 </div> */}
-                <div className="col-6" data-aos="fade-up" data-aos-delay="300">
+                <div
+                  className="col-6 pb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   <button
                     type="submit"
                     className={`btn-submit ${
@@ -250,4 +200,4 @@ const ContactForm = () => {
 //   selectedCategory: PropTypes.string.isRequired
 // }
 
-export default React.memo(ContactForm)
+export default ContactForm

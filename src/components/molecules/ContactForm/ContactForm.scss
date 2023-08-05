@@ -5,12 +5,12 @@
   // height: calc(100% - 2rem) !important;
   // width: calc(100% - 2rem) !important;
   width: 100%;
-  height: 600px;
-  max-height: 80vh;
+  height: 630px;
+  max-height: 90vh;
 
   > .row {
-    min-height: 600px;
-    max-height: 80vh;
+    min-height: 630px;
+    max-height: 90vh;
     padding: 0 15px;
     .left-cont {
       padding: 15px 15px 15px 0;
@@ -41,106 +41,6 @@
         }
       }
       .form {
-        input,
-        select,
-        textarea {
-          border: none;
-          width: 100%;
-          min-height: 35px;
-          border-bottom: 2px solid $ag-blue;
-          padding: 8px 0px 8px 10px;
-          margin-bottom: 25px;
-          font-size: 1.1rem;
-          color: $ag-blue;
-          max-height: 100px;
-          font-weight: 700;
-          &::placeholder {
-            font-weight: 500;
-            opacity: 0.5;
-          }
-          &:focus {
-            border: none;
-            outline: none;
-            border-bottom: 2px solid $ag-green;
-          }
-        }
-
-        .select {
-          position: relative;
-          & *,
-          &:after,
-          &:before {
-            box-sizing: border-box;
-          }
-          button {
-            width: 100%;
-            height: 45px;
-            margin-bottom: 25px;
-            background: transparent;
-            border: none;
-            border-bottom: 2px solid $ag-blue;
-            text-align: left;
-            padding-left: 10px;
-            font-size: 1.1rem;
-            font-weight: 500;
-            text-transform: capitalize;
-            &:focus,
-            &:hover {
-              border-bottom: 2px solid $ag-green;
-            }
-          }
-
-          ul {
-            background-color: white;
-            cursor: default;
-            list-style: none;
-            line-height: 26px;
-            overflow: hidden;
-            margin: 0;
-            max-height: 0;
-            position: absolute;
-            padding: 0;
-            transform: translateY(-50%);
-            transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
-            width: 100%;
-            font-size: 1.1rem;
-            font-weight: 500;
-            text-transform: capitalize;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-              0 1px 2px rgba(0, 0, 0, 0.24) !important;
-            li {
-              min-height: 48px;
-              font-size: 1rem;
-              margin: 0;
-              padding: 10px 16px;
-              outline: none;
-              overflow: hidden;
-              &:focus,
-              &:hover {
-                background: rgba(0, 0, 0, 0.01);
-              }
-              &.active {
-                background: rgba(0, 0, 0, 0.08);
-              }
-            }
-          }
-          &.active ul {
-            max-height: 200px;
-            overflow: auto;
-            padding: 8px 0 16px 0px;
-            z-index: 2;
-            transition: all 0.2s ease;
-          }
-        }
-
-        input.error {
-          border-bottom-color: red;
-          position: relative;
-          background-image: url(./../../../../public/assets/icons/warning.png) !important;
-          background-position: center right;
-          background-repeat: no-repeat;
-          background-size: 20px;
-        }
         // input {
         //   &[type='button'],
         //   &[type='submit'] {
@@ -209,6 +109,15 @@
           background: $ag-green;
           &:after {
             content: 'Success' !important;
+          }
+        }
+        .errorMail {
+          // font-size: 13px;
+          border: 2px solid rgb(195, 31, 31) !important;
+          color: white;
+          background: rgb(195, 31, 31);
+          &:after {
+            content: 'Error, Try again!' !important;
           }
         }
 

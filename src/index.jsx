@@ -1,6 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom/client'
 
 // Components
 import App from './App'
@@ -13,9 +14,15 @@ import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import ServicePage from './pages/ServicePage/ServicePage'
 import ContactPage from './pages/ContactPage/ContactPage'
 
-import './index.scss'
+import { TransitionProvider } from './context/TransitionContext'
+import TransitionComponent from './components/organisms/Transition/Transition'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+import './index.scss'
+import Blog from './pages/Blog/Blog'
+import Dashboard from './pages/Dashboard/Dashboard'
+import NewBlog from './pages/NewBlog/NewBlog'
+
+// const root = ReactDOM.createRoot(document.getElementById('root'))
 
 const router = createBrowserRouter([
   {
@@ -24,42 +31,98 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <HomePage />,
+        element: (
+          <TransitionComponent>
+            <HomePage />
+          </TransitionComponent>
+        ),
         children: [{ path: 'home', element: <HomePage /> }]
       },
       {
         path: 'contact',
-        element: <ContactPage />
+        element: (
+          <TransitionComponent>
+            <ContactPage />
+          </TransitionComponent>
+        )
         // lazy: () => import('./components/organisms/ContactSection/ContactSection')
       },
       {
         path: 'services/:serviceName',
-        element: <ServicePage />
+        element: (
+          <TransitionComponent>
+            <ServicePage />
+          </TransitionComponent>
+        )
       },
       {
         path: 'about',
-        element: <About />
+        element: (
+          <TransitionComponent>
+            <About />
+          </TransitionComponent>
+        )
       },
       {
         path: 'sitemap',
-        element: <Sitemap />
+        element: (
+          <TransitionComponent>
+            <Sitemap />
+          </TransitionComponent>
+        )
       },
       {
         path: 'privacy-policy',
-        element: <PrivacyPolicy />
+        element: (
+          <TransitionComponent>
+            <PrivacyPolicy />
+          </TransitionComponent>
+        )
+      },
+      {
+        path: 'blog',
+        element: (
+          <TransitionComponent>
+            <Blog />
+          </TransitionComponent>
+        )
+      },
+      {
+        path: 'dashboard',
+        element: (
+          <TransitionComponent>
+            <Dashboard />
+          </TransitionComponent>
+        )
+      },
+      {
+        path: 'new-blog',
+        element: (
+          <TransitionComponent>
+            <NewBlog />
+          </TransitionComponent>
+        )
       },
       {
         path: '*',
-        element: <NotFound />
+        element: (
+          <TransitionComponent>
+            <NotFound />
+          </TransitionComponent>
+        )
       }
     ]
   }
 ])
 
-root.render(
+// root.render(
+ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundary>
-      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
+      <TransitionProvider>
+        <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
+      </TransitionProvider>
     </ErrorBoundary>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 )
