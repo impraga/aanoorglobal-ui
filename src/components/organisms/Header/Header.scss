@@ -195,69 +195,70 @@
             > li {
               padding: 10px 0;
               margin: 0;
+              display: block;
+              width: 100%;
 
-              &:hover {
-                .first-level {
-                  background: none;
-                  width: calc(100% - 20px);
-                  position: relative;
-                  top: 0;
-                  .menu-wrapper {
-                    flex-direction: column;
-                    padding: 0;
-                    > .first-level-menu {
-                      width: 100%;
-                      padding: 10px 0;
-                      border-bottom: 1px solid rgba(0, 27, 41, 0.1);
-                      position: relative;
-                      span {
-                        margin-left: 20px;
-                        .show-chevron {
-                          position: absolute;
-                          right: 0;
-                          top: 19px;
-                          width: 15px;
-                        }
-                      }
-                      > ul {
-                        display: block;
-                      }
-
-                      &.show-service {
-                        top: -70px;
-                        background: #f8f8f8;
-                        z-index: 2;
-                        height: calc(100vh - 100px);
-                        width: calc(100% + 40px);
-                        left: -20px;
-                        right: 0;
-                        padding: 12px 30px;
+              .first-level {
+                background: none;
+                display: block;
+                width: calc(100% - 20px);
+                position: relative;
+                top: 0;
+                .menu-wrapper {
+                  flex-direction: column;
+                  padding: 0;
+                  > .first-level-menu {
+                    width: 100%;
+                    padding: 10px 0;
+                    border-bottom: 1px solid rgba(0, 27, 41, 0.1);
+                    position: relative;
+                    span {
+                      margin-left: 20px;
+                      .show-chevron {
                         position: absolute;
+                        right: 0;
+                        top: 19px;
+                        width: 15px;
+                      }
+                    }
+                    > ul {
+                      display: none;
+                    }
 
-                        ul {
-                          display: block;
-                          border-top: 1px solid rgba(0, 27, 41, 0.1);
+                    &.show-service {
+                      top: -70px;
+                      background: #f8f8f8;
+                      z-index: 2;
+                      height: calc(100vh - 100px);
+                      width: calc(100% + 40px);
+                      left: -20px;
+                      right: 0;
+                      padding: 12px 30px;
+                      position: absolute;
 
-                          li {
-                            padding: 0.5rem 0;
-                            font-size: 1rem;
-                          }
+                      ul {
+                        display: block;
+                        border-top: 1px solid rgba(0, 27, 41, 0.1);
+
+                        li {
+                          padding: 0.5rem 0;
+                          font-size: 1rem;
                         }
+                      }
 
-                        span {
-                          margin-bottom: 1.25rem;
-                          .show-chevron {
-                            right: 2rem;
-                            top: 20px;
-                            transform: rotate(180deg);
-                          }
+                      span {
+                        margin-bottom: 1.25rem;
+                        .show-chevron {
+                          right: 2rem;
+                          top: 20px;
+                          transform: rotate(180deg);
                         }
                       }
                     }
                   }
-                  .show-experts-menu {
-                    display: none;
-                  }
+                }
+                .show-experts-menu {
+                  display: none;
                 }
               }
             }
