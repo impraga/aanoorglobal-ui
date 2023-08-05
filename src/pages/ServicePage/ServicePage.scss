@@ -1,6 +1,36 @@
+@import '../../index.scss';
+
 .serivce-details-cont {
   margin-top: -60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   position: relative;
   z-index: 5;
+}
+.startup-center {
+  .service-content-cont {
+    background-color: white;
+    border-radius: $ag-border-radius;
+    box-shadow: $ag-box-shadow;
+  }
+}
+.intellectual-property {
+  background-color: $ag-darkblue;
+  .service-content-cont {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    > div {
+      background-color: white;
+      border-radius: $ag-border-radius;
+      box-shadow: $ag-box-shadow;
+      padding: 15px 15px 1px 15px;
+      margin-bottom: 15px;
+      &.Required.documents {
+        padding: 0;
+      }
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
 }
