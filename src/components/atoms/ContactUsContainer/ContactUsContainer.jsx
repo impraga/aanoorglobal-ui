@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './ContactContainer.scss'
+import './ContactUsContainer.scss'
 
-const ContactContainer = ({ contactInfo }) => (
+const ContactUsContainer = ({ contactInfo }) => (
   <div className="bg-white br-1 h-100 contact-container position-relative overflow-hidden">
     <div className="info-cont d-flex flex-row align-items-center p-3 position-relative">
       <div className="img-cont">
@@ -31,8 +31,8 @@ const ContactContainer = ({ contactInfo }) => (
   </div>
 )
 
-ContactContainer.propTypes = {
+ContactUsContainer.propTypes = {
   contactInfo: PropTypes.shape().isRequired
 }
 
-export default ContactContainer
+export default ContactUsContainer

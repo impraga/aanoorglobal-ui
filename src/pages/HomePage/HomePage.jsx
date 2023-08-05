@@ -1,8 +1,8 @@
 import React from 'react'
 
-import LandingSection from '../../components/organisms/LandingSection/LandingSection'
-import ServiceSection from '../../components/organisms/ServiceSection/ServiceSection'
-import WhyUsSection from '../../components/organisms/WhyUsSection/WhyUsSection'
+import HomeLandingSection from '../../components/organisms/HomeLandingSection/HomeLandingSection'
+import HomeServiceSection from '../../components/organisms/HomeServiceSection/HomeServiceSection'
+import HomeWhyUsSection from '../../components/organisms/HomeWhyUsSection/HomeWhyUsSection'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 const metaDetails = {
@@ -16,9 +16,9 @@ const metaDetails = {
 const HomePage = () => (
   <div>
     <HelmetWrapper data={metaDetails} />
-    <LandingSection />
-    <ServiceSection />
-    <WhyUsSection />
+    <HomeLandingSection />
+    <HomeServiceSection />
+    <HomeWhyUsSection />
   </div>
 )
 

@@ -109,11 +109,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div
-        className={`lg-container bs br-1 br-tl-0 br-tr-o ${
-          isMenuOpen ? 'remove-radius' : ''
-        }`}
-      >
+      <div className={`lg-container bs ${isMenuOpen ? 'remove-radius' : ''}`}>
         <header className="container">
           <div className="logo-wrapper">
             <Link to="/">
