@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import './BlogForm.scss'
 import RichTextEditor from '../../molecules/RichTextEditor/RichTextEditor'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
-import Chips, { Chip } from '../src'
+// import Chips, { Chip } from '../src'
 
 const BlogForm = () => {
   const {
