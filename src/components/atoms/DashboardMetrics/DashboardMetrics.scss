@@ -1,0 +1,51 @@
+.metrics-list-cont {
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  .metrics-cont {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    width: calc((1400px / 5) - (80px / 5) - 0.35rem);
+    min-width: calc((1400px / 5) - (80px / 5) - 0.35rem);
+    scroll-snap-align: start;
+    cursor: pointer;
+
+    .cat-img-cont {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+      img {
+        z-index: 12;
+        width: 30px;
+        height: auto;
+      }
+    }
+    .cat-img-bg {
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
+      opacity: 0.2;
+      top: 0;
+      transition: 0.3s ease-in-out;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 3px;
+      transition: 0.3s ease-in;
+    }
+    p {
+      transition: 0.3s ease-in;
+    }
+    .value-cont {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      .value {
+        font-size: 4rem;
+        line-height: 1;
+      }
+    }
+  }
+}
