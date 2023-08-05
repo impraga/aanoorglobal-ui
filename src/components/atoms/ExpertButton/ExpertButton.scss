@@ -70,8 +70,8 @@
     max-width: 1150px !important;
     height: auto;
     .modal-content {
-      min-height: 560px;
-      height: auto !important;
+      height: 630px;
+      max-height: 95vh;
       border-radius: 20px;
     }
   }

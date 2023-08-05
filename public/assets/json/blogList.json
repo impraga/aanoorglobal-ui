@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Sole Proprietorship",
+    "category": "StartUp Center",
+    "date": "10/12/2023",
+    "status": "Published"
+  },
+  {
+    "id": 2,
+    "title": "Tradmark Registartion",
+    "category": "Certification",
+    "date": "10/12/2023",
+    "status": "Published"
+  },
+  {
+    "id": 3,
+    "title": "Proprietorship",
+    "category": "Property",
+    "date": "10/12/2023",
+    "status": "Draft"
+  }
+]

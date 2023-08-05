@@ -1,0 +1,55 @@
+.blogthumbnail-cont {
+  min-height: 330px;
+  width: 100%;
+  cursor: pointer;
+  max-width: 400px;
+  &:hover {
+    .thumbnail-img {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .thumbnail-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    overflow: hidden;
+    img {
+      max-height: 200px;
+      height: 100%;
+      width: auto;
+      transition: 0.3s ease-in-out;
+      // min-width: 100%;
+    }
+    .img-overlay {
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.01) 0.01%,
+        rgba(0, 0, 0, 0.59) 100%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card-cont {
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .tag-cont {
+      gap: 10px;
+      .tag {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

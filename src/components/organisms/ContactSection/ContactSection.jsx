@@ -9,7 +9,7 @@ import './ContactSection.scss'
 import { contactDetails } from '../../../constants'
 
 const ContactSection = () => (
-  <div>
+  <div className="position-relative">
     <div className="contact-cont px-2 pb-4 overflow-hidden">
       <div className="container header-cont position-relative text-white d-flex flex-column justify-content-center">
         <div className="row">

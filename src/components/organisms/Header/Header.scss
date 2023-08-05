@@ -42,6 +42,8 @@
             padding: 20px 0;
             font-weight: 700;
             color: $ag-blue;
+            display: flex;
+            align-items: center;
 
             span {
               .desktop-chevron {
@@ -193,6 +195,7 @@
             > li {
               padding: 10px 0;
               margin: 0;
+
               &:hover {
                 .first-level {
                   background: none;
@@ -217,7 +220,7 @@
                         }
                       }
                       > ul {
-                        display: none;
+                        display: block;
                       }
 
                       &.show-service {

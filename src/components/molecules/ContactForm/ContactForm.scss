@@ -2,118 +2,140 @@
 
 .contform-cont {
   position: absolute;
-  height: calc(100% - 2rem) !important;
-  width: calc(100% - 2rem) !important;
+  // height: calc(100% - 2rem) !important;
+  // width: calc(100% - 2rem) !important;
+  width: 100%;
+  height: 630px;
+  max-height: 90vh;
 
-  .artbord-cont {
-    border-radius: 15px 0 0 15px;
-    overflow: hidden;
-  }
-
-  .form-cont {
-    .header-form {
-      h1 {
-        font-size: 2.6rem;
-        font-weight: bold;
-        max-width: 490px;
-        margin-bottom: 30px;
-        span {
-          color: $ag-green;
-        }
+  > .row {
+    min-height: 630px;
+    max-height: 90vh;
+    padding: 0 15px;
+    .left-cont {
+      padding: 15px 15px 15px 0;
+      .artbord-cont {
+        border-radius: 15px 0 0 15px;
+        text-align: right;
+        color: white;
+        overflow: hidden;
+        background-image: url(./../../../../public/assets/images/expert-bg.svg);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: auto 100%;
+        padding-right: 20px;
+        font-size: 1.5rem;
       }
     }
-    .form {
-      input,
-      select,
-      textarea {
-        border: none;
-        width: 100%;
-        min-height: 35px;
-        border-bottom: 2px solid $ag-blue;
-        padding: 8px 0px 8px 10px;
-        margin-bottom: 25px;
-        font-size: 1.1rem;
-        color: $ag-darkblue;
-        max-height: 100px;
-        &:focus {
-          border: none;
+
+    .form-cont {
+      .header-form {
+        h1 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          max-width: 400px;
+          margin-bottom: 30px;
+          span {
+            color: $ag-green;
+          }
+        }
+      }
+      .form {
+        // input {
+        //   &[type='button'],
+        //   &[type='submit'] {
+        //     color: $ag-white;
+        //     font-weight: 600;
+        //   }
+        // }
+
+        input:focus.btn-submit {
+          // border: none;
+        }
+        .btn-submit {
           outline: none;
-          border-bottom: 2px solid $ag-green;
-        }
-      }
+          // height: 40px;
+          text-align: center;
+          width: 200px;
+          border-radius: 20px;
+          background: #fff;
+          border: 2px solid $ag-green !important;
+          color: $ag-green;
+          padding: 10px;
+          letter-spacing: 1px;
+          text-shadow: 0;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: bold;
 
-      .select {
-        position: relative;
-        & *,
-        &:after,
-        &:before {
-          box-sizing: border-box;
-        }
-        button {
-          width: 100%;
-          height: 45px;
-          margin-bottom: 25px;
-          background: transparent;
-          border: none;
-          border-bottom: 2px solid $ag-blue;
-          text-align: left;
-          padding-left: 10px;
-          font-size: 1.1rem;
-          font-weight: 500;
-          text-transform: capitalize;
-          &:focus,
+          cursor: pointer;
+          transition: all 0.25s ease;
           &:hover {
-            border-bottom: 2px solid $ag-green;
+            color: white;
+            background: $ag-green;
+          }
+          &:active {
+            //letter-spacing: 2px;
+            // letter-spacing: 2px;
+          }
+          &:after {
+            content: 'SUBMIT';
           }
         }
-        ul {
-          background-color: white;
-          cursor: default;
-          list-style: none;
-          line-height: 26px;
-          overflow: hidden;
-          margin: 0;
-          max-height: 0;
-          position: absolute;
+        .onclick {
+          width: 40px;
+          height: 40px;
+          border-color: $ag-gray !important;
+          border-width: 3px !important;
+          border-radius: 30px;
+          font-size: 0;
+          border-left-color: $ag-green !important;
           padding: 0;
-          transform: translateY(-50%);
-          transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
-          width: 100%;
-          font-size: 1.1rem;
-          font-weight: 500;
-          text-transform: capitalize;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-            0 1px 2px rgba(0, 0, 0, 0.24) !important;
-          li {
-            min-height: 48px;
-            font-size: 1rem;
-            margin: 0;
-            padding: 10px 16px;
-            outline: none;
-            overflow: hidden;
-            &:focus,
-            &:hover {
-              background: rgba(0, 0, 0, 0.01);
-            }
-            &.active {
-              background: rgba(0, 0, 0, 0.08);
-            }
+          margin-left: 80px;
+          animation: rotating 2s 0.25s linear infinite;
+
+          &:after {
+            content: '';
+          }
+          &:hover {
+            color: $ag-green;
+            background: white;
           }
         }
-        &.active ul {
-          max-height: 200px;
-          overflow: auto;
-          padding: 8px 0 16px 0px;
-          z-index: 2;
-          transition: all 0.2s ease;
+        .validated {
+          // font-size: 13px;
+          border: 2px solid $ag-green !important;
+          color: white;
+          background: $ag-green;
+          &:after {
+            content: 'Success' !important;
+          }
         }
-      }
+        .errorMail {
+          // font-size: 13px;
+          border: 2px solid rgb(195, 31, 31) !important;
+          color: white;
+          background: rgb(195, 31, 31);
+          &:after {
+            content: 'Error, Try again!' !important;
+          }
+        }
 
-      input {
-        &[type='button'],
-        &[type='submit'] {
-          color: $ag-white;
-          font-weight: 600;
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px white inset !important;
+          -webkit-text-fill-color: $ag-blue !important;
+        }
+        /* Firefox */
+        input[type='number'] {
+          -moz-appearance: textfield;
         }
       }
     }
@@ -121,12 +143,31 @@
 }
 @media (max-width: 991.98px) {
   .contform-cont {
-    .form-cont {
-      .header {
-        h1 {
-          font-size: 1.8rem;
+    > .row {
+      .form-cont {
+        .header {
+          h1 {
+            font-size: 1.8rem;
+          }
         }
       }
     }
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
