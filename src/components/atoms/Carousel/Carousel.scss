@@ -1,0 +1,60 @@
+@import './../../../index.scss';
+
+.carousel-cont {
+  .value {
+    font-size: 1.3rem;
+  }
+  .author {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .city {
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 2px;
+  }
+  .btn-cont {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px 0 0 0;
+    overflow: hidden;
+    z-index: 500;
+    transition: 0.3s ease-in-out;
+    button {
+      z-index: 500;
+      width: 52px;
+      height: 52px;
+      border: none;
+      &:hover {
+        background-color: $ag-darkgreen;
+      }
+    }
+  }
+}
+
+// swiper css override
+
+swiper-container {
+  height: 100%;
+  position: relative;
+  // .swiper-pagination {
+  //   text-align: left !important;
+  // }
+  // .swiper-pagination-bullet-active {
+  //   background: red !important;
+  //   color: red !important;
+  // }
+  // .swiper-button-prev {
+  //   bottom: 0;
+  //   top: auto;
+  //   right: 50px;
+  //   left: auto;
+  // }
+  // .swiper-button-next {
+  //   top: auto;
+  //   left: auto;
+  //   right: 0px;
+  //   bottom: 0;
+  // }
+}

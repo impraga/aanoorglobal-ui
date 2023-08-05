@@ -1,0 +1,15 @@
+@import '../../../index.scss';
+
+.includes-cont {
+  .tip {
+    padding: 10px 20px 10px 10px;
+    margin-bottom: 10px;
+    background-color: $ag-lb-20;
+    margin-right: 10px;
+    font-weight: 600;
+    img {
+      width: 25px;
+      margin-right: 10px;
+    }
+  }
+}

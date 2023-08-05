@@ -1,0 +1,259 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import './index.scss';
+
+// @font-face {
+//     font-family: 'Bebas Neue';
+//     src: url(../public/assets/fonts/BebasNeue-Regular.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'Quicksand';
+//     src: url(../public/assets/fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
+// }
+
+.text-db {
+  color: $ag-darkblue;
+}
+.text-lb {
+  color: $ag-lightblue;
+}
+.text-blue {
+  color: $ag-blue;
+}
+.text-green {
+  color: $ag-green;
+}
+.bg-db {
+  background-color: $ag-darkblue;
+}
+.bg-lb {
+  background-color: $ag-lightblue;
+}
+.bg-green {
+  background-color: $ag-green;
+}
+.bg-orange {
+  background-color: $ag-orange;
+}
+.bg-purple {
+  background-color: $ag-purple;
+}
+.bg-red {
+  background-color: $ag-red;
+}
+.bg-gray {
+  background-color: $ag-gray;
+}
+.bg-gray-dark {
+  background-color: $ag-gray-dark;
+}
+.bg-white {
+  background-color: $ag-white;
+}
+.sec-text {
+  opacity: 0.5;
+}
+.br-1 {
+  border-radius: 20px;
+}
+.br-tl-0 {
+  border-top-left-radius: 0;
+}
+.br-tr-o {
+  border-top-right-radius: 0;
+}
+.bs {
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.1);
+}
+.o-05 {
+  opacity: 0.5;
+}
+.bebas {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+body {
+  color: $ag-blue;
+  font-family: 'Quicksand', sans-serif;
+  background-color: $ag-gray-dark;
+}
+.container {
+  // max-width: 1150px !important;
+  max-width: 1400px !important;
+}
+
+// Common Classes
+.section-title {
+  color: $ag-green;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.section-text {
+  color: $ag-blue;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: $ag-green !important;
+  }
+}
+.hero-banner-cont {
+  width: 100%;
+  background: url(/public/assets/images/service-cover.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+.ag-primary-btn {
+  border-radius: 15px;
+  height: 50px;
+  font-weight: bold;
+  border: none;
+  color: $ag-darkblue;
+  padding: 5px 35px;
+  background-color: $ag-green;
+  &:hover {
+    background-color: $ag-darkgreen;
+    color: $ag-darkblue;
+    a {
+      color: $ag-darkblue !important;
+    }
+  }
+}
+// form css
+
+.ag-form {
+  input,
+  select,
+  textarea {
+    border: none;
+    width: 100%;
+    min-height: 35px;
+    border-bottom: 2px solid $ag-blue;
+    padding: 8px 0px 8px 10px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: $ag-blue;
+    max-height: 100px;
+    font-weight: 700;
+    &::placeholder {
+      font-weight: 500;
+      opacity: 0.5;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid $ag-green;
+    }
+  }
+
+  .select {
+    position: relative;
+    & *,
+    &:after,
+    &:before {
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      height: 45px;
+      margin-bottom: 25px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid $ag-blue;
+      text-align: left;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      &:focus,
+      &:hover {
+        border-bottom: 2px solid $ag-green;
+      }
+    }
+
+    ul {
+      background-color: white;
+      cursor: default;
+      list-style: none;
+      line-height: 26px;
+      overflow: hidden;
+      margin: 0;
+      max-height: 0;
+      position: absolute;
+      padding: 0;
+      transform: translateY(-50%);
+      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+      li {
+        min-height: 48px;
+        font-size: 1rem;
+        margin: 0;
+        padding: 10px 16px;
+        outline: none;
+        overflow: hidden;
+        &:focus,
+        &:hover {
+          background: rgba(0, 0, 0, 0.01);
+        }
+        &.active {
+          background: rgba(0, 0, 0, 0.08);
+        }
+      }
+    }
+    &.active ul {
+      max-height: 200px;
+      overflow: auto;
+      padding: 8px 0 16px 0px;
+      z-index: 2;
+      transition: all 0.2s ease;
+    }
+  }
+
+  input.error {
+    border-bottom-color: red;
+    position: relative;
+    // background-image: url(./../public/assets/icons/warning.png) !important;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
+}
+
+// Scroll Bar css
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: none;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: $ag-green;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $ag-darkgreen;
+}
+
+@media (max-width: 767.98px) {
+  .section-text {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}

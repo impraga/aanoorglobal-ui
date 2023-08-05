@@ -1,0 +1,9 @@
+@import '../../../index.scss';
+ul {
+  li {
+    font-weight: 500;
+    &::marker {
+      color: $ag-green;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.contact-main-cont {
+  padding-top: 90px;
+  .contact-form-cont {
+    z-index: 2;
+    height: 630px;
+  }
+  .contact-main-cont-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,39 @@
+.contact-container {
+  min-height: 170px;
+  transition: 0.3s ease-in-out;
+  .info-cont {
+    z-index: 1;
+    .img-cont {
+      width: 180px;
+      margin-right: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .links-cont {
+      .city {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      .phone-no {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .contact-bg {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 60px;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    // transform: translateY(-10px);
+    .contact-bg {
+      width: 0%;
+    }
+  }
+}

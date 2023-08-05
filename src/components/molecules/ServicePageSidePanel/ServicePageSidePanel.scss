@@ -1,0 +1,29 @@
+@import '../../../index.scss';
+
+.side-panel-cont {
+  position: sticky;
+  top: 90px;
+  .selector {
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    a {
+      padding: 10px 20px;
+      display: block;
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      transition: 0.1s ease-in-out;
+    }
+    &:hover {
+      background-color: $ag-gray;
+    }
+    &.active {
+      background-color: $ag-gray-dark !important;
+      a {
+        font-weight: 600 !important;
+      }
+    }
+  }
+}

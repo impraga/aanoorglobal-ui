@@ -1,0 +1,173 @@
+@import '../../../index.scss';
+
+.contform-cont {
+  position: absolute;
+  // height: calc(100% - 2rem) !important;
+  // width: calc(100% - 2rem) !important;
+  width: 100%;
+  height: 630px;
+  max-height: 90vh;
+
+  > .row {
+    min-height: 630px;
+    max-height: 90vh;
+    padding: 0 15px;
+    .left-cont {
+      padding: 15px 15px 15px 0;
+      .artbord-cont {
+        border-radius: 15px 0 0 15px;
+        text-align: right;
+        color: white;
+        overflow: hidden;
+        background-image: url(./../../../../public/assets/images/expert-bg.svg);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: auto 100%;
+        padding-right: 20px;
+        font-size: 1.5rem;
+      }
+    }
+
+    .form-cont {
+      .header-form {
+        h1 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          max-width: 400px;
+          margin-bottom: 30px;
+          span {
+            color: $ag-green;
+          }
+        }
+      }
+      .form {
+        // input {
+        //   &[type='button'],
+        //   &[type='submit'] {
+        //     color: $ag-white;
+        //     font-weight: 600;
+        //   }
+        // }
+
+        input:focus.btn-submit {
+          // border: none;
+        }
+        .btn-submit {
+          outline: none;
+          // height: 40px;
+          text-align: center;
+          width: 200px;
+          border-radius: 20px;
+          background: #fff;
+          border: 2px solid $ag-green !important;
+          color: $ag-green;
+          padding: 10px;
+          letter-spacing: 1px;
+          text-shadow: 0;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: bold;
+
+          cursor: pointer;
+          transition: all 0.25s ease;
+          &:hover {
+            color: white;
+            background: $ag-green;
+          }
+          &:active {
+            //letter-spacing: 2px;
+            // letter-spacing: 2px;
+          }
+          &:after {
+            content: 'SUBMIT';
+          }
+        }
+        .onclick {
+          width: 40px;
+          height: 40px;
+          border-color: $ag-gray !important;
+          border-width: 3px !important;
+          border-radius: 30px;
+          font-size: 0;
+          border-left-color: $ag-green !important;
+          padding: 0;
+          margin-left: 80px;
+          animation: rotating 2s 0.25s linear infinite;
+
+          &:after {
+            content: '';
+          }
+          &:hover {
+            color: $ag-green;
+            background: white;
+          }
+        }
+        .validated {
+          // font-size: 13px;
+          border: 2px solid $ag-green !important;
+          color: white;
+          background: $ag-green;
+          &:after {
+            content: 'Success' !important;
+          }
+        }
+        .errorMail {
+          // font-size: 13px;
+          border: 2px solid rgb(195, 31, 31) !important;
+          color: white;
+          background: rgb(195, 31, 31);
+          &:after {
+            content: 'Error, Try again!' !important;
+          }
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px white inset !important;
+          -webkit-text-fill-color: $ag-blue !important;
+        }
+        /* Firefox */
+        input[type='number'] {
+          -moz-appearance: textfield;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .contform-cont {
+    > .row {
+      .form-cont {
+        .header {
+          h1 {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

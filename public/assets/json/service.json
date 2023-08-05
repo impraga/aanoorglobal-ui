@@ -1,0 +1,342 @@
+[
+  {
+    "category": "Startup Centre",
+    "serviceCount": "12 Services available",
+    "imgUrl": "startup.png",
+    "colorCode": "bg-lb",
+    "child": [
+      {
+        "title": "Sole Proprietorship",
+        "price": {
+          "isAvailable": true,
+          "value": "1,800",
+          "note": "with in *5 working days"
+        },
+        "url": "/services/sole-proprietorship",
+        "includes": [
+          "Udyam Registration",
+          "GST Registration",
+          "Shop & Establishment"
+        ],
+        "benefits": [
+          "One person required.",
+          "Easy to start and close.",
+          "Lower cost of compliance and formation.",
+          "Complete control.",
+          "Less than 2 lakhs income, no tax."
+        ]
+      },
+      {
+        "title": "One Person Company Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "6,300",
+          "note": "with in *10 working days"
+        },
+        "url": "/services/name",
+        "includes": [
+          "Certificate of Incorporation",
+          "Memorandum & Articles",
+          "ePAN & TAN",
+          "ESI & EPF Code"
+        ],
+        "benefits": [
+          "Limited liability protection.",
+          "Easy to raise loans and funds.",
+          "Complete company control.",
+          "Better credibility and image.",
+          "Enables funding and business model testing."
+        ]
+      },
+      {
+        "title": "Private Limited Company Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "7,200",
+          "note": "with in *10 working days"
+        },
+        "url": "/services/name",
+        "includes": [
+          "Certificate of Incorporation",
+          "Memorandum & Articles",
+          "ePAN & TAN",
+          "ESI & EPF Code"
+        ],
+        "benefits": [
+          "Easy to redistribute shares.",
+          "Provides flexibility and benefits.",
+          "Easy to wind-up.",
+          "Preferred by investors.",
+          "Separate legal entity."
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Intellectual Property",
+    "serviceCount": "8 Services available",
+    "imgUrl": "property.png",
+    "colorCode": "bg-green",
+    "child": [
+      {
+        "title": "Trademark Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "6,300",
+          "note": "with in *5 working days"
+        },
+        "url": "/services/name",
+        "includes": [
+          "Form TM-A",
+          "PoA & User Affidavit Copy",
+          "Government Fees",
+          "TM search Report & Consultation"
+        ],
+        "benefits": [
+          "Unique identity.",
+          "Goodwill or Trust.",
+          "Creation of Asset.",
+          "Legal Protection.",
+          "Helps to popularize your brand and logo."
+        ]
+      },
+      {
+        "title": "Copyright Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "9,900",
+          "note": "with in *5 working days"
+        },
+        "url": "/services/name",
+        "includes": [
+          "Consultation and Guidance",
+          "Application Drafting and Filing",
+          "Government Fees",
+          "Copyright Diary Number"
+        ],
+        "benefits": [
+          "Intangible Asset",
+          "Legal Protection",
+          "Various Legal Rights",
+          "Branding and Goodwill",
+          "Global protection",
+          "Restricts unauthorized reproduction"
+        ]
+      },
+      {
+        "title": "Patent Registration",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [
+          "Application drafting",
+          "Prior Art Search",
+          "Government Fees",
+          "Application Filing"
+        ],
+        "benefits": [
+          "Sell or transfer patent right.",
+          "Patent secures invention.",
+          "Patent valid for 20 years.",
+          "Get royalty by patent licensing.",
+          "You can then make use of your invention.",
+          "Stop others from making use of your invention without your permission."
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Registration & Liaison Works",
+    "serviceCount": "6 Services available",
+    "imgUrl": "registration.png",
+    "colorCode": "bg-orange",
+    "child": [
+      {
+        "title": "GST Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "1,800",
+          "note": "with in *5 working days"
+        },
+        "url": "/services/name",
+        "includes": [
+          "GST Certificate",
+          "Consultation and Guidance",
+          "GST Invoice & Filing Tool"
+        ],
+        "benefits": [
+          "Elimination of Multiple taxes",
+          "Saving more money",
+          "Ease of business",
+          "Cascading effect reduction",
+          "Reduction in Tax Evasion",
+          "More competitive Product"
+        ]
+      },
+      {
+        "title": "Trust/NGO Registration",
+        "price": {
+          "isAvailable": true,
+          "value": "14,500",
+          "note": "with in *10 working days"
+        },
+        "url": "/services/name",
+        "includes": [
+          "Registered Documents",
+          "Deed of the Trust",
+          "Consultation and Guidance",
+          "Trust PAN Copy"
+        ],
+        "benefits": [
+          "Registered NGO works in a systematic manner",
+          "Stays within the social parameters of the society",
+          "Legal organization status",
+          "Ethical parameters of the society",
+          "Exemption from tax",
+          "Suitable for all donations and funds"
+        ]
+      },
+      {
+        "title": "IE Code",
+        "price": {
+          "isAvailable": true,
+          "value": "2,500",
+          "note": "with in *5 working days"
+        },
+        "url": "/services/name",
+        "includes": [
+          "Import & Export License",
+          "DGFT Portal Credentials",
+          "Expert Guidance"
+        ],
+        "benefits": [
+          "No Return Filing",
+          "Independent persons who are business proprietors can acquire this IE code in their own name",
+          "Lifetime-No Renewal",
+          "IEC assist you in taking any products or services to the universe and helps in business growth"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Certification & SEC Audits",
+    "serviceCount": "10 Services available",
+    "imgUrl": "certificate.png",
+    "colorCode": "bg-purple",
+    "child": [
+      {
+        "title": "ISO 9001:2015",
+        "price": {
+          "isAvailable": true,
+          "value": "11,700",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Continuous improvement & Customer satisfaction",
+          "International recognition & Operational efficiency",
+          "Brand reputation, Improved compliance with regulations",
+          "Marketing and sales opportunities",
+          "Increased productivity, Reduced risk of product recalls"
+        ]
+      },
+      {
+        "title": "ISO 22000:2018 FSMS",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Improved food safety",
+          "Increased customer confidence",
+          "Reduced costs",
+          "Improved compliance",
+          "Enhanced employee morale"
+        ]
+      },
+      {
+        "title": "ISO 45001:2018 OHSMS",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Improves workplace safety.",
+          "Reduces accidents and injuries.",
+          "Comply with regulatory requirements.",
+          "Improves company reputation.",
+          "Improves employee morale and satisfaction."
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Statutory Compliance",
+    "serviceCount": "4 Services available",
+    "imgUrl": "statutory.png",
+    "colorCode": "bg-red",
+    "child": [
+      {
+        "title": "Bookkeeping",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Track your income and expenses.",
+          "Improve your cash flow.",
+          "Plan for the future.",
+          "Make better decisions.",
+          "Identify errors and fraud"
+        ]
+      },
+      {
+        "title": "Income Tax Returns",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Plan your finances for the future.",
+          "Claim deductions and exemptions.",
+          "Get a refund of excess tax paid.",
+          "Stay compliant with the law.",
+          "Claim benefits from the government."
+        ]
+      },
+      {
+        "title": "GST Filing",
+        "price": {
+          "isAvailable": false,
+          "value": "",
+          "note": ""
+        },
+        "url": "/services/name",
+        "includes": [],
+        "benefits": [
+          "Reduced compliance burden.",
+          "Improved transparency.",
+          "Claim input tax credit, Improve their cash flow.",
+          "Increased trade, efficiency.",
+          "Get a better understanding of their finances."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,130 @@
+.landing-cont {
+  position: relative;
+  > div {
+    padding: 0 10px;
+    .inner-landing-cont {
+      max-width: 1400px !important;
+      min-height: 440px;
+      overflow: hidden;
+      margin-top: 80px;
+      .l-cont {
+        .title {
+          font-weight: bolder;
+          font-size: 3rem;
+        }
+      }
+      .r-cont {
+        .rightimg-cont {
+          z-index: 2;
+        }
+        .ring-cont {
+          position: absolute;
+          width: 240px;
+          z-index: 1;
+          top: 15%;
+          left: 20%;
+        }
+        .dotted-cont {
+          position: absolute;
+          z-index: 3;
+          bottom: 10%;
+          right: 15%;
+        }
+      }
+      .green-cont {
+        position: absolute;
+        height: 100%;
+        width: 30%;
+        right: 0;
+        top: 0;
+        border-radius: 0 20px 20px 0;
+      }
+    }
+    .searchbox-cont {
+      margin-top: -30px;
+      z-index: 3;
+      width: 95%;
+      max-width: 720px;
+      transition: 0.3s ease-in-out;
+    }
+    .subtitle-cont {
+      margin-top: 50px;
+      font-size: 1.1rem;
+    }
+  }
+  .clip-icon {
+    position: absolute;
+    bottom: -85px;
+    left: 5%;
+    height: auto;
+    width: auto;
+    img {
+      max-width: 120px;
+    }
+  }
+}
+
+.subtitle-cont {
+  max-width: 800px;
+}
+@media (max-width: 1199.98px) {
+  .landing-cont {
+    .clip-icon {
+      bottom: -60px;
+      left: 5%;
+      img {
+        max-width: 90px;
+      }
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .landing-cont {
+    .clip-icon {
+      bottom: -45px;
+      left: 3%;
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .landing-cont {
+    padding: 0;
+    > div {
+      .inner-landing-cont {
+        .l-cont {
+          .title {
+            font-size: 2rem;
+          }
+        }
+        .r-cont {
+          .ring-cont {
+            top: 10%;
+            left: 4%;
+          }
+          .dotted-cont {
+            right: 5%;
+          }
+        }
+      }
+      .inner-landing-cont {
+        .green-cont {
+          height: 40%;
+          width: 100%;
+          right: 0;
+          top: auto;
+          bottom: 0;
+          border-radius: 0 0px 20px 20px;
+        }
+      }
+    }
+    .clip-icon {
+      bottom: -40px;
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+}
