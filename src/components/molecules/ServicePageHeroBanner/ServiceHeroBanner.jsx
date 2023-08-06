@@ -3,12 +3,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './ServiceHeroBanner.scss'
 import HeroBannerStartupCentre from '../../atoms/HeroBannerStartupCentre/HeroBannerStartupCentre'
+import HeroBannerIntellectualProperty from '../../atoms/HeroBannerIntellectualProperty/HeroBannerIntellectualProperty'
 
 const ServiceHeroBanner = ({ title, desc, price, category }) => {
   const HeroBanner = () => {
     if (category === 'startup-center')
       return <HeroBannerStartupCentre title={title} desc={desc} price={price} />
-
+    if (category === 'intellectual-property')
+      return (
+        <HeroBannerIntellectualProperty
+          title={title}
+          desc={desc}
+          price={price}
+        />
+      )
     return <div>/</div>
   }
 
