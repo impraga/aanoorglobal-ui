@@ -4,8 +4,9 @@ import React, { useState } from 'react'
 
 import { useForm } from 'react-hook-form'
 
-import './ContactForm.scss'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
+
+import './ContactForm.scss'
 
 const ContactForm = () => {
   const [onSubmitForm, setOnSubmitForm] = useState('empty')
@@ -25,14 +26,29 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     setOnSubmitForm('onclick')
 
-    setTimeout(() => {
-      reset()
-      setOnSubmitForm('Validated')
+    const url = 'http://localhost/Aanoor/aanoor-server/api/updateContact'
+    fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: 'post',
+      body: JSON.stringify(data)
+    }).then((res) => {
+      if (res.status === 200) {
+        console.log('contact added')
+        reset()
+        setOnSubmitForm('Validated')
+      } else {
+        console.log('error in uploading')
+      }
+    })
 
-      setTimeout(() => {
-        setOnSubmitForm('empty')
-      }, 2000)
-    }, 5000)
+    // setTimeout(() => {
+    //   setTimeout(() => {
+    //     setOnSubmitForm('empty')
+    //   }, 2000)
+    // }, 5000)
     console.log(data)
   }
 

@@ -1,7 +1,8 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 // import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 
 // Components
 import App from './App'
@@ -13,16 +14,17 @@ import Sitemap from './pages/Sitemap/Sitemap'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import ServicePage from './pages/ServicePage/ServicePage'
 import ContactPage from './pages/ContactPage/ContactPage'
+import Blog from './pages/Blog/Blog'
+import Dashboard from './pages/Dashboard/Dashboard'
+import NewBlog from './pages/NewBlog/NewBlog'
+import LoginPage from './pages/LoginPage/LoginPage'
 
 import { TransitionProvider } from './context/TransitionContext'
 import TransitionComponent from './components/organisms/Transition/Transition'
 
 import './index.scss'
-import Blog from './pages/Blog/Blog'
-import Dashboard from './pages/Dashboard/Dashboard'
-import NewBlog from './pages/NewBlog/NewBlog'
 
-// const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = createRoot(document.getElementById('root'))
 
 const router = createBrowserRouter([
   {
@@ -103,6 +105,7 @@ const router = createBrowserRouter([
           </TransitionComponent>
         )
       },
+      { path: 'login', element: <LoginPage /> },
       {
         path: '*',
         element: (
@@ -115,14 +118,14 @@ const router = createBrowserRouter([
   }
 ])
 
-// root.render(
-ReactDOM.render(
+root.render(
+  // ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundary>
       <TransitionProvider>
         <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
       </TransitionProvider>
     </ErrorBoundary>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
+  // document.getElementById('root')
 )
