@@ -3,9 +3,9 @@ import React from 'react'
 import Stats from '../../molecules/Stats/Stats'
 import Testimonial from '../../molecules/Testimonial/Testimonial'
 
-import './WhyUsSection.scss'
+import './HomeWhyUsSection.scss'
 
-const WhyUsSection = () => (
+const HomeWhyUsSection = () => (
   <div className="px-2">
     <div className="header-cont my-5">
       <h2 className="section-title" data-aos="fade-up" data-aos-delay="0">
@@ -28,4 +28,4 @@ const WhyUsSection = () => (
   </div>
 )
 
-export default WhyUsSection
+export default HomeWhyUsSection

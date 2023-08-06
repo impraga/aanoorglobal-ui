@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './ServiceCategory.scss'
+import './HomeServiceCategory.scss'
 
-const ServiceCategory = ({ service, selectedCategory }) => (
+const HomeServiceCategory = ({ service, selectedCategory }) => (
   <div
     className={`category-cont bg-white br-1 bs p-3 w-100 overflow-hidden position-relative ${
       selectedCategory === service.category ? ' active ' : ''
@@ -26,9 +26,9 @@ const ServiceCategory = ({ service, selectedCategory }) => (
   </div>
 )
 
-ServiceCategory.propTypes = {
+HomeServiceCategory.propTypes = {
   service: PropTypes.shape().isRequired,
   selectedCategory: PropTypes.string.isRequired
 }
 
-export default ServiceCategory
+export default HomeServiceCategory

@@ -8,7 +8,7 @@
   }
 
   .lg-container {
-    max-width: 1400px;
+    max-width: none;
     margin: 0 auto;
     background-color: $ag-gray;
     position: fixed;
@@ -17,6 +17,7 @@
     transform: translateX(-50%);
     width: 100%;
     z-index: 1000;
+    border-bottom: 2px solid $ag-green;
     header {
       display: flex;
       justify-content: flex-start;

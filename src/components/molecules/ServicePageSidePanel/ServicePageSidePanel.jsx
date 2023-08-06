@@ -31,7 +31,11 @@ const ServicePageSidePanel = ({ template, reference }) => {
   }
 
   return (
-    <div className="p-2 bg-white br-1 bs side-panel-cont">
+    <div
+      className="p-2 bg-white br-1 bs side-panel-cont"
+      data-aos="fade-up"
+      data-aos-delay="50"
+    >
       <div>
         {template.map((list, index) => (
           <div

@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         // lazy: () => import('./components/organisms/ContactSection/ContactSection')
       },
       {
-        path: 'services/:serviceName',
+        path: 'services/:category/:serviceName',
         element: (
           <TransitionComponent>
             <ServicePage />

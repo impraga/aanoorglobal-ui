@@ -1,0 +1,120 @@
+@import './../../../index.scss';
+
+.startup-hero-banner-cont {
+  // min-height: 600px;
+  padding-top: 80px;
+  // background-image: url('./../../../../public/assets/icons/Startupcentre Background.svg');
+  // background-position: left bottom;
+  // background-repeat: no-repeat;
+  // background-size: auto auto;
+  .banner-holder {
+    // max-height: 400px;
+    // height: 80vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    // .startup {
+    //   position: absolute;
+    //   top: 25%;
+    //   left: 49%;
+    //   transform: translate(-100%, -50%);
+    //   font-size: 9rem;
+    //   span {
+    //     // border: 2px solid $ag-green;
+    //   }
+    // }
+    // .centre {
+    //   position: absolute;
+    //   left: 57%;
+    //   top: 45%;
+    //   font-size: 9rem;
+    //   transform: translate(0%, -50%);
+    // }
+    .bg-img-cont {
+      // position: absolute;
+      // top: 10%;
+      // left: 50%;
+      // transform: translate(-50%, 0%);
+      width: 85%;
+      max-width: 800px;
+      margin: auto;
+      padding-top: 60px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .hero-text-cont {
+    position: relative;
+    z-index: 3;
+    margin-top: -80px;
+    .title-cont {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .price-cont {
+      font-weight: 500;
+      font-size: 1.1rem;
+      .just {
+        line-height: 1.3rem;
+      }
+      .price {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      .note {
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: 0.7;
+        line-height: 0.5rem;
+      }
+    }
+  }
+  .startup-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    max-height: 60vh;
+    width: 90%;
+    z-index: 1;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+  .whiteLines-bg {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    max-height: 100px;
+    z-index: 1;
+  }
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .startup-hero-banner-cont {
+    .banner-holder {
+      // max-height: 400px;
+    }
+    .hero-text-cont {
+      margin-top: -40px;
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}

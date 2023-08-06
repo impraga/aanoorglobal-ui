@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import dotted from '../../../../public/assets/images/circle-dotted.png'
 
-import './ServiceContainer.scss'
+import './HomeServiceContainer.scss'
 
-const ServiceContainer = ({ service, title }) => (
+const HomeServiceContainer = ({ service, title }) => (
   <div className="service-cont w-100 p-4 bg-gray br-1">
     <div className="circle" />
     <div className="dotted">
@@ -52,9 +52,9 @@ const ServiceContainer = ({ service, title }) => (
   </div>
 )
 
-ServiceContainer.propTypes = {
+HomeServiceContainer.propTypes = {
   title: PropTypes.string.isRequired,
   service: PropTypes.shape().isRequired
 }
 
-export default ServiceContainer
+export default HomeServiceContainer

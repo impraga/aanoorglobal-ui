@@ -1,7 +1,7 @@
 import React from 'react'
 
 import curve from '../../../../public/assets/icons/curve-bg-white.svg'
-import ContactContainer from '../../molecules/ContactContainer/ContactContainer'
+import ContactUsContainer from '../../atoms/ContactUsContainer/ContactUsContainer'
 
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
@@ -43,7 +43,7 @@ const ContactSection = () => (
               data-aos-delay={50 * index}
             >
               {/* <ScrollAnimation animateIn="fadeInUp" delay={index * 100}> */}
-              <ContactContainer contactInfo={contact} />
+              <ContactUsContainer contactInfo={contact} />
               {/* </ScrollAnimation> */}
             </div>
           ))}
