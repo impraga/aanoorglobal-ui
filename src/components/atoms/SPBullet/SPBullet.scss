@@ -7,3 +7,16 @@ ul {
     }
   }
 }
+.full-panel-template {
+  .bullet-cont {
+    padding-top: 20px !important;
+    h3 {
+      color: $ag-white;
+    }
+    ul {
+      li {
+        color: $ag-white;
+      }
+    }
+  }
+}

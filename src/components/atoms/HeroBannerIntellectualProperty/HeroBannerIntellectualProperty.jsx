@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import IntellectualProperty from '../../../../public/assets/images/intellectual-property-bg.svg'
-import IntellectualPropertyAbstract from '../../../../public/assets/images/intellectual-property-abstract.png'
+import IntellectualPropertyAbstract from '../../../../public/assets/images/intellectual-property-abstract.svg'
 import IntellectualPropertyALogo from '../../../../public/assets/icons/intellectual-property-a-logo.svg'
 
 import './HeroBannerIntellectualProperty.scss'

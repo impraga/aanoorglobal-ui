@@ -6,7 +6,7 @@ import star from '../../../../public/assets/icons/star.png'
 import './SPIncludes.scss'
 
 const SPIncludes = ({ data }) => (
-  <div className="p-2 pb-0 mb-4" id={data.id}>
+  <div className="container pb-0 mb-4" id={data.id}>
     <h3 className="mb-3">{data.header}</h3>
     <div className="includes-cont d-flex flex-wrap">
       {data.value.map((points) => (

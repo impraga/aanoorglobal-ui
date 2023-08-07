@@ -1,5 +1,13 @@
+@import '../../../index.scss';
+.doc-main-img-cont {
+  img {
+    width: 100%;
+    max-width: 350px;
+    padding: 0 10px 0 0;
+  }
+}
 .document-cont {
-  margin-top: 65px;
+  margin-top: 55px;
   .title-cont {
     z-index: 2;
     .img-cont {
@@ -48,7 +56,7 @@
   }
   .clip-img {
     position: absolute;
-    top: -58px;
+    top: -48px;
     right: 20px;
     transition: 0.3s ease-in;
     img {
@@ -77,6 +85,67 @@
     background-color: white !important;
     .clip-img,
     .clip-blocker {
+      display: none;
+    }
+  }
+}
+.registration {
+  .document-cont {
+    margin-top: 65px;
+    background-color: $ag-darkblue;
+    color: white;
+    .title-cont {
+      margin-bottom: 5px !important;
+      .img-cont {
+        display: none;
+      }
+      .title {
+        max-width: none;
+        padding-left: 15px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        h3 {
+          font-weight: 500 !important;
+        }
+      }
+    }
+    .file-cont ol {
+      padding-left: 30px;
+      > div {
+        li {
+          font-weight: 400;
+        }
+        hr {
+          display: none;
+        }
+      }
+    }
+    .clip-blocker {
+      background-color: $ag-darkblue;
+    }
+    .bg-gray-dark-cont {
+      display: none;
+    }
+  }
+}
+.certification {
+  .document-cont {
+    margin-top: 65px;
+    .title-cont {
+      .img-cont {
+        display: none;
+      }
+      .title {
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        max-width: none;
+      }
+    }
+    .file-cont ol {
+      padding-left: 30px;
+    }
+    .bg-gray-dark-cont {
       display: none;
     }
   }

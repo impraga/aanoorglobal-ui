@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 
 import logo from '../../../../public/assets/icons/aanoor-logo.svg'
-import menu from '../../../../public/assets/images/menu.png'
-import menuClose from '../../../../public/assets/images/menu-close.png'
 import menuList from '../../../../public/assets/json/menuList.json'
 import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
@@ -121,7 +119,6 @@ const Header = () => {
               buttonObj={{
                 className: 'menu-icon',
                 imageDetails: {
-                  path: isMenuOpen ? menuClose : menu,
                   alt: isMenuOpen ? 'menu-close' : 'menu'
                 }
               }}

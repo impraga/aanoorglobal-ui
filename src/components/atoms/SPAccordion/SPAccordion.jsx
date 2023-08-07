@@ -5,7 +5,7 @@ import Accordion from 'react-bootstrap/Accordion'
 import './SPAccordion.scss'
 
 const SPAccordion = ({ data }) => (
-  <div className="p-2 pb-0 mb-4 accordion-cont" id={data.id}>
+  <div className="p-2 pb-0 mb-4 accordion-cont container" id={data.id}>
     <h3 className="mb-3">{data.header}</h3>
     <Accordion defaultActiveKey="0">
       {data.value &&
