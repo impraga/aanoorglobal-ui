@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import './AGButton.scss'
+
 const AGButton = ({ buttonObj, handleClick }) => (
   <button
     type="button"
@@ -9,12 +11,12 @@ const AGButton = ({ buttonObj, handleClick }) => (
   >
     {buttonObj.text}
     {buttonObj.imageDetails && (
-      <img
-        src={buttonObj.imageDetails.path}
-        alt={buttonObj.imageDetails.alt}
-        onClick={handleClick}
-        aria-hidden
-      />
+      <div className="menuToggle">
+        <input type="checkbox" />
+        <span className="bg-blue" />
+        <span className="bg-blue" />
+        <span className="bg-blue" />
+      </div>
     )}
   </button>
 )

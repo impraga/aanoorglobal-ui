@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import './SPBenefits.scss'
 
 const SPBenefits = ({ data }) => (
-  <div className="p-2 pb-0 mb-4 benefits-cont" id={data.id}>
+  <div className="p-2 pb-0 mb-4 benefits-cont container" id={data.id}>
     <h3 className="mb-3">{data.header}</h3>
     <p className="mb-0">{data.desc && data.desc}</p>
     <ul className="benefits-ul">

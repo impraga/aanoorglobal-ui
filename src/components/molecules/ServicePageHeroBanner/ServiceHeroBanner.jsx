@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import './ServiceHeroBanner.scss'
 import HeroBannerStartupCentre from '../../atoms/HeroBannerStartupCentre/HeroBannerStartupCentre'
 import HeroBannerIntellectualProperty from '../../atoms/HeroBannerIntellectualProperty/HeroBannerIntellectualProperty'
+import HeroBannerRegistrationLiaisonWorks from '../../atoms/HeroBannerRegistrationLiaisonWorks/HeroBannerRegistrationLiaisonWorks'
 
 const ServiceHeroBanner = ({ title, desc, price, category }) => {
   const HeroBanner = () => {
@@ -12,6 +13,14 @@ const ServiceHeroBanner = ({ title, desc, price, category }) => {
     if (category === 'intellectual-property')
       return (
         <HeroBannerIntellectualProperty
+          title={title}
+          desc={desc}
+          price={price}
+        />
+      )
+    if (category === 'registration')
+      return (
+        <HeroBannerRegistrationLiaisonWorks
           title={title}
           desc={desc}
           price={price}

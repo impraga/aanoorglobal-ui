@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 import './SPStep.scss'
 
 const SPStep = ({ data }) => (
-  <div className="p-2 mb-2" id={data.id}>
-    <h3 className="mb-2">{data.header}</h3>
+  <div className="p-2 mb-2 container" id={data.id}>
+    <h3 className="mb-2 main-heading">{data.header}</h3>
     <div>
       {data.value && (
         <div>
           <div>
-            <p className="mb-4">{data.value.subHeading}</p>
+            <p className="mb-4 main-desc">{data.value.subHeading}</p>
           </div>
           <div className="step-cont">
             {data.value.steps.map((step, index) => (

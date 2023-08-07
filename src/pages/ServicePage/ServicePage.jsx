@@ -13,6 +13,7 @@ import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/Re
 
 const ServicePage = () => {
   const { category, serviceName } = useParams()
+  const sidePanelTemplate = ['intellectual-property', 'startup-center']
   const serviceDetails = serviceList.filter(
     (service) => service.service === serviceName
   )[0]
@@ -37,23 +38,41 @@ const ServicePage = () => {
           price={serviceDetails.price}
           category={category}
         />
-        <div className="container serivce-details-cont">
+        <div
+          className={`serivce-details-cont ${
+            sidePanelTemplate.includes(category)
+              ? 'container side-panel-template'
+              : 'container-fluid full-panel-template'
+          }`}
+        >
           <div className="row">
-            <div className="col-md-4  d-md-block d-none">
-              <ServicePageSidePanel
-                template={serviceDetails.template}
-                reference={inputRefs.current}
-              />
-            </div>
-            <div className="col-md-8">
+            {sidePanelTemplate.includes(category) && (
+              <div className="col-md-4 d-md-block d-none">
+                <ServicePageSidePanel
+                  template={serviceDetails.template}
+                  reference={inputRefs.current}
+                />
+              </div>
+            )}
+            <div
+              className={`${
+                sidePanelTemplate.includes(category)
+                  ? 'col-md-8'
+                  : 'col-12 px-0'
+              }`}
+            >
               <div
-                className="container service-content-cont px-3 py-4"
+                className={`service-content-cont ${
+                  sidePanelTemplate.includes(category)
+                    ? 'container  px-3 py-4'
+                    : 'container-fluid px-0'
+                }`}
                 data-aos="fade-up"
                 data-aos-delay="150"
               >
                 {serviceDetails.template?.map((data) => (
                   <div
-                    className={data.id}
+                    className={`${data.id} ${data.type} component-cont`}
                     ref={(ref) => inputRefs.current.push(ref)}
                     key={data.id}
                   >
