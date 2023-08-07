@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import sortArray from '../../utils/tools'
+import { sortArray } from '../../utils/tools'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 import menuList from '../../../public/assets/json/menuList.json'
 import { footerOrder } from '../../constants'

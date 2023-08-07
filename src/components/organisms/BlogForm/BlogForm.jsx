@@ -50,7 +50,15 @@ const BlogForm = () => {
               {...register('image', { required: true })}
               className={errors.image?.type === 'required' ? 'error' : ' '}
               type="file"
-              placeholder="Image"
+              placeholder="Thumbnail Image"
+            />
+          </div>
+          <div>
+            <input
+              {...register('tags', { required: true })}
+              className={errors.tags?.type === 'required' ? 'error' : ' '}
+              type="text"
+              placeholder="Add tags in semicolon separated."
             />
           </div>
           <div className="row">
@@ -96,7 +104,8 @@ const BlogForm = () => {
             />
           </div>
           <div>
-            <button type="submit">Publish</button>
+            <button type="submit">Save</button>
+            <button type="submit">Save & Publish</button>
           </div>
         </form>
       </div>

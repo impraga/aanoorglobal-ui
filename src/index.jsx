@@ -21,10 +21,15 @@ import LoginPage from './pages/LoginPage/LoginPage'
 
 import { TransitionProvider } from './context/TransitionContext'
 import TransitionComponent from './components/organisms/Transition/Transition'
+import ProtectedComponent from './components/molecules/ProtectedComponent/ProtectedComponent'
+
+import { getSessionStorage } from './utils/tools'
 
 import './index.scss'
 
 const root = createRoot(document.getElementById('root'))
+
+const isLoggedIn = getSessionStorage('isUserLoggedIn') === true
 
 const router = createBrowserRouter([
   {
@@ -92,17 +97,21 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: (
-          <TransitionComponent>
-            <Dashboard />
-          </TransitionComponent>
+          <ProtectedComponent isLoggedIn={isLoggedIn}>
+            <TransitionComponent>
+              <Dashboard />
+            </TransitionComponent>
+          </ProtectedComponent>
         )
       },
       {
         path: 'new-blog',
         element: (
-          <TransitionComponent>
-            <NewBlog />
-          </TransitionComponent>
+          <ProtectedComponent isLoggedIn={isLoggedIn}>
+            <TransitionComponent>
+              <NewBlog />
+            </TransitionComponent>
+          </ProtectedComponent>
         )
       },
       { path: 'login', element: <LoginPage /> },
