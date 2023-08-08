@@ -40,11 +40,14 @@
     background-color: $ag-gray-dark;
     padding-top: 40px;
     padding-bottom: 1px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     .accordion-cont {
       background-color: white;
       border-radius: $ag-border-radius;
       box-shadow: $ag-box-shadow;
       padding: 1rem !important;
+      max-width: 1375px !important;
       h3 {
         padding: 10px 0px 10px 5px !important;
       }
