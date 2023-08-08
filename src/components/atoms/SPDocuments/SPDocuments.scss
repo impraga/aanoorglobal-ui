@@ -94,6 +94,7 @@
     margin-top: 65px;
     background-color: $ag-darkblue;
     color: white;
+    margin-bottom: -5px !important;
     .title-cont {
       margin-bottom: 5px !important;
       .img-cont {
@@ -101,7 +102,7 @@
       }
       .title {
         max-width: none;
-        padding-left: 15px;
+        padding-left: 0px;
         padding-top: 10px;
         margin-bottom: 20px;
         h3 {
@@ -110,10 +111,11 @@
       }
     }
     .file-cont ol {
-      padding-left: 30px;
+      padding-left: 1rem;
       > div {
         li {
           font-weight: 400;
+          font-size: 0.9rem;
         }
         hr {
           display: none;
