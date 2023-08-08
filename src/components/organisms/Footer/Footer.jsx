@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import ContactSection from '../ContactSection/ContactSection'
 
-import sortArray from '../../../utils/tools'
+import { sortArray } from '../../../utils/tools'
 
 import { footerOrder } from '../../../constants'
 

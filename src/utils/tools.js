@@ -1,4 +1,4 @@
-const sortArray = (arr1, arr2) => {
+export const sortArray = (arr1, arr2) => {
   arr2.sort((a, b) => {
     const aKey = Object.keys(a)[0]
     const bKey = Object.keys(b)[0]
@@ -6,4 +6,9 @@ const sortArray = (arr1, arr2) => {
   })
 }
 
-export default sortArray
+export const getSessionStorage = (session) =>
+  window.sessionStorage.getItem(session)
+
+export const setSessionStorage = (key, value) => {
+  window.sessionStorage.setItem(key, value)
+}
