@@ -58,3 +58,11 @@ export const footerOrder = [
   'Certification',
   'Statuary Compliance'
 ]
+
+export const serviceTemplates = {
+  'startup-center': 'STARTUP_CENTER',
+  'intellectual-property': 'INTELLECTUAL_PROPERTY',
+  registration: 'REGISTRATION',
+  certification: 'CERTIFICATION',
+  'statuary-compliance': 'STATUARY_COMPLIANCE'
+}

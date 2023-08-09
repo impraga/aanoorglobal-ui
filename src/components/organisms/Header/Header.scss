@@ -189,6 +189,7 @@
             left: 0;
             right: 0;
             height: calc(100vh - 80px);
+            overflow: auto;
           }
           > ul {
             flex-direction: column;

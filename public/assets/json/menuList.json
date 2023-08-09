@@ -230,5 +230,340 @@
       ]
     },
     { "pageUrl": "/contact", "title": "Contact", "id": "contact" }
+  ],
+  "serviceData": [
+    {
+      "title": "Startup Center",
+      "id": "startup-center",
+      "icon": "startup-center.svg",
+      "children": [
+        {
+          "title": "Companay Registration",
+          "id": "company-registration",
+          "children": [
+            {
+              "pageUrl": "/services/startup-center/sole-proprietorship",
+              "title": "Sole Proprietorship",
+              "id": "sole-proprietroship"
+            },
+            {
+              "pageUrl": "/services/startup-center/partnership-firm",
+              "title": "Partnership firm",
+              "id": "partnership-firm"
+            },
+            {
+              "pageUrl": "/services/startup-center/trademark-registration",
+              "title": "One Person Company",
+              "id": "one-person-company"
+            },
+            {
+              "pageUrl": "/services/startup-center/trademark-registration",
+              "title": "Private Limited Company",
+              "id": "private-ltd"
+            },
+            {
+              "pageUrl": "/services/startup-center/trademark-registration",
+              "title": "Public Limited Company",
+              "id": "public-ltd"
+            },
+            {
+              "pageUrl": "/services/startup-center/trademark-registration",
+              "title": "Limited Liability Partnership",
+              "id": "limited-liability"
+            },
+            {
+              "pageUrl": "/services/startup-center/trademark-registration",
+              "title": "Nidhi Company",
+              "id": "nidhi-company"
+            },
+            {
+              "pageUrl": "/services/startup-center/trademark-registration",
+              "title": "Producer Company",
+              "id": "producer-company"
+            },
+            {
+              "pageUrl": "/services/startup-center/trademark-registration",
+              "title": "Section 8 Company",
+              "id": "section8"
+            }
+          ]
+        },
+        {
+          "pageUrl": "/services/startup-center/startup-india-registration",
+          "title": "Startup India Registration",
+          "id": "Startup-India-Registration"
+        },
+        {
+          "pageUrl": "/services/startup-center/gem-registration",
+          "title": "GeM Registration",
+          "id": "GeM-Registration"
+        },
+        {
+          "pageUrl": "/services/startup-center/business-loan",
+          "title": "Business Loan",
+          "id": "Business-Loan"
+        }
+      ]
+    },
+    {
+      "title": "Intellectual Property",
+      "id": "intellectual",
+      "icon": "intellectual-property.svg",
+      "children": [
+        {
+          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "title": "Trademark Registration",
+          "id": "trademark-reg"
+        },
+        {
+          "pageUrl": "/services/intellectual-property/trademark-objection",
+          "title": "Trademark Objection",
+          "id": "trademark-objection"
+        },
+        {
+          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "title": "Trademark Renewal",
+          "id": "trademark-renewal"
+        },
+        {
+          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "title": "Copyright Registration",
+          "id": "copyright-reg"
+        },
+        {
+          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "title": "Design Registration",
+          "id": "design-reg"
+        },
+        {
+          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "title": "Patent Registration",
+          "id": "patent-reg"
+        }
+      ]
+    },
+    {
+      "title": "Statuary Compliance",
+      "id": "statuary-compliance",
+      "icon": "statutory-compliance.svg",
+      "children": [
+        {
+          "title": "ROC Others",
+          "id": "roc-others",
+          "children": [
+            {
+              "pageUrl": "/services/statuary-compliance/director-din-kyc",
+              "title": "Director DIN KYC",
+              "id": "director-din-kyc"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/director-additional-removal",
+              "title": "Director Additional/Removal",
+              "id": "director-additional-removal"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/company-address-chanage",
+              "title": "Company Address Chanage",
+              "id": "company-address-chanage"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/company-name-change",
+              "title": "Company Name Change",
+              "id": "company-name-change"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/commencement-of-business",
+              "title": "Commencement of Business",
+              "id": "commencement-of-business"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/moa-alteration",
+              "title": "MoA Alteration",
+              "id": "moa-alteration"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/increase-of-authorised-paidup-capital",
+              "title": "Increase of Authorised/Paidup Capital",
+              "id": "increase-of-authorised-paidup-capital"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/share-allotment-transfer",
+              "title": "Share Allotment/Transfer",
+              "id": "share-allotment-transfer"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/conversion-of-companies",
+              "title": "Conversion of Companies",
+              "id": "conversion-of-companies"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/charge-creation",
+              "title": "Charge Creation",
+              "id": "charge-creation"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/company-closure",
+              "title": "Company Closure",
+              "id": "company-closure"
+            }
+          ]
+        },
+        {
+          "title": "Documentation & Reports",
+          "id": "Documentation-Reports",
+          "children": [
+            {
+              "pageUrl": "/services/statuary-compliance/projection-report",
+              "title": "Projection Report",
+              "id": "Projection-Report"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/CMA-preparation",
+              "title": "CMA Preparation",
+              "id": "cma-preparation"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/networth-certificate",
+              "title": "Networth Certificate",
+              "id": "networth-certificate"
+            },
+            {
+              "pageUrl": "/services/statuary-compliance/internal-audit",
+              "title": "Internal Audit",
+              "id": "internal-audit"
+            }
+          ]
+        },
+        {
+          "pageUrl": "/services/statuary-compliance/book-keeping",
+          "title": "Book keeping",
+          "id": "book-keeping"
+        },
+        {
+          "pageUrl": "/services/statuary-compliance/income-tax-filing",
+          "title": "Income Tax Filing",
+          "id": "income-tax-filing"
+        },
+        {
+          "pageUrl": "/services/statuary-compliance/gst-filing",
+          "title": "GST Filing",
+          "id": "gst-filing"
+        },
+        {
+          "pageUrl": "/services/statuary-compliance/tds-returns",
+          "title": "TDS Returns",
+          "id": "tds-returns"
+        },
+        {
+          "pageUrl": "/services/statuary-compliance/annual-compliance",
+          "title": "ROC Annual Compliance",
+          "id": "roc-annual"
+        }
+      ]
+    },
+    {
+      "title": "Registration",
+      "id": "registration",
+      "icon": "registration.svg",
+      "children": [
+        {
+          "pageUrl": "/services/registration/ssi-msme-registration",
+          "title": "SSI/MSME Registration",
+          "id": "ssi-msme-reg"
+        },
+        {
+          "pageUrl": "/services/registration/goods-service-tax-registration",
+          "title": "Goods & Service Tax Registration",
+          "id": "good-service-tax"
+        },
+        {
+          "pageUrl": "/services/registration/trademark-registration",
+          "title": "Professional Tax Registration",
+          "id": "professional-tax"
+        },
+        {
+          "pageUrl": "/services/registration/trademark-registration",
+          "title": "Trust/NGO Registration",
+          "id": "trust-ngo"
+        },
+        {
+          "pageUrl": "/services/registration/trademark-registration",
+          "title": "Import Export Code (IEC) Registration",
+          "id": "import-export-code"
+        },
+        {
+          "pageUrl": "/services/registration/trademark-registration",
+          "title": "FSSAI Registration",
+          "id": "fssai-reg"
+        },
+        {
+          "pageUrl": "/services/registration/trademark-registration",
+          "title": "PAN Registration",
+          "id": "pan-reg"
+        },
+        {
+          "pageUrl": "/services/registration/trademark-registration",
+          "title": "TAN Registration",
+          "id": "tan-reg"
+        }
+      ]
+    },
+    {
+      "title": "Certification",
+      "id": "certification",
+      "icon": "certification.svg",
+      "children": [
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO 9001:2015 QMS",
+          "id": "iso-9001:2015"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO 14001:2004 EMS",
+          "id": "iso-14001:2004"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO 22000:2005 / HACCP",
+          "id": "iso-22000:2005"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO 13485:2003 Medical devices",
+          "id": "iso-13485:2003"
+        },
+        {
+          "pageUrl": "/services/certification/rademark-registration",
+          "title": "ISO/TS 16949:2009",
+          "id": "iso-16949:2009"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "OHSAS 18001:2007",
+          "id": "iso-18001:2007"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO/IEC 20000",
+          "id": "iso-20000"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO 27001:2005 ISMS",
+          "id": "iso-27001:2005"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO 29990:2010",
+          "id": "iso-29990:2010"
+        },
+        {
+          "pageUrl": "/services/certification/trademark-registration",
+          "title": "ISO 50001:2011",
+          "id": "iso-50001:2011"
+        }
+      ]
+    }
   ]
 }

@@ -127,7 +127,7 @@ const Header = () => {
           </div>
           <nav className={isMenuOpen ? 'open-menu' : 'close-menu'}>
             <ul>
-              {menuList?.data.map((item) => menuWithLink(item))}
+              {menuList?.serviceData.map((item) => menuWithLink(item))}
 
               <li key="blog">
                 <Button className="blog-btn" variant="success">
