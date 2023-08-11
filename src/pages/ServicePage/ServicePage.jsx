@@ -1,7 +1,7 @@
 import React from 'react'
-import { useParams } from 'react-router'
+import PropTypes from 'prop-types'
 
-import serviceList from '../../../public/assets/json/serviceDetails.json'
+// import serviceList from '../../../public/assets/json/serviceDetails.json'
 import ServiceHeroBanner from '../../components/molecules/ServicePageHeroBanner/ServiceHeroBanner'
 import ServicePageContent from '../../components/molecules/ServicePageContent/ServicePageContent'
 import ServicePageSidePanel from '../../components/molecules/ServicePageSidePanel/ServicePageSidePanel'
@@ -11,22 +11,12 @@ import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 import './ServicePage.scss'
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 
-const ServicePage = () => {
-  const { category, serviceName } = useParams()
+const ServicePage = ({ props }) => {
+  const { serviceDetails, metaDetails, category } = props
+  // eslint-disable-next-line import/no-dynamic-require, global-require
   const sidePanelTemplate = ['intellectual-property', 'startup-center']
-  const serviceDetails = serviceList.filter(
-    (service) => service.service === serviceName
-  )[0]
 
   const inputRefs = React.useRef([])
-
-  const metaDetails = {
-    title: `Services | ${serviceDetails?.title} | Aanoor Global`,
-    canonicalUrl: `www.aanoorglobal.com/services/${category}/${serviceName}`,
-    metaDesc:
-      'Aanoor Global provide multiple services like GST, Income tax filing',
-    metaKeywords: 'gst filing, income tax filing'
-  }
 
   return serviceDetails ? (
     <>
@@ -89,6 +79,13 @@ const ServicePage = () => {
   ) : (
     <NotFound />
   )
+}
+
+ServicePage.propTypes = {
+  props: PropTypes.shape().isRequired,
+  serviceDetails: PropTypes.shape().isRequired,
+  metaDetails: PropTypes.shape().isRequired,
+  category: PropTypes.string.isRequired
 }
 
 export default React.memo(ServicePage)

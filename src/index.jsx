@@ -12,7 +12,6 @@ import NotFound from './pages/NotFound/NotFound'
 import About from './pages/About/About'
 import Sitemap from './pages/Sitemap/Sitemap'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
-import ServicePage from './pages/ServicePage/ServicePage'
 import ContactPage from './pages/ContactPage/ContactPage'
 import Blog from './pages/Blog/Blog'
 import Dashboard from './pages/Dashboard/Dashboard'
@@ -26,6 +25,7 @@ import ProtectedComponent from './components/molecules/ProtectedComponent/Protec
 import { getSessionStorage } from './utils/tools'
 
 import './index.scss'
+import ServiceWrapper from './components/molecules/ServiceWrapper/ServiceWrapper'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
         path: 'services/:category/:serviceName',
         element: (
           <TransitionComponent>
-            <ServicePage />
+            <ServiceWrapper />
           </TransitionComponent>
         )
       },
