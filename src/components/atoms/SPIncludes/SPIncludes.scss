@@ -15,12 +15,21 @@
 }
 
 .full-panel-template {
-  .includes-cont .tip {
-    padding: 7px 16px 7px 7px;
-    font-size: 0.8rem;
-    img {
-      width: 18px;
-      margin-right: 8px;
+  .component-cont.includes {
+    > div {
+      padding-top: 0 !important;
+      // text-align: center;
+      .includes-cont {
+        // justify-content: center;
+        .tip {
+          padding: 7px 16px 7px 7px;
+          font-size: 0.8rem;
+          img {
+            width: 18px;
+            margin-right: 8px;
+          }
+        }
+      }
     }
   }
 }
