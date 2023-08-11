@@ -23,12 +23,21 @@
         // justify-content: center;
         .tip {
           padding: 7px 16px 7px 7px;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           img {
-            width: 18px;
+            width: 22px;
             margin-right: 8px;
           }
         }
+      }
+    }
+  }
+}
+.statuary-compliance {
+  .component-cont.includes {
+    > div {
+      .includes-cont {
+        justify-content: center;
       }
     }
   }

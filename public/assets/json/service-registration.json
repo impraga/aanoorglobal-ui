@@ -48,9 +48,10 @@
       },
       {
         "id": "benefits",
-        "header": "Benefits",
+        "header": "Facts",
         "desc": "",
         "type": "SPBenefits",
+        "class": "facts",
         "value": [
           {
             "title": "",
@@ -1026,9 +1027,10 @@
       },
       {
         "id": "benefits",
-        "header": "Benefits",
+        "header": "Facts",
         "desc": "",
         "type": "SPBenefits",
+        "class": "facts",
         "value": [
           {
             "title": "",

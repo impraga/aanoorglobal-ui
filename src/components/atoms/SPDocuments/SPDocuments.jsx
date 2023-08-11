@@ -6,6 +6,8 @@ import folderIcon from '../../../../public/assets/icons/folder.png'
 import clip from '../../../../public/assets/icons/clip-icon.svg'
 import documentRegistration from '../../../../public/assets/icons/Document abstract.svg'
 import documentCertificate from '../../../../public/assets/icons/Document abstract2.svg'
+import documentCompliance from '../../../../public/assets/icons/Document abstract3.svg'
+import circleGreen from '../../../../public/assets/icons/circle-green.svg'
 
 import './SPDocuments.scss'
 
@@ -23,6 +25,10 @@ const SPDocuments = ({ data }) => {
       setIsImage(true)
       return <img src={documentCertificate} alt="decorative" />
     }
+    if (category === 'statuary-compliance') {
+      setIsImage(true)
+      return <img src={documentCompliance} alt="decorative" />
+    }
     setIsImage(false)
     return null
   }
@@ -34,21 +40,44 @@ const SPDocuments = ({ data }) => {
     >
       <div
         className={`container ${
-          category === 'registration' || category === 'certification'
+          category === 'registration' ||
+          category === 'certification' ||
+          category === 'statuary-compliance'
             ? 'mt-5 mt-md-0 mb-3'
             : ''
         }`}
       >
         <div
           className={`${
-            category === 'registration' || category === 'certification'
+            category === 'registration' ||
+            category === 'certification' ||
+            category === 'statuary-compliance'
               ? 'row'
               : ''
           }`}
         >
           {isImage && (
-            <div className="doc-main-img-cont col-md-4 d-flex align-items-center justify-content-center">
-              <DocImage />
+            <div className="doc-main-img-cont col-md-4 d-flex align-items-center justify-content-center position-relative">
+              <div
+                className="main-img-cont"
+                data-aos="fade-top"
+                data-aos-delay="0"
+              >
+                <DocImage />
+              </div>
+              <div
+                className="glass"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              />
+              <div className="ring-img-cont">
+                <img
+                  src={circleGreen}
+                  alt="decorative"
+                  data-aos="fade-left"
+                  data-aos-delay="150"
+                />
+              </div>
             </div>
           )}
           <div

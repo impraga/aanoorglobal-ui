@@ -5,6 +5,7 @@ import './ServiceHeroBanner.scss'
 import HeroBannerStartupCentre from '../../atoms/HeroBannerStartupCentre/HeroBannerStartupCentre'
 import HeroBannerIntellectualProperty from '../../atoms/HeroBannerIntellectualProperty/HeroBannerIntellectualProperty'
 import HeroBannerRegistrationLiaisonWorks from '../../atoms/HeroBannerRegistrationLiaisonWorks/HeroBannerRegistrationLiaisonWorks'
+import HeroBannerCertification from '../../atoms/HeroBannerCertification/HeroBannerCertification'
 
 const ServiceHeroBanner = ({ title, desc, price, category }) => {
   const HeroBanner = () => {
@@ -26,6 +27,8 @@ const ServiceHeroBanner = ({ title, desc, price, category }) => {
           price={price}
         />
       )
+    if (category === 'certification')
+      return <HeroBannerCertification title={title} desc={desc} price={price} />
     return <div>/</div>
   }
 

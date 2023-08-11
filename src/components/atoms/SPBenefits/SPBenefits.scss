@@ -29,6 +29,18 @@
     font-weight: 600;
     margin-top: 15px;
   }
+  .facts {
+    ul {
+      li {
+        &::before {
+          background-image: url(./../../../../public/assets/icons/info.png) !important;
+          background-size: contain;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
 }
 
 .full-panel-template {
@@ -69,13 +81,15 @@
     }
     .registration-img-bg {
       background-color: $ag-darkblue-overlay;
-      height: 200px;
+      height: auto;
       width: 200px;
       border-radius: 50%;
       position: absolute;
+      max-width: 65%;
       top: 40%;
       transform: translate(50%, -50%);
       right: 40%;
+      aspect-ratio: 1 / 1;
     }
     .glass {
       position: absolute;
@@ -87,6 +101,51 @@
       color: white;
       text-align: center;
       padding: 10px;
+    }
+  }
+}
+.statuary-compliance {
+  .benefits-cont {
+    h3 {
+      color: $ag-green !important;
+      // text-align: center;
+    }
+    .benefits-desc {
+      // text-align: center;
+    }
+    .benefits-ul {
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 20px;
+      h4 {
+        border-radius: 0px 0px 0 0;
+        color: $ag-blue;
+        background-color: $ag-gray-dark !important;
+        margin: 0;
+        font-weight: 700;
+        padding: 12px 15px;
+      }
+      li {
+        margin-bottom: 0;
+        border-radius: 0 !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        &::before {
+          top: 18px;
+        }
+        // &:first-child {
+        //   border-radius: 20px 20px 0 0 !important;
+        // }
+        // &:last-child {
+        //   border-radius: 0 0 20px 20px !important;
+        // }
+        &:nth-child(odd) {
+          background-color: $ag-gray-dark !important;
+        }
+        &:nth-child(even) {
+          background-color: $ag-gray !important;
+        }
+      }
     }
   }
 }

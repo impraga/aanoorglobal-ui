@@ -1,0 +1,136 @@
+.certification-hero-banner-cont {
+  padding-top: 100px;
+  background-image: url(./../../../../public/assets/images/certification-bg.svg);
+  background-position: left top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  .banner-holder {
+    min-height: 430px;
+    .title-cont {
+      z-index: 2;
+      font-size: 8rem;
+      line-height: 0.8;
+      margin-left: -5px;
+      div {
+        line-height: 0.3 !important;
+      }
+    }
+    .badge-cont {
+      .glass {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        z-index: 3;
+        left: -20%;
+        top: 25%;
+      }
+      img {
+        max-width: 200px;
+        width: 100%;
+        z-index: 4;
+      }
+    }
+    .abstract-cont {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .tag {
+        position: absolute;
+        z-index: 6;
+      }
+      .img-cont {
+        max-width: 240px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .glass {
+      position: absolute;
+      height: 120px;
+      width: 130px;
+      opacity: 0.8;
+      bottom: 30px;
+      z-index: 5;
+      right: 20px;
+    }
+    .dot-img-cont {
+      position: absolute;
+      bottom: 30px;
+      right: 50%;
+      z-index: 4;
+    }
+  }
+  .hero-text-cont {
+    .title-cont {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+    .price-cont {
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding-bottom: 5px;
+      .just {
+        line-height: 1.3rem;
+      }
+      .price {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      .note {
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 0.7;
+        line-height: 0.5rem;
+      }
+    }
+  }
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 5.8rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}

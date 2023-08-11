@@ -47,10 +47,11 @@
         ]
       },
       {
-        "id": "benefits",
-        "header": "Benefits",
+        "id": "facts",
+        "header": "Facts",
         "desc": "",
         "type": "SPBenefits",
+        "class": "facts",
         "value": [
           {
             "title": "",

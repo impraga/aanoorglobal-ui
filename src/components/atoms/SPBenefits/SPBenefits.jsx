@@ -10,12 +10,14 @@ const SPBenefits = ({ data }) => {
 
   return (
     <div className="pb-0 mb-4 benefits-cont container" id={data.id}>
-      <div className={`${category === 'registration' ? 'row' : ''}`}>
+      <div
+        className={`${data?.class} ${category === 'registration' ? 'row' : ''}`}
+      >
         <div
           className={`${category === 'registration' ? 'col-md-8 px-0' : ''}`}
         >
           <h3 className="mb-3">{data.header}</h3>
-          <p className="mb-0">{data.desc && data.desc}</p>
+          <p className="mb-0 benefits-desc">{data.desc && data.desc}</p>
           <ul className="benefits-ul">
             {data.value &&
               data.value.map((benefit) => (
@@ -37,7 +39,7 @@ const SPBenefits = ({ data }) => {
               category === 'registration'
                 ? 'col-md-4 my-3 position-relative px-0'
                 : ''
-            }`}
+            }  ${data.value.length > 1 ? 'order-md-first' : ''}`}
           >
             <div className="registration-img-cont">
               <img src={registrationBenefits} alt="decorative" />
