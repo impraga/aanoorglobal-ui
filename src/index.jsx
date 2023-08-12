@@ -26,6 +26,7 @@ import { getSessionStorage } from './utils/tools'
 
 import './index.scss'
 import ServiceWrapper from './components/molecules/ServiceWrapper/ServiceWrapper'
+import BlogView from './pages/BlogView/BlogView'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -54,14 +55,7 @@ const router = createBrowserRouter([
         )
         // lazy: () => import('./components/organisms/ContactSection/ContactSection')
       },
-      {
-        path: 'services/:category/:serviceName',
-        element: (
-          <TransitionComponent>
-            <ServiceWrapper />
-          </TransitionComponent>
-        )
-      },
+
       {
         path: 'about',
         element: (
@@ -90,9 +84,19 @@ const router = createBrowserRouter([
         path: 'blog',
         element: (
           <TransitionComponent>
-            <Blog />
+            <BlogView />
           </TransitionComponent>
-        )
+        ),
+        children: [
+          {
+            path: ':title',
+            element: (
+              <TransitionComponent>
+                <BlogView />
+              </TransitionComponent>
+            )
+          }
+        ]
       },
       {
         path: 'dashboard',
@@ -107,7 +111,8 @@ const router = createBrowserRouter([
       {
         path: 'new-blog',
         element: (
-          <ProtectedComponent isLoggedIn={isLoggedIn}>
+          // <ProtectedComponent isLoggedIn={isLoggedIn}>
+          <ProtectedComponent isLoggedIn={true}>
             <TransitionComponent>
               <NewBlog />
             </TransitionComponent>
@@ -115,6 +120,14 @@ const router = createBrowserRouter([
         )
       },
       { path: 'login', element: <LoginPage /> },
+      // {
+      //   path: 'services/:category/:serviceName',
+      //   element: (
+      //     <TransitionComponent>
+      //       <ServiceWrapper />
+      //     </TransitionComponent>
+      //   )
+      // },
       {
         path: '*',
         element: (

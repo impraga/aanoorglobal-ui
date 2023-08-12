@@ -10,10 +10,19 @@ const HeroBannerRegistrationLiaisonWorks = ({ title, desc, price }) => (
     <div className="container">
       <div className="banner-holder position-relative">
         <div className="mt-5">
-          <h1 className="bebas clip-cont">
+          <h1
+            className="bebas clip-cont"
+            data-aos="fade-right"
+            data-aos-delay="0"
+          >
             Registration & <br />
             Liaison Works
-            <img src={registrationAbstract} alt="decorative" />
+            <img
+              src={registrationAbstract}
+              alt="decorative"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            />
           </h1>
         </div>
       </div>

@@ -66,3 +66,6 @@ export const serviceTemplates = {
   certification: 'CERTIFICATION',
   'statuary-compliance': 'STATUARY_COMPLIANCE'
 }
+
+export const apiUrl = 'http://localhost:8080/assets/json'
+// export const apiUrl = 'http://project.praga.co.in/api/'
