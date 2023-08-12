@@ -25,8 +25,8 @@ import ProtectedComponent from './components/molecules/ProtectedComponent/Protec
 import { getSessionStorage } from './utils/tools'
 
 import './index.scss'
-import ServiceWrapper from './components/molecules/ServiceWrapper/ServiceWrapper'
 import BlogView from './pages/BlogView/BlogView'
+import ServicePage from './pages/ServicePage/ServicePage'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -112,7 +112,7 @@ const router = createBrowserRouter([
         path: 'new-blog',
         element: (
           // <ProtectedComponent isLoggedIn={isLoggedIn}>
-          <ProtectedComponent isLoggedIn={true}>
+          <ProtectedComponent isLoggedIn>
             <TransitionComponent>
               <NewBlog />
             </TransitionComponent>
@@ -120,14 +120,14 @@ const router = createBrowserRouter([
         )
       },
       { path: 'login', element: <LoginPage /> },
-      // {
-      //   path: 'services/:category/:serviceName',
-      //   element: (
-      //     <TransitionComponent>
-      //       <ServiceWrapper />
-      //     </TransitionComponent>
-      //   )
-      // },
+      {
+        path: 'services/:category/:serviceName',
+        element: (
+          <TransitionComponent>
+            <ServicePage />
+          </TransitionComponent>
+        )
+      },
       {
         path: '*',
         element: (

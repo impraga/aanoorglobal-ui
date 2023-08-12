@@ -4,19 +4,6 @@ import { useParams } from 'react-router'
 
 import { serviceTemplates } from '../../../constants'
 
-const TemplateLoader = {
-  STARTUP_CENTER: () => import('../../../pages/ServicePage/ServicePage'),
-  INTELLECTUAL_PROPERTY: () => import('../../../pages/ServicePage/ServicePage'),
-  REGISTRATION: () => import('../../../pages/ServicePage/ServicePage'),
-  CERTIFICATION: () => import('../../../pages/ServicePage/ServicePage'),
-  STATUARY_COMPLIANCE: () => import('../../../pages/ServicePage/ServicePage')
-}
-
-const loadTemplate = (temp) =>
-  lazy(TemplateLoader[temp], {
-    ssr: false
-  })
-
 const ServiceWrapper = () => {
   const { category, serviceName } = useParams()
   const ComponentLoader = loadTemplate(serviceTemplates[category])
@@ -27,6 +14,7 @@ const ServiceWrapper = () => {
   const serviceDetails = serviceList.filter(
     (service) => service.service === serviceName
   )[0]
+  console.log(serviceDetails)
 
   const metaDetails = {
     title: `Services | ${serviceDetails?.title} | Aanoor Global`,

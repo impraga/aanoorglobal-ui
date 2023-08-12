@@ -1,38 +1,68 @@
 /* eslint-disable react/no-unstable-nested-components */
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import PropTypes from 'prop-types'
 import './ServiceHeroBanner.scss'
-import HeroBannerStartupCentre from '../../atoms/HeroBannerStartupCentre/HeroBannerStartupCentre'
-import HeroBannerIntellectualProperty from '../../atoms/HeroBannerIntellectualProperty/HeroBannerIntellectualProperty'
-import HeroBannerRegistrationLiaisonWorks from '../../atoms/HeroBannerRegistrationLiaisonWorks/HeroBannerRegistrationLiaisonWorks'
-import HeroBannerCertification from '../../atoms/HeroBannerCertification/HeroBannerCertification'
+import { serviceTemplates } from '../../../constants'
+
+const TemplateLoader = {
+  STARTUP_CENTER: () =>
+    import('../../atoms/HeroBannerStartupCentre/HeroBannerStartupCentre'),
+  INTELLECTUAL_PROPERTY: () =>
+    import(
+      '../../atoms/HeroBannerIntellectualProperty/HeroBannerIntellectualProperty'
+    ),
+  REGISTRATION: () =>
+    import(
+      '../../atoms/HeroBannerRegistrationLiaisonWorks/HeroBannerRegistrationLiaisonWorks'
+    ),
+  CERTIFICATION: () =>
+    import('../../atoms/HeroBannerCertification/HeroBannerCertification'),
+  STATUARY_COMPLIANCE: () =>
+    import('../../atoms/HeroBannerCertification/HeroBannerCertification')
+}
+
+const loadTemplate = (temp) => {
+  if (temp) {
+    return lazy(TemplateLoader[temp], {
+      ssr: false
+    })
+  }
+  return lazy(TemplateLoader[temp], {
+    ssr: false
+  })
+}
 
 const ServiceHeroBanner = ({ title, desc, price, category }) => {
-  const HeroBanner = () => {
-    if (category === 'startup-center')
-      return <HeroBannerStartupCentre title={title} desc={desc} price={price} />
-    if (category === 'intellectual-property')
-      return (
-        <HeroBannerIntellectualProperty
-          title={title}
-          desc={desc}
-          price={price}
-        />
-      )
-    if (category === 'registration')
-      return (
-        <HeroBannerRegistrationLiaisonWorks
-          title={title}
-          desc={desc}
-          price={price}
-        />
-      )
-    if (category === 'certification')
-      return <HeroBannerCertification title={title} desc={desc} price={price} />
-    return <div>/</div>
-  }
+  const ComponentLoader = loadTemplate(serviceTemplates[category])
+  // const HeroBanner = () => {
+  //   if (category === 'startup-center')
+  //     return <HeroBannerStartupCentre title={title} desc={desc} price={price} />
+  //   if (category === 'intellectual-property')
+  //     return (
+  //       <HeroBannerIntellectualProperty
+  //         title={title}
+  //         desc={desc}
+  //         price={price}
+  //       />
+  //     )
+  //   if (category === 'registration')
+  //     return (
+  //       <HeroBannerRegistrationLiaisonWorks
+  //         title={title}
+  //         desc={desc}
+  //         price={price}
+  //       />
+  //     )
+  //   if (category === 'certification')
+  //     return <HeroBannerCertification title={title} desc={desc} price={price} />
+  //   return <div>/</div>
+  // }
 
-  return <HeroBanner />
+  return (
+    <Suspense fallback="loading">
+      <ComponentLoader title={title} desc={desc} price={price} />
+    </Suspense>
+  )
   // <div className="hero-banner-cont d-flex align-items-center justify-content-between">
   //   <div className="container text-white pb-5 my-5">
   //     <div className="row">
