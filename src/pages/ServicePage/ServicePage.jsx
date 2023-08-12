@@ -1,6 +1,5 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import { useParams } from 'react-router'
 
 // import serviceList from '../../../public/assets/json/serviceDetails.json'
 import ServiceHeroBanner from '../../components/molecules/ServicePageHeroBanner/ServiceHeroBanner'
@@ -13,7 +12,9 @@ import './ServicePage.scss'
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 
 const ServicePage = () => {
-  const { category, serviceName } = useParams()
+  const path = window.location.pathname.split('/')
+  const category = path[2]
+  const serviceName = path[3]
 
   // eslint-disable-next-line import/no-dynamic-require, global-require
   const serviceList = require(`../../../public/assets/json/service-${category}.json`)

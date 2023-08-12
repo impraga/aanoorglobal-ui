@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useParams } from 'react-router'
 
@@ -13,25 +13,23 @@ import './SPDocuments.scss'
 
 const SPDocuments = ({ data }) => {
   const { category } = useParams()
-  const [isImage, setIsImage] = useState(true)
+  const [isImage, setIsImage] = useState(false)
+  const [documentPath, setDocumentPath] = useState('')
 
-  // eslint-disable-next-line react/no-unstable-nested-components
-  const DocImage = () => {
+  useEffect(() => {
     if (category === 'registration') {
       setIsImage(true)
-      return <img src={documentRegistration} alt="decorative" />
-    }
-    if (category === 'certification') {
+      setDocumentPath(documentRegistration)
+    } else if (category === 'certification') {
       setIsImage(true)
-      return <img src={documentCertificate} alt="decorative" />
-    }
-    if (category === 'statuary-compliance') {
+      setDocumentPath(documentCertificate)
+    } else if (category === 'statuary-compliance') {
       setIsImage(true)
-      return <img src={documentCompliance} alt="decorative" />
+      documentPath(documentCompliance)
     }
     setIsImage(false)
-    return null
-  }
+  }, [])
+
   return (
     <div
       className={`row 
@@ -63,7 +61,7 @@ const SPDocuments = ({ data }) => {
                 data-aos="fade-top"
                 data-aos-delay="0"
               >
-                <DocImage />
+                <img src={documentPath} alt="decorative" />
               </div>
               <div
                 className="glass"
