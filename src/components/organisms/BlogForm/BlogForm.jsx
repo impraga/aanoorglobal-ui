@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
 import './BlogForm.scss'
@@ -8,26 +8,67 @@ import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
 // import Chips, { Chip } from '../src'
 
 const BlogForm = () => {
+  const [displayNotification, setDisplayNotification] = useState({})
   const {
     register,
     formState: { errors },
     handleSubmit,
-    setValue
-    // reset
+    setValue,
+    reset
   } = useForm()
 
-  const onSubmit = (data) => {
-    console.log(data)
+  const onSubmit = (data, e) => {
+    const saveorPublish = e.nativeEvent.submitter.name
+    const url = 'http://localhost/Aanoor/aanoor-server/api/createPost'
+    fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: 'post',
+      body: JSON.stringify({
+        ...data,
+        image: data.image[0].name,
+        published: saveorPublish === 'save' ? 1 : 2
+      })
+    })
+      .then((d) => d.json())
+      .then((res) => {
+        if (res.status === '200' && res.message === 'Blog Added') {
+          reset()
+          showBlogNotification(
+            'success',
+            `Blog Added and ${saveorPublish === 'save' ? 'saved' : 'published'}`
+          )
+        } else {
+          showBlogNotification('danger', 'Error while adding blog')
+        }
+      })
+  }
+
+  const showBlogNotification = (type, msg) => {
+    setDisplayNotification({
+      type,
+      msg
+    })
+    setTimeout(() => {
+      setDisplayNotification({})
+    }, 5000)
   }
 
   const RTEChange = (value) => {
     if (value) {
-      setValue('rte', value, { shouldValidate: true })
+      setValue('content', value, { shouldValidate: true })
     }
   }
 
   return (
     <div className="container bg-white bs br-1 p-4">
+      {displayNotification && Object.keys(displayNotification).length > 0 && (
+        <div className={`alert alert-${displayNotification.type}`} role="alert">
+          {displayNotification.msg}
+        </div>
+      )}
       <div className="ag-form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
@@ -64,7 +105,7 @@ const BlogForm = () => {
           <div className="row">
             <div className="col-md-7">
               <input
-                {...register('video', { required: true })}
+                {...register('video', { required: false })}
                 className={`w-100 ${
                   errors.video?.type === 'required' ? 'error' : ' '
                 }`}
@@ -94,18 +135,25 @@ const BlogForm = () => {
             </div>
           </div>
           <div>
-            <div className={errors.rte?.type === 'required' ? 'error' : ' '}>
+            <div
+              className={errors.content?.type === 'required' ? 'error' : ' '}
+            >
               <RichTextEditor editorValue={RTEChange} />
             </div>
             <input
-              {...register('rte', { required: true })}
+              {...register('content', { required: true })}
               type="text"
               hidden
             />
+            {/* <input type="hidden" {...register('published')} value={published} /> */}
           </div>
           <div>
-            <button type="submit">Save</button>
-            <button type="submit">Save & Publish</button>
+            <button name="save" type="submit">
+              Save
+            </button>
+            <button name="publish" type="submit">
+              Save & Publish
+            </button>
           </div>
         </form>
       </div>

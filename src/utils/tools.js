@@ -12,3 +12,7 @@ export const getSessionStorage = (session) =>
 export const setSessionStorage = (key, value) => {
   window.sessionStorage.setItem(key, value)
 }
+
+export const removeSession = (key) => {
+  window.sessionStorage.removeItem(key)
+}

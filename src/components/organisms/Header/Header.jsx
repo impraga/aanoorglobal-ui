@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button'
 
@@ -9,10 +9,21 @@ import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 import './Header.scss'
+import { getSessionStorage, removeSession } from '../../../utils/tools'
+import { sessionKeys } from '../../../constants'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(-1)
+  const isUserLoggedIn =
+    getSessionStorage(sessionKeys.userLoggedStatus) === 'true'
+
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    removeSession(sessionKeys.userLoggedStatus)
+    navigate('/')
+  }
 
   const menuWithLink = (item) => (
     <li key={item.id}>
@@ -134,6 +145,17 @@ const Header = () => {
                   Blog
                 </Button>
               </li>
+              {isUserLoggedIn && (
+                <li key="logout">
+                  <Button
+                    className="logout"
+                    variant="primary"
+                    onClick={() => handleClick()}
+                  >
+                    Logout
+                  </Button>
+                </li>
+              )}
             </ul>
           </nav>
         </header>

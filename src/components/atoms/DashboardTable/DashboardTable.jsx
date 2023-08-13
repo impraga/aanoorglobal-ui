@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Table from 'react-bootstrap/Table'
 // import PropTypes from 'prop-types'
 
@@ -21,6 +21,14 @@ const DashboardTable = () => {
   // After API call
   // displayColumns = [...Object.keys(blogList[0]), 'Edit', 'View']
   // displayColumns.shift()
+
+  useEffect(() => {
+    fetch('http://localhost/aanoor/aanoor-server/api/getContact')
+      .then((res) => res.json())
+      .then((r) => {
+        console.log(r)
+      })
+  }, [])
 
   return (
     <div className="mt-4 bg-white bs br-1 overflow-hidden">

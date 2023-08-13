@@ -69,3 +69,7 @@ export const serviceTemplates = {
 
 export const apiUrl = 'http://localhost:8080/assets/json'
 // export const apiUrl = 'http://project.praga.co.in/api/'
+
+export const sessionKeys = {
+  userLoggedStatus: 'isUserLoggedIn'
+}
