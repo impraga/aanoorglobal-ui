@@ -5,12 +5,18 @@ import './RichTextEditor.scss'
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
 
-const RichTextEditor = ({ editorValue }) => {
+const RichTextEditor = ({ editorValue, reset }) => {
   const [value, setValue] = useState('')
 
   useEffect(() => {
     editorValue(value)
   }, [value])
+
+  useEffect(() => {
+    if (reset) {
+      setValue('')
+    }
+  })
 
   const toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'], // toggled buttons
@@ -76,11 +82,13 @@ const RichTextEditor = ({ editorValue }) => {
 }
 
 RichTextEditor.propTypes = {
-  editorValue: PropTypes.func
+  editorValue: PropTypes.func,
+  reset: PropTypes.bool
 }
 
 RichTextEditor.defaultProps = {
-  editorValue: () => {}
+  editorValue: () => {},
+  reset: false
 }
 
 export default RichTextEditor

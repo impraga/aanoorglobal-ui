@@ -42,6 +42,7 @@ const LoginPage = () => {
       body: JSON.stringify(data)
     }).then((res) => {
       if (res.status === '200' && res.message === 'USER ADDED') {
+        setSessionStorage(sessionKeys.authorization, res.accessToken)
         setUserAddedNotification(true)
         console.log('contact added')
         // reset()

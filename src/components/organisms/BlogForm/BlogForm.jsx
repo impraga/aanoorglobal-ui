@@ -1,14 +1,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import axios from 'axios'
 
 import './BlogForm.scss'
 import RichTextEditor from '../../molecules/RichTextEditor/RichTextEditor'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
-// import Chips, { Chip } from '../src'
 
 const BlogForm = () => {
   const [displayNotification, setDisplayNotification] = useState({})
+  const [resetRTE, setResetRTE] = useState(false)
   const {
     register,
     formState: { errors },
@@ -19,23 +20,25 @@ const BlogForm = () => {
 
   const onSubmit = (data, e) => {
     const saveorPublish = e.nativeEvent.submitter.name
+    const formData = new FormData()
+    formData.append('file', data.thumbImg[0])
+    const dd = {
+      ...data,
+      published: saveorPublish === 'save' ? 1 : 2
+    }
+    formData.append('postData', JSON.stringify(dd))
+
     const url = 'http://localhost/Aanoor/aanoor-server/api/createPost'
-    fetch(url, {
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: 'post',
-      body: JSON.stringify({
-        ...data,
-        image: data.image[0].name,
-        published: saveorPublish === 'save' ? 1 : 2
+    axios
+      .post(url, formData, {
+        headers: {
+          'content-type': 'multipart/form-data'
+        }
       })
-    })
-      .then((d) => d.json())
       .then((res) => {
-        if (res.status === '200' && res.message === 'Blog Added') {
+        if (res.data.status === '200' && res.data.message === 'Blog Added') {
           reset()
+          setResetRTE(true)
           showBlogNotification(
             'success',
             `Blog Added and ${saveorPublish === 'save' ? 'saved' : 'published'}`
@@ -88,8 +91,8 @@ const BlogForm = () => {
           </div>
           <div>
             <input
-              {...register('image', { required: true })}
-              className={errors.image?.type === 'required' ? 'error' : ' '}
+              {...register('thumbImg', { required: true })}
+              className={errors.thumbImg?.type === 'required' ? 'error' : ' '}
               type="file"
               placeholder="Thumbnail Image"
             />
@@ -138,7 +141,7 @@ const BlogForm = () => {
             <div
               className={errors.content?.type === 'required' ? 'error' : ' '}
             >
-              <RichTextEditor editorValue={RTEChange} />
+              <RichTextEditor editorValue={RTEChange} reset={resetRTE} />
             </div>
             <input
               {...register('content', { required: true })}
