@@ -77,13 +77,13 @@ const ServiceDropDown = ({ errors, form }) => {
 
 ServiceDropDown.propTypes = {
   errors: PropTypes.shape(),
-  form: PropTypes.func
+  form: PropTypes.shape()
   // updateValue: PropTypes.func
 }
 
 ServiceDropDown.defaultProps = {
   errors: { services: {} },
-  form: () => {}
+  form: {}
   // updateValue: () => {}
 }
 

@@ -25,6 +25,7 @@ import ProtectedComponent from './components/molecules/ProtectedComponent/Protec
 import './index.scss'
 import BlogView from './pages/BlogView/BlogView'
 import ServicePage from './pages/ServicePage/ServicePage'
+import Blog from './pages/Blog/Blog'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -80,19 +81,25 @@ const router = createBrowserRouter([
         path: 'blog',
         element: (
           <TransitionComponent>
+            <Blog />
+          </TransitionComponent>
+        )
+      },
+      {
+        path: 'blog/:postUrl',
+        element: (
+          <TransitionComponent>
             <BlogView />
           </TransitionComponent>
-        ),
-        children: [
-          {
-            path: ':title',
-            element: (
-              <TransitionComponent>
-                <BlogView />
-              </TransitionComponent>
-            )
-          }
-        ]
+        )
+      },
+      {
+        path: 'edit-blog/:postUrl',
+        element: (
+          <TransitionComponent>
+            <NewBlog />
+          </TransitionComponent>
+        )
       },
       {
         path: 'dashboard',

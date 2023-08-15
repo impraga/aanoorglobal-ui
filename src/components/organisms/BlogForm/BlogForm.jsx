@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
@@ -10,9 +11,10 @@ import { apiUri, sessionKeys } from '../../../constants'
 
 import './BlogForm.scss'
 
-const BlogForm = () => {
+const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
   const [resetRTE, setResetRTE] = useState(false)
+  const [updateRTE, updateRTEVal] = useState('')
   const form = useForm()
   const {
     register,
@@ -22,17 +24,34 @@ const BlogForm = () => {
     reset
   } = form
 
+  useEffect(() => {
+    if (edit) {
+      setValue('title', blogDetails.title)
+      setValue('url', blogDetails.url)
+      setValue('thumbImg', blogDetails.image_name)
+      setValue('tags', blogDetails.tags)
+      setValue('services', blogDetails.service)
+      setValue('video', blogDetails.youtube)
+      setValue('date', blogDetails.date)
+      setValue('readTime', blogDetails.read_time)
+      updateRTEVal(blogDetails.content)
+    }
+  }, [blogDetails])
+
   const onSubmit = (data, e) => {
     const saveorPublish = e.nativeEvent.submitter.name
     const formData = new FormData()
     formData.append('file', data.thumbImg[0])
-    const dd = {
+    let dd = {
       ...data,
       status: saveorPublish === 'save' ? 1 : 2
     }
+    if (edit) {
+      dd = { ...dd, id: blogDetails.id }
+    }
     formData.append('postData', JSON.stringify(dd))
 
-    const url = `${apiUri}/createPost`
+    const url = edit ? `${apiUri}/updatePost` : `${apiUri}/createPost`
     axios
       .post(url, formData, {
         headers: {
@@ -162,7 +181,11 @@ const BlogForm = () => {
             <div
               className={errors.content?.type === 'required' ? 'error' : ' '}
             >
-              <RichTextEditor editorValue={RTEChange} reset={resetRTE} />
+              <RichTextEditor
+                editorValue={RTEChange}
+                reset={resetRTE}
+                updateValue={updateRTE}
+              />
             </div>
             <input
               {...register('content', { required: true })}
@@ -184,4 +207,12 @@ const BlogForm = () => {
   )
 }
 
-export default BlogForm
+BlogForm.propTypes = {
+  edit: PropTypes.bool.isRequired,
+  blogDetails: PropTypes.shape()
+}
+BlogForm.defaultProps = {
+  blogDetails: {}
+}
+
+export default React.memo(BlogForm)

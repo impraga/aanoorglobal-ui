@@ -2,13 +2,17 @@ import React from 'react'
 import Table from 'react-bootstrap/Table'
 import PropTypes from 'prop-types'
 
+import { Button } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
+
 import './DashboardTable.scss'
 
 const DashboardTable = ({ blogList }) => {
+  const navigate = useNavigate()
   const displayColumns = ['title', 'service', 'date', 'status', 'Edit', 'View']
-  const tableCellData = (cellValue, col) => {
+  const tableCellData = (cellValue, col, id) => {
     if (col === 'Edit') {
-      return <>P</>
+      return <Button onClick={() => navigate(`/edit-blog/${id}`)}>Edit</Button>
     }
     if (col === 'View') {
       return <>V</>
@@ -47,7 +51,7 @@ const DashboardTable = ({ blogList }) => {
               <tr key={(row.id, rowIndex)}>
                 {displayColumns.map((col, colIndex) => (
                   <td key={(row[col], colIndex)} className={col + row[col]}>
-                    {tableCellData(row[col], col)}
+                    {tableCellData(row[col], col, row.id)}
                   </td>
                 ))}
               </tr>
