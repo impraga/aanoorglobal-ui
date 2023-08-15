@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
+import { apiUri } from '../../../constants'
 
 import './ContactForm.scss'
 
@@ -26,7 +27,7 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     setOnSubmitForm('onclick')
 
-    const url = 'http://localhost/Aanoor/aanoor-server/api/updateContact'
+    const url = `${apiUri}/updateContact`
     fetch(url, {
       headers: {
         Accept: 'application/json',

@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Table from 'react-bootstrap/Table'
-// import PropTypes from 'prop-types'
-
-import blogList from '../../../../public/assets/json/blogList.json'
+import PropTypes from 'prop-types'
 
 import './DashboardTable.scss'
 
-const DashboardTable = () => {
-  const displayColumns = ['title', 'category', 'date', 'status', 'Edit', 'View']
+const DashboardTable = ({ blogList }) => {
+  const displayColumns = ['title', 'service', 'date', 'status', 'Edit', 'View']
   const tableCellData = (cellValue, col) => {
     if (col === 'Edit') {
       return <>P</>
@@ -15,20 +13,15 @@ const DashboardTable = () => {
     if (col === 'View') {
       return <>V</>
     }
+    if (col === 'status') {
+      let res = ''
+      console.log(cellValue)
+      if (cellValue === '1') res = 'Draft'
+      if (cellValue === '2') res = 'Published'
+      return res
+    }
     return cellValue
   }
-
-  // After API call
-  // displayColumns = [...Object.keys(blogList[0]), 'Edit', 'View']
-  // displayColumns.shift()
-
-  useEffect(() => {
-    fetch('http://localhost/aanoor/aanoor-server/api/getContact')
-      .then((res) => res.json())
-      .then((r) => {
-        console.log(r)
-      })
-  }, [])
 
   return (
     <div className="mt-4 bg-white bs br-1 overflow-hidden">
@@ -36,7 +29,7 @@ const DashboardTable = () => {
         <div>
           <h2>Blogs</h2>
         </div>
-        <div>Searc</div>
+        <div>Search</div>
       </div>
       <div className="">
         <Table striped hover responsive>
@@ -67,11 +60,11 @@ const DashboardTable = () => {
 }
 
 DashboardTable.propTypes = {
-  // details: PropTypes.shape()
+  blogList: PropTypes.arrayOf(PropTypes.shape())
 }
 
 DashboardTable.defaultProps = {
-  details: {}
+  blogList: [{}]
 }
 
 export default DashboardTable

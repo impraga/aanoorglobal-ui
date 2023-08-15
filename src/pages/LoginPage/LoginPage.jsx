@@ -1,11 +1,13 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import axios from 'axios'
 
-import './LoginPage.scss'
 import { Navigate } from 'react-router'
 import { getSessionStorage, setSessionStorage } from '../../utils/tools'
-import { sessionKeys } from '../../constants'
+import { apiUri, sessionKeys } from '../../constants'
+
+import './LoginPage.scss'
 
 const LoginPage = () => {
   const [onSubmitForm, setOnSubmitForm] = useState('empty')
@@ -32,48 +34,44 @@ const LoginPage = () => {
     setOnSubmitForm('onclick')
     console.log(data)
 
-    const url = 'http://localhost/Aanoor/aanoor-server/api/createUser'
-    fetch(url, {
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: 'post',
-      body: JSON.stringify(data)
-    }).then((res) => {
-      if (res.status === '200' && res.message === 'USER ADDED') {
-        setSessionStorage(sessionKeys.authorization, res.accessToken)
-        setUserAddedNotification(true)
-        console.log('contact added')
-        // reset()
-        setOnSubmitForm('Validated')
-      } else {
-        console.log('error in adding user')
-      }
-    })
+    const url = `${apiUri}/createUser`
+    axios
+      .post(url, JSON.stringify(data), {
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      })
+      .then((res) => {
+        if (res.data.status === '200' && res.data.message === 'USER ADDED') {
+          setUserAddedNotification(true)
+          console.log('contact added')
+          // reset()
+          setOnSubmitForm('Validated')
+        } else {
+          console.log('error in adding user')
+        }
+      })
   }
 
   const onLoginSubmit = (data) => {
     console.log(data)
 
-    const url = 'http://localhost/Aanoor/aanoor-server/api/loginUser'
-    fetch(url, {
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: 'post',
-      body: JSON.stringify(data)
-    })
-      .then((d) => d.json())
+    const url = `${apiUri}/loginUser`
+    axios
+      .post(url, JSON.stringify(data))
       .then((res) => {
-        if (res.status === '200' && res.message === 'VERIFIED') {
+        if (res.data.status === '200' && res.data.message === 'VERIFIED') {
           setSessionStorage(sessionKeys.userLoggedStatus, 'true')
+          setSessionStorage(sessionKeys.authorization, res.data.accessToken)
           setLoginVerified(true)
           console.log('login Verified')
         } else {
           console.log('Login Verification failed')
         }
+      })
+      .catch((err) => {
+        console.log('Login Verification failed', err)
       })
   }
 

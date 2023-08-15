@@ -41,11 +41,11 @@
           --bs-table-color-type: $ag-blue !important;
           color: $ag-blue !important;
 
-          &.statusDraft {
+          &.status1 {
             font-weight: 700;
             color: $ag-orange !important;
           }
-          &.statusPublished {
+          &.status2 {
             font-weight: 700;
             color: $ag-green !important;
           }

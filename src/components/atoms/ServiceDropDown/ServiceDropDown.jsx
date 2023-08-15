@@ -1,14 +1,13 @@
-import React, { useMemo, useState, useEffect } from 'react'
+import React, { useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
 import { services } from '../../../constants'
 import category from '../../../../public/assets/json/service.json'
 
 import './ServiceDropDown.scss'
 
-const ServiceDropDown = ({ errors, register, updateValue }) => {
+const ServiceDropDown = ({ errors, form }) => {
   const [selectActive, setSelectActive] = useState(false)
   const [selectedService, setSelectedService] = useState(null)
-  const currentUrl = document.location.pathname
 
   const serviceCategory = useMemo(() => {
     const flatCategory = [...services]
@@ -17,22 +16,21 @@ const ServiceDropDown = ({ errors, register, updateValue }) => {
         flatCategory.push({ title: service.title, url: service.url })
       })
     })
-    setSelectedService(
-      flatCategory.find((d) => currentUrl === d.url)?.title || services[0].title
-    )
+    setSelectedService(services[0].title)
 
     return flatCategory
   }, [])
 
   // To Update Service value after Page renders
-  useEffect(() => {
-    updateValue(selectedService)
-  }, [selectedService])
+  // useEffect(() => {
+  //   updateValue(selectedService)
+  // }, [selectedService])
 
   const changeService = (service) => {
     setSelectedService(service)
     setSelectActive(false)
   }
+  // console.log(selectedService)
 
   return (
     <div className={`select ${selectActive ? ' active' : ''}`}>
@@ -45,7 +43,7 @@ const ServiceDropDown = ({ errors, register, updateValue }) => {
         }}
         value={selectedService}
         // eslint-disable-next-line react/jsx-props-no-spreading
-        {...register('services', {
+        {...form.register('services', {
           required: 'Select atleast one services'
         })}
         aria-invalid={errors.services ? 'true' : 'false'}
@@ -79,14 +77,14 @@ const ServiceDropDown = ({ errors, register, updateValue }) => {
 
 ServiceDropDown.propTypes = {
   errors: PropTypes.shape(),
-  register: PropTypes.func,
-  updateValue: PropTypes.func
+  form: PropTypes.func
+  // updateValue: PropTypes.func
 }
 
 ServiceDropDown.defaultProps = {
   errors: { services: {} },
-  register: () => {},
-  updateValue: () => {}
+  form: () => {}
+  // updateValue: () => {}
 }
 
 export default React.memo(ServiceDropDown)

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 // import serviceList from '../../../public/assets/json/serviceDetails.json'
 import ServiceHeroBanner from '../../components/molecules/ServicePageHeroBanner/ServiceHeroBanner'
@@ -11,8 +10,26 @@ import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 import './ServicePage.scss'
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 
-const ServicePage = ({ props }) => {
-  const { serviceDetails, metaDetails, category } = props
+const ServicePage = () => {
+  const path = window.location.pathname.split('/')
+  const category = path[2]
+  const serviceName = path[3]
+
+  // eslint-disable-next-line import/no-dynamic-require, global-require
+  const serviceList = require(`../../../public/assets/json/service-${category}.json`)
+
+  const serviceDetails = serviceList.filter(
+    (service) => service.service === serviceName
+  )[0]
+
+  const metaDetails = {
+    title: `Services | ${serviceDetails?.title} | Aanoor Global`,
+    canonicalUrl: `www.aanoorglobal.com/services/${category}/${serviceName}`,
+    metaDesc:
+      'Aanoor Global provide multiple services like GST, Income tax filing',
+    metaKeywords: 'gst filing, income tax filing'
+  }
+
   // eslint-disable-next-line import/no-dynamic-require, global-require
   const sidePanelTemplate = ['intellectual-property', 'startup-center']
 
@@ -79,13 +96,6 @@ const ServicePage = ({ props }) => {
   ) : (
     <NotFound />
   )
-}
-
-ServicePage.propTypes = {
-  props: PropTypes.shape().isRequired,
-  serviceDetails: PropTypes.shape().isRequired,
-  metaDetails: PropTypes.shape().isRequired,
-  category: PropTypes.string.isRequired
 }
 
 export default React.memo(ServicePage)

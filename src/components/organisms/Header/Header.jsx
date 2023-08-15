@@ -22,7 +22,8 @@ const Header = () => {
 
   const handleClick = () => {
     removeSession(sessionKeys.userLoggedStatus)
-    navigate('/')
+    removeSession(sessionKeys.authorization)
+    navigate('/login')
   }
 
   const menuWithLink = (item) => (
@@ -141,7 +142,11 @@ const Header = () => {
               {menuList?.serviceData.map((item) => menuWithLink(item))}
 
               <li key="blog">
-                <Button className="blog-btn" variant="success">
+                <Button
+                  className="blog-btn"
+                  variant="success"
+                  onClick={() => navigate('/dashboard')}
+                >
                   Blog
                 </Button>
               </li>

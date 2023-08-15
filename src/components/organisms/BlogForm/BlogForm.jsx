@@ -3,20 +3,24 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
-import './BlogForm.scss'
 import RichTextEditor from '../../molecules/RichTextEditor/RichTextEditor'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
+import { getSessionStorage } from '../../../utils/tools'
+import { apiUri, sessionKeys } from '../../../constants'
+
+import './BlogForm.scss'
 
 const BlogForm = () => {
   const [displayNotification, setDisplayNotification] = useState({})
   const [resetRTE, setResetRTE] = useState(false)
+  const form = useForm()
   const {
     register,
     formState: { errors },
     handleSubmit,
     setValue,
     reset
-  } = useForm()
+  } = form
 
   const onSubmit = (data, e) => {
     const saveorPublish = e.nativeEvent.submitter.name
@@ -24,15 +28,16 @@ const BlogForm = () => {
     formData.append('file', data.thumbImg[0])
     const dd = {
       ...data,
-      published: saveorPublish === 'save' ? 1 : 2
+      status: saveorPublish === 'save' ? 1 : 2
     }
     formData.append('postData', JSON.stringify(dd))
 
-    const url = 'http://localhost/Aanoor/aanoor-server/api/createPost'
+    const url = `${apiUri}/createPost`
     axios
       .post(url, formData, {
         headers: {
-          'content-type': 'multipart/form-data'
+          'content-type': 'multipart/form-data',
+          Authorization: getSessionStorage(sessionKeys.authorization)
         }
       })
       .then((res) => {
@@ -46,6 +51,9 @@ const BlogForm = () => {
         } else {
           showBlogNotification('danger', 'Error while adding blog')
         }
+      })
+      .catch(() => {
+        showBlogNotification('danger', 'Error while adding blog')
       })
   }
 
@@ -75,7 +83,7 @@ const BlogForm = () => {
       <div className="ag-form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-12">
               <input
                 {...register('title', { required: true })}
                 className={`w-100 ${
@@ -85,25 +93,38 @@ const BlogForm = () => {
                 placeholder="Title"
               />
             </div>
-            <div className="col-md-4">
-              <ServiceDropDown errors={errors} register={register} />
+          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <input
+                {...register('url', { required: true })}
+                className={errors.url?.type === 'required' ? 'error' : ' '}
+                type="text"
+                placeholder="Url for the post"
+              />
+            </div>
+            <div className="col-md-6">
+              <input
+                {...register('thumbImg', { required: true })}
+                className={errors.thumbImg?.type === 'required' ? 'error' : ' '}
+                type="file"
+                placeholder="Thumbnail Image"
+              />
             </div>
           </div>
-          <div>
-            <input
-              {...register('thumbImg', { required: true })}
-              className={errors.thumbImg?.type === 'required' ? 'error' : ' '}
-              type="file"
-              placeholder="Thumbnail Image"
-            />
-          </div>
-          <div>
-            <input
-              {...register('tags', { required: true })}
-              className={errors.tags?.type === 'required' ? 'error' : ' '}
-              type="text"
-              placeholder="Add tags in semicolon separated."
-            />
+          <div className="row">
+            <div className="col-md-6">
+              <input
+                {...register('tags', { required: true })}
+                className={errors.tags?.type === 'required' ? 'error' : ' '}
+                type="text"
+                placeholder="Add tags in semicolon separated."
+              />
+            </div>
+
+            <div className="col-md-6">
+              <ServiceDropDown errors={errors} form={form} />
+            </div>
           </div>
           <div className="row">
             <div className="col-md-7">
@@ -148,7 +169,6 @@ const BlogForm = () => {
               type="text"
               hidden
             />
-            {/* <input type="hidden" {...register('published')} value={published} /> */}
           </div>
           <div>
             <button name="save" type="submit">
