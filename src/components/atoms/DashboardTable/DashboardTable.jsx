@@ -10,16 +10,25 @@ import './DashboardTable.scss'
 const DashboardTable = ({ blogList }) => {
   const navigate = useNavigate()
   const displayColumns = ['title', 'service', 'date', 'status', 'Edit', 'View']
-  const tableCellData = (cellValue, col, id) => {
+  const tableCellData = (cellValue, col, row) => {
     if (col === 'Edit') {
-      return <Button onClick={() => navigate(`/edit-blog/${id}`)}>Edit</Button>
+      return (
+        <Button onClick={() => navigate(`/edit-blog/${row.id}`)}>Edit</Button>
+      )
     }
     if (col === 'View') {
-      return <>V</>
+      return (
+        <Button
+          onClick={() =>
+            window.open(`/blog/${row.url}`, '', 'noopener, noreferrer')
+          }
+        >
+          View
+        </Button>
+      )
     }
     if (col === 'status') {
       let res = ''
-      console.log(cellValue)
       if (cellValue === '1') res = 'Draft'
       if (cellValue === '2') res = 'Published'
       return res
@@ -51,7 +60,7 @@ const DashboardTable = ({ blogList }) => {
               <tr key={(row.id, rowIndex)}>
                 {displayColumns.map((col, colIndex) => (
                   <td key={(row[col], colIndex)} className={col + row[col]}>
-                    {tableCellData(row[col], col, row.id)}
+                    {tableCellData(row[col], col, row)}
                   </td>
                 ))}
               </tr>

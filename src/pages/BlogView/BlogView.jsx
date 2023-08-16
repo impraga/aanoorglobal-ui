@@ -26,7 +26,7 @@ const BlogView = () => {
 
   useEffect(() => {
     axios.get(`${apiUri}/moreBlogInfo?url=${postUrl}`).then((res) => {
-      setBlogList(res.data)
+      setBlogList(res.data.response[0])
     })
   }, [])
 
