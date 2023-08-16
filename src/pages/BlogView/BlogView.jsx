@@ -59,7 +59,7 @@ const BlogView = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container blog-content">
           <div className="herobanner-cont br-1 overflow-hidden">
             {blogList.youTubeUrl && (
               <iframe

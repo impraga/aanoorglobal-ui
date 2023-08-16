@@ -25,9 +25,10 @@ const SPDocuments = ({ data }) => {
       setDocumentPath(documentCertificate)
     } else if (category === 'statuary-compliance') {
       setIsImage(true)
-      documentPath(documentCompliance)
+      setDocumentPath(documentCompliance)
+    } else {
+      setIsImage(false)
     }
-    setIsImage(false)
   }, [])
 
   return (

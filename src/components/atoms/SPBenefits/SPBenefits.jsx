@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useParams } from 'react-router'
 import './SPBenefits.scss'
 
 import registrationBenefits from '../../../../public/assets/icons/registration-benefits.svg'
+import factsBenefits from '../../../../public/assets/icons/facts.svg'
+import criteriaBenefits from '../../../../public/assets/icons/criteria.svg'
+import importantBenefits from '../../../../public/assets/icons/important.svg'
 
 const SPBenefits = ({ data }) => {
   const { category } = useParams()
+  const [imgPath, setImgPath] = useState('')
+
+  useEffect(() => {
+    if (data?.class === 'facts') {
+      setImgPath(factsBenefits)
+    } else if (data?.class === 'criteria') {
+      setImgPath(criteriaBenefits)
+    } else if (data?.class === 'important') {
+      setImgPath(importantBenefits)
+    } else {
+      setImgPath(registrationBenefits)
+    }
+  }, [])
 
   return (
     <div className="pb-0 mb-4 benefits-cont container" id={data.id}>
@@ -42,10 +58,10 @@ const SPBenefits = ({ data }) => {
             }  ${data.value.length > 1 ? 'order-md-first' : ''}`}
           >
             <div className="registration-img-cont">
-              <img src={registrationBenefits} alt="decorative" />
+              <img src={imgPath} alt="decorative" />
             </div>
             <div className="registration-img-bg" />
-            <div className="glass">Benefits</div>
+            <div className="glass" />
           </div>
         )}
       </div>

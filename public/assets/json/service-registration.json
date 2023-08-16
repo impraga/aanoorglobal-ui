@@ -51,7 +51,7 @@
         "header": "Facts",
         "desc": "",
         "type": "SPBenefits",
-        "class": "facts",
+        "class": "important",
         "value": [
           {
             "title": "",
@@ -69,6 +69,7 @@
         "id": "benefits Multi",
         "header": "Benefits with multiple values",
         "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "class": "criteria",
         "type": "SPBenefits",
         "value": [
           {

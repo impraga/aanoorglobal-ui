@@ -14,7 +14,6 @@ const ServiceWrapper = () => {
   const serviceDetails = serviceList.filter(
     (service) => service.service === serviceName
   )[0]
-  console.log(serviceDetails)
 
   const metaDetails = {
     title: `Services | ${serviceDetails?.title} | Aanoor Global`,
