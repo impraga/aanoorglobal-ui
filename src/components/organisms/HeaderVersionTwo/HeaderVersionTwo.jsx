@@ -7,12 +7,12 @@ import logo from '../../../../public/assets/icons/aanoor-logo.svg'
 import menuList from '../../../../public/assets/json/menuList.json'
 import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
-
-import './Header.scss'
 import { getSessionStorage, removeSession } from '../../../utils/tools'
 import { sessionKeys } from '../../../constants'
 
-const Header = () => {
+import './HeaderVersionTwo.scss'
+
+const HeaderVersionTwo = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(-1)
   const isUserLoggedIn =
@@ -27,9 +27,25 @@ const Header = () => {
   }
 
   const menuWithLink = (item) => (
-    <li key={item.id}>
-      {item.pageUrl && <Link to={item.pageUrl}>{item.title}</Link>}
-      {item.children && menuWithChildren(item.children, item.title, null, true)}
+    <li key={item.id} className={item.className}>
+      {item.pageUrl ? (
+        <Link to={item.pageUrl}>{item.title}</Link>
+      ) : (
+        <span>
+          {item.title}
+          {/* <img
+            src="/assets/images/chevron-right.svg"
+            alt=""
+            className="desktop-chevron d-none d-lg-inline"
+          /> */}
+        </span>
+      )}
+      {item.children && (
+        <div className={`div-${item.className}`}>
+          <ul>{item.children.map((d) => menuWithLink(d))}</ul>
+          {item.className === 'first-level' && showExpertsButton()}
+        </div>
+      )}
     </li>
   )
 
@@ -139,9 +155,9 @@ const Header = () => {
           </div>
           <nav className={isMenuOpen ? 'open-menu' : 'close-menu'}>
             <ul>
-              {menuList?.data.map((item) => menuWithLink(item))}
+              {menuList?.serviceData.map((item) => menuWithLink(item))}
 
-              <li key="blog">
+              <li key="blog" className="first-level">
                 <Button
                   className="blog-btn"
                   variant="success"
@@ -151,7 +167,7 @@ const Header = () => {
                 </Button>
               </li>
               {isUserLoggedIn && (
-                <li key="logout">
+                <li key="logout" className="first-level">
                   <Button
                     className="logout"
                     variant="primary"
@@ -169,4 +185,4 @@ const Header = () => {
   )
 }
 
-export default React.memo(Header)
+export default React.memo(HeaderVersionTwo)
