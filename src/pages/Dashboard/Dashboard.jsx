@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
-import DashboardMetrics from '../../components/atoms/DashboardMetrics/DashboardMetrics'
+// import DashboardMetrics from '../../components/atoms/DashboardMetrics/DashboardMetrics'
 import DashboardTable from '../../components/atoms/DashboardTable/DashboardTable'
 import { getSessionStorage } from '../../utils/tools'
 import { apiUri, sessionKeys } from '../../constants'
@@ -23,6 +23,16 @@ const Dashboard = () => {
   const [blogStatus, setBlogStatus] = useState({ active: 0, inactive: 0 })
 
   useEffect(() => {
+    getBlog()
+  }, [])
+
+  useEffect(() => {
+    const activeBlogCount = blogList?.filter((d) => d.status === '2').length
+    const inActiveBlogCount = blogList?.filter((d) => d.status === '1').length
+    setBlogStatus({ active: activeBlogCount, inactive: inActiveBlogCount })
+  }, [blogList])
+
+  const getBlog = () => {
     axios
       .get(`${apiUri}/getBlogLists`, {
         headers: {
@@ -38,13 +48,7 @@ const Dashboard = () => {
       .catch(() => {
         console.log('Error in receiving Blog details')
       })
-  }, [])
-
-  useEffect(() => {
-    const activeBlogCount = blogList?.filter((d) => d.status === '2').length
-    const inActiveBlogCount = blogList?.filter((d) => d.status === '1').length
-    setBlogStatus({ active: activeBlogCount, inactive: inActiveBlogCount })
-  }, [blogList])
+  }
 
   return (
     <>
@@ -76,9 +80,11 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <DashboardMetrics />
+          {/* Part of enhancemnet */}
+          {/* <DashboardMetrics /> */}
+          {/* Part of enhancemnet */}
           <div className="overlay-text bebas">Dashboard</div>
-          <DashboardTable blogList={blogList} />
+          <DashboardTable blogList={blogList} updateBlog={() => getBlog()} />
         </div>
         <div className="bg-drop bg-db" />
       </div>

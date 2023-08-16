@@ -13,7 +13,6 @@ import './BlogForm.scss'
 
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
-  const [resetRTE, setResetRTE] = useState(false)
   const [updateRTE, updateRTEVal] = useState('')
   const form = useForm()
   const {
@@ -60,13 +59,20 @@ const BlogForm = ({ edit, blogDetails }) => {
         }
       })
       .then((res) => {
-        if (res.data.status === '200' && res.data.message === 'Blog Added') {
-          reset()
-          setResetRTE(true)
-          showBlogNotification(
-            'success',
-            `Blog Added and ${saveorPublish === 'save' ? 'saved' : 'published'}`
-          )
+        if (res.data.status === '200') {
+          if (
+            res.data.message === 'Blog Updated' ||
+            res.data.message === 'Blog Added'
+          ) {
+            reset()
+            updateRTEVal('')
+            showBlogNotification(
+              'success',
+              `Blog Added and ${
+                saveorPublish === 'save' ? 'saved' : 'published'
+              }`
+            )
+          }
         } else {
           showBlogNotification('danger', 'Error while adding blog')
         }
@@ -181,11 +187,7 @@ const BlogForm = ({ edit, blogDetails }) => {
             <div
               className={errors.content?.type === 'required' ? 'error' : ' '}
             >
-              <RichTextEditor
-                editorValue={RTEChange}
-                reset={resetRTE}
-                updateValue={updateRTE}
-              />
+              <RichTextEditor editorValue={RTEChange} updateValue={updateRTE} />
             </div>
             <input
               {...register('content', { required: true })}

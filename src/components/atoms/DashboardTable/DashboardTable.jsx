@@ -6,27 +6,32 @@ import { Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 import './DashboardTable.scss'
+import axios from 'axios'
+import { apiUri, sessionKeys } from '../../../constants'
+import { getSessionStorage } from '../../../utils/tools'
 
-const DashboardTable = ({ blogList }) => {
+const DashboardTable = ({ blogList, updateBlog }) => {
   const navigate = useNavigate()
-  const displayColumns = ['title', 'service', 'date', 'status', 'Edit', 'View']
+  const displayColumns = ['title', 'service', 'date', 'status', 'Options']
   const tableCellData = (cellValue, col, row) => {
-    if (col === 'Edit') {
+    if (col === 'Options') {
       return (
-        <Button onClick={() => navigate(`/edit-blog/${row.id}`)}>Edit</Button>
+        <>
+          <Button onClick={() => navigate(`/edit-blog/${row.id}`)}>Edit</Button>{' '}
+          &nbsp;
+          <Button
+            onClick={() =>
+              window.open(`/blog/${row.url}`, '', 'noopener, noreferrer')
+            }
+          >
+            View
+          </Button>
+          &nbsp;
+          <Button onClick={() => deletePost(row.id)}>Delete</Button>
+        </>
       )
     }
-    if (col === 'View') {
-      return (
-        <Button
-          onClick={() =>
-            window.open(`/blog/${row.url}`, '', 'noopener, noreferrer')
-          }
-        >
-          View
-        </Button>
-      )
-    }
+
     if (col === 'status') {
       let res = ''
       if (cellValue === '1') res = 'Draft'
@@ -34,6 +39,20 @@ const DashboardTable = ({ blogList }) => {
       return res
     }
     return cellValue
+  }
+
+  const deletePost = (id) => {
+    axios
+      .post(`${apiUri}/deletePost`, JSON.stringify({ id }), {
+        headers: {
+          Authorization: getSessionStorage(sessionKeys.authorization)
+        }
+      })
+      .then(({ data }) => {
+        if (data.status === '200') {
+          updateBlog(data.response)
+        }
+      })
   }
 
   return (
@@ -73,11 +92,13 @@ const DashboardTable = ({ blogList }) => {
 }
 
 DashboardTable.propTypes = {
-  blogList: PropTypes.arrayOf(PropTypes.shape())
+  blogList: PropTypes.arrayOf(PropTypes.shape()),
+  updateBlog: PropTypes.func
 }
 
 DashboardTable.defaultProps = {
-  blogList: [{}]
+  blogList: [{}],
+  updateBlog: () => {}
 }
 
 export default DashboardTable
