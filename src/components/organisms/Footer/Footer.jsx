@@ -23,8 +23,9 @@ let primarylist = []
 
 const Footer = () => {
   useMemo(() => {
-    servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
-      ?.children
+    // servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
+    //   ?.children
+    servicelist = menuList?.serviceData
     primarylist = menuList?.data.filter((menu) => menu.title !== 'Services')
     servicelist.forEach((element, index) => {
       if (Array.isArray(element)) {
@@ -106,6 +107,17 @@ const Footer = () => {
                   {service.children.map((childs) => (
                     <li key={childs.title}>
                       <Link to={childs.pageUrl}>{childs.title}</Link>
+                      {childs?.children?.length > 0 && (
+                        <ul className="inner-ul ps-3 pt-1 pb-1">
+                          {childs?.children?.map((childList) => (
+                            <li key={childList.title}>
+                              <Link to={childList.pageUrl}>
+                                {childList.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>

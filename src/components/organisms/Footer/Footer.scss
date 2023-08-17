@@ -38,6 +38,12 @@
           &::marker {
             content: none;
           }
+          .inner-ul {
+            opacity: 0.8;
+            li::marker {
+              content: '- ';
+            }
+          }
         }
       }
     }
