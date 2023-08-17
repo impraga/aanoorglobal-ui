@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import * as DOMPurify from 'dompurify'
 import axios from 'axios'
-import { apiUrl } from '../../constants/index'
+import { apiUri } from '../../constants/index'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 import tagIcon from '../../../public/assets/icons/tag.svg'
@@ -19,12 +19,16 @@ const metaDetails = {
 }
 
 const BlogView = () => {
+  const path = window.location.pathname.split('/')
+  const postUrl = path[2]
   const [blogList, setBlogList] = useState({})
   const cleanHTML = DOMPurify.sanitize(blogList.content)
 
-  axios.get(`${apiUrl}/blogView.json`).then((res) => {
-    setBlogList(res.data)
-  })
+  useEffect(() => {
+    axios.get(`${apiUri}/moreBlogInfo?url=${postUrl}`).then((res) => {
+      setBlogList(res.data.response[0])
+    })
+  }, [])
 
   return (
     <>

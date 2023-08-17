@@ -13,7 +13,7 @@ import About from './pages/About/About'
 import Sitemap from './pages/Sitemap/Sitemap'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import ContactPage from './pages/ContactPage/ContactPage'
-import Blog from './pages/Blog/Blog'
+// import Blog from './pages/Blog/Blog'
 import Dashboard from './pages/Dashboard/Dashboard'
 import NewBlog from './pages/NewBlog/NewBlog'
 import LoginPage from './pages/LoginPage/LoginPage'
@@ -22,15 +22,12 @@ import { TransitionProvider } from './context/TransitionContext'
 import TransitionComponent from './components/organisms/Transition/Transition'
 import ProtectedComponent from './components/molecules/ProtectedComponent/ProtectedComponent'
 
-import { getSessionStorage } from './utils/tools'
-
 import './index.scss'
 import BlogView from './pages/BlogView/BlogView'
 import ServicePage from './pages/ServicePage/ServicePage'
+import Blog from './pages/Blog/Blog'
 
 const root = createRoot(document.getElementById('root'))
-
-const isLoggedIn = getSessionStorage('isUserLoggedIn') === true
 
 const router = createBrowserRouter([
   {
@@ -84,24 +81,30 @@ const router = createBrowserRouter([
         path: 'blog',
         element: (
           <TransitionComponent>
+            <Blog />
+          </TransitionComponent>
+        )
+      },
+      {
+        path: 'blog/:postUrl',
+        element: (
+          <TransitionComponent>
             <BlogView />
           </TransitionComponent>
-        ),
-        children: [
-          {
-            path: ':title',
-            element: (
-              <TransitionComponent>
-                <BlogView />
-              </TransitionComponent>
-            )
-          }
-        ]
+        )
+      },
+      {
+        path: 'edit-blog/:postUrl',
+        element: (
+          <TransitionComponent>
+            <NewBlog />
+          </TransitionComponent>
+        )
       },
       {
         path: 'dashboard',
         element: (
-          <ProtectedComponent isLoggedIn={isLoggedIn}>
+          <ProtectedComponent>
             <TransitionComponent>
               <Dashboard />
             </TransitionComponent>
@@ -111,8 +114,7 @@ const router = createBrowserRouter([
       {
         path: 'new-blog',
         element: (
-          // <ProtectedComponent isLoggedIn={isLoggedIn}>
-          <ProtectedComponent isLoggedIn>
+          <ProtectedComponent>
             <TransitionComponent>
               <NewBlog />
             </TransitionComponent>

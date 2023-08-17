@@ -1,8 +1,12 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { getSessionStorage } from '../../../utils/tools'
+import { sessionKeys } from '../../../constants'
 
-const ProtectedComponent = ({ isLoggedIn = true, children }) => {
+const ProtectedComponent = ({ children }) => {
+  const isLoggedIn = getSessionStorage(sessionKeys.userLoggedStatus) === 'true'
+
   if (!isLoggedIn) {
     return <Navigate to="/login" replace />
   }
@@ -10,7 +14,6 @@ const ProtectedComponent = ({ isLoggedIn = true, children }) => {
 }
 
 ProtectedComponent.propTypes = {
-  isLoggedIn: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired
 }
 

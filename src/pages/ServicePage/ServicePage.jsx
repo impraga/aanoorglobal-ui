@@ -1,5 +1,4 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 
 // import serviceList from '../../../public/assets/json/serviceDetails.json'
 import ServiceHeroBanner from '../../components/molecules/ServicePageHeroBanner/ServiceHeroBanner'
@@ -98,12 +97,5 @@ const ServicePage = () => {
     <NotFound />
   )
 }
-
-// ServicePage.propTypes = {
-//   props: PropTypes.shape().isRequired,
-//   serviceDetails: PropTypes.shape().isRequired,
-//   metaDetails: PropTypes.shape().isRequired,
-//   category: PropTypes.string.isRequired
-// }
 
 export default React.memo(ServicePage)
