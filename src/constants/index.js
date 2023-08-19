@@ -80,4 +80,4 @@ export const sessionKeys = {
 }
 
 export const isKillSwitchDisabled =
-  getSessionStorage('isKillSwitchDisabled') === true
+  getSessionStorage('isKillSwitchDisabled') === 'true'

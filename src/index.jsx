@@ -137,11 +137,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'login',
-        element: (
-          <ProtectedComponent>
-            <LoginPage />
-          </ProtectedComponent>
-        )
+        element: <LoginPage />
       },
 
       {
