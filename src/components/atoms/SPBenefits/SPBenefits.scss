@@ -41,6 +41,30 @@
       }
     }
   }
+  .important {
+    ul {
+      li {
+        &::before {
+          background-image: url(./../../../../public/assets/icons/information.png) !important;
+          background-size: contain;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .criteria {
+    ul {
+      li {
+        &::before {
+          background-image: url(./../../../../public/assets/icons/clipboard.png) !important;
+          background-size: contain;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
 }
 
 .full-panel-template {
