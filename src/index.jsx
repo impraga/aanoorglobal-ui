@@ -78,27 +78,41 @@ const router = createBrowserRouter([
         )
       },
       {
-        path: 'blog',
+        path: 'services/:category/:serviceName',
         element: (
           <TransitionComponent>
-            <Blog />
+            <ServicePage />
           </TransitionComponent>
+        )
+      },
+      {
+        path: 'blog',
+        element: (
+          <ProtectedComponent>
+            <TransitionComponent>
+              <Blog />
+            </TransitionComponent>
+          </ProtectedComponent>
         )
       },
       {
         path: 'blog/:postUrl',
         element: (
-          <TransitionComponent>
-            <BlogView />
-          </TransitionComponent>
+          <ProtectedComponent>
+            <TransitionComponent>
+              <BlogView />
+            </TransitionComponent>
+          </ProtectedComponent>
         )
       },
       {
         path: 'edit-blog/:postUrl',
         element: (
-          <TransitionComponent>
-            <NewBlog />
-          </TransitionComponent>
+          <ProtectedComponent>
+            <TransitionComponent>
+              <NewBlog />
+            </TransitionComponent>
+          </ProtectedComponent>
         )
       },
       {
@@ -121,15 +135,15 @@ const router = createBrowserRouter([
           </ProtectedComponent>
         )
       },
-      { path: 'login', element: <LoginPage /> },
       {
-        path: 'services/:category/:serviceName',
+        path: 'login',
         element: (
-          <TransitionComponent>
-            <ServicePage />
-          </TransitionComponent>
+          <ProtectedComponent>
+            <LoginPage />
+          </ProtectedComponent>
         )
       },
+
       {
         path: '*',
         element: (

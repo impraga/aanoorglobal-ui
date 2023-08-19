@@ -8,13 +8,13 @@ import menuList from '../../../../public/assets/json/menuList.json'
 import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 import { getSessionStorage, removeSession } from '../../../utils/tools'
-import { sessionKeys } from '../../../constants'
+import { isKillSwitchDisabled, sessionKeys } from '../../../constants'
 
 import './HeaderVersionTwo.scss'
 
 const HeaderVersionTwo = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [serviceOpen, setServiceOpen] = useState(-1)
+  // const [serviceOpen, setServiceOpen] = useState(-1)
   const isUserLoggedIn =
     getSessionStorage(sessionKeys.userLoggedStatus) === 'true'
 
@@ -49,71 +49,71 @@ const HeaderVersionTwo = () => {
     </li>
   )
 
-  const menuWithChildren = (list, title, clsName, displayExpertBtn = false) => (
-    <>
-      {title && (
-        <span>
-          {title}
-          <img
-            src="/assets/images/chevron-right.svg"
-            alt=""
-            className="desktop-chevron d-none d-lg-inline"
-          />
-        </span>
-      )}
-      <div
-        className={clsName || 'first-level'}
-        key={clsName ? 'multi-child' : title}
-      >
-        <div
-          className={clsName ? '' : 'menu-wrapper'}
-          key={clsName ? 'multi-child' : title}
-        >
-          {list?.map((item, index) =>
-            Array.isArray(item) ? (
-              menuWithChildren(item, null, 'first-level-menu')
-            ) : (
-              <div
-                className={`first-level-menu ${
-                  serviceOpen === index ? 'show-service' : ''
-                }`}
-                key={item.id}
-              >
-                <img src={`/assets/images/${item.icon}`} alt="icon" />
-                {item.title && (
-                  <span
-                    aria-hidden
-                    onClick={() =>
-                      serviceOpen >= 0
-                        ? setServiceOpen(-1)
-                        : setServiceOpen(index)
-                    }
-                  >
-                    {item.title}
-                    {isMenuOpen && (
-                      <img
-                        src="/assets/images/chevron-right.svg"
-                        alt=""
-                        className="show-chevron"
-                      />
-                    )}
-                  </span>
-                )}
-                {item.children && (
-                  <ul>
-                    {item.children.map((secondMenu) =>
-                      menuWithLink(secondMenu)
-                    )}
-                  </ul>
-                )}
-              </div>
-            )
-          )}
-        </div>
-        {displayExpertBtn && showExpertsButton()}
-      </div>
-    </>
-  )
+  // const menuWithChildren = (list, title, clsName, displayExpertBtn = false) => (
+  //   <>
+  //     {title && (
+  //       <span>
+  //         {title}
+  //         <img
+  //           src="/assets/images/chevron-right.svg"
+  //           alt=""
+  //           className="desktop-chevron d-none d-lg-inline"
+  //         />
+  //       </span>
+  //     )}
+  //     <div
+  //       className={clsName || 'first-level'}
+  //       key={clsName ? 'multi-child' : title}
+  //     >
+  //       <div
+  //         className={clsName ? '' : 'menu-wrapper'}
+  //         key={clsName ? 'multi-child' : title}
+  //       >
+  //         {list?.map((item, index) =>
+  //           Array.isArray(item) ? (
+  //             menuWithChildren(item, null, 'first-level-menu')
+  //           ) : (
+  //             <div
+  //               className={`first-level-menu ${
+  //                 serviceOpen === index ? 'show-service' : ''
+  //               }`}
+  //               key={item.id}
+  //             >
+  //               <img src={`/assets/images/${item.icon}`} alt="icon" />
+  //               {item.title && (
+  //                 <span
+  //                   aria-hidden
+  //                   onClick={() =>
+  //                     serviceOpen >= 0
+  //                       ? setServiceOpen(-1)
+  //                       : setServiceOpen(index)
+  //                   }
+  //                 >
+  //                   {item.title}
+  //                   {isMenuOpen && (
+  //                     <img
+  //                       src="/assets/images/chevron-right.svg"
+  //                       alt=""
+  //                       className="show-chevron"
+  //                     />
+  //                   )}
+  //                 </span>
+  //               )}
+  //               {item.children && (
+  //                 <ul>
+  //                   {item.children.map((secondMenu) =>
+  //                     menuWithLink(secondMenu)
+  //                   )}
+  //                 </ul>
+  //               )}
+  //             </div>
+  //           )
+  //         )}
+  //       </div>
+  //       {displayExpertBtn && showExpertsButton()}
+  //     </div>
+  //   </>
+  // )
 
   const showExpertsButton = () => (
     <div className="show-experts-menu">
@@ -157,15 +157,17 @@ const HeaderVersionTwo = () => {
             <ul>
               {menuList?.serviceData.map((item) => menuWithLink(item))}
 
-              <li key="blog" className="first-level">
-                <Button
-                  className="blog-btn"
-                  variant="success"
-                  onClick={() => navigate('/dashboard')}
-                >
-                  Blog
-                </Button>
-              </li>
+              {isKillSwitchDisabled && (
+                <li key="blog" className="first-level">
+                  <Button
+                    className="blog-btn"
+                    variant="success"
+                    onClick={() => navigate('/dashboard')}
+                  >
+                    Blog
+                  </Button>
+                </li>
+              )}
               {isUserLoggedIn && (
                 <li key="logout" className="first-level">
                   <Button
