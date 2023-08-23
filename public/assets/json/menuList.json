@@ -327,36 +327,42 @@
       "children": [
         {
           "pageUrl": "/services/intellectual-property/trademark-registration",
-          "title": "Trademark Registration",
+          "title": "TM Registration",
           "id": "trademark-reg",
           "className": "second-level"
         },
         {
           "pageUrl": "/services/intellectual-property/trademark-objection",
-          "title": "Trademark Objection",
+          "title": "TM Objection Reply",
           "id": "trademark-objection",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
-          "title": "Trademark Renewal",
+          "pageUrl": "/services/intellectual-property/trademark-hearing",
+          "title": "TM Hearing",
+          "id": "trademark-hearing",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/intellectual-property/trademark-renewal",
+          "title": "TM Renewal",
           "id": "trademark-renewal",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "pageUrl": "/services/intellectual-property/copyright-registration",
           "title": "Copyright Registration",
           "id": "copyright-reg",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
-          "title": "Design Registration",
+          "pageUrl": "/services/intellectual-property/design-registration",
+          "title": "Design Right Registration",
           "id": "design-reg",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "pageUrl": "/services/intellectual-property/patent-registration",
           "title": "Patent Registration",
           "id": "patent-reg",
           "className": "second-level"
