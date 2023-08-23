@@ -161,7 +161,7 @@ const HeaderVersionTwo = () => {
                 <Button
                   className="blog-btn"
                   variant="success"
-                  onClick={() => navigate('/dashboard')}
+                  onClick={() => navigate('/blog')}
                 >
                   Blog
                 </Button>
