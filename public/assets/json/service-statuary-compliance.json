@@ -445,7 +445,7 @@
     ]
   },
   {
-    "service": "roc-annual-filing",
+    "service": "annual-compliance",
     "title": "roc-annual-filing",
     "price": {
       "isAvailable": true,

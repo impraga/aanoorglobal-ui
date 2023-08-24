@@ -420,6 +420,139 @@
     ]
   },
   {
+    "service": "copyright-registration",
+    "title": "Income Tax Filing",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "/services/copyright-registration",
+    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "template": [
+      {
+        "id": "Logo copyright registration",
+        "header": "Logo copyright registration",
+        "type": "SPParagraph",
+        "value": "The Copyright Act, 1957 (the Act) is the primary legislation that governs copyright in India. To be eligible for copyright protection, a work must be original and fixed in a tangible form. This means that the work must be the product of the author's own creative labor and that it must be recorded in some way, such as in writing, on film, or in audio form."
+      },
+      {
+        "id": "The Act defines copyright as",
+        "header": "The Act defines copyright as",
+        "desc": "The exclusive right to do or authorize the doing of any of the following acts in respect of a work:",
+        "type": "SPBullet",
+        "value": [
+          "Reproducing the work in any material form;",
+          "Communicating the work to the public;",
+          "Communicating the work to the public;",
+          "Showing the work in public;",
+          "Making of cinematograph film or sound recordings work;",
+          "Making any adaptation of the work."
+        ]
+      },
+      {
+        "id": "Copyright registration service includes",
+        "header": "Copyright registration service includes",
+        "type": "SPIncludes",
+        "value": [
+          "Consultation and guidance",
+          "Application drafting and filing",
+          "Government fees",
+          "Copyright diary number"
+        ]
+      },
+
+      {
+        "id": "Benefits of Copyright Registration",
+        "header": "Benefits of Copyright Registration",
+        "desc": "Logo Copyright registration offers number of benefits, including:",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "Intangible asset",
+            "value": [
+              "Copyright is an intangible asset that can be valuable to a business. It can be used to generate revenue through licensing, sales, and other means."
+            ]
+          },
+          {
+            "title": "Legal protection",
+            "value": [
+              "Copyright registration provides legal protection against unauthorized use of your work. This can help you to prevent others from copying, distributing, or performing your work without your permission."
+            ]
+          },
+          {
+            "title": "Various legal rights",
+            "value": [
+              "Copyright registration gives you certain legal rights, such as the right to reproduce, distribute, perform, display, and create derivative works of your work. "
+            ]
+          },
+          {
+            "title": "Branding and goodwill",
+            "value": [
+              "Copyright registration can help to establish your brand and goodwill. It can show potential customers and partners that you are serious about your work and that you are willing to protect your intellectual property."
+            ]
+          },
+          {
+            "title": "Global protection",
+            "value": [
+              "Copyright registration is valid in most countries around the world. This means that you can protect your work in multiple countries with a single registration."
+            ]
+          },
+          {
+            "title": "Restricts unauthorized reproduction",
+            "value": [
+              "Copyright registration can help to restrict unauthorized reproduction of your work. This can help to protect your profits and ensure that your work is not used without your permission."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Documents Required for Copyright Protection",
+        "header": "Documents Required for Copyright Protection",
+        "type": "SPDocuments",
+        "value": [
+          "Filled Basic Information Requirement Document – COPYQ shared from Aanor team.",
+          "Evidence of works like printed book or content for literary work, any artistic work etc.,",
+          "Power of Attorney document from applicant.",
+          "Board resolution for authorized signatory and letter of authorization for companies."
+        ]
+      },
+      {
+        "id": "Copyright application online process",
+        "header": "Copyright application online process",
+        "type": "SPStep",
+        "value": {
+          "steps": [
+            {
+              "heading": "Consultation and guidance",
+              "desc": "An intellectual property (IP) team will discuss your work with you and advise you on whether it is eligible for copyright protection. They will also help you to understand the copyright registration process and your options."
+            },
+            {
+              "heading": "Application drafting and filing",
+              "desc": "The attorney team will draft the copyright application form and file it with the Copyright Office. They will also pay the government fees associated with the application."
+            },
+            {
+              "heading": "Copyright diary number",
+              "desc": "The Copyright Office will assign a copyright diary number to your application. Dairy number to be used to track the status of application."
+            },
+            {
+              "heading": "Timeline",
+              "desc": "The copyright registration process can take several months to complete. The IP lawyer will keep you updated on the status of your application and let you know when it is approved."
+            },
+            {
+              "heading": "Approval of application",
+              "desc": "Once copyright application is registered, we will receive a registration certificate from the Copyright Office. This certificate is a public record of your copyright ownership and can be used to enforce your copyright rights."
+            },
+            {
+              "heading": "Protect your creativity!",
+              "desc": "If you have created an original work of authorship, you should consider registering your copyright with the Copyright Office. This will help you to protect your work and ensure that you are able to benefit from your creativity."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
     "service": "design-registration",
     "title": "Income Tax Filing",
     "price": {
