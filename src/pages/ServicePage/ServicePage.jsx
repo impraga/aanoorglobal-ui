@@ -38,7 +38,7 @@ const ServicePage = () => {
   return serviceDetails ? (
     <>
       <HelmetWrapper data={metaDetails} />
-      <div className={category}>
+      <div className={`service-page-cont ${category}`}>
         <ServiceHeroBanner
           title={serviceDetails.title}
           desc={serviceDetails.description}

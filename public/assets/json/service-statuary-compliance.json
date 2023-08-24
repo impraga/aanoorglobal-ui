@@ -301,6 +301,7 @@
         "header": "Important aspects of GST Returns Online",
         "desc": "",
         "type": "SPBenefits",
+        "class": "important",
         "value": [
           {
             "title": "Due date for Filing GST",

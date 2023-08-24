@@ -28,7 +28,7 @@
     color: $ag-white;
   }
 }
-.startup-center {
+.service-page-cont.startup-center {
   .step-cont {
     .step-count {
       color: $ag-lightblue;
@@ -36,7 +36,7 @@
     }
   }
 }
-.statuary-compliance {
+.service-page-cont.statuary-compliance {
   .SPStep {
     overflow: hidden;
     .step-cont {
@@ -86,7 +86,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .statuary-compliance {
+  .service-page-cont.statuary-compliance {
     .SPStep {
       .step-cont {
         > div {

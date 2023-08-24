@@ -11,8 +11,8 @@
       padding: 10px 20px;
       display: block;
       margin-bottom: 0;
-      font-weight: 500;
-      font-size: 1.3rem;
+      font-weight: 600;
+      font-size: 1.1rem;
       text-transform: capitalize;
       transition: 0.1s ease-in-out;
     }
@@ -22,7 +22,7 @@
     &.active {
       background-color: $ag-gray-dark !important;
       a {
-        font-weight: 600 !important;
+        font-weight: 700 !important;
       }
     }
   }
