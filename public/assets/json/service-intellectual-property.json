@@ -573,151 +573,102 @@
         "type": "SPParagraph",
         "value": "The Patents Act, 1970 governs patent registration in India. The Act defines a patent as an exclusive right granted by the Government of India to the inventor for a limited period of time to prevent others from making, using, selling, or importing the invention without the consent of the inventor."
       },
+
       {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
+        "id": "Criteria for filing a Patent right registration",
+        "header": "Criteria for filing a Patent right registration",
         "desc": "",
         "type": "SPBenefits",
         "value": [
           {
-            "title": "",
+            "title": "Novelty:",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "The invention must be new and not previously known to the public in India or anywhere else in the world."
+            ]
+          },
+          {
+            "title": "Non-obviousness:",
+            "value": [
+              "The invention must involve an inventive step, meaning that it must be something that would not have been obvious to a person skilled in the art at the time of the invention."
+            ]
+          },
+          {
+            "title": "Industrial applicability:",
+            "value": [
+              "The invention must be capable of industrial application, meaning that it must be capable of being used in a commercial or industrial setting."
             ]
           }
         ]
       },
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "id": "Benefits of Patent Registration in Chennai",
+        "header": "Benefits of Patent Registration in Chennai",
+        "desc": "",
         "type": "SPBenefits",
         "value": [
           {
-            "title": "No return Filing",
+            "title": "Sell or transfer patent rights:",
             "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+              "Patent registration gives you the exclusive right to make, use, sell, or import your invention for a period of 20 years. This means that you can sell or transfer your patent rights to another party, which can be a great way to raise capital or expand your business."
             ]
           },
           {
-            "title": "Proprietors with IE Code",
+            "title": "Secure your invention:",
             "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+              "Patent registration is one of the strongest forms of intellectual property protection available. It gives you the legal right to prevent from others making, using, selling, or importing your invention without your consent. This can help you to protect your investment in research and development and to maintain a competitive advantage in the marketplace."
+            ]
+          },
+
+          {
+            "title": "Get royalty by patent licensing:",
+            "value": [
+              "You can also license your patent to another party, which means that they can use your invention in exchange for paying you a royalty. This can be a great way to generate passive income from your invention."
             ]
           },
           {
-            "title": "Exporters with IE Code",
+            "title": "Make use of your invention:",
             "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+              "Patent registration does not just prevent others from using your invention. It also gives you the right to use your invention yourself. This means that you can bring your invention to market and start generating profits."
+            ]
+          },
+          {
+            "title": "Stop others from using your invention without permission:",
+            "value": [
+              "Patent registration gives you the legal right to stop others from using your invention without your permission. This can be a powerful tool for protecting your intellectual property and for enforcing your rights."
             ]
           }
         ]
       },
+
       {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
+        "id": "Patent Registration Procedure Online",
+        "header": "Patent Registration Procedure Online",
         "type": "SPStep",
         "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "subHeading": "Here are some additional details about the patent registration services:",
           "steps": [
             {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+              "heading": "Application for Patent",
+              "desc": "The first step in the design patent registration process is to file a patent application with the Indian Patent Office. The application must include a description of the invention, drawings if necessary, and claims that define the scope of the invention."
             },
             {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+              "heading": "Identification of Novelty",
+              "desc": "The patent office will then conduct a search of prior art to determine whether the invention is novel and inventive. If the invention is found to be novel and inventive, it will be published for public inspection."
             },
             {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+              "heading": "Opposition to Patent",
+              "desc": "Any person who believes that the invention is not novel or inventive can file an opposition to the patent application. The patent office will then decide whether to grant the patent."
             },
             {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+              "heading": "Approval of Patent",
+              "desc": "If the Indian patent register is granted, the inventor will have the exclusive right to make, use, sell, or import the invention for a period of 20 years."
             },
             {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+              "heading": "Apply Patent here!",
+              "desc": "Contact Aanoor Global team today to process application for patent registration services. We can help you protect your intellectual property and secure your invention for future."
             }
           ]
         }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
       }
     ]
   },
@@ -738,42 +689,7 @@
         "type": "SPParagraph",
         "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
       },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
+
       {
         "id": "benefits Multi",
         "header": "Benefits with multiple values",
