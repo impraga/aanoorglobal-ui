@@ -56,7 +56,7 @@ const SPDocuments = ({ data }) => {
           }`}
         >
           {isImage && (
-            <div className="doc-main-img-cont col-md-4 d-flex align-items-center justify-content-center position-relative">
+            <div className="doc-main-img-cont overflow-hidden col-md-4 d-flex align-items-center justify-content-center position-relative">
               <div
                 className="main-img-cont"
                 data-aos="fade-top"

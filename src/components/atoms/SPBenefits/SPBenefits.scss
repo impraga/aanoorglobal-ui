@@ -68,7 +68,7 @@
 }
 
 .full-panel-template {
-  .benefits-cont {
+  > .benefits-cont {
     h4,
     h3,
     p {
@@ -76,7 +76,7 @@
     }
   }
 }
-.registration {
+.service-page-cont.registration {
   .benefits-cont {
     padding-top: 20px !important;
     margin-bottom: 10px !important;
@@ -128,14 +128,18 @@
     }
   }
 }
-.statuary-compliance {
+.service-page-cont.statuary-compliance {
   .benefits-cont {
+    margin-bottom: 40px !important;
+    margin-top: 20px !important;
     h3 {
-      color: $ag-green !important;
+      // color: $ag-green !important;
+      color: white !important;
       // text-align: center;
     }
     .benefits-desc {
       // text-align: center;
+      color: white;
     }
     .benefits-ul {
       border-radius: 20px;
@@ -168,6 +172,50 @@
         }
         &:nth-child(even) {
           background-color: $ag-gray !important;
+        }
+      }
+    }
+  }
+}
+.service-page-cont.certification {
+  .benefits-cont {
+    .benefits-desc {
+      margin-bottom: 10px !important;
+    }
+    .benefits-ul {
+      padding: 20px 0 20px 60px;
+      position: relative;
+      &::before {
+        content: '';
+        background-color: #ffffff10;
+        width: 250px;
+        max-width: 60%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        border-radius: 30px;
+        left: 0px;
+        top: 0px;
+      }
+      li {
+        width: fit-content;
+      }
+      > div:first-child h4 {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .service-page-cont.certification {
+    .benefits-cont {
+      .benefits-desc {
+        margin-bottom: 10px !important;
+      }
+      .benefits-ul {
+        padding: 0;
+        &::before {
+          content: none;
         }
       }
     }

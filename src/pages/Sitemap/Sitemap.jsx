@@ -19,8 +19,9 @@ const metaDetails = {
 
 const Sitemap = () => {
   useMemo(() => {
-    servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
-      ?.children
+    // servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
+    //   ?.children
+    servicelist = menuList?.serviceData
     primarylist = menuList?.data.filter((menu) => menu.title !== 'Services')
     servicelist.forEach((element, index) => {
       if (Array.isArray(element)) {
@@ -54,9 +55,9 @@ const Sitemap = () => {
                   </h2>
                 </li>
               ))}
-              <li className="primary-link">
+              <li className="primary-link ">
                 <h2 className="bg-gray">Services</h2>
-                <ul>
+                <ul className="tree">
                   {servicelist.map((sList) => (
                     <li key={sList.title} className="secondary-link">
                       <h3 className="bg-gray">{sList.title}</h3>
@@ -66,6 +67,19 @@ const Sitemap = () => {
                             <h4 className="bg-gray">
                               <Link to={child.pageUrl}>{child.title}</Link>
                             </h4>
+                            {child?.children?.length > 0 && (
+                              <ul className="inner-ul ps-3 pt-1 pb-1">
+                                {child?.children?.map((childList) => (
+                                  <li key={childList.title}>
+                                    <h5 className="bg-gray">
+                                      <Link to={childList.pageUrl}>
+                                        {childList.title}
+                                      </Link>
+                                    </h5>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
                           </li>
                         ))}
                       </ul>

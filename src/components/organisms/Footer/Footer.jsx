@@ -11,7 +11,7 @@ import { footerOrder } from '../../../constants'
 import menuList from '../../../../public/assets/json/menuList.json'
 import whiteStripes from '../../../../public/assets/icons/lines-white.svg'
 import rings from '../../../../public/assets/icons/ring.svg'
-import logo from '../../../../public/assets/icons/aanoor-logo.svg'
+import logo from '../../../../public/assets/icons/aanoor-logo-white.svg'
 import facebook from '../../../../public/assets/icons/facebook.png'
 import linkedin from '../../../../public/assets/icons/linkedin.png'
 import twitter from '../../../../public/assets/icons/twitter.png'
@@ -19,13 +19,14 @@ import twitter from '../../../../public/assets/icons/twitter.png'
 import './Footer.scss'
 
 let servicelist = []
-let primarylist = []
+// let primarylist = []
 
 const Footer = () => {
   useMemo(() => {
-    servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
-      ?.children
-    primarylist = menuList?.data.filter((menu) => menu.title !== 'Services')
+    // servicelist = menuList?.data.filter((menu) => menu.title === 'Services')[0]
+    //   ?.children
+    servicelist = menuList?.serviceData
+    // primarylist = menuList?.data.filter((menu) => menu.title !== 'Services')
     servicelist.forEach((element, index) => {
       if (Array.isArray(element)) {
         servicelist.push(...element)
@@ -49,7 +50,8 @@ const Footer = () => {
               >
                 <img src={logo} alt="Aanoor Logo" />
               </div>
-              <div className="primary-link d-flex text-white pt-4 px-3">
+              {/* Commented below code for Removing About and contact page */}
+              {/* <div className="primary-link d-flex text-white pt-4 px-3">
                 {primarylist.map((list, index) => (
                   <Link
                     className="px-3"
@@ -61,7 +63,7 @@ const Footer = () => {
                     {list.title}
                   </Link>
                 ))}
-              </div>
+              </div> */}
             </div>
             <div className="social-link-cont d-flex align-items-center pt-4">
               <div data-aos="fade-up" data-aos-delay="250">
@@ -106,6 +108,17 @@ const Footer = () => {
                   {service.children.map((childs) => (
                     <li key={childs.title}>
                       <Link to={childs.pageUrl}>{childs.title}</Link>
+                      {childs?.children?.length > 0 && (
+                        <ul className="inner-ul ps-3 pt-1 pb-1">
+                          {childs?.children?.map((childList) => (
+                            <li key={childList.title}>
+                              <Link to={childList.pageUrl}>
+                                {childList.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>

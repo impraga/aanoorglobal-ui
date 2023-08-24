@@ -25,12 +25,15 @@ h3 {
         .container {
           // max-width: 1375px !important;
         }
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
       }
     }
   }
 }
 
-.startup-center {
+.service-page-cont.startup-center {
   .service-content-cont {
     background-color: white;
     border-radius: $ag-border-radius;
@@ -43,7 +46,7 @@ h3 {
     }
   }
 }
-.intellectual-property {
+.service-page-cont.intellectual-property {
   background-color: $ag-darkblue;
   .serivce-details-cont {
     margin-top: 0px !important;
@@ -69,9 +72,9 @@ h3 {
     }
   }
 }
-.registration,
-.certification,
-.statuary-compliance {
+.service-page-cont.registration,
+.service-page-cont.certification,
+.service-page-cont.statuary-compliance {
   background-color: $ag-darkblue;
   .serivce-details-cont {
     margin-top: 0px !important;
@@ -108,7 +111,7 @@ h3 {
     }
   }
 }
-.statuary-compliance {
+.service-page-cont.statuary-compliance {
   .serivce-details-cont {
     .service-content-cont {
       .component-cont {

@@ -18,8 +18,8 @@ import Dashboard from './pages/Dashboard/Dashboard'
 import NewBlog from './pages/NewBlog/NewBlog'
 import LoginPage from './pages/LoginPage/LoginPage'
 
-import { TransitionProvider } from './context/TransitionContext'
-import TransitionComponent from './components/organisms/Transition/Transition'
+// import { TransitionProvider } from './context/TransitionContext'
+// import TransitionComponent from './components/organisms/Transition/Transition'
 import ProtectedComponent from './components/molecules/ProtectedComponent/ProtectedComponent'
 
 import './index.scss'
@@ -36,62 +36,34 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: (
-          <TransitionComponent>
-            <HomePage />
-          </TransitionComponent>
-        ),
+        element: <HomePage />,
         children: [{ path: 'home', element: <HomePage /> }]
       },
       {
         path: 'contact',
-        element: (
-          <TransitionComponent>
-            <ContactPage />
-          </TransitionComponent>
-        )
-        // lazy: () => import('./components/organisms/ContactSection/ContactSection')
+        element: <ContactPage />
       },
-
       {
         path: 'about',
-        element: (
-          <TransitionComponent>
-            <About />
-          </TransitionComponent>
-        )
+        element: <About />
       },
       {
         path: 'sitemap',
-        element: (
-          <TransitionComponent>
-            <Sitemap />
-          </TransitionComponent>
-        )
+        element: <Sitemap />
       },
       {
         path: 'privacy-policy',
-        element: (
-          <TransitionComponent>
-            <PrivacyPolicy />
-          </TransitionComponent>
-        )
+        element: <PrivacyPolicy />
       },
       {
         path: 'services/:category/:serviceName',
-        element: (
-          <TransitionComponent>
-            <ServicePage />
-          </TransitionComponent>
-        )
+        element: <ServicePage />
       },
       {
         path: 'blog',
         element: (
           <ProtectedComponent>
-            <TransitionComponent>
-              <Blog />
-            </TransitionComponent>
+            <Blog />
           </ProtectedComponent>
         )
       },
@@ -99,9 +71,7 @@ const router = createBrowserRouter([
         path: 'blog/:postUrl',
         element: (
           <ProtectedComponent>
-            <TransitionComponent>
-              <BlogView />
-            </TransitionComponent>
+            <BlogView />
           </ProtectedComponent>
         )
       },
@@ -109,9 +79,7 @@ const router = createBrowserRouter([
         path: 'edit-blog/:postUrl',
         element: (
           <ProtectedComponent>
-            <TransitionComponent>
-              <NewBlog />
-            </TransitionComponent>
+            <NewBlog />
           </ProtectedComponent>
         )
       },
@@ -119,9 +87,7 @@ const router = createBrowserRouter([
         path: 'dashboard',
         element: (
           <ProtectedComponent>
-            <TransitionComponent>
-              <Dashboard />
-            </TransitionComponent>
+            <Dashboard />
           </ProtectedComponent>
         )
       },
@@ -129,9 +95,7 @@ const router = createBrowserRouter([
         path: 'new-blog',
         element: (
           <ProtectedComponent>
-            <TransitionComponent>
-              <NewBlog />
-            </TransitionComponent>
+            <NewBlog />
           </ProtectedComponent>
         )
       },
@@ -142,11 +106,7 @@ const router = createBrowserRouter([
 
       {
         path: '*',
-        element: (
-          <TransitionComponent>
-            <NotFound />
-          </TransitionComponent>
-        )
+        element: <NotFound />
       }
     ]
   }
@@ -156,9 +116,7 @@ root.render(
   // ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundary>
-      <TransitionProvider>
-        <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
-      </TransitionProvider>
+      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
     </ErrorBoundary>
   </React.StrictMode>
   // document.getElementById('root')
