@@ -62,9 +62,20 @@
                   transform: rotate(90deg);
                 }
               }
+              &:nth-child(4),
+              &:nth-child(5) {
+                .div-first-level {
+                  > ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                  }
+                }
+              }
 
               &:hover {
-                color: $ag-green;
+                > span {
+                  color: $ag-green;
+                }
 
                 > .div-first-level {
                   background-image: url(/public/assets/images/semi-circle.png);
@@ -80,17 +91,28 @@
                   border-radius: 20px;
                   padding-bottom: 0;
                   position: absolute;
+                  max-height: 500px;
+                  overflow: auto;
+
                   .second-level {
-                    display: flex;
+                    display: block;
+                    flex: 33%;
                     padding: 1rem 0;
                     &:hover {
+                      > span {
+                        color: $ag-green;
+                      }
                       .div-second-level {
                         position: absolute;
                         left: 20rem;
+                        top: 0;
                       }
                       .third-level {
                         display: block;
-                        padding: 1rem 0;
+                        a {
+                          padding: 0.6rem 0;
+                          display: block;
+                        }
                       }
                     }
                   }

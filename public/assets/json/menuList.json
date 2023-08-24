@@ -327,36 +327,42 @@
       "children": [
         {
           "pageUrl": "/services/intellectual-property/trademark-registration",
-          "title": "Trademark Registration",
+          "title": "TM Registration",
           "id": "trademark-reg",
           "className": "second-level"
         },
         {
           "pageUrl": "/services/intellectual-property/trademark-objection",
-          "title": "Trademark Objection",
+          "title": "TM Objection Reply",
           "id": "trademark-objection",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
-          "title": "Trademark Renewal",
+          "pageUrl": "/services/intellectual-property/trademark-hearing",
+          "title": "TM Hearing",
+          "id": "trademark-hearing",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/intellectual-property/trademark-renewal",
+          "title": "TM Renewal",
           "id": "trademark-renewal",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "pageUrl": "/services/intellectual-property/copyright-registration",
           "title": "Copyright Registration",
           "id": "copyright-reg",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
-          "title": "Design Registration",
+          "pageUrl": "/services/intellectual-property/design-registration",
+          "title": "Design Right Registration",
           "id": "design-reg",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "pageUrl": "/services/intellectual-property/patent-registration",
           "title": "Patent Registration",
           "id": "patent-reg",
           "className": "second-level"
@@ -369,110 +375,6 @@
       "icon": "statutory-compliance.svg",
       "className": "first-level",
       "children": [
-        {
-          "title": "ROC Others",
-          "id": "roc-others",
-          "className": "second-level",
-          "children": [
-            {
-              "pageUrl": "/services/statuary-compliance/director-din-kyc",
-              "title": "Director DIN KYC",
-              "id": "director-din-kyc",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/director-additional-removal",
-              "title": "Director Additional/Removal",
-              "id": "director-additional-removal",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/company-address-chanage",
-              "title": "Company Address Chanage",
-              "id": "company-address-chanage",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/company-name-change",
-              "title": "Company Name Change",
-              "id": "company-name-change",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/commencement-of-business",
-              "title": "Commencement of Business",
-              "id": "commencement-of-business",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/moa-alteration",
-              "title": "MoA Alteration",
-              "id": "moa-alteration",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/increase-of-authorised-paidup-capital",
-              "title": "Increase of Authorised/Paidup Capital",
-              "id": "increase-of-authorised-paidup-capital",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/share-allotment-transfer",
-              "title": "Share Allotment/Transfer",
-              "id": "share-allotment-transfer",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/conversion-of-companies",
-              "title": "Conversion of Companies",
-              "id": "conversion-of-companies",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/charge-creation",
-              "title": "Charge Creation",
-              "id": "charge-creation",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/company-closure",
-              "title": "Company Closure",
-              "id": "company-closure",
-              "className": "third-level"
-            }
-          ]
-        },
-        {
-          "title": "Documentation & Reports",
-          "id": "Documentation-Reports",
-          "className": "second-level",
-          "children": [
-            {
-              "pageUrl": "/services/statuary-compliance/projection-report",
-              "title": "Projection Report",
-              "id": "Projection-Report",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/CMA-preparation",
-              "title": "CMA Preparation",
-              "id": "cma-preparation",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/networth-certificate",
-              "title": "Networth Certificate",
-              "id": "networth-certificate",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/statuary-compliance/internal-audit",
-              "title": "Internal Audit",
-              "id": "internal-audit",
-              "className": "third-level"
-            }
-          ]
-        },
         {
           "pageUrl": "/services/statuary-compliance/book-keeping",
           "title": "Book keeping",

@@ -56,16 +56,32 @@ const router = createBrowserRouter([
         element: <PrivacyPolicy />
       },
       {
+        path: 'services/:category/:serviceName',
+        element: <ServicePage />
+      },
+      {
         path: 'blog',
-        element: <Blog />
+        element: (
+          <ProtectedComponent>
+            <Blog />
+          </ProtectedComponent>
+        )
       },
       {
         path: 'blog/:postUrl',
-        element: <BlogView />
+        element: (
+          <ProtectedComponent>
+            <BlogView />
+          </ProtectedComponent>
+        )
       },
       {
         path: 'edit-blog/:postUrl',
-        element: <NewBlog />
+        element: (
+          <ProtectedComponent>
+            <NewBlog />
+          </ProtectedComponent>
+        )
       },
       {
         path: 'dashboard',
@@ -83,11 +99,11 @@ const router = createBrowserRouter([
           </ProtectedComponent>
         )
       },
-      { path: 'login', element: <LoginPage /> },
       {
-        path: 'services/:category/:serviceName',
-        element: <ServicePage />
+        path: 'login',
+        element: <LoginPage />
       },
+
       {
         path: '*',
         element: <NotFound />

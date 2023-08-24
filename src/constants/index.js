@@ -1,3 +1,5 @@
+import { getSessionStorage } from '../utils/tools'
+
 export const testimonial = [
   {
     author: 'TCNOM Engineers',
@@ -76,3 +78,6 @@ export const sessionKeys = {
   userLoggedStatus: 'isUserLoggedIn',
   authorization: 'Authorization'
 }
+
+export const isKillSwitchDisabled =
+  getSessionStorage('isKillSwitchDisabled') === 'true'

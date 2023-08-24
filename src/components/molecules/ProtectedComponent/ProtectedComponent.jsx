@@ -2,11 +2,14 @@ import React from 'react'
 import { Navigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { getSessionStorage } from '../../../utils/tools'
-import { sessionKeys } from '../../../constants'
+import { isKillSwitchDisabled, sessionKeys } from '../../../constants'
 
 const ProtectedComponent = ({ children }) => {
   const isLoggedIn = getSessionStorage(sessionKeys.userLoggedStatus) === 'true'
 
+  if (!isKillSwitchDisabled) {
+    return <Navigate to="/" replace />
+  }
   if (!isLoggedIn) {
     return <Navigate to="/login" replace />
   }
