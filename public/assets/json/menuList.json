@@ -239,82 +239,54 @@
       "className": "first-level",
       "children": [
         {
-          "title": "Companay Registration",
-          "id": "company-registration",
-          "className": "second-level",
-          "children": [
-            {
-              "pageUrl": "/services/startup-center/sole-proprietorship",
-              "title": "Sole Proprietorship",
-              "id": "sole-proprietroship",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/partnership-firm",
-              "title": "Partnership firm",
-              "id": "partnership-firm",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "One Person Company",
-              "id": "one-person-company",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Private Limited Company",
-              "id": "private-ltd",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Public Limited Company",
-              "id": "public-ltd",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Limited Liability Partnership",
-              "id": "limited-liability",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Nidhi Company",
-              "id": "nidhi-company",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Producer Company",
-              "id": "producer-company",
-              "className": "third-level"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Section 8 Company",
-              "id": "section8",
-              "className": "third-level"
-            }
-          ]
-        },
-        {
-          "pageUrl": "/services/startup-center/startup-india-registration",
-          "title": "Startup India Registration",
-          "id": "Startup-India-Registration",
+          "pageUrl": "/services/startup-center/sole-proprietorship",
+          "title": "Sole Proprietorship",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/startup-center/gem-registration",
-          "title": "GeM Registration",
-          "id": "GeM-Registration",
+          "pageUrl": "/services/startup-center/partnership-firm",
+          "title": "Partnership firm",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/startup-center/trademark-registration",
+          "title": "One Person Company",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/startup-center/trademark-registration",
+          "title": "Private Limited Company",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/startup-center/trademark-registration",
+          "title": "Public Limited Company",
+          "className": "second-level"
+        },
+
+        {
+          "pageUrl": "/services/startup-center/trademark-registration",
+          "title": "Limited Liability Partnership",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/startup-center/trademark-registration",
+          "title": "Nidhi Company",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/startup-center/trademark-registration",
+          "title": "Producer Company",
+          "className": "second-level"
+        },
+        {
+          "pageUrl": "/services/startup-center/trademark-registration",
+          "title": "Section 8 Company",
           "className": "second-level"
         },
         {
           "pageUrl": "/services/startup-center/business-loan",
           "title": "Business Loan",
-          "id": "Business-Loan",
           "className": "second-level"
         }
       ]
@@ -326,45 +298,38 @@
       "className": "first-level",
       "children": [
         {
-          "pageUrl": "/services/intellectual-property/trademark-registration",
+          "pageUrl": "trademarkRegistration",
           "title": "TM Registration",
-          "id": "trademark-reg",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-objection",
+          "pageUrl": "trademarkObjection",
           "title": "TM Objection Reply",
-          "id": "trademark-objection",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-hearing",
+          "pageUrl": "trademarkHearing",
           "title": "TM Hearing",
-          "id": "trademark-hearing",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/trademark-renewal",
+          "pageUrl": "trademarkRenewal",
           "title": "TM Renewal",
-          "id": "trademark-renewal",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/copyright-registration",
+          "pageUrl": "copyrightRegistration",
           "title": "Copyright Registration",
-          "id": "copyright-reg",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/design-registration",
+          "pageUrl": "designrightRegistration",
           "title": "Design Right Registration",
-          "id": "design-reg",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/intellectual-property/patent-registration",
+          "pageUrl": "patentRegistration",
           "title": "Patent Registration",
-          "id": "patent-reg",
           "className": "second-level"
         }
       ]
@@ -376,33 +341,28 @@
       "className": "first-level",
       "children": [
         {
-          "pageUrl": "/services/statuary-compliance/book-keeping",
+          "pageUrl": "bookKeeping",
           "title": "Book keeping",
-          "id": "book-keeping",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/statuary-compliance/income-tax-filing",
+          "pageUrl": "incometaxFilling",
           "title": "Income Tax Filing",
-          "id": "income-tax-filing",
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/statuary-compliance/gst-filing",
+          "pageUrl": "gstFilling",
           "title": "GST Filing",
-          "id": "gst-filing",
           "className": "second-level"
         },
         {
           "pageUrl": "/services/statuary-compliance/tds-returns",
           "title": "TDS Returns",
-          "id": "tds-returns",
           "className": "second-level"
         },
         {
           "pageUrl": "/services/statuary-compliance/annual-compliance",
           "title": "ROC Annual Compliance",
-          "id": "roc-annual",
           "className": "second-level"
         }
       ]
@@ -415,139 +375,116 @@
       "children": [
         {
           "title": "Udyam/MSME Registration",
-          "id": "udyam-msme-registration",
           "className": "second-level",
           "pageUrl": "/services/registration/udyam-msme-registration"
         },
         {
           "title": "GST Registration / Amendment",
-          "id": "gst-registration-amendment",
           "className": "second-level",
           "pageUrl": "/services/registration/gst-registration-amendment"
         },
         {
           "title": "FSSAI Food & Catering License",
-          "id": "fssai-food-catering-license",
           "className": "second-level",
           "pageUrl": "/services/registration/fssai-food-catering-license"
         },
         {
           "title": "Import Export Code",
-          "id": "import-export-code",
           "className": "second-level",
           "pageUrl": "/services/registration/import-export-code"
         },
         {
           "title": "APEDA",
-          "id": "apeda",
           "className": "second-level",
           "pageUrl": "/services/registration/apeda"
         },
         {
           "title": "Spice Board",
-          "id": "spice-board",
           "className": "second-level",
           "pageUrl": "/services/registration/spice-board"
         },
         {
           "title": "Trust / NGO Registration",
-          "id": "trust-ngo-registration",
           "className": "second-level",
           "pageUrl": "/services/registration/trust-ngo-registration"
         },
         {
           "title": "Assocaition / Society Registration & Compliance",
-          "id": "assocaition-society-registration-compliance",
           "className": "second-level",
           "pageUrl": "/services/registration/assocaition-society-registration-compliance"
         },
         {
           "title": "12AA & 80G Registration/Filing",
-          "id": "12aa-80g-registration-filing",
           "className": "second-level",
           "pageUrl": "/services/registration/12aa-80g-registration-filing"
         },
         {
           "title": "CSR Registration/Compliance",
-          "id": "csr-registration-compliance",
           "className": "second-level",
           "pageUrl": "/services/registration/csr-registration-compliance"
         },
         {
           "title": "PAN Registration/Correction",
-          "id": "pan-registration-correction",
           "className": "second-level",
           "pageUrl": "/services/registration/pan-registration-correction"
         },
         {
           "title": "TAN Registration",
-          "id": "tan-registration",
           "className": "second-level",
           "pageUrl": "/services/registration/tan-registration"
         },
         {
           "title": "ESI Registration / Filing",
-          "id": "esi-registration-filing",
           "className": "second-level",
           "pageUrl": "/services/registration/esi-registration-filing"
         },
         {
           "title": "EPF Registration / Filing",
-          "id": "epf-registration-filing",
           "className": "second-level",
           "pageUrl": "/services/registration/epf-registration-filing"
         },
         {
           "title": "HR & Payroll Services",
-          "id": "hr-payroll-services",
           "className": "second-level",
           "pageUrl": "/services/registration/hr-payroll-services"
         },
         {
           "title": "Professional Tax Registration",
-          "id": "professional-tax-registration",
           "className": "second-level",
           "pageUrl": "/services/registration/professional-tax-registration"
         },
         {
           "title": "Shop & Establishment",
-          "id": "shop-establishment",
           "className": "second-level",
           "pageUrl": "/services/registration/shop-establishment"
         },
         {
           "title": "Labour Welfare Fund",
-          "id": "labour-welfare-fund",
           "className": "second-level",
           "pageUrl": "/services/registration/labour-welfare-fund"
         },
         {
           "title": "Labour Contract License",
-          "id": "labour-contract-license",
           "className": "second-level",
           "pageUrl": "/services/registration/labour-contract-license"
         },
         {
           "title": "Inspector of Factories",
-          "id": "inspector-of-factories",
           "className": "second-level",
           "pageUrl": "/services/registration/inspector-of-factories"
         },
         {
           "title": "Fire License",
-          "id": "fire-license",
           "className": "second-level",
           "pageUrl": "/services/registration/fire-license"
         },
         {
           "title": "Training Programs",
-          "id": "training-programs",
           "className": "second-level",
           "pageUrl": "/services/registration/training-programs"
         },
         {
           "title": "Digital Signature",
-          "id": "digital-signature",
           "className": "second-level",
           "pageUrl": "/services/registration/digital-signature"
         }
@@ -561,109 +498,91 @@
       "children": [
         {
           "title": "ISO 9001:2015 QMS",
-          "id": "iso-9001-2015-qms",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-9001-2015-qms"
         },
         {
           "title": "ISO 14001:2004 EMS",
-          "id": "iso-14001-200-ems",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-14001-200-ems"
         },
         {
           "title": "ISO 22000:2018 FSMS",
-          "id": "iso-22000-2018-fsms",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-22000-2018-fsms"
         },
         {
           "title": "ISO 45001:2018 OHSMS",
-          "id": "iso-45001-2018-ohsms",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-45001-2018-ohsms"
         },
         {
           "title": "ISO/IEC 27001:2013 ISMS",
-          "id": "iso-iec-27001-2013-isms",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-iec-27001-2013-isms"
         },
         {
           "title": "ISO 13485:2003 Medical devices",
-          "id": "iso-13485-2003-medical-devices",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-13485-2003-medical-devices"
         },
         {
           "title": "ISO/TS 16949:2009",
-          "id": "iso-ts-16949-2009",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-ts-16949-2009"
         },
         {
           "title": "ISO/IEC 20000",
-          "id": "iso-iec-20000",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-iec-20000"
         },
         {
           "title": "ISO 29990:2010",
-          "id": "iso-29990-2010",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-29990-2010"
         },
         {
           "title": "ISO 50001:2011",
-          "id": "iso-50001-2011",
           "className": "second-level",
           "pageUrl": "/services/registration/iso-50001-2011"
         },
         {
           "title": "HACCP",
-          "id": "haccp",
           "className": "second-level",
           "pageUrl": "/services/registration/haccp"
         },
         {
           "title": "CE Marking",
-          "id": "ce-marking",
           "className": "second-level",
           "pageUrl": "/services/registration/ce-marking"
         },
         {
           "title": "Good Manufacturing Practice(GMP)",
-          "id": "Good-Manufacturing-Practice",
           "className": "second-level",
           "pageUrl": "/services/registration/Good-Manufacturing-Practice"
         },
         {
           "title": "WRAP",
-          "id": "wrap",
           "className": "second-level",
           "pageUrl": "/services/registration/wrap"
         },
         {
           "title": "BSCI",
-          "id": "bsci",
           "className": "second-level",
           "pageUrl": "/services/registration/bsci"
         },
         {
           "title": "SEDEX",
-          "id": "sedex",
           "className": "second-level",
           "pageUrl": "/services/registration/sedex"
         },
         {
           "title": "OEKO",
-          "id": "oeko",
           "className": "second-level",
           "pageUrl": "/services/registration/oeko"
         },
         {
           "title": "GOT",
-          "id": "got",
           "className": "second-level",
           "pageUrl": "/services/registration/got"
         }

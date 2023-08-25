@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { useParams, useLocation } from 'react-router'
 // import serviceList from '../../../public/assets/json/serviceDetails.json'
 import ServiceHeroBanner from '../../components/molecules/ServicePageHeroBanner/ServiceHeroBanner'
 import ServicePageContent from '../../components/molecules/ServicePageContent/ServicePageContent'
@@ -9,17 +10,25 @@ import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 import './ServicePage.scss'
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
+import URLs from '../../constants/urlMapper'
 
 const ServicePage = () => {
-  const path = window.location.pathname.split('/')
-  const category = path[2]
-  const serviceName = path[3]
+  // const path = window.location.pathname.split('/')
+  // const [time, setTime] = useState(0)
+  // useEffect(() => {
+  //   setTime(time + 1)
+  // }, [category, serviceName])
+  // const category = path[2]
+  // const serviceName = path[3]
+
+  const { category, serviceName } = useParams()
+  const location = useLocation()
 
   // eslint-disable-next-line import/no-dynamic-require, global-require
   const serviceList = require(`../../../public/assets/json/service-${category}.json`)
 
   const serviceDetails = serviceList.filter(
-    (service) => service.service === serviceName
+    (service) => URLs[service.url] === location.pathname
   )[0]
 
   const metaDetails = {
@@ -39,6 +48,7 @@ const ServicePage = () => {
     <>
       <HelmetWrapper data={metaDetails} />
       <div className={`service-page-cont ${category}`}>
+        {serviceDetails?.h1 && <h1 className="d-none">{serviceDetails.h1}</h1>}
         <ServiceHeroBanner
           title={serviceDetails.title}
           desc={serviceDetails.description}

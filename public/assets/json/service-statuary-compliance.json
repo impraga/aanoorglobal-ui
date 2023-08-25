@@ -1,24 +1,25 @@
 [
   {
     "service": "book-keeping",
-    "title": "Trademark Registration",
+    "title": "Book Keeping",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "bookKeeping",
+    "h1": "Best Small Business Bookkeeping and Accounting",
+    "description": "Accounting services managed for preparing monthly/periodical financial statements, such as the balance sheet and income statement whenever required. Monthly accounting services are a set of services that are performed on a monthly basis to keep a business's financial records up-to-date.",
     "template": [
       {
-        "id": "Bookkeeping Overview",
+        "id": "Overview",
         "header": "Bookkeeping Overview",
         "type": "SPParagraph",
         "value": "Bookkeeping in India is the process of recording and summarizing financial transactions of a business in accordance with the Generally Accepted Accounting Principles (GAAP) in India. It begins with entering all financial transactions into a ledger, which may be recorded in a book or computer system that tracks the financial activity of a business. "
       },
 
       {
-        "id": "The main objectives of bookkeeping",
+        "id": "Objectives ",
         "header": "The main objectives of bookkeeping",
         "type": "SPBullet",
         "value": [
@@ -30,7 +31,7 @@
       },
 
       {
-        "id": "Benefits of monthly Accounting",
+        "id": "Benefits",
         "header": "Benefits of monthly Accounting",
         "desc": "Benefits of outsourcing monthly accounting services to a professional accounting firm:",
         "type": "SPBenefits",
@@ -95,10 +96,12 @@
         }
       },
       {
-        "id": "Important aspects of bookkeeping",
+        "id": "Important aspects ",
         "header": "Important aspects of bookkeeping",
         "desc": "",
         "type": "SPBenefits",
+        "class": "important",
+
         "value": [
           {
             "title": "The double-entry system",
@@ -130,23 +133,27 @@
   },
   {
     "service": "income-tax-filing",
-    "title": "Trademark Objection",
+    "title": "Income Tax Filing",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-objection",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "incometaxFilling",
+    "h1": "Best Tax Preparation Services in Chennai",
+    "description": "Income tax filing is a key part of India's economic development. It is a way for the government to collect revenue to fund essential services, such as education, healthcare, and infrastructure.",
     "template": [
       {
-        "id": "ITR Online ",
+        "id": "Overview ",
         "header": "ITR Online ",
         "type": "SPParagraph",
-        "value": "Income Tax Return (ITR) filing in India is the process of submitting an annual tax return to the Income Tax Department of India. It is a requirement for individuals and businesses with taxable income above a certain threshold. The ITR filing process is designed to collect taxes from taxpayers and to ensure that everyone pays their fair share.To file an ITR, taxpayers must provide information about their income, deductions, and tax credits. This information can be gathered from various sources, such as Form 16 (for salaried employees), Form 26AS (for taxpayers who have made TDS payments), and bank statements."
+        "value": [
+          "Income Tax Return (ITR) filing in India is the process of submitting an annual tax return to the Income Tax Department of India. It is a requirement for individuals and businesses with taxable income above a certain threshold. The ITR filing process is designed to collect taxes from taxpayers and to ensure that everyone pays their fair share",
+          "To file an ITR, taxpayers must provide information about their income, deductions, and tax credits. This information can be gathered from various sources, such as Form 16 (for salaried employees), Form 26AS (for taxpayers who have made TDS payments), and bank statements."
+        ]
       },
       {
-        "id": "Income Tax Returns Filing includes",
+        "id": "Includes",
         "header": "Income Tax Returns Filing includes",
         "type": "SPIncludes",
         "value": [
@@ -158,7 +165,7 @@
       },
 
       {
-        "id": "Most common ITR forms",
+        "id": "ITR forms",
         "header": "Here are seven different ITR forms, each of which is designed for a specific type of taxpayer. The most common ITR forms are:",
         "type": "SPBullet",
         "value": [
@@ -173,7 +180,7 @@
       },
 
       {
-        "id": "Benefits of Filing ITR Online",
+        "id": "Benefits",
         "header": "Benefits of Filing ITR Online",
         "desc": "",
         "type": "SPBenefits",
@@ -205,7 +212,7 @@
         ]
       },
       {
-        "id": "Documents require for Income Tax Filing",
+        "id": "Documents requires ",
         "header": "Documents require for Income Tax Filing",
         "type": "SPDocuments",
         "value": [
@@ -220,7 +227,7 @@
         ]
       },
       {
-        "id": "Procedure to file ITR Online",
+        "id": "Online Procedure",
         "header": "Procedure to file ITR Online",
         "type": "SPStep",
         "value": {
@@ -263,8 +270,9 @@
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/sole-proprietorship",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "gstFilling",
+    "h1": "GST Return Filing Services in Chennai",
+    "description": "Aanoor Global help to file GST Return Filing Online hassle free for you without any complications and with just a few clicks at an affordable rate",
     "template": [
       {
         "id": "GSTR Filing",

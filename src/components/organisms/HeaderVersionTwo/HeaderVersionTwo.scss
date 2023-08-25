@@ -62,13 +62,11 @@
                   transform: rotate(90deg);
                 }
               }
-              &:nth-child(4),
-              &:nth-child(5) {
-                .div-first-level {
-                  > ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                  }
+
+              .div-first-level {
+                > ul {
+                  display: flex;
+                  flex-wrap: wrap;
                 }
               }
 
@@ -86,13 +84,17 @@
                   left: 0;
                   right: 0;
                   max-width: 1150px;
-                  top: 70px;
+                  top: 65px;
                   z-index: 5;
                   border-radius: 20px;
                   padding-bottom: 0;
                   position: absolute;
                   max-height: 500px;
                   overflow: auto;
+
+                  ul {
+                    margin-bottom: 5rem;
+                  }
 
                   .second-level {
                     display: block;

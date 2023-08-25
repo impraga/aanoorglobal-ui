@@ -6,6 +6,7 @@ import menuList from '../../../public/assets/json/menuList.json'
 import { footerOrder } from '../../constants'
 
 import './Sitemap.scss'
+import URLs from '../../constants/urlMapper'
 
 let servicelist = []
 let primarylist = []
@@ -65,14 +66,16 @@ const Sitemap = () => {
                         {sList.children.map((child) => (
                           <li key={child.title}>
                             <h4 className="bg-gray">
-                              <Link to={child.pageUrl}>{child.title}</Link>
+                              <Link to={URLs[child.pageUrl]}>
+                                {child.title}
+                              </Link>
                             </h4>
                             {child?.children?.length > 0 && (
                               <ul className="inner-ul ps-3 pt-1 pb-1">
                                 {child?.children?.map((childList) => (
                                   <li key={childList.title}>
                                     <h5 className="bg-gray">
-                                      <Link to={childList.pageUrl}>
+                                      <Link to={URLs[childList.pageUrl]}>
                                         {childList.title}
                                       </Link>
                                     </h5>

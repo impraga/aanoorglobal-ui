@@ -17,6 +17,7 @@ import linkedin from '../../../../public/assets/icons/linkedin.png'
 import twitter from '../../../../public/assets/icons/twitter.png'
 
 import './Footer.scss'
+import URLs from '../../../constants/urlMapper'
 
 let servicelist = []
 // let primarylist = []
@@ -107,12 +108,12 @@ const Footer = () => {
                 <ul>
                   {service.children.map((childs) => (
                     <li key={childs.title}>
-                      <Link to={childs.pageUrl}>{childs.title}</Link>
+                      <Link to={URLs[childs.pageUrl]}>{childs.title}</Link>
                       {childs?.children?.length > 0 && (
                         <ul className="inner-ul ps-3 pt-1 pb-1">
                           {childs?.children?.map((childList) => (
                             <li key={childList.title}>
-                              <Link to={childList.pageUrl}>
+                              <Link to={URLs[childList.pageUrl]}>
                                 {childList.title}
                               </Link>
                             </li>

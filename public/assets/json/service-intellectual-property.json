@@ -1,13 +1,13 @@
 [
   {
-    "service": "trademark-registration",
     "title": "Trademark Registration",
     "price": {
       "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-registration",
+    "url": "trademarkRegistration",
+    "h1": "Trademark and Logo Registration in Chennai",
     "description": "Do you want to protect your intellectual property? Aanoor global can help you register your logo trademark registration online, which will protect your brand and establish your ownership of it. We offer affordable rates and make the process simple.",
     "template": [
       {
@@ -99,7 +99,7 @@
         "header": "Brand Trademark Registration Online Process",
         "type": "SPStep",
         "value": {
-          "subHeading": "The process of trademark registration can be complex, but it is important to register your trademark if you want to protect your brand and ensure that you have the exclusive right to use it.",
+          "subHeading": "The process of trademark registration can be complex, but it is important to register your trademark if you want to protect your brand and ensure that you have the exclusive right to use it. Here is a more detailed explanation of the services included in our logo trademark registration service:",
           "steps": [
             {
               "heading": "TM Search Report and Consultation",
@@ -131,21 +131,24 @@
     ]
   },
   {
-    "service": "trademark-objection",
     "title": "Trademark Objection",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-objection",
+    "url": "trademarkObjection",
+    "h1": "Trademark Objection Reply in Chennai",
     "description": "Aanoor Global can help you draft a trademark objection reply that addresses the examiner's concerns and increases the chances of your TM application being approved. Our objection reply service includes various stages to file the response.",
     "template": [
       {
-        "id": "TM Objection",
+        "id": "Overview",
         "header": "TM Objection",
         "type": "SPParagraph",
-        "value": "When you apply to register a trademark, the trademark examiner may raise an objection to a trademark application at the initial stage of the registration process. This can happen for a number of reasons, such as if the trademark is too similar to another registered trademark, or if it is descriptive of the goods or services it is used for. If you have received an objection to your trademark application, contact Aanoor Global today to learn more about our objection reply service. We can help you get your application approved and protect your brand."
+        "value": [
+          "When you apply to register a trademark, the trademark examiner may raise an objection to a trademark application at the initial stage of the registration process. This can happen for a number of reasons, such as if the trademark is too similar to another registered trademark, or if it is descriptive of the goods or services it is used for.",
+          " If you have received an objection to your trademark application, contact Aanoor Global today to learn more about our objection reply service. We can help you get your application approved and protect your brand."
+        ]
       },
       {
         "id": "includes",
@@ -159,7 +162,7 @@
         ]
       },
       {
-        "id": "Essential Facts about Trademark Objection",
+        "id": "Essential Facts ",
         "header": "Essential Facts about Trademark Objection",
         "type": "SPBenefits",
         "class": "facts",
@@ -191,7 +194,7 @@
         ]
       },
       {
-        "id": "A trademark can be objected to for a variety of reasons",
+        "id": "Objected Reasons",
         "header": "A trademark can be objected to for a variety of reasons",
         "type": "SPBullet",
         "value": [
@@ -203,7 +206,7 @@
         ]
       },
       {
-        "id": "TM Objection Reply Process",
+        "id": "Reply Process",
         "header": "TM Objection Reply Process",
         "desc": "It is important to note that trademark objections are common and do not necessarily mean that your application will be rejected. If you receive an objection, it is important to carefully review the examination report and file a strong reply. With careful preparation, you can overcome most trademark objections and register your trademark. Here is a more detailed explanation of the services included in our trademark objection reply service:",
         "type": "SPStep",
@@ -235,21 +238,22 @@
     ]
   },
   {
-    "service": "trademark-hearing",
     "title": "Trademark Hearing",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-hearing",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "trademarkHearing",
+    "h1": "Trademark objection Hearing in chennai",
+    "description": "Trademark hearing is a legal proceeding that is held before the Trademark Registry in India to resolve disputes between trademark owners. A trademark hearing can be held in response to an opposition to a trademark application, or in response to a cancellation petition.",
     "template": [
       {
-        "id": "Trademark Hearing Stages",
+        "id": "Stages",
         "header": "Trademark Hearing Stages",
         "desc": "The Trademark Act, 1999 governs trademark hearings in India. The Act provides for a two-stage TM hearing process in Chennai:",
         "type": "SPBenefits",
+        "class": "Facts",
         "value": [
           {
             "title": "Preliminary hearing",
@@ -264,87 +268,87 @@
             ]
           }
         ]
+      },
+      {
+        "id": " Includes",
+        "header": "TM hearing Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Applicant or registrant name and address ",
+          "Opposite party name and address",
+          "The trademark registration number (if applicable)",
+          "A brief summary of the dispute"
+        ]
+      },
+      {
+        "id": " Online Procedure",
+        "header": "Trademark hearing Procedure Online",
+        "desc": "Here are the steps involved in tm hearing:",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "Form TM-H",
+            "value": [
+              "We will file Form TM-H with the given information on behalf of applicant for registration of the trademark with the Trademark Registry."
+            ]
+          },
+          {
+            "title": "Filing of Opposition",
+            "value": [
+              "If an opposition is filed against the trademark application, the Trademark Registry will schedule a preliminary hearing to determine whether there are any prima facie grounds for the trademark hearing."
+            ]
+          },
+          {
+            "title": "Prima facie grounds",
+            "value": [
+              "If the Registrar finds that there are prima facie grounds for the trademark hearing, the trademark hearing will proceed to the next stage."
+            ]
+          },
+          {
+            "title": "Filing of Responses",
+            "value": [
+              "The trademark applicant and the opponent will file written submissions and evidence in support of their respective cases."
+            ]
+          },
+          {
+            "title": "Final Hearing ",
+            "value": [
+              "The Registrar will hold a final hearing to resolve the dispute between the trademark owners. The Registrar will make a decision on the merits of the case and issue a ruling."
+            ]
+          },
+          {
+            "title": "Start hearing process now! ",
+            "value": [
+              "The trademark hearing process can be a lengthy and complex process. It is important to have an experienced trademark attorney to represent you at a trademark hearing. We Aanoor Global with an experienced trademark attorney team will be able to help you prepare your case and present your arguments to the TM Registrar."
+            ]
+          }
+        ]
       }
     ]
   },
 
   {
-    "id": "TM hearing Includes",
-    "header": "TM hearing Includes",
-    "type": "SPIncludes",
-    "value": [
-      "Applicant or registrant name and address ",
-      "Opposite party name and address",
-      "The trademark registration number (if applicable)",
-      "A brief summary of the dispute"
-    ]
-  },
-  {
-    "id": "Trademark hearing Procedure Online",
-    "header": "Trademark hearing Procedure Online",
-    "desc": "Here are the steps involved in tm hearing:",
-    "type": "SPBenefits",
-    "value": [
-      {
-        "title": "Form TM-H",
-        "value": [
-          "We will file Form TM-H with the given information on behalf of applicant for registration of the trademark with the Trademark Registry."
-        ]
-      },
-      {
-        "title": "Filing of Opposition",
-        "value": [
-          "If an opposition is filed against the trademark application, the Trademark Registry will schedule a preliminary hearing to determine whether there are any prima facie grounds for the trademark hearing."
-        ]
-      },
-      {
-        "title": "Prima facie grounds",
-        "value": [
-          "If the Registrar finds that there are prima facie grounds for the trademark hearing, the trademark hearing will proceed to the next stage."
-        ]
-      },
-      {
-        "title": "Filing of Responses",
-        "value": [
-          "The trademark applicant and the opponent will file written submissions and evidence in support of their respective cases."
-        ]
-      },
-      {
-        "title": "Final Hearing ",
-        "value": [
-          "The Registrar will hold a final hearing to resolve the dispute between the trademark owners. The Registrar will make a decision on the merits of the case and issue a ruling."
-        ]
-      },
-      {
-        "title": "Start hearing process now! ",
-        "value": [
-          "The trademark hearing process can be a lengthy and complex process. It is important to have an experienced trademark attorney to represent you at a trademark hearing. We Aanoor Global with an experienced trademark attorney team will be able to help you prepare your case and present your arguments to the TM Registrar."
-        ]
-      }
-    ]
-  },
-
-  {
-    "service": "trademark-renewal",
     "title": "TM Renewal",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-renewal",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "trademarkRenewal",
+    "h1": "Renewal of Trademark Registration in Chennai",
+    "description": "Trademark renewal in Chennai is the process of extending the registration of a trademark for a further period of 10 years. A registered trademark is valid for a period of 10 years from the date of registration. The renewal application must be filed with the Trademark Registry within 6 months of the expiry date of the trademark registration. ",
     "template": [
       {
-        "id": "Trademark renewal service",
+        "id": "Overview",
         "header": "Trademark renewal service",
         "type": "SPParagraph",
-        "value": "The Trademark Act, 1999 governs trademark renewal in India. The Act states a trademark as a mark used or proposed to be used in relation to goods or services for the purpose to indicate a connection in the course of trade between the goods or services and some person having the right either as proprietor or by registration to use the mark."
+        "value": "The Trademark Act, 1999 governs trademark renewal in India. The Act states \"a trademark as a mark used or proposed to be used in relation to goods or services for the purpose to indicate a connection in the course of trade between the goods or services and some person having the right either as proprietor or by registration to use the mark\"."
       },
       {
-        "id": "Benefits of renewal of trademark registration",
+        "id": "Benefits ",
         "header": "Benefits of renewal of trademark registration",
         "type": "SPBenefits",
+        "class": "Facts",
         "value": [
           {
             "title": "Extension of ownership rights",
@@ -368,7 +372,7 @@
       },
 
       {
-        "id": "Documents required for Trademark renewal process",
+        "id": "Documents required ",
         "header": "Documents required for Trademark renewal process",
         "type": "SPDocuments",
         "value": [
@@ -378,7 +382,7 @@
         ]
       },
       {
-        "id": "Trademark renewal procedure in Chennai ",
+        "id": " renewal  ",
         "header": "Trademark renewal procedure in Chennai ",
         "type": "SPStep",
         "value": {
@@ -414,23 +418,24 @@
   },
   {
     "service": "copyright-registration",
-    "title": "Income Tax Filing",
+    "title": "Copyright Registration",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/copyright-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "copyrightRegistration",
+    "h1": "Apply for Copyright Registration in Chennai",
+    "description": "Protect Your Creative Work with Copyright Registration, everyone wants to protect their own creative work, whether it is artistic work, story content, sound recordings, or any other intellectual work. They don't want their work to be copied by others. Aanoor Global can help you protect your work and enjoy all legal rights for the same.",
     "template": [
       {
-        "id": "Logo copyright registration",
+        "id": "Overview",
         "header": "Logo copyright registration",
         "type": "SPParagraph",
         "value": "The Copyright Act, 1957 (the Act) is the primary legislation that governs copyright in India. To be eligible for copyright protection, a work must be original and fixed in a tangible form. This means that the work must be the product of the author's own creative labor and that it must be recorded in some way, such as in writing, on film, or in audio form."
       },
       {
-        "id": "The Act defines copyright as",
+        "id": " Defines ",
         "header": "The Act defines copyright as",
         "desc": "The exclusive right to do or authorize the doing of any of the following acts in respect of a work:",
         "type": "SPBullet",
@@ -444,7 +449,7 @@
         ]
       },
       {
-        "id": "Copyright registration service includes",
+        "id": "Includes",
         "header": "Copyright registration service includes",
         "type": "SPIncludes",
         "value": [
@@ -456,7 +461,7 @@
       },
 
       {
-        "id": "Benefits of Copyright Registration",
+        "id": "Benefits ",
         "header": "Benefits of Copyright Registration",
         "desc": "Logo Copyright registration offers number of benefits, including:",
         "type": "SPBenefits",
@@ -500,7 +505,7 @@
         ]
       },
       {
-        "id": "Documents Required for Copyright Protection",
+        "id": "Documents Required",
         "header": "Documents Required for Copyright Protection",
         "type": "SPDocuments",
         "value": [
@@ -511,7 +516,7 @@
         ]
       },
       {
-        "id": "Copyright application online process",
+        "id": "Online process",
         "header": "Copyright application online process",
         "type": "SPStep",
         "value": {
@@ -546,24 +551,24 @@
     ]
   },
   {
-    "service": "design-registration",
-    "title": "Income Tax Filing",
+    "title": "Designright Registration",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/design-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "designrightRegistration",
+    "h1": "Design Right Registration in Chennai",
+    "description": "We help you protect your intellectual property and ensure that your industrial designs are legally protected. We offer a comprehensive suite of services to meet your specific needs, and we work with you every step of the way to ensure a smooth and successful registration process.",
     "template": [
       {
-        "id": "Design right online",
+        "id": "Overview",
         "header": "Design right online",
         "type": "SPParagraph",
         "value": "Design right registration in India is a legal process that protects the original patterns,shapes, ornaments, and composition of lines and colors applied to any article by different industrial processes. The Designs Act, 2000 governs design registration in India. Aanoor Global provides a secure and affordable way to acquire valid registered design rights in Chennai."
       },
       {
-        "id": "Design right registration package includes",
+        "id": " Includes",
         "header": "Design right registration package includes",
         "type": "SPIncludes",
         "value": [
@@ -578,7 +583,7 @@
       },
 
       {
-        "id": "What can be applied for Designs",
+        "id": "Apply Designs",
         "header": "What can be applied for Designs",
         "desc": "To be eligible for design registration in Chennai, the design must be:",
         "type": "SPBullet",
@@ -592,7 +597,19 @@
         ]
       },
       {
-        "id": "Benefits of Designs registration in Chennai",
+        "id": "Exclusive rights",
+        "header": "Exclusive rights for Designs",
+        "desc": "After an application of design is registered, the owner of the design has the exclusive right to:",
+        "type": "SPBullet",
+        "value": [
+          "Can Use the design in India.",
+          "Can Make, import, sell, or distribute articles in India that incorporate the design.",
+          "Can license others to use the design."
+        ]
+      },
+
+      {
+        "id": "Benefits ",
         "header": "Benefits of Designs registration in Chennai",
         "desc": "",
         "type": "SPBenefits",
@@ -610,9 +627,10 @@
         ]
       },
       {
-        "id": "Essential facts of design right registration",
+        "id": "Essential facts",
         "header": "Essential facts of design right registration",
         "type": "SPBenefits",
+        "class": "facts",
         "value": [
           {
             "title": "File professionally.",
@@ -641,7 +659,7 @@
         ]
       },
       {
-        "id": "Documents Required for Designs Protection",
+        "id": "Documents Requires",
         "header": "Documents Required for Designs Protection",
         "type": "SPDocuments",
         "value": [
@@ -652,7 +670,7 @@
         ]
       },
       {
-        "id": "Design right registration procedure",
+        "id": "Registration procedure",
         "header": "Design right registration procedure",
         "type": "SPStep",
         "value": {
@@ -683,28 +701,29 @@
     ]
   },
   {
-    "service": "patent-registration",
-    "title": "GST Filing",
+    "title": "Patent Registration",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/patent-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "patentRegistration",
+    "h1": "Patent Registration in Chennai",
+    "description": "Patent registration is the process of securing legal protection for an invention that is novel, inventive, and has industrial applicability. A patent registration gives the inventor the exclusive right to make, use, sell, or import the invention in accordance with the Indian Patent Act and the Patent Rules. Aanoor Global can help you acquire a patent registration at an affordable rate. ",
     "template": [
       {
-        "id": "About Patent Act",
+        "id": "Overview",
         "header": "About Patent Act",
         "type": "SPParagraph",
         "value": "The Patents Act, 1970 governs patent registration in India. The Act defines a patent as an exclusive right granted by the Government of India to the inventor for a limited period of time to prevent others from making, using, selling, or importing the invention without the consent of the inventor."
       },
 
       {
-        "id": "Criteria for filing a Patent right registration",
+        "id": "Criteria",
         "header": "Criteria for filing a Patent right registration",
         "desc": "",
         "type": "SPBenefits",
+        "class": "important",
         "value": [
           {
             "title": "Novelty:",
@@ -727,7 +746,7 @@
         ]
       },
       {
-        "id": "Benefits of Patent Registration in Chennai",
+        "id": "Benefits",
         "header": "Benefits of Patent Registration in Chennai",
         "desc": "",
         "type": "SPBenefits",
@@ -767,7 +786,7 @@
       },
 
       {
-        "id": "Patent Registration Procedure Online",
+        "id": "Registration Procedure",
         "header": "Patent Registration Procedure Online",
         "type": "SPStep",
         "value": {

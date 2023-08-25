@@ -11,6 +11,7 @@ import { getSessionStorage, removeSession } from '../../../utils/tools'
 import { isKillSwitchDisabled, sessionKeys } from '../../../constants'
 
 import './HeaderVersionTwo.scss'
+import URLs from '../../../constants/urlMapper'
 
 const HeaderVersionTwo = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,7 +30,9 @@ const HeaderVersionTwo = () => {
   const menuWithLink = (item) => (
     <li key={item.id} className={item.className}>
       {item.pageUrl ? (
-        <Link to={item.pageUrl}>{item.title}</Link>
+        <Link key={item.pageUrl} to={URLs[item.pageUrl]}>
+          {item.title}
+        </Link>
       ) : (
         <span>
           {item.title}
