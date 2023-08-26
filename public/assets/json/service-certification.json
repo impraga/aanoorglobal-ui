@@ -1,361 +1,191 @@
 [
   {
-    "service": "trademark-registration",
-    "title": "Trademark Registration",
+    "service": "ISO 9001:2015 QMS",
+    "title": "ISO 9001:2015 QMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "iso2015",
+    "h1": "ISO 9001:2015 Certification-Quality Management System",
+    "description": "ISO 9001:2015 certification standard that specifies requirements for a quality management system (QMS). A QMS is a set of processes that an organization uses to ensure that its products and services meet customer requirements and regulatory requirements.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "An overview of ISO 9001",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "The standard is published by the International Organization for Standardization (ISO), a non-governmental organization that sets standards for a wide range of products, services, and processes. ISO 9001 2015 qms certification is one of the most widely used standards in the world, with over 1 million organizations certified to it."
       },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
+
       {
         "id": "benefits",
-        "header": "Benefits",
+        "header": "Benefits of QMS Certification",
         "desc": "",
         "type": "SPBenefits",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Increased customer satisfaction",
+              "Improved product and service quality",
+              "Increased efficiency and productivity",
+              "Reduced costs",
+              "Enhanced reputation",
+              "Improved compliance with regulations",
+              "Improved compliance with regulations"
             ]
           }
         ]
       },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
+
       {
         "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
+        "header": "QMS 9001 2015 Process",
         "type": "SPStep",
         "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "subHeading": "The process of implementing ISO 9001:2015 in India typically involves the following steps",
           "steps": [
             {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+              "heading": "Planning",
+              "desc": "The organization defines the scope of its QMS and identifies the requirements that it will need to meet"
             },
             {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+              "heading": "Implementation",
+              "desc": "The organization develops and implements the processes that will make up its QMS."
             },
             {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+              "heading": "Documentation",
+              "desc": "The organization documents its QMS, including its policies, procedures, and records."
             },
             {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+              "heading": "Internal audit",
+              "desc": "The organization conducts internal audits to ensure that its QMS is effective."
             },
             {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+              "heading": "Management review",
+              "desc": "The organization's management reviews the QMS on a regular basis to ensure that it is still meeting its objectives."
+            },
+            {
+              "heading": "Certification",
+              "desc": "The organization can then apply for certification to an accredited certification body."
+            },
+            {
+              "heading": "Surveillance & Others",
+              "desc": [
+                "Any organization is certified to ISO 9001:2015, it must maintain its certification by undergoing regular surveillance audits with some interval.",
+                "ISO 9001:2015 is a valuable standard that can help organizations in India improve their quality management practices and achieve their business objectives. If you are an organization in India that is interested in implementing ISO 9001:2015, contact Aanoor team to know more!"
+              ]
             }
           ]
         }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
       }
     ]
   },
   {
-    "service": "trademark-objection",
-    "title": "Trademark Objection",
+    "service": "ISO 14001:2015 EMS",
+    "title": "ISO 14001:2015 EMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
     "url": "/services/trademark-objection",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "h1": "ISO 14001:2015 Environmental Management System",
+    "description": [
+      "ISO 14001:2015 specifies requirements for Environmental Management System (EMS) for any organization that seeks to demonstrate compliance with laws and regulations, and conformity to environmental policy and stated objectives, ISO 14001: 2015 supports environmental protection and the prevention of pollution in the socio-economic balance",
+      "ISO 14001:2015 certification standard that specifies requirements for an environmental management system (EMS) for an organization. An EMS is a set of processes that an organization uses to manage its environmental impacts."
+    ],
+
     "template": [
       {
-        "id": "overview",
-        "header": "What is Logo Trademark Registration?",
-        "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
         "id": "benefits",
-        "header": "Benefits",
+        "header": "Benefits of ISO 14001:2015 EMS ",
         "desc": "",
         "type": "SPBenefits",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Improved environmental performance",
+              "Reduced environmental impact",
+              "Increased compliance with environmental regulations",
+              "Enhanced reputation",
+              "Improved customer satisfaction",
+              "Increased efficiency and productivity",
+              "Reduced costs"
             ]
           }
         ]
       },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
+
       {
         "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
+        "header": "EMS 14001:2015 Certification Process",
         "type": "SPStep",
         "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "subHeading": "The process of implementing ISO 14001:2015 in India typically involves the following steps:",
           "steps": [
             {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+              "heading": "Planning",
+              "desc": "The organization defines the scope of its EMS and identifies the environmental aspects that it will need to manage."
             },
             {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+              "heading": "Implementation",
+              "desc": "The organization develops and implements the processes that will make up its EMS."
             },
             {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+              "heading": "Documentation",
+              "desc": "The organization documents its EMS, including its policies, procedures, and records."
             },
             {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+              "heading": "Internal audit",
+              "desc": "The organization conducts internal audits to ensure that its EMS is effective."
             },
             {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+              "heading": "Management review",
+              "desc": "The organization's management reviews the EMS on a regular basis to ensure that it is still meeting its objectives."
+            },
+            {
+              "heading": "Certification",
+              "desc": "The organization can then apply for certification to an accredited certification body"
+            },
+            {
+              "heading": "Surveillance & Others",
+              "desc": "Once an organization is certified to ISO 14001:2015, it must maintain its certification by undergoing regular surveillance audits. Overall, ISO 14001:2015 is a valuable standard that can help organizations in India improve their environmental performance and achieve their business objectives."
             }
           ]
         }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
       }
     ]
   },
   {
-    "service": "sole-proprietorship",
-    "title": "Sole Proprietorship",
+    "service": "ISO 22000:2018 FSMS",
+    "title": "ISO 22000:2018 FSMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
     "url": "/services/sole-proprietorship",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "h1": "ISO 22000:2018 Food Safety Management Systems",
+    "description": "The ISO 22000:2018 standard is a valuable tool for organizations that want to ensure the safety of their food products. It is a comprehensive and rigorous standard that can help organizations to achieve their food safety goals.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "FSMS Overview",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "ISO 22000:2018 is an international standard that specifies the requirements for a food safety management system (FSMS). An FSMS is a systematic approach to managing food safety risks throughout the food chain. It helps organizations to ensure that their products are safe for consumers."
       },
       {
-        "id": "includes",
-        "header": "Includes",
+        "id": "Principles",
+        "header": "The ISO 22000:2018 FSMS Certification standard is based on the following principles:",
         "type": "SPIncludes",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "Hazard analysis and critical control points (HACCP)",
+          "Risk-based thinking",
+          "The Plan-Do-Check-Act (PDCA) cycle",
+          "Communication"
         ]
       },
       {
@@ -364,482 +194,220 @@
         "type": "SPParagraph",
         "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
       },
+
       {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "Requirements",
+        "header": "FSMS Requirements",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "The standard covers all aspects of food safety, from the production of raw materials to the final sale of food products",
+          "The identification and assessment of food safety hazards",
+          "The establishment of control measures to prevent or reduce hazards to acceptable levels",
+          "The monitoring and verification of the effectiveness of control measures",
+          "The management of change",
+          "The management of documentation",
+          "The communication of food safety information"
         ]
       },
       {
         "id": "benefits",
-        "header": "Benefits",
+        "header": "Benefits of FSMS Certification",
         "desc": "",
         "type": "SPBenefits",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Increased food safety",
+              "Improved compliance with food safety regulations",
+              "Reduced food safety risks",
+              "Increased customer confidence",
+              "Improved efficiency and productivity",
+              "Enhanced market opportunities"
             ]
           }
         ]
       },
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
+        "id": "Objectives",
+        "header": "Food Safety objectives of ISO 22000 2018",
+        "type": "SPBullet",
         "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
+          "To ensure that food is safe at the consumption side.",
+          "To identify and control food safety hazards throughout the food chain",
+          "To comply with applicable food safety regulations.",
+          "To meet customer food safety requirements.",
+          "To communicate food safety information to interested parties."
         ]
       },
       {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
+        "id": "Approach",
+        "header": "Approach for FSMS here!",
+        "type": "SPParagraph",
+        "value": "By achieving above objectives, organizations can help to protect public health and ensure the safety of their food products. Contact our team of food safety audit team to know more!"
       }
     ]
   },
   {
-    "service": "partnership-firm",
-    "title": "Partnership Firm",
+    "service": "ISO 45001:2018 OHSMS",
+    "title": "ISO 45001:2018 OHSMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
     "url": "/services/partnership-firm",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+
+    "description": "",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "ISO 45001:2018 is a certification standard that specifies requirements for an occupational health and safety management system (OHSMS) for an organization. An OHSMS is a systematic approach to managing occupational health and safety (OH&S) risks in order to prevent work-related injuries and ill health."
       },
       {
-        "id": "includes",
-        "header": "Includes",
+        "id": "Principles",
+        "header": "The ISO 45001:2018 OHSMS standard is based on the following principles:",
         "type": "SPIncludes",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "Leadership and commitment",
+          "Involvement of workers",
+          "Legal compliance",
+          "Risk-based thinking",
+          "Participatory approach",
+          "Continual improvement"
         ]
       },
+
       {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "Requirements",
+        "header": "Requirements",
+        "desc": "The standard covers all aspects of OH&S, from the identification of hazards to the implementation of control measures. It includes requirements for:",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "The identification and assessment of OH&S risks",
+          "The establishment of control measures to prevent or reduce risks to acceptable levels",
+          "The monitoring and verification of the effectiveness of control measures",
+          "The communication of OH&S information",
+          "The management of change"
         ]
       },
       {
         "id": "benefits",
         "header": "Benefits",
-        "desc": "",
+        "desc": "Organizations that implement an ISO 45001:2018 OHSMS Certification can benefit from a number of advantages, including:",
         "type": "SPBenefits",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Increased OH&S performance",
+              "Improved compliance with OH&S regulations",
+              "Reduced OH&S risks",
+              "Increased employee morale and productivity",
+              "Enhanced reputation with customers and stakeholders"
             ]
           }
         ]
       },
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
+        "id": "OH&S objectives ",
+        "header": "OH&S objectives",
+
+        "desc": "The standard covers all aspects of OH&S, from the identification of hazards to the implementation of control measures. It includes requirements for:",
+        "type": "SPBullet",
         "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
+          "To provide a safe and healthy workplace for all workers.",
+          "To prevent work-related injuries and ill health.",
+          "To comply with applicable OH&S regulations.",
+          "To meet the OH&S requirements of customers and stakeholders.",
+          "To continually improve OH&S performance."
         ]
       }
     ]
   },
   {
-    "service": "income-tax-filing",
-    "title": "Income Tax Filing",
+    "service": "ISO/IEC 27001:2013 ISMS",
+    "title": "ISO/IEC 27001:2013 ISMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
     "url": "/services/income-tax-filing",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "h1": "> ISO/IEC 27001:2013 Information Security Management Systems",
+
+    "description": "ISO/IEC 27001:2013 is an international standard that provides a framework for organizations to manage their information security. The standard is based on the principles of risk-based thinking, the Plan-Do-Check-Act (PDCA) cycle, and management commitment.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "About ISMS",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "trademarked",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
+        "value": "An ISMS is a systematic approach to managing information security risks in order to protect the confidentiality, integrity, and availability of information. The standard covers all aspects of information security, from the identification of risks to the implementation of control measures."
       },
       {
         "id": "benefits",
-        "header": "Benefits",
+        "header": "Benefits of ISO- ISMS",
         "desc": "",
         "type": "SPBenefits",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Increased information security",
+              "Improved compliance with information security regulations",
+              "Reduced information security risks",
+              "Increased customer confidence",
+              "Improved efficiency and productivity",
+              "Enhanced market opportunities"
             ]
           }
         ]
       },
       {
-        "id": "multi-benefits",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
+        "id": "Objectives",
+        "header": "Information Security Objectives ",
+        "type": "SPBullet",
         "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
+          "To ensure the confidentiality, integrity, and readiness of information.",
+          "To comply with applicable information security regulations.",
+          "To meet the information security requirements of customers and stakeholders.",
+          "To continually improve information security performance."
         ]
       },
+
       {
-        "id": "required-documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
+        "id": "certify",
+        "header": "Audit & Certify with ISMS",
+        "type": "SPParagraph",
         "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "registeration-steps",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
+          "The ISO/IEC 27001:2013 standard is a valuable tool for organizations that want to protect their information assets. It is a comprehensive and rigorous standard that can help organizations to achieve their information security goals",
+          "By achieving these objectives, organizations can help to protect their information assets and improve their overall performance. Connect with Aanoor ISO audit team to compete your certification."
         ]
       }
     ]
   },
   {
-    "service": "gst-filing",
-    "title": "GST Filing",
+    "service": "ISO 13485:2016",
+    "title": "ISO 13485:2016",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
     "url": "/services/gst-filing",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "h1": "> ISO 13485:2016 Medical devices Certifications",
+    "description": "The ISO 13485:2016 standard is a valuable tool for organizations that want to demonstrate their commitment to quality and safety in the medical device industry.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "Overview of ISO 13845:2016",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": [
+          "ISO 13485:2016 is a certification standard that states requirements for a quality management system (QMS) to an organizations that design, develop, manufacture, install, and service medical devices and related services",
+          "The standard is based on the principles of risk management and the Plan-Do-Check-Act (PDCA) cycle. It covers all aspects of the QMS, from design and development to production, installation, and servicing."
+        ]
       },
       {
         "id": "includes",
@@ -873,18 +441,18 @@
       },
       {
         "id": "benefits",
-        "header": "Benefits",
+        "header": "Benefits of ISO 13485:2016 QMS",
         "desc": "",
         "type": "SPBenefits",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Increased customer confidence",
+              "Improved compliance with regulatory requirements",
+              "Reduced risk of recalls and product liability claims",
+              "Increased efficiency and productivity",
+              "Enhanced market opportunities"
             ]
           }
         ]

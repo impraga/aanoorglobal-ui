@@ -216,11 +216,11 @@
         "header": "Documents require for Income Tax Filing",
         "type": "SPDocuments",
         "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
+          "PAN card",
+          "Form 16: ",
+          "Bank statement",
+          "Investment proofs",
+          "Other documents",
           "Proof of Incorporation certificate and business registration.",
           "Address proof of the business place.",
           "Digital Signatures."
@@ -275,7 +275,7 @@
     "description": "Aanoor Global help to file GST Return Filing Online hassle free for you without any complications and with just a few clicks at an affordable rate",
     "template": [
       {
-        "id": "GSTR Filing",
+        "id": "Overview",
         "header": "GSTR Filing",
         "type": "SPParagraph",
         "value": "GST filing in India is the process of submitting GST returns to the government. GST returns are documents that contain information about a business's sales, purchases, and taxes collected and paid. They are filed electronically through the GST portal."
@@ -288,7 +288,7 @@
       },
 
       {
-        "id": "Benefits of GST Filing Online",
+        "id": "Benefits",
         "header": "Benefits of GST Filing Online",
         "desc": "",
         "type": "SPBenefits",
@@ -305,7 +305,7 @@
         ]
       },
       {
-        "id": "Important aspects of GST Returns Online",
+        "id": "Important aspects ",
         "header": "Important aspects of GST Returns Online",
         "desc": "",
         "type": "SPBenefits",
@@ -344,7 +344,7 @@
         ]
       },
       {
-        "id": "GST filing Procedure Online",
+        "id": "filing Procedure ",
         "header": "GST filing Procedure Online",
         "type": "SPDocuments",
         "value": [
@@ -368,17 +368,18 @@
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/partnership-firm",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "tdsReturns",
+    "h1": "TDS Return Filing Services in Chennai",
+    "description": "TDS Return Filing is compulsory needed quarterly by all entities and persons who have deducted tax at Source. Aanoor Global can help to prepare and file TDS return easily at an affordable rate. TDS is an important part of the Indian tax system. It helps to ensure that taxes are collected fairly and efficiently.",
     "template": [
       {
-        "id": "TDS Return Filing",
+        "id": "Overview",
         "header": "TDS Return Filing",
         "type": "SPParagraph",
         "value": "TDS returns filing is the process of submitting a quarterly statement to the Income Tax Department (ITD) detailing the amount of tax deducted at source (TDS) by a deductor from the payments made to a deductee during a specified quarter. The TDS returns are filed using Form 24Q for salaries, Form 26Q for non-salary payments, and Form 27Q for additional income like interest, dividends, or any other amount payable to NRIs (foreigners)."
       },
       {
-        "id": "The TDS returns filing due dates are as follows:",
+        "id": "due dates:",
         "header": "The TDS returns filing due dates are as follows:",
         "type": "SPIncludes",
         "value": [
@@ -390,7 +391,7 @@
       },
 
       {
-        "id": "TDS filing procedure online",
+        "id": "Online Procedure",
         "header": "TDS filing procedure online",
         "type": "SPBullet",
         "value": [
@@ -405,7 +406,7 @@
       },
 
       {
-        "id": "Documents required for TDS returns filing",
+        "id": "Documents required",
         "header": "Documents required for TDS returns filing",
         "type": "SPStep",
         "value": {
@@ -435,7 +436,7 @@
         }
       },
       {
-        "id": "Benefits of filing TDS returns",
+        "id": "Benefits",
         "header": "Benefits of filing TDS returns",
         "desc": "",
         "type": "SPBenefits",
@@ -459,586 +460,104 @@
     "price": {
       "isAvailable": true,
       "value": "2,800",
-      "note": "with in *5 working days"
-    },
-    "url": "/services/partnership-firm",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
-    "template": [
-      {
-        "id": "ROC filing for Pvt Ltd Company",
-        "header": "ROC filing for Pvt Ltd Company",
-        "type": "SPParagraph",
-        "value": "ROC filing refers to the submission of various documents and returns to the Registrar of Companies (ROC). The ROC is a government body that is responsible for registering and regulating companies in India. Filing of ROC compliance is a mandatory requirement for all companies registered in India. ROC filings can also be used by investors and other stakeholders to assess the financial health and governance of companies."
-      },
-      {
-        "id": "common ROC filling",
-        "header": "There are some of the common ROC filings that companies are required to do",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "Annual return",
-            "value": [
-              "This is a document that provides information about the company's financial performance, board of directors, and shareholders. It must be filed within 60 days of the conclusion of the company's annual general meeting (AGM)."
-            ]
-          },
-          {
-            "title": "Audited financial statements",
-            "value": [
-              "These are the financial statements of the company that have been audited by a qualified auditor. They must be filed within 30 days of the conclusion of the AGM."
-            ]
-          },
-          {
-            "title": "Change in company information",
-            "value": [
-              "This filing is required to be made whenever there is a change in the company's information, such as its name, address, directors, or shareholders."
-            ]
-          },
-          {
-            "title": "Other filings",
-            "value": [
-              "There are several other ROC filings that companies may be required to make, depending on their specific circumstances."
-            ]
-          }
-        ]
-      },
+      "note": "with in *5 working days",
+      "url": "rocAnnualCompliance",
+      "h1": "Annual Filing of ROC Compliance in Chennai",
+      "description": "ROC Compliance and ROC filing is made with Return filing Online annually with an affordable rate for small business through Aanoor Global. ROC filings are ensured that companies are complying with the law, and they provide the government with information about the corporate sector.",
+      "template": [
+        {
+          "id": "Overview",
+          "header": "ROC filing for Pvt Ltd Company",
+          "type": "SPParagraph",
+          "value": "ROC filing refers to the submission of various documents and returns to the Registrar of Companies (ROC). The ROC is a government body that is responsible for registering and regulating companies in India. Filing of ROC compliance is a mandatory requirement for all companies registered in India. ROC filings can also be used by investors and other stakeholders to assess the financial health and governance of companies."
+        },
+        {
+          "id": "common ROC filling",
+          "header": "There are some of the common ROC filings that companies are required to do",
+          "desc": "",
+          "type": "SPBenefits",
+          "value": [
+            {
+              "title": "Annual return",
+              "value": [
+                "This is a document that provides information about the company's financial performance, board of directors, and shareholders. It must be filed within 60 days of the conclusion of the company's annual general meeting (AGM)."
+              ]
+            },
+            {
+              "title": "Audited financial statements",
+              "value": [
+                "These are the financial statements of the company that have been audited by a qualified auditor. They must be filed within 30 days of the conclusion of the AGM."
+              ]
+            },
+            {
+              "title": "Change in company information",
+              "value": [
+                "This filing is required to be made whenever there is a change in the company's information, such as its name, address, directors, or shareholders."
+              ]
+            },
+            {
+              "title": "Other filings",
+              "value": [
+                "There are several other ROC filings that companies may be required to make, depending on their specific circumstances."
+              ]
+            }
+          ]
+        },
 
-      {
-        "id": "The key forms that need to be filed as part of the annual compliance are",
-        "header": "The key forms that need to be filed as part of the annual compliance are",
-        "type": "SPBullet",
-        "value": [
-          "Form MGT-7: Annual return",
-          "Form AOC-4: Financial statements",
-          "Form DIR-3: Directors' report",
-          "Form MGT-14: Minutes of the annual general meeting",
-          "Form ADT-1: Appointment of auditor",
-          "Form ADT-2: Resignation of auditor",
-          "Form ADT-3: Change in auditor's address"
-        ]
-      },
+        {
+          "id": "The key forms",
+          "header": "The key forms that need to be filed as part of the annual compliance are",
+          "type": "SPBullet",
+          "value": [
+            "Form MGT-7: Annual return",
+            "Form AOC-4: Financial statements",
+            "Form DIR-3: Directors' report",
+            "Form MGT-14: Minutes of the annual general meeting",
+            "Form ADT-1: Appointment of auditor",
+            "Form ADT-2: Resignation of auditor",
+            "Form ADT-3: Change in auditor's address"
+          ]
+        },
 
-      {
-        "id": "Benefits to ROC annual compliance for companies",
-        "header": "Benefits to ROC annual compliance for companies",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "Maintaining a company's active status",
-            "value": [
-              "If a company fails to comply with ROC annual compliance requirements, its status with the ROC may be changed to \"dormant\" or \"struck off.\" This can make it difficult or impossible for the company to carry out certain activities, such as opening a bank account or filing taxes."
-            ]
-          },
-          {
-            "title": "Avoiding penalties",
-            "value": [
-              "The ROC can impose penalties on companies that fail to comply with annual compliance requirements. These penalties can be significant, and they can also damage a company's reputation."
-            ]
-          },
-          {
-            "title": "Protecting investors",
-            "value": [
-              "ROC annual compliance requirements help to protect investors by ensuring that companies are transparent about their financial performance and governance practices. This information can help investors to make informed investment decisions."
-            ]
-          },
-          {
-            "title": "Enhancing a company's credibility",
-            "value": [
-              "ROC annual compliance demonstrates that a company is taking its legal obligations seriously. This can help to build trust with customers, suppliers, and other stakeholders."
-            ]
-          },
-          {
-            "title": "Ensuring compliance with other laws",
-            "value": [
-              "ROC annual compliance requirements often overlap with requirements under other laws, such as tax laws and labor laws. By complying with ROC annual compliance requirements, companies can help to ensure that they are also complying with other applicable laws."
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "service": "gst-filing",
-    "title": "GST Filing",
-    "price": {
-      "isAvailable": true,
-      "value": "2,800",
-      "note": "with in *5 working days"
-    },
-    "url": "/services/gst-filing",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
-    "template": [
-      {
-        "id": "overview",
-        "header": "What is Logo Trademark Registration?",
-        "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
+        {
+          "id": "Benefits ",
+          "header": "Benefits to ROC annual compliance for companies",
+          "desc": "",
+          "type": "SPBenefits",
+          "value": [
             {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+              "title": "Maintaining a company's active status",
+              "value": [
+                "If a company fails to comply with ROC annual compliance requirements, its status with the ROC may be changed to \"dormant\" or \"struck off.\" This can make it difficult or impossible for the company to carry out certain activities, such as opening a bank account or filing taxes."
+              ]
             },
             {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+              "title": "Avoiding penalties",
+              "value": [
+                "The ROC can impose penalties on companies that fail to comply with annual compliance requirements. These penalties can be significant, and they can also damage a company's reputation."
+              ]
             },
             {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+              "title": "Protecting investors",
+              "value": [
+                "ROC annual compliance requirements help to protect investors by ensuring that companies are transparent about their financial performance and governance practices. This information can help investors to make informed investment decisions."
+              ]
             },
             {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+              "title": "Enhancing a company's credibility",
+              "value": [
+                "ROC annual compliance demonstrates that a company is taking its legal obligations seriously. This can help to build trust with customers, suppliers, and other stakeholders."
+              ]
             },
             {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+              "title": "Ensuring compliance with other laws",
+              "value": [
+                "ROC annual compliance requirements often overlap with requirements under other laws, such as tax laws and labor laws. By complying with ROC annual compliance requirements, companies can help to ensure that they are also complying with other applicable laws."
+              ]
             }
           ]
         }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "service": "ssi-msme-registration",
-    "title": "SSI/MSME Registration",
-    "price": {
-      "isAvailable": true,
-      "value": "2,800",
-      "note": "with in *5 working days"
-    },
-    "url": "/services/ssi-msme-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
-    "template": [
-      {
-        "id": "overview",
-        "header": "What is Logo Trademark Registration?",
-        "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "service": "goods-service-tax-registration",
-    "title": "Goods & Service Tax Registration",
-    "price": {
-      "isAvailable": true,
-      "value": "2,800",
-      "note": "with in *5 working days"
-    },
-    "url": "/services/goods-service-tax-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
-    "template": [
-      {
-        "id": "overview",
-        "header": "What is Logo Trademark Registration?",
-        "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
-      }
-    ]
+      ]
+    }
   }
 ]

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './ServicePageSidePanel.scss'
 
 const ServicePageSidePanel = ({ template, reference }) => {
-  const headerHeight = 90
+  const headerHeight = 500
   const [activeIndex, setActiveIndex] = useState(0)
 
   useEffect(() => {
@@ -15,14 +15,19 @@ const ServicePageSidePanel = ({ template, reference }) => {
     }
   }, [])
 
+  useEffect(() => {
+    setActiveIndex(0)
+  }, [template, reference])
+
   const handleScroll = () => {
-    const pageYOffset = window.scrollY
+    // 500 iis avg height of hero banner and
+    const pageYOffset = window.scrollY - headerHeight
     reference.forEach((section, index) => {
       const sectionOffsetTop = section?.offsetTop || 0
       const sectionHeight = section?.offsetHeight || 0
 
       if (
-        pageYOffset >= sectionOffsetTop - headerHeight &&
+        pageYOffset >= sectionOffsetTop &&
         pageYOffset < sectionOffsetTop + sectionHeight
       ) {
         setActiveIndex(index)
@@ -49,7 +54,7 @@ const ServicePageSidePanel = ({ template, reference }) => {
                 e.preventDefault()
                 window.scrollTo({
                   behavior: 'smooth',
-                  top: reference[index].offsetTop - headerHeight
+                  top: reference[index].offsetTop + headerHeight
                 })
               }}
               href={`#${list.id}`}
@@ -72,4 +77,4 @@ ServicePageSidePanel.defaultProps = {
   template: [{}]
 }
 
-export default ServicePageSidePanel
+export default React.memo(ServicePageSidePanel)

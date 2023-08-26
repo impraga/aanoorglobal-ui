@@ -16,10 +16,18 @@ const URLs = {
   bookKeeping: '/services/statuary-compliance/book-keeping',
   incometaxFilling: '/services/statuary-compliance/income-tax-filling',
   gstFilling: '/services/statuary-compliance/gst-filing',
+  rocAnnualCompliance: '/services/statuary-compliance/roc-annual-compiance/',
+  tdsReturns: '/services/statuary-compliance/roc-annual-compiance/',
 
   // CERTIFICATIONS
+  iso2015: '/services/certification/iso-9001-2015-qms',
 
   // REGISTRATIONS
+  udayamMSME: '/services/registration/udyam-msme-registration',
+  gstRegAmendment: '/services/registration/gst-registration-amendment',
+  foodCatering: '/services/registration/fssai-food-catering-license',
+  importExportCode: '/services/registration/import-export-code',
+  ngoRegistration: '/services/registration/trust-ngo-registration',
 
   // STARTUP CENTER
   soleProprietorship: '/services/startup-center/sole-proprietorship',

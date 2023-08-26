@@ -7,17 +7,20 @@ import logo from '../../../../public/assets/icons/aanoor-logo.svg'
 import menuList from '../../../../public/assets/json/menuList.json'
 import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
-import { getSessionStorage, removeSession } from '../../../utils/tools'
-import { isKillSwitchDisabled, sessionKeys } from '../../../constants'
+import { removeSession } from '../../../utils/tools'
+import {
+  isKillSwitchDisabled,
+  sessionKeys,
+  isUserLoggedIn
+} from '../../../constants'
 
 import './HeaderVersionTwo.scss'
 import URLs from '../../../constants/urlMapper'
 
 const HeaderVersionTwo = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeFirstLevelMenu, setActiveFirstLevelMenu] = useState('')
   // const [serviceOpen, setServiceOpen] = useState(-1)
-  const isUserLoggedIn =
-    getSessionStorage(sessionKeys.userLoggedStatus) === 'true'
 
   const navigate = useNavigate()
 
@@ -28,20 +31,33 @@ const HeaderVersionTwo = () => {
   }
 
   const menuWithLink = (item) => (
-    <li key={item.id} className={item.className}>
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
+    <li
+      key={item.id}
+      className={`${item.className} ${
+        activeFirstLevelMenu === item.id ? 'active' : ''
+      }`}
+      onClick={() =>
+        setActiveFirstLevelMenu(activeFirstLevelMenu === item.id ? '' : item.id)
+      }
+    >
       {item.pageUrl ? (
-        <Link key={item.pageUrl} to={URLs[item.pageUrl]}>
+        <Link
+          key={item.pageUrl}
+          activeClassName="active"
+          to={URLs[item.pageUrl]}
+        >
           {item.title}
         </Link>
       ) : (
-        <span>
-          {item.title}
-          {/* <img
-            src="/assets/images/chevron-right.svg"
-            alt=""
-            className="desktop-chevron d-none d-lg-inline"
-          /> */}
-        </span>
+        <>
+          <img
+            src={`/assets/images/${item.icon}`}
+            className="d-inline-block d-lg-none mobile-menu-icon"
+            alt={item.title}
+          />
+          <span>{item.title}</span>
+        </>
       )}
       {item.children && (
         <div className={`div-${item.className}`}>

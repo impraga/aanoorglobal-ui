@@ -63,6 +63,14 @@
                 }
               }
 
+              &:nth-child(3) {
+                .div-first-level {
+                  .second-level {
+                    flex: 100% !important;
+                  }
+                }
+              }
+
               .div-first-level {
                 > ul {
                   display: flex;
@@ -200,13 +208,40 @@
           > ul {
             flex-direction: column;
             padding-left: 20px;
-            > li {
+            > li.first-level {
               padding: 10px 0;
               margin: 0;
               display: block;
               width: 100%;
 
-              .first-level {
+              span {
+                padding-left: 0.8rem;
+              }
+
+              .div-first-level {
+                display: none;
+              }
+
+              &.active {
+                .div-first-level {
+                  display: block;
+                  top: -70px;
+                  background: #f8f8f8;
+                  z-index: 2;
+                  height: calc(100vh - 100px);
+                  width: calc(100% + 20px);
+                  left: -20px;
+                  right: 0;
+                  padding: 12px 30px;
+                  position: absolute;
+
+                  .second-level {
+                    flex: 100%;
+                  }
+                }
+              }
+
+              .fdfirst-level {
                 background: none;
                 display: block;
                 width: calc(100% - 20px);

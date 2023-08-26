@@ -87,10 +87,13 @@ const ServicePage = () => {
                 data-aos="fade-up"
                 data-aos-delay="150"
               >
-                {serviceDetails.template?.map((data) => (
+                {serviceDetails.template?.map((data, index) => (
                   <div
                     className={`${data.id} ${data.type} component-cont`}
-                    ref={(ref) => inputRefs.current.push(ref)}
+                    ref={(ref) => {
+                      inputRefs.current[index] = ref
+                      return inputRefs
+                    }}
                     key={data.id}
                   >
                     <ServicePageContent template={data.type} data={data} />

@@ -356,13 +356,8 @@
           "className": "second-level"
         },
         {
-          "pageUrl": "/services/statuary-compliance/tds-returns",
+          "pageUrl": "tdsReturns",
           "title": "TDS Returns",
-          "className": "second-level"
-        },
-        {
-          "pageUrl": "/services/statuary-compliance/annual-compliance",
-          "title": "ROC Annual Compliance",
           "className": "second-level"
         }
       ]
@@ -376,52 +371,27 @@
         {
           "title": "Udyam/MSME Registration",
           "className": "second-level",
-          "pageUrl": "/services/registration/udyam-msme-registration"
+          "pageUrl": "udayamMSME"
         },
         {
           "title": "GST Registration / Amendment",
           "className": "second-level",
-          "pageUrl": "/services/registration/gst-registration-amendment"
+          "pageUrl": "gstRegAmendment"
         },
         {
           "title": "FSSAI Food & Catering License",
           "className": "second-level",
-          "pageUrl": "/services/registration/fssai-food-catering-license"
+          "pageUrl": "foodCatering"
         },
         {
           "title": "Import Export Code",
           "className": "second-level",
-          "pageUrl": "/services/registration/import-export-code"
-        },
-        {
-          "title": "APEDA",
-          "className": "second-level",
-          "pageUrl": "/services/registration/apeda"
-        },
-        {
-          "title": "Spice Board",
-          "className": "second-level",
-          "pageUrl": "/services/registration/spice-board"
+          "pageUrl": "importExportCode"
         },
         {
           "title": "Trust / NGO Registration",
           "className": "second-level",
-          "pageUrl": "/services/registration/trust-ngo-registration"
-        },
-        {
-          "title": "Assocaition / Society Registration & Compliance",
-          "className": "second-level",
-          "pageUrl": "/services/registration/assocaition-society-registration-compliance"
-        },
-        {
-          "title": "12AA & 80G Registration/Filing",
-          "className": "second-level",
-          "pageUrl": "/services/registration/12aa-80g-registration-filing"
-        },
-        {
-          "title": "CSR Registration/Compliance",
-          "className": "second-level",
-          "pageUrl": "/services/registration/csr-registration-compliance"
+          "pageUrl": "ngoRegistration"
         },
         {
           "title": "PAN Registration/Correction",
@@ -499,7 +469,7 @@
         {
           "title": "ISO 9001:2015 QMS",
           "className": "second-level",
-          "pageUrl": "/services/registration/iso-9001-2015-qms"
+          "pageUrl": "iso2015"
         },
         {
           "title": "ISO 14001:2004 EMS",
@@ -527,64 +497,9 @@
           "pageUrl": "/services/registration/iso-13485-2003-medical-devices"
         },
         {
-          "title": "ISO/TS 16949:2009",
-          "className": "second-level",
-          "pageUrl": "/services/registration/iso-ts-16949-2009"
-        },
-        {
-          "title": "ISO/IEC 20000",
-          "className": "second-level",
-          "pageUrl": "/services/registration/iso-iec-20000"
-        },
-        {
-          "title": "ISO 29990:2010",
-          "className": "second-level",
-          "pageUrl": "/services/registration/iso-29990-2010"
-        },
-        {
-          "title": "ISO 50001:2011",
-          "className": "second-level",
-          "pageUrl": "/services/registration/iso-50001-2011"
-        },
-        {
-          "title": "HACCP",
-          "className": "second-level",
-          "pageUrl": "/services/registration/haccp"
-        },
-        {
-          "title": "CE Marking",
-          "className": "second-level",
-          "pageUrl": "/services/registration/ce-marking"
-        },
-        {
           "title": "Good Manufacturing Practice(GMP)",
           "className": "second-level",
           "pageUrl": "/services/registration/Good-Manufacturing-Practice"
-        },
-        {
-          "title": "WRAP",
-          "className": "second-level",
-          "pageUrl": "/services/registration/wrap"
-        },
-        {
-          "title": "BSCI",
-          "className": "second-level",
-          "pageUrl": "/services/registration/bsci"
-        },
-        {
-          "title": "SEDEX",
-          "className": "second-level",
-          "pageUrl": "/services/registration/sedex"
-        },
-        {
-          "title": "OEKO",
-          "className": "second-level",
-          "pageUrl": "/services/registration/oeko"
-        },
-        {
-          "title": "GOT",
-          "className": "second-level",
-          "pageUrl": "/services/registration/got"
         }
       ]
     }

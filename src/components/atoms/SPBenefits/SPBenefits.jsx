@@ -27,7 +27,9 @@ const SPBenefits = ({ data }) => {
   return (
     <div className="pb-0 mb-4 benefits-cont container" id={data.id}>
       <div
-        className={`${data?.class} ${category === 'registration' ? 'row' : ''}`}
+        className={`${data?.class || ''} ${
+          category === 'registration' ? 'row' : ''
+        }`}
       >
         <div
           className={`${category === 'registration' ? 'col-md-8 px-0' : ''}`}

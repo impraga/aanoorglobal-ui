@@ -9,14 +9,12 @@ import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 import './Header.scss'
-import { getSessionStorage, removeSession } from '../../../utils/tools'
-import { sessionKeys } from '../../../constants'
+import { removeSession } from '../../../utils/tools'
+import { sessionKeys, isUserLoggedIn } from '../../../constants'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(-1)
-  const isUserLoggedIn =
-    getSessionStorage(sessionKeys.userLoggedStatus) === 'true'
 
   const navigate = useNavigate()
 

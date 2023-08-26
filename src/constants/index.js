@@ -81,3 +81,5 @@ export const sessionKeys = {
 
 export const isKillSwitchDisabled =
   getSessionStorage('isKillSwitchDisabled') === 'true'
+
+export const isUserLoggedIn = getSessionStorage('isUserLoggedIn') === 'true'

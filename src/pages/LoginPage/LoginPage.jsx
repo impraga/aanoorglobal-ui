@@ -4,8 +4,8 @@ import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
 import { Navigate } from 'react-router'
-import { getSessionStorage, setSessionStorage } from '../../utils/tools'
-import { apiUri, sessionKeys } from '../../constants'
+import { setSessionStorage } from '../../utils/tools'
+import { apiUri, sessionKeys, isUserLoggedIn } from '../../constants'
 
 import './LoginPage.scss'
 
@@ -13,9 +13,6 @@ const LoginPage = () => {
   const [onSubmitForm, setOnSubmitForm] = useState('empty')
   const [loginVerified, setLoginVerified] = useState(false)
   const [userAddedNotfication, setUserAddedNotification] = useState(false)
-
-  const isUserLoggedIn =
-    getSessionStorage(sessionKeys.userLoggedStatus) === 'true'
 
   const {
     register,
