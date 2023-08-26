@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 // import ReactDOM from 'react-dom'
 // import ReactDOM from 'react-dom/client'
 import { createRoot } from 'react-dom/client'
@@ -68,7 +68,24 @@ const router = createBrowserRouter([
         )
       },
       {
-        path: 'blog/:postUrl',
+        path: 'blog/:service',
+        element: (
+          <ProtectedComponent>
+            <Blog />
+          </ProtectedComponent>
+        )
+      },
+      {
+        path: 'blogView',
+        element: (
+          <ProtectedComponent>
+            <Navigate to="/blog" />
+          </ProtectedComponent>
+        )
+      },
+      {
+        path: 'blogView/:postUrl',
+
         element: (
           <ProtectedComponent>
             <BlogView />

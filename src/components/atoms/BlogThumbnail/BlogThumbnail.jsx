@@ -7,26 +7,27 @@ import clockSvg from '../../../../public/assets/icons/clock.svg'
 import './BlogThumbnail.scss'
 
 const BlogThumbnail = ({ blog }) => (
-  <Link to="/blog">
+  <Link to={`/blogView/${blog.url}`}>
     <div className="blogthumbnail-cont br-1 overflow-hidden bs h-100">
       <div className="thumbnail-img position-relative">
-        <img src={blog.imgUrl} alt="" />
+        <img src={blog.image_name} alt="" />
         <div className="img-overlay" />
         <div className="read-time-cont d-flex text-white align-items-center">
           <div className="img-cont">
             <img src={clockSvg} alt="Read Time" />
           </div>
-          <div>{blog.read} mins read</div>
+          <div>{blog.read_time} mins read</div>
         </div>
       </div>
       <div className="card-cont bg-white h-100 p-3">
         <h3>{blog.title}</h3>
         <div className="tag-cont d-flex flex-wrap ">
-          {blog.tag.map((tag, index) => (
-            <div key={(tag, index)} className="tag br-1 text-white bg-db">
-              {tag}
-            </div>
-          ))}
+          {blog.tags?.split(';') &&
+            blog.tags?.split(';').map((tag, index) => (
+              <div key={(tag, index)} className="tag br-1 text-white bg-db">
+                {tag}
+              </div>
+            ))}
         </div>
       </div>
     </div>

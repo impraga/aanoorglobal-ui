@@ -35,6 +35,7 @@ const Dashboard = () => {
   const getBlog = () => {
     axios
       .get(`${apiUri}/getBlogLists`, {
+        // .get('/assets/json/api-mock-bloglist.json', {
         headers: {
           Authorization: getSessionStorage(sessionKeys.authorization)
         }
@@ -84,7 +85,10 @@ const Dashboard = () => {
           {/* <DashboardMetrics /> */}
           {/* Part of enhancemnet */}
           <div className="overlay-text bebas">Dashboard</div>
-          <DashboardTable blogList={blogList} updateBlog={() => getBlog()} />
+          <DashboardTable
+            blogListInput={blogList}
+            updateBlog={() => getBlog()}
+          />
         </div>
         <div className="bg-drop bg-db" />
       </div>
