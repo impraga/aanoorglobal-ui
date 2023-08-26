@@ -25,8 +25,11 @@ const BlogView = () => {
   const cleanHTML = DOMPurify.sanitize(blogList.content)
 
   useEffect(() => {
-    axios.get(`${apiUri}/moreBlogInfo?url=${postUrl}`).then((res) => {
-      setBlogList(res.data.response[0])
+    axios.get(`${apiUri}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
+      // axios.get('/assets/json/api-mock-blogView.json').then(({ data }) => {
+      if (data.message.length > 0 && data.status === '200') {
+        setBlogList(data.message[0])
+      }
     })
   }, [])
 
@@ -38,8 +41,8 @@ const BlogView = () => {
           <div className="container d-flex flex-column">
             <div className="row mt-md-5 mt-0">
               <div className="col-md-8 tag-cont d-flex flex-wrap align-items-center">
-                {blogList.tag &&
-                  blogList.tag.map((tag) => (
+                {blogList.tags?.split(';') &&
+                  blogList.tags?.split(';').map((tag) => (
                     <div
                       key={tag}
                       className="tag-tip d-flex align-items-center"
@@ -65,18 +68,18 @@ const BlogView = () => {
         </div>
         <div className="container blog-content">
           <div className="herobanner-cont br-1 overflow-hidden">
-            {blogList.youTubeUrl && (
+            {blogList.youtube && (
               <iframe
                 width="100%"
                 height="auto"
-                src={blogList.youTubeUrl}
+                src={blogList.youtube}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             )}
-            {!blogList.youTubeUrl && blogList.imageUrl && (
-              <img src={blogList.imageUrl} alt="herobanner" />
+            {!blogList.youtube && blogList.image_name && (
+              <img src={blogList.image_name} alt="herobanner" />
             )}
           </div>
           <div className="mt-4">

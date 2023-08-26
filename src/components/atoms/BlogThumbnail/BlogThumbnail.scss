@@ -53,6 +53,7 @@
     }
   }
   .card-cont {
+    min-height: 130px;
     h3 {
       font-size: 1.4rem;
       font-weight: 700;
@@ -69,6 +70,22 @@
   }
 }
 
+@media (max-width: 991.98px) {
+  .blogthumbnail-cont {
+    .card-cont {
+      h3 {
+        font-size: 1.2rem;
+      }
+      .tag-cont {
+        .tag {
+          padding: 6px 12px;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 767.98px) {
   .blogthumbnail-cont {
     .thumbnail-img {

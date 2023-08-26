@@ -6,7 +6,7 @@ import ContactSection from '../ContactSection/ContactSection'
 
 import { sortArray } from '../../../utils/tools'
 
-import { footerOrder } from '../../../constants'
+import { serviceOrder } from '../../../constants'
 
 import menuList from '../../../../public/assets/json/menuList.json'
 import whiteStripes from '../../../../public/assets/icons/lines-white.svg'
@@ -34,7 +34,7 @@ const Footer = () => {
         servicelist.splice(index, 1)
       }
     })
-    sortArray(footerOrder, servicelist)
+    sortArray(serviceOrder, servicelist)
   }, [])
 
   return (

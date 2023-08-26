@@ -53,7 +53,7 @@ export const contactDetails = [
   }
 ]
 
-export const footerOrder = [
+export const serviceOrder = [
   'Startup Centre',
   'Intellectual Property',
   'Registration',
