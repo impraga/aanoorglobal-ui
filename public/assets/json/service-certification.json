@@ -397,7 +397,7 @@
       "note": "with in *5 working days"
     },
     "url": "/services/gst-filing",
-    "h1": "> ISO 13485:2016 Medical devices Certifications",
+    "h1": "ISO 13485:2016 Medical devices Certifications",
     "description": "The ISO 13485:2016 standard is a valuable tool for organizations that want to demonstrate their commitment to quality and safety in the medical device industry.",
     "template": [
       {
@@ -455,6 +455,30 @@
               "Enhanced market opportunities"
             ]
           }
+        ]
+      },
+      {
+        "id": "Requirements",
+        "header": "Requirements",
+        "type": "SPBullet",
+        "value": [
+          "The organization must have a documented QMS that is implemented, maintained, and continually improved",
+          "The organization must identify and assess the risks associated with its medical devices and related services.",
+          "The organization must establish and implement control measures to mitigate those risks.",
+          "The organization must ensure that its medical devices and related services meet customer requirements and applicable regulatory requirements.",
+          "The organization must monitor and measure the performance of its QMS and take corrective and preventive actions as necessary.",
+          "The ISO 13485:2016 standard is a living document and is updated periodically to reflect changes in the medical device industry. The latest published version of the standard in 2016."
+        ]
+      },
+      {
+        "id": "Differences",
+        "header": "Here are some of the key differences between ISO 13485:2003 and ISO 13485:2016",
+        "type": "SPBullet",
+        "value": [
+          "The new standard places a greater emphasis on risk management.",
+          "The new standard requires organizations to consider the needs of patients and users when designing and developing medical devices.",
+          "The new standard requires organizations to have a more robust process for managing change.",
+          "The new standard requires organizations to have a more comprehensive approach to monitoring and measuring the performance of their QMS."
         ]
       },
       {

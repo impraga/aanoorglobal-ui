@@ -42,11 +42,7 @@ const HeaderVersionTwo = () => {
       }
     >
       {item.pageUrl ? (
-        <Link
-          key={item.pageUrl}
-          activeClassName="active"
-          to={URLs[item.pageUrl]}
-        >
+        <Link key={item.pageUrl} to={URLs[item.pageUrl]}>
           {item.title}
         </Link>
       ) : (

@@ -21,6 +21,8 @@ const URLs = {
 
   // CERTIFICATIONS
   iso2015: '/services/certification/iso-9001-2015-qms',
+  iso2004: '/services/registration/iso-14001-200-ems',
+  iso2018: '/services/registration/iso-45001-2018-ohsms',
 
   // REGISTRATIONS
   udayamMSME: '/services/registration/udyam-msme-registration',

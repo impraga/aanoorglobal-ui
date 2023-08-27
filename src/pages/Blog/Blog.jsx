@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './Blog.scss'
 import { serviceOrder, apiUri } from '../../constants'
 
@@ -18,8 +18,8 @@ const metaDetails = {
 }
 
 const Blog = () => {
-  const location = useLocation()
-  const [servicePath, setServicePath] = useState('')
+  // const location = useLocation()
+  const { service } = useParams()
   const [blogList, setBlogList] = useState([])
   const [blogRawList, setBlogRawList] = useState([])
 
@@ -30,46 +30,40 @@ const Blog = () => {
       // Only for Data mocking - Remove Below line
       // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
       if (data.message.length > 0 && data.status === '200') {
-        setServicePath(location.pathname?.split('/')[2]?.replace('%20', ' '))
         setBlogRawList(data.message)
       }
     })
   }, [])
 
-  // To Update Service on Location Change
-  useEffect(() => {
-    setServicePath(location.pathname?.split('/')[2]?.replace('%20', ' '))
-  }, [location])
-
   // To Update Blog List on Service Change
   useEffect(() => {
     setBlogList([])
-    if (!servicePath) {
+    if (!service) {
       // If Service Is not selected - Full Blog list will be rendered
       updateBlogList(blogRawList)
     } else {
       setBlogList([
         {
-          service: servicePath,
+          service,
           data: blogRawList.filter(
-            (blog) => blog.category.toLowerCase() === servicePath.toLowerCase()
+            (blog) => blog.category.toLowerCase() === service.toLowerCase()
           )
         }
       ])
     }
-  }, [servicePath])
+  }, [blogRawList, service])
 
   // To get Latest 3 Blog List with Service Category
   const updateBlogList = (value) => {
-    serviceOrder.forEach((service) => {
+    serviceOrder.forEach((serviceList) => {
       const list = value
-        .filter((blog) => blog.category === service) // Filter the Blog List by service
+        .filter((blog) => blog.category === serviceList) // Filter the Blog List by serviceList
         .sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1)) // Sorting the blog list by Date
         .slice(0, 3) // Splicing the Top 3 Blog list
       setBlogList((prev) => [
         ...prev,
         {
-          service,
+          service: serviceList,
           data: list
         }
       ])
@@ -92,10 +86,10 @@ const Blog = () => {
                         <h2 className="mb-0">{blogCat.service}</h2>
                       </div>
                       <div>
-                        {!servicePath && (
+                        {!service && (
                           <Link to={`/blog/${blogCat.service}`}>View more</Link>
                         )}
-                        {servicePath && <Link to="/blog">Back</Link>}
+                        {service && <Link to="/blog">Back</Link>}
                       </div>
                     </div>
                     <div className="blog-list-cont row mb-4 d-flex align-items-center">
