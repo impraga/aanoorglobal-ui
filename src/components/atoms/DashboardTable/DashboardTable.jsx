@@ -72,17 +72,17 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
   }
 
   // Updating Blog List on Search results
-  const searchTable = (event) => {
-    setBlogList(
-      blogListInput.filter((obj) =>
-        Object.values(obj).some((val) =>
-          val
-            ? val.toString().toLowerCase().includes(event.target.value)
-            : false
-        )
-      )
-    )
-  }
+  // const searchTable = (event) => {
+  //   setBlogList(
+  //     blogListInput.filter((obj) =>
+  //       Object.values(obj).some((val) =>
+  //         val
+  //           ? val.toString().toLowerCase().includes(event.target.value)
+  //           : false
+  //       )
+  //     )
+  //   )
+  // }
 
   return (
     <div className="dashboard-table-cont mt-4 bg-white bs br-1 overflow-hidden">
@@ -90,14 +90,15 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
         <div>
           <h2>Blogs</h2>
         </div>
-        <div className="ag-form">
+        {/* Enhancement */}
+        {/* <div className="ag-form">
           <input
             type="text"
             placeholder="Search"
             className="mb-0 search-form"
             onChange={searchTable}
           />
-        </div>
+        </div> */}
       </div>
       <div className="">
         <Table striped hover responsive>
