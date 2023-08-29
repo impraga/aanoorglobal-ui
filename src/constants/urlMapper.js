@@ -23,11 +23,25 @@ const URLs = {
   iso2015: '/services/certification/iso-9001-2015-qms',
 
   // REGISTRATIONS
-  udayamMSME: '/services/registration/udyam-msme-registration',
-  gstRegAmendment: '/services/registration/gst-registration-amendment',
-  foodCatering: '/services/registration/fssai-food-catering-license',
-  importExportCode: '/services/registration/import-export-code',
-  ngoRegistration: '/services/registration/trust-ngo-registration',
+  udayamMSME: '/services/registration/udyam-msme-registration-online',
+  gstRegistration: '/services/registration/gst-registration',
+  foodCatering: '/services/registration/food-license-online',
+  importExportCode: '/services/registration/iec-registration',
+  ngoRegistration: '/services/registration/charitable-trust-registration',
+  panRegistration: '/services/registration/pan-card-online',
+  tanRegistration: '/services/registration/tds-tan-registration',
+  esiOnlineFiling: '/services/registration/esi-online-filing',
+  pfOnline: '/services/registration/pf-online',
+  hrPayrollService: '/services/registration/hr-payroll-service',
+  ptRegistration: '/services/registration/pt-registration',
+  shopEstRegistration:
+    '/services/registration/shops-and-establishment-registration',
+  labourWelfareFund: '/services/registration/labour-welfare-fund',
+  labourContractLicense: '/services/registration/labour-contract-license',
+  factoryLicenseOnline: '/services/registration/factory-license-online',
+  fireLicense: '/services/registration/fire-license-online-chennai',
+  trainingPrograms: '/services/registration/training-programs',
+  digitalSignature: '/services/registration/apply-digital-signature-online',
 
   // STARTUP CENTER
   soleProprietorship: '/services/startup-center/sole-proprietorship',

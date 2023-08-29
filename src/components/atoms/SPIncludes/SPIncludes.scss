@@ -15,7 +15,7 @@
 }
 
 .full-panel-template {
-  .component-cont.includes {
+  .component-cont.SPIncludes {
     > div {
       padding-top: 0 !important;
       // text-align: center;
@@ -34,11 +34,18 @@
   }
 }
 .service-page-cont.statuary-compliance {
-  .component-cont.includes {
+  .component-cont.SPIncludes {
     > div {
       .includes-cont {
         justify-content: center;
       }
+    }
+  }
+}
+.service-page-cont.registration {
+  .component-cont.SPIncludes {
+    > div {
+      padding-bottom: 20px !important;
     }
   }
 }

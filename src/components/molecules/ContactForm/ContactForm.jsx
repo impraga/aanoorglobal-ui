@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 
 import { FormProvider, useForm } from 'react-hook-form'
+import axios from 'axios'
 
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
 import { apiUri } from '../../../constants'
@@ -29,22 +30,29 @@ const ContactForm = () => {
     setOnSubmitForm('onclick')
 
     const url = `${apiUri}/updateContact`
-    fetch(url, {
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: 'post',
-      body: JSON.stringify(data)
-    }).then((res) => {
-      if (res.status === 200) {
-        console.log('contact added')
-        reset()
-        setOnSubmitForm('Validated')
-      } else {
-        console.log('error in uploading')
-      }
-    })
+    axios
+      .get(url, {
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: 'post',
+        body: JSON.stringify(data)
+      })
+      .then((res) => {
+        if (res.status === 200) {
+          console.log('contact added')
+          reset()
+          setOnSubmitForm('Validated')
+        } else {
+          setOnSubmitForm('error')
+          console.log('error in uploading')
+        }
+      })
+      .catch(() => {
+        console.log('error in uploading2')
+        setOnSubmitForm('error')
+      })
 
     // setTimeout(() => {
     //   setTimeout(() => {
