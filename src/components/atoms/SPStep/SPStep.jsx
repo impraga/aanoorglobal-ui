@@ -20,7 +20,16 @@ const SPStep = ({ data }) => (
                 </div>
                 <div className="step-details w-100">
                   <h4>{step.heading}</h4>
-                  <p>{step.desc}</p>
+                  {Array.isArray(step.desc) ? (
+                    step.desc.map((d, i) => (
+                      // eslint-disable-next-line react/no-array-index-key
+                      <p key={`para_${i}`} className={i > 0 ? 'mb-0' : 'mb-3'}>
+                        {d}
+                      </p>
+                    ))
+                  ) : (
+                    <p>{step.desc}</p>
+                  )}
                 </div>
               </div>
             ))}

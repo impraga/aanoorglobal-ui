@@ -23,6 +23,8 @@ const URLs = {
   iso2015: '/services/certification/iso-9001-2015-qms',
   iso2004: '/services/registration/iso-14001-200-ems',
   iso2018: '/services/registration/iso-45001-2018-ohsms',
+  gmpCertification: '/services/registration/Good-Manufacturing-Practice',
+  isoMedicalDevices: '/services/registration/iso-13485-2003-medical-devices',
 
   // REGISTRATIONS
   udayamMSME: '/services/registration/udyam-msme-registration',
@@ -34,14 +36,16 @@ const URLs = {
   // STARTUP CENTER
   soleProprietorship: '/services/startup-center/sole-proprietorship',
   partnershipFirm: '/services/startup-center/partnership-firm',
-  onePersonCompany: '/services/startup-center/sole-proprietorship',
-  limitedLiabilityPartnership: '/services/startup-center/sole-proprietorship',
-  privateLimitedCompany: '/services/startup-center/sole-proprietorship',
-  publicLimitedCompany: '/services/startup-center/sole-proprietorship',
-  nidhiCompany: '/services/startup-center/sole-proprietorship',
-  producerCompany: '/services/startup-center/sole-proprietorship',
-  section8Company: '/services/startup-center/sole-proprietorship',
-  businessLoan: '/services/startup-center/sole-proprietorship'
+  onePersonCompany: '/services/startup-center/opc-registration',
+  limitedLiabilityPartnership: '/services/startup-center/llp-registration',
+  privateLimitedCompany:
+    '/services/startup-center/pvt-ltd-company-registration',
+  publicLimitedCompany:
+    '/services/startup-center/public-limited-company-registration',
+  nidhiCompany: '/services/startup-center/nidhi-company-registration ',
+  producerCompany: '/services/startup-center/farmer-producer-company',
+  section8Company: '/services/startup-center/ngo-registration-online',
+  businessLoan: '/services/startup-center/bussiness-funding'
 }
 
 export default URLs
