@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import ExpertButton from '../ExpertButton/ExpertButton'
 
 import noresult from '../../../../public/assets/icons/noresult.svg'
+import URLs from '../../../constants/urlMapper'
 
 import './SearchResult.scss'
 
@@ -20,7 +21,7 @@ const SearchResult = ({ data }) => (
               <div className="category">{value.category}</div>
             </div>
             <div className="searchresult-btn text-end">
-              <Link to={value.url}>
+              <Link to={URLs[value.pageUrl]}>
                 <button type="button" className="text-green">
                   View more
                 </button>

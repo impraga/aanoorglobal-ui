@@ -29,6 +29,7 @@ const BlogForm = ({ edit, blogDetails }) => {
       setValue('url', blogDetails.url)
       setValue('thumbImg', blogDetails.image_name)
       setValue('tags', blogDetails.tags)
+      setValue('category', blogDetails.category)
       setValue('services', blogDetails.service)
       setValue('video', blogDetails.youtube)
       setValue('date', blogDetails.date)
@@ -146,8 +147,16 @@ const BlogForm = ({ edit, blogDetails }) => {
                 placeholder="Add tags in semicolon separated."
               />
             </div>
+            <div className="col-md-3">
+              <input
+                {...register('category', { required: true })}
+                className={errors.category?.type === 'required' ? 'error' : ' '}
+                type="text"
+                placeholder="Category"
+              />
+            </div>
 
-            <div className="col-md-6">
+            <div className="col-md-3">
               <ServiceDropDown errors={errors} form={form} />
             </div>
           </div>
