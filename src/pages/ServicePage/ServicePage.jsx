@@ -13,15 +13,7 @@ import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/Re
 import URLs from '../../constants/urlMapper'
 
 const ServicePage = () => {
-  // const path = window.location.pathname.split('/')
-  // const [time, setTime] = useState(0)
-  // useEffect(() => {
-  //   setTime(time + 1)
-  // }, [category, serviceName])
-  // const category = path[2]
-  // const serviceName = path[3]
-
-  const { category, serviceName } = useParams()
+  const { category } = useParams()
   const location = useLocation()
 
   // eslint-disable-next-line import/no-dynamic-require, global-require
@@ -32,11 +24,10 @@ const ServicePage = () => {
   )[0]
 
   const metaDetails = {
-    title: `Services | ${serviceDetails?.title} | Aanoor Global`,
-    canonicalUrl: `www.aanoorglobal.com/services/${category}/${serviceName}`,
-    metaDesc:
-      'Aanoor Global provide multiple services like GST, Income tax filing',
-    metaKeywords: 'gst filing, income tax filing'
+    title: serviceDetails.metaTitle,
+    // canonicalUrl: `www.aanoorglobal.com/services/${category}/${serviceName}`,
+    metaDesc: serviceDetails.metaDesc,
+    metaKeywords: serviceDetails.metaKeywords
   }
 
   // eslint-disable-next-line import/no-dynamic-require, global-require

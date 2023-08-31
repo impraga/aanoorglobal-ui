@@ -1,181 +1,17 @@
 [
   {
-    "service": "trademark-registration",
-    "title": "Trademark Registration",
-    "price": {
-      "isAvailable": true,
-      "value": "2,800",
-      "note": "with in *5 working days"
-    },
-    "url": "/services/trademark-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
-    "template": [
-      {
-        "id": "overview",
-        "header": "What is Logo Trademark Registration?",
-        "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "service": "Sole Proprietorship",
+    "metaTitle": "Proprietorship Registration Company in Chennai |Udyam Registration and  MSME Registration in Chennai",
+    "metaDesc": "Aanoor Global is a leading proprietorship registration company in chennai.Sole proprietorship is quick and easy to start business you need not to elborate the legal formalities.For more details call us now!",
+    "metaKeywords": "proprietorship registration,msme registration ,ssi registration",
     "title": "Sole Proprietorship",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "soloProprietorship",
+    "url": "soleProprietorship",
     "h1": "Sole / Individual Proprietorship Firm Registration in Chennai",
     "description": "Sole proprietorship is a business structure in India that is owned and operated by a single individual. The proprietor is responsible for all aspects of the business, including management, financing, and liability. Sole proprietorships are the simplest and most common form of business in India, and they are relatively easy to set up and maintain.",
-    "Keywords to search": "sole proprietorship, individual business registration, udyam registration, msme registration",
 
     "template": [
       {
@@ -254,32 +90,7 @@
           }
         ]
       },
-      {
-        "id": "Disadvantages",
-        "header": "However, individual firm registration disadvantages",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "Limited liability",
-            "value": [
-              "The sole proprietor is personally liable for all debts and obligations of the business, which can be a significant risk."
-            ]
-          },
-          {
-            "title": "Limited access to capital",
-            "value": [
-              "Sole proprietorships may have limited access to capital, as they are not considered separate legal entities."
-            ]
-          },
-          {
-            "title": "Difficult to raise funds",
-            "value": [
-              "It is difficult to raise funds for a sole proprietorship, as investors are often hesitant to invest in a business where the owner is personally liable for all debts."
-            ]
-          }
-        ]
-      },
+
       {
         "id": "Required documents",
         "header": "Documents required for new proprietorship firm registration online",
@@ -376,7 +187,9 @@
     ]
   },
   {
-    "service": "Partnership Firm",
+    "metaTitle": "Partnership Firm Registration Company in chennai | Online Registration for Partnershipfirm in Chennai",
+    "metaDesc": "Register the partnership firm registration in Aanoor global chennai. Quick&Easy registration process. Online registration for partnershipfirm services also provide by us for more details contact to our office to register now.",
+    "metaKeywords": "partnership firm registration,Online registration for partnershipfirm",
     "title": "Partnership Firm",
     "price": {
       "isAvailable": true,
@@ -514,7 +327,9 @@
     ]
   },
   {
-    "service": "Limited Liability Partnership",
+    "metaTitle": "Limited Liability Partnership Registration in Chennai | LLP Firm Registration Chennai",
+    "metaDesc": "According to corporate affairs Limited Liability Partnership registration is with of two partners minimum and can have maximum number  of partners. Contact us now!",
+    "metaKeywords": "Limited Liability Partnership Registration,LLP Firm Registration",
     "title": "Limited Liability Partnership",
     "price": {
       "isAvailable": true,
@@ -632,7 +447,9 @@
     ]
   },
   {
-    "service": "One Person Company",
+    "metaTitle": "One Person Company Registration in Chennai | OPC Registration Online in Chennai",
+    "metaDesc": "Looking for a one person company registration in chennai,  Aanoor global is here for you to get registration within 5 days. Small entrepreneurs can easily convert from proprietorship business to opc registration model for more details visit our site.",
+    "metaKeywords": "one person company registration, opc registration ",
     "title": "One Person Company",
     "price": {
       "isAvailable": true,
@@ -767,8 +584,10 @@
     ]
   },
   {
-    "service": "Private Limited Registration",
-    "title": "Private Limited Registration",
+    "metaTitle": "Best private limited company registration in Chennai | Pvt Ltd Registration in 5 days Chennai",
+    "metaDesc": "Get your company pvt ltd registration in 5 days. Aanoor global is the chennai's best private limited company registration to open your new business with low cost.Contact us now.",
+    "metaKeywords": "private limited company registration,pvt ltd registration",
+    "title": "Private Limited Company",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -889,7 +708,9 @@
     ]
   },
   {
-    "service": "Public Limited Company Registration",
+    "metaTitle": "Limited Company Registration in Chennai | Public Limited Company Registration in Chennai",
+    "metaDesc": "Register your Limited company registration with Quick and affordable cost. Get Public Limited Company Registration in online for your business within Min contact our office.",
+    "metaKeywords": "Limited Company Registration, Public Limited Company Registration ",
     "title": "Public Limited Company Registration",
     "price": {
       "isAvailable": true,
@@ -1004,7 +825,9 @@
     ]
   },
   {
-    "service": "Nidhi Company ",
+    "metaTitle": "Nidhi Company Registration Online Chennai -  Aanoor Global",
+    "metaDesc": "Nidhi Company Registration in Chennai has become the most hassle free like never before. Nidhi company registration process is quick, easy and cost effective with Aanoor global. ",
+    "metaKeywords": "Nidhi Company Registration",
     "title": "Nidhi Company ",
     "price": {
       "isAvailable": true,
@@ -1137,8 +960,15 @@
     ]
   },
   {
-    "service": "producerCompany",
+    "metaTitle": "Producer Company Registration in Chennai | Register Producer Company in Online",
+    "metaDesc": "Register Producer company in online get Procedure and Quotation within a min for Producer Company Registration, this mainly who involved  in agricultural activities",
+    "metaKeywords": "Producer Company Registration,Register Producer Company ",
     "title": "Producer Company",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
     "url": "producerCompany",
     "h1": " Producer Company Registration Services in Chennai",
     "Keywords to search": "nidhi company registration, register nidhi company",
@@ -1227,14 +1057,16 @@
     ]
   },
   {
-    "service": "Section 8 Company",
+    "metaTitle": "Online Section 8 Company Registration in Chennai - Aanoor Global",
+    "metaDesc": "Make the Online Section 8 Company Registration with easy and quick process just call us now ! Aanoor global is the best place to register Section 8.",
+    "metaKeywords": "Section 8 Company Registration",
     "title": "Section 8 Company",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "soloProprietorship",
+    "url": "section8Company",
     "h1": "Section 8 Company Registration in Chennai",
     "description": "People found that they cannot be approaching the government elected by them for all the support and help to society, they organised themselves to form entities in name of Trust and Non-Profitable or Non-Government organisations. Section 8 companies are a popular choice for organizations that want to promote charitable or non-profit objectives. If you are considering setting up a non-profit organization, a Section 8 company is a good option to consider.",
     "template": [
@@ -1293,7 +1125,6 @@
     ]
   },
   {
-    "service": "Business Loan",
     "title": "Business Loan",
     "price": {
       "isAvailable": true,

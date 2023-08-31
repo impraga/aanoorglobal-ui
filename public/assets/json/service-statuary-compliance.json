@@ -1,6 +1,8 @@
 [
   {
-    "service": "book-keeping",
+    "metaTitle": "Monthly Accounting Services in Chennai | Virtual Accountant in Chennai | Aanoor Global",
+    "metaDesc": "Aanoor Global, monthly accounting service provider in Chennai, India. Bookkeeping Service with team of professionals. Simple & affordable virtul accountant for startup. Contact us now!",
+    "metaKeywords": "",
     "title": "Book Keeping",
     "price": {
       "isAvailable": true,
@@ -132,7 +134,9 @@
     ]
   },
   {
-    "service": "income-tax-filing",
+    "metaTitle": "Income Tax Filing Service in Chennai | Income Tax Return Filing Service in Chennai",
+    "metaDesc": "To file your Income Tax so easy and quick with professional Auditors for all type of Business and Individuals. Income Tax Return filing we are best service provider in Chennai, Tamilnadu",
+    "metaKeywords": "Income Tax Filing,  Income Tax Return Filing",
     "title": "Income Tax Filing",
     "price": {
       "isAvailable": true,
@@ -263,7 +267,9 @@
     ]
   },
   {
-    "service": "gst-filing",
+    "metaTitle": "GST Registration Online in Chennai | Apply New GST Registration Chennai",
+    "metaDesc": "File your GST Registration application online with Aanoor Global. To Apply New GST Registration contact our team to get easy and quick guidance to apply in online.",
+    "metaKeywords": "GST Registration Online , Apply New GST Registration",
     "title": "GST Filing",
     "price": {
       "isAvailable": true,
@@ -361,7 +367,9 @@
     ]
   },
   {
-    "service": "tds-returns",
+    "metaTitle": "TDS Return Filing Service in Chennai | Online TDS Return Filing Consultants in Chennai",
+    "metaDesc": "Get Your TDS Return Filing Service easily with Aanoor Global. Hassle Free Service. Quick& Easy Registration Process for more Details Contact our Office now!",
+    "metaKeywords": "TDS Return Filing, TDS Return Filing Consultants",
     "title": "TDS Returns",
     "price": {
       "isAvailable": true,
@@ -455,109 +463,111 @@
     ]
   },
   {
-    "service": "annual-compliance",
+    "metaTitle": "ROC Annual Compliance | ROC Filing in Chennai | Annual Filing of ROC - Aanoor Global",
+    "metaDesc": "Get your ROC Annual Compliance easy and quick process for Register with Aanoor Global in Chennai. ROC Filing and  Annual Filing for ROC  is done with our expert team  is easy online registration process.",
+    "metaKeywords": "ROC Annual Compliance, ROC Filing ",
     "title": "roc-annual-filing",
     "price": {
       "isAvailable": true,
       "value": "2,800",
-      "note": "with in *5 working days",
-      "url": "rocAnnualCompliance",
-      "h1": "Annual Filing of ROC Compliance in Chennai",
-      "description": "ROC Compliance and ROC filing is made with Return filing Online annually with an affordable rate for small business through Aanoor Global. ROC filings are ensured that companies are complying with the law, and they provide the government with information about the corporate sector.",
-      "template": [
-        {
-          "id": "Overview",
-          "header": "ROC filing for Pvt Ltd Company",
-          "type": "SPParagraph",
-          "value": "ROC filing refers to the submission of various documents and returns to the Registrar of Companies (ROC). The ROC is a government body that is responsible for registering and regulating companies in India. Filing of ROC compliance is a mandatory requirement for all companies registered in India. ROC filings can also be used by investors and other stakeholders to assess the financial health and governance of companies."
-        },
-        {
-          "id": "common ROC filling",
-          "header": "There are some of the common ROC filings that companies are required to do",
-          "desc": "",
-          "type": "SPBenefits",
-          "value": [
-            {
-              "title": "Annual return",
-              "value": [
-                "This is a document that provides information about the company's financial performance, board of directors, and shareholders. It must be filed within 60 days of the conclusion of the company's annual general meeting (AGM)."
-              ]
-            },
-            {
-              "title": "Audited financial statements",
-              "value": [
-                "These are the financial statements of the company that have been audited by a qualified auditor. They must be filed within 30 days of the conclusion of the AGM."
-              ]
-            },
-            {
-              "title": "Change in company information",
-              "value": [
-                "This filing is required to be made whenever there is a change in the company's information, such as its name, address, directors, or shareholders."
-              ]
-            },
-            {
-              "title": "Other filings",
-              "value": [
-                "There are several other ROC filings that companies may be required to make, depending on their specific circumstances."
-              ]
-            }
-          ]
-        },
+      "note": "with in *5 working days"
+    },
+    "url": "rocannualCompliance",
+    "h1": "Annual Filing of ROC Compliance in Chennai",
+    "description": "ROC Compliance and ROC filing is made with Return filing Online annually with an affordable rate for small business through Aanoor Global. ROC filings are ensured that companies are complying with the law, and they provide the government with information about the corporate sector.",
+    "template": [
+      {
+        "id": "Overview",
+        "header": "ROC filing for Pvt Ltd Company",
+        "type": "SPParagraph",
+        "value": "ROC filing refers to the submission of various documents and returns to the Registrar of Companies (ROC). The ROC is a government body that is responsible for registering and regulating companies in India. Filing of ROC compliance is a mandatory requirement for all companies registered in India. ROC filings can also be used by investors and other stakeholders to assess the financial health and governance of companies."
+      },
+      {
+        "id": "common ROC filling",
+        "header": "There are some of the common ROC filings that companies are required to do",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "Annual return",
+            "value": [
+              "This is a document that provides information about the company's financial performance, board of directors, and shareholders. It must be filed within 60 days of the conclusion of the company's annual general meeting (AGM)."
+            ]
+          },
+          {
+            "title": "Audited financial statements",
+            "value": [
+              "These are the financial statements of the company that have been audited by a qualified auditor. They must be filed within 30 days of the conclusion of the AGM."
+            ]
+          },
+          {
+            "title": "Change in company information",
+            "value": [
+              "This filing is required to be made whenever there is a change in the company's information, such as its name, address, directors, or shareholders."
+            ]
+          },
+          {
+            "title": "Other filings",
+            "value": [
+              "There are several other ROC filings that companies may be required to make, depending on their specific circumstances."
+            ]
+          }
+        ]
+      },
 
-        {
-          "id": "The key forms",
-          "header": "The key forms that need to be filed as part of the annual compliance are",
-          "type": "SPBullet",
-          "value": [
-            "Form MGT-7: Annual return",
-            "Form AOC-4: Financial statements",
-            "Form DIR-3: Directors' report",
-            "Form MGT-14: Minutes of the annual general meeting",
-            "Form ADT-1: Appointment of auditor",
-            "Form ADT-2: Resignation of auditor",
-            "Form ADT-3: Change in auditor's address"
-          ]
-        },
+      {
+        "id": "The key forms",
+        "header": "The key forms that need to be filed as part of the annual compliance are",
+        "type": "SPBullet",
+        "value": [
+          "Form MGT-7: Annual return",
+          "Form AOC-4: Financial statements",
+          "Form DIR-3: Directors' report",
+          "Form MGT-14: Minutes of the annual general meeting",
+          "Form ADT-1: Appointment of auditor",
+          "Form ADT-2: Resignation of auditor",
+          "Form ADT-3: Change in auditor's address"
+        ]
+      },
 
-        {
-          "id": "Benefits ",
-          "header": "Benefits to ROC annual compliance for companies",
-          "desc": "",
-          "type": "SPBenefits",
-          "value": [
-            {
-              "title": "Maintaining a company's active status",
-              "value": [
-                "If a company fails to comply with ROC annual compliance requirements, its status with the ROC may be changed to \"dormant\" or \"struck off.\" This can make it difficult or impossible for the company to carry out certain activities, such as opening a bank account or filing taxes."
-              ]
-            },
-            {
-              "title": "Avoiding penalties",
-              "value": [
-                "The ROC can impose penalties on companies that fail to comply with annual compliance requirements. These penalties can be significant, and they can also damage a company's reputation."
-              ]
-            },
-            {
-              "title": "Protecting investors",
-              "value": [
-                "ROC annual compliance requirements help to protect investors by ensuring that companies are transparent about their financial performance and governance practices. This information can help investors to make informed investment decisions."
-              ]
-            },
-            {
-              "title": "Enhancing a company's credibility",
-              "value": [
-                "ROC annual compliance demonstrates that a company is taking its legal obligations seriously. This can help to build trust with customers, suppliers, and other stakeholders."
-              ]
-            },
-            {
-              "title": "Ensuring compliance with other laws",
-              "value": [
-                "ROC annual compliance requirements often overlap with requirements under other laws, such as tax laws and labor laws. By complying with ROC annual compliance requirements, companies can help to ensure that they are also complying with other applicable laws."
-              ]
-            }
-          ]
-        }
-      ]
-    }
+      {
+        "id": "Benefits ",
+        "header": "Benefits to ROC annual compliance for companies",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "Maintaining a company's active status",
+            "value": [
+              "If a company fails to comply with ROC annual compliance requirements, its status with the ROC may be changed to \"dormant\" or \"struck off.\" This can make it difficult or impossible for the company to carry out certain activities, such as opening a bank account or filing taxes."
+            ]
+          },
+          {
+            "title": "Avoiding penalties",
+            "value": [
+              "The ROC can impose penalties on companies that fail to comply with annual compliance requirements. These penalties can be significant, and they can also damage a company's reputation."
+            ]
+          },
+          {
+            "title": "Protecting investors",
+            "value": [
+              "ROC annual compliance requirements help to protect investors by ensuring that companies are transparent about their financial performance and governance practices. This information can help investors to make informed investment decisions."
+            ]
+          },
+          {
+            "title": "Enhancing a company's credibility",
+            "value": [
+              "ROC annual compliance demonstrates that a company is taking its legal obligations seriously. This can help to build trust with customers, suppliers, and other stakeholders."
+            ]
+          },
+          {
+            "title": "Ensuring compliance with other laws",
+            "value": [
+              "ROC annual compliance requirements often overlap with requirements under other laws, such as tax laws and labor laws. By complying with ROC annual compliance requirements, companies can help to ensure that they are also complying with other applicable laws."
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
