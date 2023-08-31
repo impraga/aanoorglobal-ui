@@ -162,7 +162,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className={`lg-container bs ${isMenuOpen ? 'remove-radius' : ''}`}>
-        <header className="container">
+        <header className="container-fluid">
           <div className="logo-wrapper">
             <Link to="/">
               <img src={logo} className="logo-img" alt="logo" />
@@ -181,21 +181,27 @@ const Header = () => {
           </div>
           <nav className={isMenuOpen ? 'open-menu' : 'close-menu'}>
             {/* desktop menu */}
-            <ul className="d-none d-lg-flex">
-              {menuList?.serviceData.map((item, i) =>
-                menuWithLink(item, 'desktop', i)
-              )}
+            <ul className="d-none d-lg-flex ps-0">
+              <div />
+              <div className="d-flex">
+                {menuList?.serviceData.map((item, i) =>
+                  menuWithLink(item, 'desktop', i)
+                )}
+              </div>
 
-              {isKillSwitchDisabled && (
-                <li key="blog">
-                  <Button
-                    className="blog-btn"
-                    variant="success"
-                    onClick={() => navigate('/blog')}
-                  >
-                    Blog
-                  </Button>
-                </li>
+              {/* {isKillSwitchDisabled && ( */}
+              {true && (
+                <div className="d-flex align-items-center">
+                  <li key="blog">
+                    <Button
+                      className="blog-btn"
+                      variant="success"
+                      onClick={() => navigate('/blog')}
+                    >
+                      Blog
+                    </Button>
+                  </li>
+                </div>
               )}
               {isUserLoggedIn && (
                 <li key="logout">
