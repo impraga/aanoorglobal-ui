@@ -1,236 +1,4 @@
 {
-  "data": [
-    { "pageUrl": "/about", "title": "About", "id": "about" },
-    {
-      "title": "Services",
-      "id": "services",
-      "children": [
-        {
-          "title": "Startup Center",
-          "id": "startup-center",
-          "icon": "startup-center.svg",
-          "children": [
-            {
-              "pageUrl": "/services/startup-center/sole-proprietorship",
-              "title": "Sole Proprietorship",
-              "id": "sole-proprietroship"
-            },
-            {
-              "pageUrl": "/services/startup-center/partnership-firm",
-              "title": "Partnership firm",
-              "id": "partnership-firm"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "One Person Company",
-              "id": "one-person-company"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Private Limited Company",
-              "id": "private-ltd"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Public Limited Company",
-              "id": "public-ltd"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Limited Liability Partnership",
-              "id": "limited-liability"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Nidhi Company",
-              "id": "nidhi-company"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Producer Company",
-              "id": "producer-company"
-            },
-            {
-              "pageUrl": "/services/startup-center/trademark-registration",
-              "title": "Section 8 Company",
-              "id": "section8"
-            }
-          ]
-        },
-        [
-          {
-            "title": "Intellectual Property",
-            "id": "intellectual",
-            "icon": "intellectual-property.svg",
-            "children": [
-              {
-                "pageUrl": "/services/intellectual-property/trademark-registration",
-                "title": "Trademark Registration",
-                "id": "trademark-reg"
-              },
-              {
-                "pageUrl": "/services/intellectual-property/trademark-objection",
-                "title": "Trademark Objection",
-                "id": "trademark-objection"
-              },
-              {
-                "pageUrl": "/services/intellectual-property/trademark-registration",
-                "title": "Trademark Renewal",
-                "id": "trademark-renewal"
-              },
-              {
-                "pageUrl": "/services/intellectual-property/trademark-registration",
-                "title": "Copyright Registration",
-                "id": "copyright-reg"
-              },
-              {
-                "pageUrl": "/services/intellectual-property/trademark-registration",
-                "title": "Design Registration",
-                "id": "design-reg"
-              },
-              {
-                "pageUrl": "/services/intellectual-property/trademark-registration",
-                "title": "Patent Registration",
-                "id": "patent-reg"
-              }
-            ]
-          },
-          {
-            "title": "Statuary Compliance",
-            "id": "statuary-compliance",
-            "icon": "statutory-compliance.svg",
-            "children": [
-              {
-                "pageUrl": "/services/statuary-compliance/income-tax-filing",
-                "title": "Income Tax Filing",
-                "id": "income-tax-filing"
-              },
-              {
-                "pageUrl": "/services/statuary-compliance/gst-filing",
-                "title": "GST Filing",
-                "id": "gst-filing"
-              },
-              {
-                "pageUrl": "/services/statuary-compliance/trademark-registration",
-                "title": "TDS Returns",
-                "id": "tds-returns"
-              },
-              {
-                "pageUrl": "/services/statuary-compliance/trademark-registration",
-                "title": "ROC Annual Compliance",
-                "id": "roc-annual"
-              }
-            ]
-          }
-        ],
-        {
-          "title": "Registration",
-          "id": "registration",
-          "icon": "registration.svg",
-          "children": [
-            {
-              "pageUrl": "/services/registration/ssi-msme-registration",
-              "title": "SSI/MSME Registration",
-              "id": "ssi-msme-reg"
-            },
-            {
-              "pageUrl": "/services/registration/goods-service-tax-registration",
-              "title": "Goods & Service Tax Registration",
-              "id": "good-service-tax"
-            },
-            {
-              "pageUrl": "/services/registration/trademark-registration",
-              "title": "Professional Tax Registration",
-              "id": "professional-tax"
-            },
-            {
-              "pageUrl": "/services/registration/trademark-registration",
-              "title": "Trust/NGO Registration",
-              "id": "trust-ngo"
-            },
-            {
-              "pageUrl": "/services/registration/trademark-registration",
-              "title": "Import Export Code (IEC) Registration",
-              "id": "import-export-code"
-            },
-            {
-              "pageUrl": "/services/registration/trademark-registration",
-              "title": "FSSAI Registration",
-              "id": "fssai-reg"
-            },
-            {
-              "pageUrl": "/services/registration/trademark-registration",
-              "title": "PAN Registration",
-              "id": "pan-reg"
-            },
-            {
-              "pageUrl": "/services/registration/trademark-registration",
-              "title": "TAN Registration",
-              "id": "tan-reg"
-            }
-          ]
-        },
-        {
-          "title": "Certification",
-          "id": "certification",
-          "icon": "certification.svg",
-          "children": [
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO 9001:2015 QMS",
-              "id": "iso-9001:2015"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO 14001:2004 EMS",
-              "id": "iso-14001:2004"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO 22000:2005 / HACCP",
-              "id": "iso-22000:2005"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO 13485:2003 Medical devices",
-              "id": "iso-13485:2003"
-            },
-            {
-              "pageUrl": "/services/certification/rademark-registration",
-              "title": "ISO/TS 16949:2009",
-              "id": "iso-16949:2009"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "OHSAS 18001:2007",
-              "id": "iso-18001:2007"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO/IEC 20000",
-              "id": "iso-20000"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO 27001:2005 ISMS",
-              "id": "iso-27001:2005"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO 29990:2010",
-              "id": "iso-29990:2010"
-            },
-            {
-              "pageUrl": "/services/certification/trademark-registration",
-              "title": "ISO 50001:2011",
-              "id": "iso-50001:2011"
-            }
-          ]
-        }
-      ]
-    },
-    { "pageUrl": "/contact", "title": "Contact", "id": "contact" }
-  ],
   "serviceData": [
     {
       "title": "Step into",
@@ -243,55 +11,77 @@
           "className": "first-level",
           "children": [
             {
-              "pageUrl": "/services/startup-center/sole-proprietorship",
+              "pageUrl": "soleProprietorship",
               "title": "Sole Proprietorship",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "sole proprietorship, individual business registration, udyam registration, msme registration "
+              ]
             },
             {
-              "pageUrl": "/services/startup-center/partnership-firm",
+              "pageUrl": "partnershipFirm",
               "title": "Partnership firm",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "firm registration, form c registration, partnership deed, partnership firm"
+              ]
             },
             {
-              "pageUrl": "/services/startup-center/trademark-registration",
+              "pageUrl": "onePersonCompany",
               "title": "One Person Company",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "one person company registration, opc registration online, one man company"
+              ]
             },
             {
-              "pageUrl": "/services/startup-center/trademark-registration",
+              "pageUrl": "privateLimitedCompany",
               "title": "Private Limited Company",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "pvt limited company registration, pvt ltd company registration, private limited company registration, private company registration"
+              ]
             },
             {
-              "pageUrl": "/services/startup-center/trademark-registration",
+              "pageUrl": "publicLimitedCompany",
               "title": "Public Limited Company",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": ["limited company, public company registration"]
             },
 
             {
-              "pageUrl": "/services/startup-center/trademark-registration",
+              "pageUrl": "limitedLiabilityPartnership",
               "title": "Limited Liability Partnership",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": ["llp, llp firm, llp deed, partnership llp"]
             },
             {
-              "pageUrl": "/services/startup-center/trademark-registration",
+              "pageUrl": "nidhiCompany",
               "title": "Nidhi Company",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "nidhi company registration, register nidhi company"
+              ]
             },
             {
-              "pageUrl": "/services/startup-center/trademark-registration",
+              "pageUrl": "producerCompany",
               "title": "Producer Company",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": ["farmer producer company, farmer company"]
             },
             {
-              "pageUrl": "/services/startup-center/trademark-registration",
+              "pageUrl": "section8Company",
               "title": "Section 8 Company",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [" ngo, section8 company"]
             },
             {
-              "pageUrl": "/services/startup-center/business-loan",
+              "pageUrl": "businessLoan",
               "title": "Business Loan",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "startup business loan, small business finance, working capital loan"
+              ]
             }
           ]
         },
@@ -305,37 +95,49 @@
               "pageUrl": "trademarkRegistration",
               "title": "TM Registration",
               "className": "second-level",
-              "searchKeyword": []
+              "searchKeyword": [
+                "logo registration online, brand name, tm registration"
+              ]
             },
             {
               "pageUrl": "trademarkObjection",
               "title": "TM Objection Reply",
-              "className": "second-level"
+              "className": "second-level",
+              "searchKeyword": ["tm objection, trademark objection reply"]
             },
             {
               "pageUrl": "trademarkHearing",
               "title": "TM Hearing",
-              "className": "second-level"
+              "className": "second-level",
+              "searchKeyword": ["TM hearing, brand tm hearing"]
             },
             {
               "pageUrl": "trademarkRenewal",
               "title": "TM Renewal",
-              "className": "second-level"
+              "className": "second-level",
+              "searchKeyword": ["TM renewal, renew trademark"]
             },
             {
               "pageUrl": "copyrightRegistration",
               "title": "Copyright Registration",
-              "className": "second-level"
+              "className": "second-level",
+              "searchKeyword": [
+                "logo copyright, content copyright, book copyright"
+              ]
             },
             {
               "pageUrl": "designrightRegistration",
               "title": "Design Right Registration",
-              "className": "second-level"
+              "className": "second-level",
+              "searchKeyword": ["protect design online, design registration"]
             },
             {
               "pageUrl": "patentRegistration",
               "title": "Patent Registration",
-              "className": "second-level"
+              "className": "second-level",
+              "searchKeyword": [
+                "protect invention, patent rights registration, online patent"
+              ]
             }
           ]
         }
@@ -354,22 +156,36 @@
             {
               "pageUrl": "bookKeeping",
               "title": "Book keeping",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "monthly accounting, bookkeeping, virtual accounting"
+              ]
             },
             {
               "pageUrl": "incometaxFilling",
               "title": "Income Tax Filing",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [""]
             },
             {
               "pageUrl": "gstFilling",
               "title": "GST Filing",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": [
+                "gst return, gst filing, gstr filing, gstr online "
+              ]
             },
             {
               "pageUrl": "tdsReturns",
               "title": "TDS Returns",
-              "className": "second-level"
+              "className": "second-level",
+              "searchkeyword": ["tds online, tds returns, tds filing"]
+            },
+            {
+              "pageUrl": "rocannualCompliance",
+              "title": "roc annual Compliance",
+              "className": "second-level",
+              "searchkeyword": ["roc filing, roc annual compliance"]
             }
           ]
         },
@@ -480,37 +296,50 @@
             {
               "title": "ISO 9001:2015 QMS",
               "className": "second-level",
-              "pageUrl": "iso2015"
+              "pageUrl": "iso2015",
+              "searchkeyword": [
+                "qms certificarion, iso 9001 certification, iso certification"
+              ]
             },
             {
               "title": "ISO 14001:2004 EMS",
               "className": "second-level",
-              "pageUrl": "iso2004"
+              "pageUrl": "iso14001",
+              "searchkeyword": [
+                "iso ems certification, environment management system"
+              ]
             },
             {
               "title": "ISO 22000:2018 FSMS",
               "className": "second-level",
-              "pageUrl": "/services/registration/iso-22000-2018-fsms"
+              "pageUrl": "iso22000",
+              "searchkeyword": [
+                "iso fsms, iso 22000 food safety management system"
+              ]
             },
             {
               "title": "ISO 45001:2018 OHSMS",
               "className": "second-level",
-              "pageUrl": "iso2018"
+              "pageUrl": "iso45001",
+              "searchkeyword": ["ohsms certification"]
             },
             {
               "title": "ISO/IEC 27001:2013 ISMS",
               "className": "second-level",
-              "pageUrl": "/services/registration/iso-iec-27001-2013-isms"
+              "pageUrl": "iso27001",
+              "searchkeyword": ["isms certification, "]
             },
             {
               "title": "ISO 13485:2003 Medical devices",
               "className": "second-level",
-              "pageUrl": "/services/registration/iso-13485-2003-medical-devices"
+              "pageUrl": "iso13485",
+              "searchkeyword": ["iso for medical devices "]
             },
             {
               "title": "Good Manufacturing Practice(GMP)",
               "className": "second-level",
-              "pageUrl": "/services/registration/Good-Manufacturing-Practice"
+              "pageUrl": "gmpCertification",
+              "searchkeyword": ["gmp certification, iso manufacturing"]
             }
           ]
         }

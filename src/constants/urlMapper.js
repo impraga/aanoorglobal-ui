@@ -16,13 +16,17 @@ const URLs = {
   bookKeeping: '/services/statuary-compliance/book-keeping',
   incometaxFilling: '/services/statuary-compliance/income-tax-filling',
   gstFilling: '/services/statuary-compliance/gst-filing',
-  rocAnnualCompliance: '/services/statuary-compliance/roc-annual-compiance/',
+  rocannualCompliance: '/services/statuary-compliance/roc-annual-compliance/',
   tdsReturns: '/services/statuary-compliance/roc-annual-compiance/',
 
   // CERTIFICATIONS
   iso2015: '/services/certification/iso-9001-2015-qms',
-  iso2004: '/services/registration/iso-14001-200-ems',
-  iso2018: '/services/registration/iso-45001-2018-ohsms',
+  iso14001: '/services/certification/iso-14001-2015-ems',
+  iso22000: '/services/certification/iso-22000-2018-fsms',
+  iso45001: '/services/certification/iso-45001-2018-ohsms',
+  iso27001: '/services/certification/iso-27001-2013-isms',
+  iso13485: '/services/certification/iso-13485-2016-isms',
+  gmpCertification: '/services/certification/good-manufacturing-practice',
 
   // REGISTRATIONS
   udayamMSME: '/services/registration/udyam-msme-registration-online',
@@ -48,14 +52,16 @@ const URLs = {
   // STARTUP CENTER
   soleProprietorship: '/services/startup-center/sole-proprietorship',
   partnershipFirm: '/services/startup-center/partnership-firm',
-  onePersonCompany: '/services/startup-center/sole-proprietorship',
-  limitedLiabilityPartnership: '/services/startup-center/sole-proprietorship',
-  privateLimitedCompany: '/services/startup-center/sole-proprietorship',
-  publicLimitedCompany: '/services/startup-center/sole-proprietorship',
-  nidhiCompany: '/services/startup-center/sole-proprietorship',
-  producerCompany: '/services/startup-center/sole-proprietorship',
-  section8Company: '/services/startup-center/sole-proprietorship',
-  businessLoan: '/services/startup-center/sole-proprietorship'
+  onePersonCompany: '/services/startup-center/opc-registration',
+  limitedLiabilityPartnership: '/services/startup-center/llp-registration',
+  privateLimitedCompany:
+    '/services/startup-center/pvt-ltd-company-registration',
+  publicLimitedCompany:
+    '/services/startup-center/public-limited-company-registration',
+  nidhiCompany: '/services/startup-center/nidhi-company-registration',
+  producerCompany: '/services/startup-center/farmer-producer-company',
+  section8Company: '/services/startup-center/ngo-registration-online',
+  businessLoan: '/services/startup-center/bussiness-funding'
 }
 
 export default URLs

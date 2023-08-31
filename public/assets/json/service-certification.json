@@ -1,6 +1,8 @@
 [
   {
-    "service": "ISO 9001:2015 QMS",
+    "metaTitle": "ISO 9001:2015 QMS Certification in Chennai | ISO QMS Audit services in Chennai",
+    "metaDesc": "ISO 9001:2015 QMS Certification in Chennai for business Aanoor Global has best team to get your certification Quick&Easy. ISO QMS Audit services we are best service provider for more details contact us now!",
+    "metaKeywords": "ISO 9001:2015 QMS Certification, ISO QMS Audit services",
     "title": "ISO 9001:2015 QMS",
     "price": {
       "isAvailable": true,
@@ -83,14 +85,16 @@
     ]
   },
   {
-    "service": "ISO 14001:2015 EMS",
+    "metaTitle": "ISO 14001:2015 EMS Certification in Chennai | ISO EMS Services in Chennai",
+    "metaDesc": "ISO 14001:2015 EMS Certification in Chennai with Aanoor Global. ISO EMS Services Quick and Easy Online process in Chennai . Hassle free service contact us now!",
+    "metaKeywords": "ISO 14001:2015 EMS Certification,  ISO EMS Services",
     "title": "ISO 14001:2015 EMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-objection",
+    "url": "iso14001",
     "h1": "ISO 14001:2015 Environmental Management System",
     "description": [
       "ISO 14001:2015 specifies requirements for Environmental Management System (EMS) for any organization that seeks to demonstrate compliance with laws and regulations, and conformity to environmental policy and stated objectives, ISO 14001: 2015 supports environmental protection and the prevention of pollution in the socio-economic balance",
@@ -160,14 +164,16 @@
     ]
   },
   {
-    "service": "ISO 22000:2018 FSMS",
+    "metaTitle": "Food Safety Management System Certification in Chennai | ISO FSMS Service Chennai",
+    "metaDesc": "Food Safety Management System Certification in Chennai with AAnoor Global. ISO FSMS Service with quick and easy process. For more details contact our office now!",
+    "metaKeywords": "Food Safety Management System Certification, ISO FSMS",
     "title": "ISO 22000:2018 FSMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/sole-proprietorship",
+    "url": "iso22000",
     "h1": "ISO 22000:2018 Food Safety Management Systems",
     "description": "The ISO 22000:2018 standard is a valuable tool for organizations that want to ensure the safety of their food products. It is a comprehensive and rigorous standard that can help organizations to achieve their food safety goals.",
     "template": [
@@ -187,12 +193,6 @@
           "The Plan-Do-Check-Act (PDCA) cycle",
           "Communication"
         ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
       },
 
       {
@@ -249,14 +249,16 @@
     ]
   },
   {
-    "service": "ISO 45001:2018 OHSMS",
+    "metaTitle": "ISO 45001:2018 | Occupational Health and Safety Management in Chennai",
+    "metaDesc": "Occupational Health and Safety Series certification in chennai with Aanoor Global. Hassle Free Service. Quick and easy process.For more details contact our office now!",
+    "metaKeywords": "Occupational Health and Safety Series certification, OHSAS 18001:2007",
     "title": "ISO 45001:2018 OHSMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/partnership-firm",
+    "url": "iso45001",
 
     "description": "",
     "template": [
@@ -328,14 +330,16 @@
     ]
   },
   {
-    "service": "ISO/IEC 27001:2013 ISMS",
+    "metaTitle": "Information Security Management System Certification Chennai | ISO 27001:2005 ISMS",
+    "metaDesc": "Information Security Management System certification in chennai with Aanoor Global. Hassle Free Service. Quick and easy process.For more details contact our office now! ",
+    "metaKeywords": "Information Security Management System Certification, ISO 27001:2013 ISMS",
     "title": "ISO/IEC 27001:2013 ISMS",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/income-tax-filing",
+    "url": "iso27001",
     "h1": "> ISO/IEC 27001:2013 Information Security Management Systems",
 
     "description": "ISO/IEC 27001:2013 is an international standard that provides a framework for organizations to manage their information security. The standard is based on the principles of risk-based thinking, the Plan-Do-Check-Act (PDCA) cycle, and management commitment.",
@@ -389,14 +393,16 @@
     ]
   },
   {
-    "service": "ISO 13485:2016",
+    "metaTitle": " ISO 13485:2016 Medical devices QMS Certification in Chennai - Aanoor Global",
+    "metaDesc": "ISO 13485:2016 Medical devices QMS Certification in Chennai with Aanoor Global. Hassle Free Service. Quick and easy process.For more details contact our office now!",
+    "metaKeywords": "ISO 13485:2016 Medical devices QMS Certification, Medical devices QMS services",
     "title": "ISO 13485:2016",
     "price": {
       "isAvailable": true,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/gst-filing",
+    "url": "iso13485",
     "h1": "ISO 13485:2016 Medical devices Certifications",
     "description": "The ISO 13485:2016 standard is a valuable tool for organizations that want to demonstrate their commitment to quality and safety in the medical device industry.",
     "template": [
@@ -409,36 +415,7 @@
           "The standard is based on the principles of risk management and the Plan-Do-Check-Act (PDCA) cycle. It covers all aspects of the QMS, from design and development to production, installation, and servicing."
         ]
       },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
-        "type": "SPBullet",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
+
       {
         "id": "benefits",
         "header": "Benefits of ISO 13485:2016 QMS",
@@ -480,102 +457,89 @@
           "The new standard requires organizations to have a more robust process for managing change.",
           "The new standard requires organizations to have a more comprehensive approach to monitoring and measuring the performance of their QMS."
         ]
-      },
+      }
+    ]
+  },
+  {
+    "metaTitle": "",
+    "metaDesc": "",
+    "metaKeywords": "",
+    "title": "Good Manufacturing Practice",
+    "price": {
+      "isAvailable": true,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "gmpCertification",
+    "h1": "Facts About the Current Good Manufacturing Practices",
+    "description": "Good Manufacturing Practice (GMP) certification is a set of regulations that ensure the quality of pharmaceutical products. It is required for pharmaceutical companies to manufacture and sell their products in most countries. The GMP regulations cover all aspects of pharmaceutical manufacturing, from the raw materials used to the finished product. They make sure that medicinal products in the aspect of  safe, effective, and its quality.",
+    "template": [
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "id": "overview",
+        "header": "An overview of GMP",
+        "type": "SPParagraph",
+        "value": [
+          "GMP certification is typically awarded by a government agency or a third-party organization. The certification process typically involves an audit of the pharmaceutical company's manufacturing facilities and procedures. The audit process assures the organization compliance with GMP regulations. when the company is found to be in compliance, it will be awarded GMP certification.",
+          "GMP certification is important for a number of reasons. First, it make sure that pharmaceutical products are safe, effective as well. Second, it helps to protect consumers from counterfeit or substandard products. Third, it can help pharmaceutical companies to gain access to new markets."
+        ]
+      },
+
+      {
+        "id": "benefits",
+        "header": "Benefits of GMP certification",
+        "desc": "",
         "type": "SPBenefits",
         "value": [
           {
-            "title": "No return Filing",
+            "title": "",
             "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+              "Increased customer confidence in the safety and quality of products",
+              "Improved compliance with regulatory requirements",
+              "Reduced risk of product recalls",
+              "Increased market access",
+              "Improved operational efficiency",
+              "Enhanced brand reputation"
             ]
           }
         ]
       },
       {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
+        "id": "Important components",
+        "header": "Important components of GMP",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "important",
         "value": [
           {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+            "title": "People",
+            "value": [
+              "The people who work in a GMP-compliant facility must be qualified and trained to perform their tasks. They must also follow strict hygiene procedures to prevent contamination of products."
+            ]
           },
           {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+            "title": "Primses",
+            "value": [
+              "The facilities where pharmaceutical products are manufactured must be clean, well-organized, and properly equipped. They must also be designed to prevent contamination of products."
+            ]
           },
           {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+            "title": "Processes",
+            "value": [
+              "The processes used to manufacture pharmaceutical products must be well-defined and documented. They must also be validated to ensure that they consistently produce products of the desired quality."
+            ]
           },
           {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+            "title": "products",
+            "value": [
+              "The pharmaceutical products themselves must meet all applicable specifications and standards. They must also be free from contaminants."
+            ]
           },
           {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            "title": "Procedures",
+            "value": [
+              "All activities related to the manufacture of pharmaceutical products must be documented in a clear and concise manner. This documentation provides a record of the processes and procedures that were used to produce the products, and it can be used to investigate any problems that may occur.",
+              "If you are a pharmaceutical company, GMP certification is an important step in ensuring the quality of your products and gaining access to new markets."
+            ]
           }
         ]
       }
