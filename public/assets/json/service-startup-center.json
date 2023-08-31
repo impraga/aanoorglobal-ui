@@ -103,7 +103,7 @@
         ]
       },
       {
-        "id": "Steps to register",
+        "id": "Steps to register firm",
         "header": "Sole proprietorship firm registration process",
         "type": "SPStep",
         "value": {
@@ -147,7 +147,7 @@
         ]
       },
       {
-        "id": "Steps to register",
+        "id": "Steps to register for GST",
         "header": "How to Register for GST online?",
         "type": "SPStep",
         "value": {

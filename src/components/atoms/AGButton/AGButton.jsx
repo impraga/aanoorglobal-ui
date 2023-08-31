@@ -12,7 +12,7 @@ const AGButton = ({ buttonObj, handleClick }) => (
     {buttonObj.text}
     {buttonObj.imageDetails && (
       <div className="menuToggle">
-        <input type="checkbox" />
+        <input type="checkbox" readOnly checked={buttonObj.status} />
         <span className="bg-blue" />
         <span className="bg-blue" />
         <span className="bg-blue" />

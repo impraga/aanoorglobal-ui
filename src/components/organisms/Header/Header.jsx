@@ -31,12 +31,19 @@ const Header = () => {
 
   const menuWithLink = (item, device, index) => (
     <li
-      key={item.id}
+      key={item.id || item.title}
       className={`item${index + 1} ${
         serviceOpen === item.title ? 'active' : ''
       }`}
     >
-      {item.pageUrl && <Link to={URLs[item.pageUrl]}>{item.title}</Link>}
+      {item.pageUrl && (
+        <Link
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          to={URLs[item.pageUrl]}
+        >
+          {item.title}
+        </Link>
+      )}
       {item.children &&
         device === 'mobile' &&
         menuWithMobileChildren(item.children, item, null, true)}
@@ -65,7 +72,7 @@ const Header = () => {
           <img
             src="/assets/images/chevron-right.svg"
             alt=""
-            className="desktop-chevron "
+            className="mobile-chevron "
           />
         </span>
       )}
@@ -87,9 +94,9 @@ const Header = () => {
 
               {item.title}
               <img
-                src="/assets/images/chevron-right.svg"
+                src="/assets/images/chevron-left.svg"
                 alt=""
-                className="desktop-chevron "
+                className="mobile-chevron "
               />
             </span>
           )}
@@ -171,6 +178,7 @@ const Header = () => {
           <div className="hamburger-menu">
             <AGButton
               buttonObj={{
+                status: isMenuOpen,
                 className: 'menu-icon',
                 imageDetails: {
                   alt: isMenuOpen ? 'menu-close' : 'menu'
@@ -189,8 +197,7 @@ const Header = () => {
                 )}
               </div>
 
-              {/* {isKillSwitchDisabled && ( */}
-              {true && (
+              {isKillSwitchDisabled && (
                 <div className="d-flex align-items-center">
                   <li key="blog">
                     <Button
@@ -217,33 +224,37 @@ const Header = () => {
             </ul>
             {/* mobile menu */}
             <ul className="d-lg-none">
-              {[
-                // eslint-disable-next-line no-unsafe-optional-chaining
-                ...menuList?.serviceData[0].children,
-                // eslint-disable-next-line no-unsafe-optional-chaining
-                ...menuList?.serviceData[1].children
-              ].map((item, i) => menuWithLink(item, 'mobile', i))}
-
-              <li key="blog">
-                <Button
-                  className="blog-btn"
-                  variant="success"
-                  onClick={() => navigate('/blog')}
-                >
-                  Blog
-                </Button>
-              </li>
-              {isUserLoggedIn && (
-                <li key="logout">
-                  <Button
-                    className="logout"
-                    variant="primary"
-                    onClick={() => handleClick()}
-                  >
-                    Logout
-                  </Button>
-                </li>
-              )}
+              <div />
+              <div>
+                {[
+                  // eslint-disable-next-line no-unsafe-optional-chaining
+                  ...menuList?.serviceData[0].children,
+                  // eslint-disable-next-line no-unsafe-optional-chaining
+                  ...menuList?.serviceData[1].children
+                ].map((item, i) => menuWithLink(item, 'mobile', i))}
+                {isKillSwitchDisabled && (
+                  <li key="blog">
+                    <Button
+                      className="blog-btn"
+                      variant="success"
+                      onClick={() => navigate('/blog')}
+                    >
+                      Blog
+                    </Button>
+                  </li>
+                )}
+                {isUserLoggedIn && (
+                  <li key="logout">
+                    <Button
+                      className="logout"
+                      variant="primary"
+                      onClick={() => handleClick()}
+                    >
+                      Logout
+                    </Button>
+                  </li>
+                )}
+              </div>
             </ul>
           </nav>
         </header>
