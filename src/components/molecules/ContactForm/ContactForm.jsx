@@ -204,7 +204,7 @@ const ContactForm = () => {
                       className={`btn-submit ${
                         onSubmitForm === 'onclick' ? 'onclick' : ''
                       } ${onSubmitForm === 'Validated' ? 'validated' : ''} ${
-                        onSubmitForm === 'error' ? 'error' : ''
+                        onSubmitForm === 'error' ? 'errorMail' : ''
                       }`}
                       // value="Submit"
                     />

@@ -1,0 +1,110 @@
+@import './../../../index.scss';
+
+.statuary-hero-banner-cont {
+  padding-top: 100px;
+  // background-image: url(./../../../../public/assets/images/statuary-compliance-hero-bg.svg);
+  background: linear-gradient(180deg, #fcfcfc 0%, #ccc 100%);
+  background-position: left top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid $ag-green;
+  min-height: 400px;
+  .banner-holder {
+    // min-height: 430px;
+    .title-cont {
+      z-index: 2;
+      text-align: center;
+      font-size: 6rem;
+      line-height: 1;
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+  }
+  .hero-text-cont {
+    background-image: url(./../../../../public/assets/images/ribbon-sc.svg);
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+    padding: 9rem 10px 50px 10px;
+    color: white;
+    .title-cont {
+      text-align: center;
+      .title {
+        margin: auto;
+        font-size: 2.5rem;
+        font-weight: 600;
+        max-width: 600px;
+        width: 90%;
+        padding-bottom: 20px;
+      }
+      p {
+        margin: auto;
+        max-width: 1000px;
+        width: 90%;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+    .price-cont {
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding-bottom: 5px;
+      .just {
+        line-height: 1.3rem;
+      }
+      .price {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      .note {
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 0.7;
+        line-height: 0.5rem;
+      }
+    }
+  }
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 5.8rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .certification-hero-banner-cont {
+    .banner-holder {
+      .title-cont {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}
