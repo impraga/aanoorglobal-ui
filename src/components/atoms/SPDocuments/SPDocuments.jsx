@@ -62,7 +62,12 @@ const SPDocuments = ({ data }) => {
                 data-aos="fade-top"
                 data-aos-delay="0"
               >
-                <img src={documentPath} alt="decorative" />
+                <img
+                  src={documentPath}
+                  alt="decorative"
+                  data-aos="zoom-in-up"
+                  data-aos-delay="50"
+                />
               </div>
               <div
                 className="glass"
@@ -85,7 +90,10 @@ const SPDocuments = ({ data }) => {
             }`}
             id={data.id}
           >
-            <div className="position-relative title-cont d-flex align-item-center mb-4">
+            <div
+              className="position-relative title-cont d-flex align-item-center mb-4"
+              data-aos="fade-left"
+            >
               <div className="img-cont bg-db br-1">
                 <img src={folderIcon} alt="" />
               </div>
@@ -96,8 +104,12 @@ const SPDocuments = ({ data }) => {
             <div className="position-relative file-cont">
               <ol>
                 {data.value &&
-                  data.value.map((list) => (
-                    <div key={list}>
+                  data.value.map((list, index) => (
+                    <div
+                      key={list}
+                      data-aos="fade-left"
+                      data-aos-delay={index * 50 + 50}
+                    >
                       <li>{list}</li>
                       <hr className="" />
                     </div>

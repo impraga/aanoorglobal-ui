@@ -111,13 +111,16 @@
             content: 'Success' !important;
           }
         }
-        .errorMail {
+        .error {
           // font-size: 13px;
           border: 2px solid rgb(195, 31, 31) !important;
           color: white;
           background: rgb(195, 31, 31);
           &:after {
             content: 'Error, Try again!' !important;
+          }
+          &:hover {
+            background: rgb(180, 26, 26);
           }
         }
 

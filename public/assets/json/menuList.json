@@ -203,7 +203,7 @@
             {
               "title": "GST Registration / Amendment",
               "className": "second-level",
-              "pageUrl": "gstRegAmendment"
+              "pageUrl": "gstRegistration"
             },
             {
               "title": "FSSAI Food & Catering License",
@@ -223,67 +223,67 @@
             {
               "title": "PAN Registration/Correction",
               "className": "second-level",
-              "pageUrl": "/services/registration/pan-registration-correction"
+              "pageUrl": "panRegistration"
             },
             {
               "title": "TAN Registration",
               "className": "second-level",
-              "pageUrl": "/services/registration/tan-registration"
+              "pageUrl": "tanRegistration"
             },
             {
               "title": "ESI Registration / Filing",
               "className": "second-level",
-              "pageUrl": "/services/registration/esi-registration-filing"
+              "pageUrl": "esiOnlineFiling"
             },
             {
-              "title": "EPF Registration / Filing",
+              "title": "Employee Provident Fund",
               "className": "second-level",
-              "pageUrl": "/services/registration/epf-registration-filing"
+              "pageUrl": "pfOnline"
             },
             {
               "title": "HR & Payroll Services",
               "className": "second-level",
-              "pageUrl": "/services/registration/hr-payroll-services"
+              "pageUrl": "hrPayrollService"
             },
             {
               "title": "Professional Tax Registration",
               "className": "second-level",
-              "pageUrl": "/services/registration/professional-tax-registration"
+              "pageUrl": "ptRegistration"
             },
             {
               "title": "Shop & Establishment",
               "className": "second-level",
-              "pageUrl": "/services/registration/shop-establishment"
+              "pageUrl": "shopEstRegistration"
             },
             {
               "title": "Labour Welfare Fund",
               "className": "second-level",
-              "pageUrl": "/services/registration/labour-welfare-fund"
+              "pageUrl": "labourWelfareFund"
             },
             {
               "title": "Labour Contract License",
               "className": "second-level",
-              "pageUrl": "/services/registration/labour-contract-license"
+              "pageUrl": "labourContractLicense"
             },
             {
               "title": "Inspector of Factories",
               "className": "second-level",
-              "pageUrl": "/services/registration/inspector-of-factories"
+              "pageUrl": "factoryLicenseOnline"
             },
             {
               "title": "Fire License",
               "className": "second-level",
-              "pageUrl": "/services/registration/fire-license"
+              "pageUrl": "fireLicense"
             },
             {
               "title": "Training Programs",
               "className": "second-level",
-              "pageUrl": "/services/registration/training-programs"
+              "pageUrl": "trainingPrograms"
             },
             {
               "title": "Digital Signature",
               "className": "second-level",
-              "pageUrl": "/services/registration/digital-signature"
+              "pageUrl": "digitalSignature"
             }
           ]
         },

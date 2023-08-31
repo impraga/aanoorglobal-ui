@@ -25,7 +25,10 @@ const SPBenefits = ({ data }) => {
   }, [])
 
   return (
-    <div className="pb-0 mb-4 benefits-cont container" id={data.id}>
+    <div
+      className="pb-0 mb-4 benefits-cont container overflow-hidden"
+      id={data.id}
+    >
       <div
         className={`${data?.class || ''} ${
           category === 'registration' ? 'row' : ''
@@ -34,16 +37,29 @@ const SPBenefits = ({ data }) => {
         <div
           className={`${category === 'registration' ? 'col-md-8 px-0' : ''}`}
         >
-          <h3 className="mb-3">{data.header}</h3>
-          <p className="mb-0 benefits-desc">{data.desc && data.desc}</p>
+          <h3 className="mb-3" data-aos="fade-left">
+            {data.header}
+          </h3>
+          <p className="mb-3 benefits-desc" data-aos="fade-left">
+            {data.desc && data.desc}
+          </p>
           <ul className="benefits-ul">
             {data.value &&
-              data.value.map((benefit) => (
+              data.value.map((benefit, index) => (
                 <div key={benefit.title}>
-                  {benefit.title && <h4>{benefit.title}</h4>}
+                  {benefit.title && (
+                    <h4 data-aos="fade-left" data-aos-delay={index * 50}>
+                      {benefit.title}
+                    </h4>
+                  )}
                   {benefit.value &&
                     benefit.value.map((points) => (
-                      <li className="bg-gray br-1" key={points}>
+                      <li
+                        className="bg-gray br-1"
+                        key={points}
+                        data-aos="fade-left"
+                        data-aos-delay={index * 50 + 50}
+                      >
                         {points}
                       </li>
                     ))}
@@ -57,13 +73,19 @@ const SPBenefits = ({ data }) => {
               category === 'registration'
                 ? 'col-md-4 my-3 position-relative px-0'
                 : ''
-            }  ${data.value.length > 1 ? 'order-md-first' : ''}`}
+            }`}
+            // }  ${data.value.length > 1 ? 'order-md-first' : ''}`}
           >
             <div className="registration-img-cont">
-              <img src={imgPath} alt="decorative" />
+              <img
+                src={imgPath}
+                alt="decorative"
+                data-aos="zoom-in-up"
+                data-aos-delay="50"
+              />
             </div>
             <div className="registration-img-bg" />
-            <div className="glass" />
+            <div className="glass" data-aos="zoom-in-up" data-aos-delay="150" />
           </div>
         )}
       </div>

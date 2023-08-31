@@ -170,7 +170,8 @@
 
       {
         "id": "ITR forms",
-        "header": "Here are seven different ITR forms, each of which is designed for a specific type of taxpayer. The most common ITR forms are:",
+        "header": "Here are seven different ITR forms, each of which is designed for a specific type of taxpayer.",
+        "desc": "The most common ITR forms are:",
         "type": "SPBullet",
         "value": [
           "ITR 1 - For individuals being a resident (other than not ordinarily resident) having total income upto Rs.50 lakh, having Income from Salaries, one house property, other sources (Interest etc.), and agricultural income upto Rs.5 thousand",

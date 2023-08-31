@@ -5,6 +5,7 @@
   padding-bottom: 60px;
   position: relative;
   z-index: 5;
+  min-height: 100vh;
 }
 h3 {
   font-weight: 700 !important;
@@ -27,6 +28,12 @@ h3 {
         }
         &:last-child {
           margin-bottom: 0 !important;
+        }
+      }
+
+      .SPBenefits:nth-child(even) {
+        .row > .col-md-8 {
+          order: -1 !important;
         }
       }
     }
@@ -58,7 +65,7 @@ h3 {
         box-shadow: $ag-box-shadow;
         padding: 15px 15px 1px 15px;
         margin-bottom: 15px;
-        &.Required.documents {
+        &.SPDocuments {
           padding: 0;
         }
         &:last-child {

@@ -80,6 +80,9 @@
   .benefits-cont {
     padding-top: 20px !important;
     margin-bottom: 10px !important;
+    > .row .col-md-8 {
+      align-self: center;
+    }
     h4 {
       font-weight: 500;
     }
@@ -179,6 +182,7 @@
 }
 .service-page-cont.certification {
   .benefits-cont {
+    margin-top: 20px !important;
     .benefits-desc {
       margin-bottom: 10px !important;
     }

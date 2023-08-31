@@ -1,54 +1,500 @@
 [
   {
-    "service": "trademark-registration",
-    "title": "Trademark Registration",
+    "title": "Udyam Registration",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/trademark-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "udayamMSME",
+    "h1": "Udyam MSME Registration Certificate - Apply Now!",
+    "description": "Udyam registration is an online registration process for micro, small and medium enterprises (MSMEs) in India. It was launched by the Ministry of Micro, Small and Medium Enterprises (MSME) on July 1, 2020. The goal of Udyam registration is to digitize the MSME registration process and make it more accessible to businesses of all sizes.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "MSME Registration Online",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "To register for Udyam, businesses need to provide some basic information about their company, such as their name, address, contact details, and the nature of their business. They also need to upload a copy of their PAN card and Aadhaar card. The registration process is completed within a few minutes and businesses are issued a unique Udyam registration number."
       },
       {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
+        "id": "Benefits",
+        "header": "Benefits of MSME Registration",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          {
+            "title": "Access to government schemes and programs",
+            "value": [
+              "Udyam registration is a prerequisite for availing many government schemes and programs for MSMEs, such as the Credit Guarantee Scheme, public procurement policy, and additional edge in government tenders."
+            ]
+          },
+          {
+            "title": "Easier access to finance",
+            "value": [
+              "Banks and financial institutions are more likely to lend to businesses that are registered with Udyam."
+            ]
+          },
+          {
+            "title": "Increased credibility",
+            "value": [
+              "Udyam registration gives businesses a more credible and professional image."
+            ]
+          },
+          {
+            "title": "Compliance with government regulations",
+            "value": [
+              "Udyam registration is a requirement for compliance with certain government regulations, such as the Factories Act and the Shops and Establishments Act."
+            ]
+          },
+          {
+            "title": "Tax benefits",
+            "value": [
+              "MSMEs that are registered with the government may be eligible for certain tax benefits, such as a lower rate of income tax."
+            ]
+          },
+          {
+            "title": "Export promotion",
+            "value": [
+              "The government offers a number of export promotion schemes for MSMEs, such as the Market Access Initiative and the Export Credit Guarantee Scheme. These schemes can help MSMEs to expand their exports and reach new markets."
+            ]
+          }
         ]
       },
       {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+        "id": "Steps to register",
+        "header": "MSME/Udyam Registration Online Process",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "",
+          "steps": [
+            {
+              "heading": "Applicant KYC details",
+              "desc": "Use your individual Aadhaar number to initiate the process."
+            },
+            {
+              "heading": "Verify PAN & Aadhaar",
+              "desc": "Both of your Aadhaar number is verified, your Income tax PAN number will be validated."
+            },
+            {
+              "heading": "File Application",
+              "desc": "Fill out the online application form and submitting the same, you will be assigned an Udyam number."
+            },
+            {
+              "heading": "Approval Certificate",
+              "desc": "Use your Udyam number to generate your Udyam certificate."
+            }
+          ]
+        }
       },
       {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "Limitations",
+        "header": "Individual Aadhaar Holder Limitations",
+        "desc": "",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "Only one Udyam certification is allowed per individual Aadhaar holder.",
+          "Proprietorships with an annual income of less than Rs. 2 lakhs are not required to pay income tax.",
+          "If you are a business owner in India, we encourage you to register for Udyam. It is a free and easy process that offers a number of benefits to your business. Contact Aanoor Team for more information!"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Goods & Services Tax (GST)",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "gstRegistration",
+    "h1": "GST Filing Registration Company",
+    "description": "Stay ahead on GST compliance and register for GST online for free! GST is a tax registration which is required for all Indian businesses meeting similar requirements like, Making sales outside your state, Annual sales are higher than Rs 40 Lakhs & E-commerce Seller.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "GSTN Registration Online",
+        "type": "SPParagraph",
+        "value": [
+          "GST registration is the process by which a business in India becomes liable to pay Goods and Services Tax (GST). It is mandatory for businesses whose annual turnover exceeds the prescribed threshold limit. The threshold limit for GST registration varies depending on the type of business and the state in which it is located.",
+          "Once a business is registered under GST, it is assigned a unique 15-digit identification number called the Goods and Services Tax Identification Number (GSTIN). The GSTIN is used to track all GST transactions made by the business."
         ]
       },
       {
-        "id": "benefits",
-        "header": "Facts",
+        "id": "GST Types",
+        "header": "GST Types in India",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "important",
+        "value": [
+          {
+            "title": "Central GST (CGST)",
+            "value": [
+              "This is the tax levied by the central government on all goods and services sold or consumed within a state."
+            ]
+          },
+          {
+            "title": "State GST (SGST)",
+            "value": [
+              "This is the tax levied by the state government on all goods and services sold or consumed within a state."
+            ]
+          },
+          {
+            "title": "Integrated GST (IGST)",
+            "value": [
+              "This is the tax levied by the central government on all goods and services sold or consumed from one state to another."
+            ]
+          },
+          {
+            "title": "Union Territory GST (UTGST)",
+            "value": [
+              "This is the tax levied by the central government on all goods and services sold or consumed within a union territory."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "GST filing Types",
+        "header": "Types of GST filing registration online",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "criteria",
+        "value": [
+          {
+            "title": "Normal taxable person",
+            "value": [
+              "This is the most common type of GST registration. It is required for businesses whose annual turnover exceeds the prescribed threshold limit."
+            ]
+          },
+          {
+            "title": "Composition scheme",
+            "value": [
+              "This is a simplified GST registration scheme that is available to small businesses with an annual turnover of up to Rs. 1.5 crore. Businesses under the composition scheme pay a fixed monthly tax instead of the regular GST rates."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Benefits",
+        "header": "Benefits of GST Certificate",
+        "desc": "The benefits of GST registration in Chennai include:",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "Increased transparency",
+            "value": [
+              "GST is a transparent tax system that makes it easier for businesses to calculate and pay taxes."
+            ]
+          },
+          {
+            "title": "Reduced compliance burden",
+            "value": [
+              "GST simplifies the tax compliance process for businesses."
+            ]
+          },
+          {
+            "title": "Increased efficiency",
+            "value": [
+              "GST improves the efficiency of the Indian economy by reducing the number of taxes and simplifying the tax administration process.",
+              "If you are a business owner in India, you should consider registering for GST if your annual turnover exceeds the prescribed threshold limit. GST registration can help you save money on taxes, improve your compliance, and boost your efficiency."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "GST Registration Process",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Here are the steps involved in GST registration in India:",
+          "steps": [
+            {
+              "heading": "Application & Login",
+              "desc": "Apply for GST registration on the GSTN portal for the applicant. Provide the required documents and information."
+            },
+            {
+              "heading": "Documents & Verification",
+              "desc": "Verification of applicant email address and mobile number. Upload your digital signature or Aadhaar authentication. If Aadhaar Authentication Successful, the GST Number will be allocated within 7 Working days. If Aadhaar Authentication is Unsuccessful, the GST Number will be allocated within 20 Working days after physical verification by GST Officer."
+            },
+            {
+              "heading": "Submission for GST",
+              "desc": "Submit your application ARN Number will be generated. Wait for your GSTIN to be generated."
+            },
+            {
+              "heading": "Approval GSTN",
+              "desc": "File your GST returns regularly. The GST registration process can be completed online in a few days. However, it is important to ensure that you provide all the required documents and information correctly. If you are unsure about anything, you can seek the help of a GST expert from our Aanoor team to assist services."
+            }
+          ]
+        }
+      },
+      {
+        "id": "Amendment/Changes in GST",
+        "header": "Amendment/Changes in GST",
+        "desc": "GST certificate amendment for business refer to the changes that can be made to a GST registration certificate. These changes can be made for a variety of reasons, such as:",
+        "type": "SPBullet",
+        "value": [
+          "A change in the business name.",
+          "Business location/ address change.",
+          "Business constitution change.",
+          "A change in the type of business.",
+          "A change in the taxable turnover of the business."
+        ]
+      },
+      {
+        "id": "GST Amendment online process",
+        "header": "GST Amendment online process",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "",
+          "steps": [
+            {
+              "heading": "",
+              "desc": "Changes to a GST registration certificate can be made by filing an application with the GST authorities."
+            },
+
+            {
+              "heading": "",
+              "desc": "The application must be made in Form GST REG-14."
+            },
+
+            {
+              "heading": "",
+              "desc": "The GST authorities will then verify the application and approve the same."
+            },
+            {
+              "heading": "",
+              "desc": "GST amended certificate will be generated."
+            },
+            {
+              "heading": "",
+              "desc": "It is important to note that not all changes to a Goods and Services Tax registration certificate can be made reach Aanoor team for more details!"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "title": "Food & Catering License",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "foodCatering",
+    "h1": "FSSAI Food & Catering License Registration",
+    "description": "Are you in need of Food License? FSSAI Chennai is the most critical organization which governs and monitors the food businesses in India. FSSAI (Food Safety and Standards Authority of India) make sure about the food products and check whether they undergo best quality checks and therefore curtailing the sale and food adulteration of substandard products.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "FSSAI Food License Registration",
+        "type": "SPParagraph",
+        "value": [
+          "FSSAI certificate registration is mandatory for all food businesses in India. It is a way to ensure that food products are safe for consumption and that food businesses are following good manufacturing practices."
+        ]
+      },
+      {
+        "id": "Includes",
+        "header": "Food License registration includes",
+        "type": "SPIncludes",
+        "value": [
+          "Document Preparation",
+          "Application Filing",
+          "Eligibility Consultation",
+          "Application Drafting"
+        ]
+      },
+      {
+        "id": "Food License types",
+        "header": "Food License types",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "important",
+        "value": [
+          {
+            "title": "Basic Registration",
+            "value": [
+              "This type of registration is for small businesses with an annual turnover of up to Rs. 12 lakhs."
+            ]
+          },
+          {
+            "title": "State License",
+            "value": [
+              "This type of registration is for medium-sized businesses with an annual turnover of up to Rs. 20 crores."
+            ]
+          },
+          {
+            "title": "Central License",
+            "value": [
+              "This type of registration is for large businesses with an annual turnover of over Rs. 20 crores."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Documents Required",
+        "header": "Required documents for FSSAI online in Chennai",
+        "type": "SPDocuments",
+        "value": [
+          "Authority Letter: This is a letter from the owner of the food business authorizing the person who will be filling out the application form.",
+          "Copy of Rent Agreement:  If the food business is located in a rented premises, you will need to submit a copy of the rent agreement.",
+          "Water or Electricity Bill: This is to prove that the food business is located in a commercial property.",
+          "Form IX: This is a form that nominates a person to be responsible for the food safety management system of the food business.",
+          "Declaration Form: This is a form that declares that the information provided in the application form is true and correct.",
+          "Copy of Property Paper: If the food business is located in a owned premises, you will need to submit a copy of the property papers.",
+          "Food Safety Management Certificate or Plan: This is a certificate or plan that shows that the food business has a food safety management system in place.",
+          "KYC Proofs: Copy of ID proof like Aadhar card of partners, directors, or proprietor: This is to prove the identity of the owners of the food business. In addition to these documents, you may also need to submit other documents depending on the type of food business you are operating. For example, if you are manufacturing food products, you will need to submit a list of machinery and equipment, a pesticide residues report of water, and a layout plan or blueprint of the processing unit."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "Process for applying for an FSSAI license is as follows",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "Here are the steps involved in GST registration in India:",
+          "steps": [
+            {
+              "heading": "Login & Online Application",
+              "desc": "Our team will Fill out the FSSAI licensing registration form on the FSSAI portal."
+            },
+            {
+              "heading": "Confirmation & Submission",
+              "desc": "We will get confirmation from applicant side and make the payment of the application fee. Follow up with the department for any application updates."
+            },
+            {
+              "heading": "Inspection & Approval",
+              "desc": "The Food Inspector will review your application and approve the license FSSAI Certificate will be generated."
+            },
+            {
+              "heading": "Apply FSSAI now!",
+              "desc": "By getting an FSSAI license, you can help to ensure that your food business is safe and compliant with the law. This will help you to build customer trust and avoid legal problems. Aanoor Global can help you with the entire process of getting an FSSAI license. We can help you with document preparation, application filing, and government fees. We can also help you with the online application process."
+            }
+          ]
+        }
+      },
+      {
+        "id": "Catering License",
+        "header": "Catering License",
+        "type": "SPParagraph",
+        "value": [
+          "A catering license is a permit that allows a business to prepare and serve food to customers at a location other than their own premises. This type of license is typically required for businesses that cater events, such as weddings, parties, and corporate functions."
+        ]
+      },
+      {
+        "id": "requirements",
+        "header": "Requirements",
+        "desc": "The requirements for obtaining a catering license vary from state to state, but they typically include the following:",
+        "type": "SPBullet",
+        "value": [
+          "A business license from the local government.",
+          "A food handler's permit for all employees who will be handling food.",
+          "A health inspection of the catering facility.",
+          "A plan for food safety and sanitation.",
+          "A catering license is an important safety measure that helps to protect the public from foodborne illness. By requiring catering businesses to meet certain standards, a catering license helps to ensure that food is prepared and handled safely."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Import Export Code",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "importExportCode",
+    "h1": "Apply Import Export Code Online in Chennai",
+    "description": "Are you into importing or exporting goods? If so, you should have an Import Export License legally. The IEC code Online is a ten digit code issued by DGFT (Directorate General of Foreign Trade). Each business and organization that are engaged in export and import of goods need to register import export code mandatorily.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "Import Export Code (IEC) Registration",
+        "type": "SPParagraph",
+        "value": "An Import Export Code (IEC) is a 10-digit alpha-numeric code issued by the Directorate General of Foreign Trade (DGFT) in India. It is a mandatory requirement for all entities engaged in import or export of goods or services from India. The IEC code is used to track and regulate all import and export activities in India."
+      },
+
+      {
+        "id": "Benefits",
+        "header": "Benefits of registering an Import Export Code (IEC)",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "Import and export goods/services",
+            "value": [
+              "This is the most obvious benefit of registering an IEC. Without an IEC, you will not be able to legally import or export goods or services from India."
+            ]
+          },
+          {
+            "title": "Avail of government schemes and incentives for exporters",
+            "value": [
+              "The Indian government offers a number of schemes and incentives to exporters. These schemes can provide financial assistance, tax breaks, and other benefits. To be eligible for these schemes, you must have an IEC."
+            ]
+          },
+          {
+            "title": "Get better rates from shipping companies and other service providers",
+            "value": [
+              "When you have an IEC, shipping companies and other service providers will know that you are a legitimate business and they may be willing to give you better rates."
+            ]
+          },
+          {
+            "title": "Build a stronger reputation with foreign suppliers and buyers",
+            "value": [
+              "Having an IEC shows foreign suppliers and buyers that you are a serious business and that you are authorized to import and export goods and services from India. This would help you to build stronger relationship with them."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Documents Required",
+        "header": "Documents required for IEC Code Registration",
+        "type": "SPDocuments",
+        "value": [
+          "PAN and Aadhaar Copy of Proprietor/Directors/Partners",
+          "Passport Size Photos of Proprietor/Directors/Partners",
+          "Office Address Proof – EB Bill and Property Tax Receipt or Legal Ownership Document",
+          "Rental Agreement with Commercial Purpose",
+          "Contact Number and Mail ID details of Proprietor/Directors/Partners",
+          "Cancelled Cheque Leaf",
+          "GST Certificate (If applicable)",
+          "Digital Signature (If any)"
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "How to Apply IEC code",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "",
+          "steps": [
+            {
+              "heading": "",
+              "desc": "Need to create a Login in DGFT"
+            },
+            {
+              "heading": "",
+              "desc": "After Login creation, Need to fill the Online Form"
+            },
+            {
+              "heading": "",
+              "desc": "After Online form Filled need to process Aadhaar Sign or Digital Signature sign to Submit the application"
+            },
+            {
+              "heading": "",
+              "desc": "After Successful Signing, the payment page is reflected."
+            },
+            {
+              "heading": "",
+              "desc": "Once Payment is made, the documents will be verified and Certificate will be issued."
+            }
+          ]
+        }
+      },
+      {
+        "id": "Important aspects of IEC Certificate",
+        "header": "Important aspects of IEC Certificate",
         "desc": "",
         "type": "SPBenefits",
         "class": "important",
@@ -56,1257 +502,1460 @@
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "For Every Year before June 30th need to update the IE Code or otherwise IE Code will be deactivated. ",
+              "If IE Code is deactivated, to activate the IE Code need to Modify/Update the IE Code. The documents and process are same as the New IE Code process. Connect with Aanoor support team for further assistance."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Trust/NGO Registration",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "ngoRegistration",
+    "h1": "Charitable Trust, NGO Registration in Chennai",
+    "description": "People found that they cannot be approaching the government elected by them for all the support and help to society, they organized themselves to form entities in name of Trust and Non-Profitable or Non-Government organizations. The formation and functioning of these entities must abide by local laws and registered as per various laws including Indian Trust Act 1882, Companies Act 2013.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "What is the Trust Registration?",
+        "type": "SPParagraph",
+        "value": "Trust is registered and managed by the act of the Indian trust. Trust registration is the process of legally establishing a trust in India. A trust is a legal entity that holds assets for the benefit of a beneficiary or beneficiaries. Trusts can be used for a variety of purposes, such as charitable giving, managing assets for minors, or providing for the elderly."
+      },
+      {
+        "id": "Benefits",
+        "header": "Benefits of registering a trust",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "Legal protection",
+            "value": [
+              "Registered trusts are afforded certain legal protections that unregistered trusts do not have. Get recognized rather than being just a Name. The legal organization status makes sure that they are suitable for all donations and funds they collect. "
+            ]
+          },
+          {
+            "title": "Tax benefits",
+            "value": [
+              "Registered trusts may be eligible for certain tax benefits, such as exemption 12A, 80G from income tax."
+            ]
+          },
+          {
+            "title": "Public accountability",
+            "value": [
+              "Registered trusts are subject to public scrutiny, which can help to ensure that they are being operated in a transparent and accountable manner."
+            ]
+          },
+          {
+            "title": "Transparency",
+            "value": [
+              "Public document which gives Trust to beneficiaries/Common Public to manage money."
             ]
           }
         ]
       },
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "id": "Required documents",
+        "header": "Documents required for Trust/NGO Registration",
+        "type": "SPDocuments",
+        "value": [
+          "An electricity bill or water bill stating the address which is registered.",
+          "The identity proof of two members of the company and the proof includes driving license, Aadhaar card, passport, and voter ID card.",
+          "The details of trustees like Occupation, Age, designation, email address, two photographs, name, address, age, and more.",
+          "Rent deed duly notarized along with NOC form landlord in case of the rented property.",
+          "The physical presence of two witnesses at the registration ID along with original ID proof."
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "The Trust Registration procedure in Chennai",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "",
+          "steps": [
+            {
+              "heading": "Prepare the trust deed",
+              "desc": "The trust deed is a legal document that outlines the purpose of the trust, the assets that are being transferred to the trust, and the names of the trustees. The trust deed must be drafted by a lawyer and should be in accordance with the Indian Trusts Act, 1882."
+            },
+            {
+              "heading": "Submit the trust deed to the registrar of trusts",
+              "desc": "The trust deed must be submitted to the registrar of trusts in the state where the trust will be registered. The registrar of trusts will review the trust deed and approve it if it is in accordance with the law."
+            },
+            {
+              "heading": "Pay the registration fee",
+              "desc": "There is a registration fee payable to the registrar of trusts. The amount of the registration fee changes from state to state."
+            },
+            {
+              "heading": "Wait for the registrar to approve your registration",
+              "desc": "Once the registrar of trusts has approved your registration, you will be issued a certificate of registration. This certificate will be required for various purposes, such as opening a bank account for the trust or applying for tax exemption."
+            },
+            {
+              "heading": "Apply for PAN & Tax Exemption",
+              "desc": "Application for Trust PAN with income tax department, on receipt or approval of PAN we can go for other tax exemption benefits for trust."
+            }
+          ]
+        }
+      },
+      {
+        "id": "Benefits",
+        "header": "Important aspects of Trust/NGO",
+        "desc": "",
+        "type": "SPBenefits",
         "class": "criteria",
-        "type": "SPBenefits",
         "value": [
           {
-            "title": "No return Filing",
+            "title": "Settlor",
             "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+              "The Person who creates a trust usually called as Guarantor."
             ]
           },
           {
-            "title": "Proprietors with IE Code",
+            "title": "Trustee",
             "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+              "The Person who is held responsible and accountable acting in fiduciary capacity on asset of the trust and its activities i.e., legal owner of the trust properties."
             ]
           },
           {
-            "title": "Exporters with IE Code",
+            "title": "Beneficiary",
             "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+              "Whoever received the benefits derived out of the trust i.e., beneficial owners of the trust property."
+            ]
+          },
+          {
+            "title": "Revocable Trust",
+            "value": [
+              "The trust can be revoked at any point of time by the guarantor and changes can be made in terms of beneficiaries, assets distribution etc. Revocable trust becomes irrevocable on demise of the guarantor or as per any condition given in the trust deed is met."
+            ]
+          },
+          {
+            "title": "Irrevocable Trust",
+            "value": [
+              "As the name specifies it cannot be revoked once its registered."
             ]
           }
         ]
       },
       {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "service": "trademark-objection",
-    "title": "Trademark Objection",
-    "price": {
-      "isAvailable": true,
-      "value": "2,800",
-      "note": "with in *5 working days"
-    },
-    "url": "/services/trademark-objection",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
-    "template": [
-      {
-        "id": "overview",
-        "header": "What is Logo Trademark Registration?",
-        "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "Amendment/Changes in GST",
+        "header": "Amendment/Changes in GST",
+        "desc": "GST certificate amendment for business refer to the changes that can be made to a GST registration certificate. These changes can be made for a variety of reasons, such as:",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
+          "A change in the business name.",
+          "Business location/ address change.",
+          "Business constitution change.",
+          "A change in the type of business.",
+          "A change in the taxable turnover of the business."
         ]
       }
     ]
   },
   {
-    "service": "sole-proprietorship",
-    "title": "Sole Proprietorship",
+    "title": "PAN Registration",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/sole-proprietorship",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "panRegistration",
+    "h1": "Business Pan Registration ",
+    "description": "Income Tax PAN Registration is the most essential and required for all business type and individuals who are engaged in financial transactions. At Aanoor Global, we help you to get PAN Card through easy steps and at affordable rates.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "PAN Application Online",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "A Permanent Account Number (PAN) is a 10-digit alphanumeric number issued by the Income Tax Department of India to any 'person' who applies for it or to whom the department allots the number without an application. PAN is issued in the form of a laminated card (commonly known as PAN card)."
       },
       {
-        "id": "includes",
-        "header": "Includes",
+        "id": "Includes",
+        "header": "Pan card application online includes",
         "type": "SPIncludes",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "Same day filing.",
+          "Drafting applications.",
+          "Government Fees.",
+          "Acknowledgement."
         ]
       },
       {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+        "id": "Features of PAN Card",
+        "header": "Features of PAN Card",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "important",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "The PAN Card requires no renewal and valid for a lifetime.",
+              "Pan is mandatory to file ITR and for payment of Direct Taxes.",
+              "The PAN is a ten-digit alphanumeric code provided by the income tax department.",
+              "Both foreign nationals and Indians can acquire Pan."
+            ]
+          }
+        ]
       },
       {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "Documents Required",
+        "header": "Documents needed to register pan number in India",
+        "type": "SPDocuments",
+        "value": [
+          "Proof of Date of Birth",
+          "Copy of Address Proof (Electricity/telephone bill)",
+          "Partnership deed in case of a partnership",
+          "Copy of voter identity and Aadhar card",
+          "Passport size photograph.",
+          "Incorporation certificate in case of a company",
+          "Copy of property papers in case of owned property"
+        ]
+      },
+      {
+        "id": "PAN Correction",
+        "header": "PAN Correction",
+        "type": "SPParagraph",
+        "value": "PAN card correction in India is the process of making changes to the details mentioned on a PAN card. To correct the details on your PAN card, you will need to fill out the 'Request for New PAN Card or/and Changes or Correction in PAN Data' form. This form is available online or at any PAN card issuing center. You will need to submit the form along with the required documents to the PAN card issuing authority."
+      },
+      {
+        "id": "Do’s and Don’ts of PAN Card Application",
+        "header": "Do’s and Don’ts of PAN Card Application",
+        "desc": "",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
+          "Make sure you have filled all the details as per the address and identity proof documents that you are submitting.",
+          "Provide the correct contact details and complete address in the simple form.",
+          "Don’t overwrite anywhere or do not make corrections in the form.",
+          "Do not apply for a new pan card in case if you’re old pan card is stolen, defaced or lost.",
+          "Do get a thumb impression by a notary or Magistrate before submitting the form to avoid neglect ion.",
+          "Make sure you fill the application form only in capital letters.",
+          "Do not use initials in the last name and first name columns."
         ]
       }
     ]
   },
   {
-    "service": "partnership-firm",
-    "title": "Partnership Firm",
+    "title": "TAN Registration",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/partnership-firm",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "tanRegistration",
+    "h1": "TIN Facilitation Centre Registration in Chennai",
+    "description": "TAN Registration is mandatory for making tax collection or tax deduction at source, issuance and remittance of TDS Payment and Certificates. Aanoor Global provides TAN registration at an affordable rate.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "What is TAN Registration?",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "TAN stands for Tax Deduction and Collection Account Number. It is a 10-digit alpha-numeric number issued by the Income Tax Department of India to individuals or entities that are required to deduct tax at source (TDS) or collect tax at source (TCS).",
+          "TDS is a system by which the government collects tax from individuals or entities before they actually receive the income. This is done by requiring the payer to deduct a certain percentage of the amount payable to the recipient and remit it to the government. TCS is similar to TDS, but it is used to collect tax on certain specified services."
         ]
       },
       {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+        "id": "Benefits of having a TAN",
+        "header": "Benefits of having a TAN",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "TAN ensures that taxes are deducted and collected properly.",
+              "It makes it easier to file TDS and TCS returns.",
+              "It can help to prevent fraud.",
+              "It can help to speed up the processing of refunds and adjustments.",
+              "The TAN can also made use for generating TDS/TCS certificates and payment challans."
+            ]
+          }
+        ]
       },
       {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "TAN correction",
+        "header": "TAN correction",
+        "desc": "",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "TAN correction refers to the process of amending any inaccuracies or errors in the data associated with a Tax Deduction Account Number (TAN).",
+          "A change in the name, address, or PAN of the TAN holder",
+          "A change in the category of the TAN holder (e.g., from 'firm' to 'company')",
+          "An error in the TAN number itself"
         ]
       },
       {
-        "id": "benefits",
-        "header": "Benefits",
+        "id": "Important factors you need to know about TAN Registration",
+        "header": "Important factors you need to know about TAN Registration",
         "desc": "",
         "type": "SPBenefits",
+        "class": "important",
         "value": [
           {
-            "title": "",
+            "title": "Concept",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+              "The TAN is the unique alphanumeric code which is necessary for the people who need to deduct tax at TDS or source."
             ]
           },
           {
-            "title": "Proprietors with IE Code",
+            "title": "Pan Card Issue",
             "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+              "The NSDL has been provided with the power to provide the PAN card by the Income Tax Department under the CBDT supervision of TAN Card and on behalf of the IT department."
             ]
           },
           {
-            "title": "Exporters with IE Code",
+            "title": "Necessity",
             "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+              "The business entity or the individual who is supposed to deduct the TDS and file the TDS returns are essential to apply TAN."
             ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
-        ]
-      },
-      {
-        "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
           },
           {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            "title": "TAN Card Validity",
+            "value": [
+              "It’s valid for a lifetime, and the generation of TAN Card is also a one-time process. The people who need to acquire the TAN number needs to file TAN Application for Section 49B."
+            ]
           }
         ]
       }
     ]
   },
   {
-    "service": "income-tax-filing",
-    "title": "Income Tax Filing",
+    "title": "Employee State Insurance",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/income-tax-filing",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "esiOnlineFiling",
+    "h1": "Esi Registration Online in Chennai",
+    "description": "ESI is a valuable social security scheme that provides a range of benefits to employees and their families. If you are an employer, you should make sure that your company is registered with ESIC connect with Aanoor team for easy and simple way to process.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "ESIC Online ",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "Employee State Insurance (ESI) is a social security scheme that was introduced by the Government of India in 1948. It is compulsory for all private limited companies in India with 10 or more employees and a minimum monthly salary of Rs. 21,000 to register with ESIC, the statutory body that administers the scheme."
       },
       {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
+        "id": "ESI provides a range of benefits to employees and their families",
+        "header": "ESI provides a range of benefits to employees and their families",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          {
+            "title": "Medical benefits",
+            "value": [
+              "ESI covers the cost of hospitalization, surgery, and other medical expenses for employees and their family members."
+            ]
+          },
+          {
+            "title": "Old age care medical expenses",
+            "value": [
+              "ESI provides financial assistance to employees who are unable to work due to old age or disability."
+            ]
+          },
+          {
+            "title": "Sickness benefits",
+            "value": [
+              "ESI pays a daily allowance to employees who are unable to work due to illness."
+            ]
+          },
+          {
+            "title": "Maternity benefits",
+            "value": [
+              "ESI provides financial assistance to pregnant women and new mothers."
+            ]
+          },
+          {
+            "title": "Funeral expenses",
+            "value": ["ESI pays the cost of a funeral for employees who die."]
+          },
+          {
+            "title": "Disablement benefits",
+            "value": [
+              "ESI provides financial assistance to employees who are disabled due to an accident or illness."
+            ]
+          },
+          {
+            "title": "Death benefits",
+            "value": [
+              "ESI provides financial assistance to the family of an employee who dies."
+            ]
+          }
         ]
       },
       {
-        "id": "trademarked",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+        "id": "Documents Required",
+        "header": "Documents required for ESI registration include",
+        "type": "SPDocuments",
+        "value": [
+          "Partnership deed or registration certificate (for companies)",
+          "List of employees working in the establishment",
+          "Employees' compensation details",
+          "List of company directors",
+          "Register of employee attendance",
+          "Registration certificate under the shop and establishment act, factories act",
+          "MoA and AoA of the company",
+          "PAN card of the business entity",
+          "List of company directors",
+          "List of company shareholders"
+        ]
       },
       {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "ESIC Monthly Filing",
+        "header": "ESIC Monthly Filing",
+        "type": "SPParagraph",
+        "value": "ESIC monthly filing is the process of submitting the monthly contributions to the Employees State Insurance Corporation (ESIC) by employers. The ESIC monthly filing can be done online or offline. To file online, employers need to create an account on the ESIC portal and upload the monthly contribution details. To file offline, employers need to submit the monthly contribution details to the nearest ESIC office."
+      },
+      {
+        "id": "Important aspect of ESIC",
+        "header": "Important aspect of ESIC",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "important",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "The ESIC monthly filing deadline is the 15th of the next month. For example, the deadline for filing the contributions for the month of January is the 15th of February.",
+              "IF employers fail to file the ESIC monthly contributions on time, they will be liable to pay a penalty. ",
+              "The ESIC monthly filing is an important process for employers. It ensures that employees are covered by the ESIC scheme and that they can avail of the benefits of the scheme in case of sickness, maternity, or death."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Employee Provident Fund",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "pfOnline",
+    "h1": "PF Filing Online in Chennai",
+    "description": "Aanoor Global is the best PF consultant in Chennai. EPF (Employee Provident Fund) is one of the significant advantages offered to the employees when they get relieved from a company or provided in a lump at the time of retirement.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "Employees' Provident Fund Organization (EPFO)",
+        "type": "SPParagraph",
+        "value": "Employees' Provident Fund Organization (EPFO) is a statutory body established under the Employees' Provident Fund and Miscellaneous Provisions Act, 1952. It is responsible for administering the Employees' Provident Fund (EPF), Employees' Pension Scheme (EPS), and Employees' Deposit Linked Insurance (EDLI) schemes."
+      },
+      {
+        "id": "Benefits of PF Registration",
+        "header": "Benefits of PF Registration",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "Provident Fund",
+            "value": [
+              "The EPFO collects 12% of the basic salary and dearness allowance of each employee and the employer contributes an equal amount. The employee can withdraw the money from the provident fund after retirement or in case of certain other eligible events."
+            ]
+          },
+          {
+            "title": "Pension",
+            "value": [
+              "The EPFO also provides a pension scheme to its members. The pension is payable to the employee after retirement or in case of death. The pension amount is calculated based on the employee's salary and the number of years of service."
+            ]
+          },
+          {
+            "title": "Interest",
+            "value": [
+              "The EPFO also pays interest on the provident fund and pension contributions. The interest rate is declared by the government every year."
+            ]
+          },
+          {
+            "title": "Medical benefits",
+            "value": [
+              "The EPFO provides medical benefits to its members and their families. The medical benefits include hospitalization, surgery, and other medical expenses."
+            ]
+          },
+          {
+            "title": "Maternity benefits",
+            "value": [
+              "The EPFO provides maternity benefits to female employees. The maternity benefits include leave, medical expenses, and cash assistance."
+            ]
+          },
+          {
+            "title": "Death benefits",
+            "value": [
+              "The EPFO provides death benefits to the family members of deceased members. The death benefits include a lump sum amount and a monthly pension."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Steps to register",
+        "header": "PF Online Filing procedure",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "",
+          "steps": [
+            {
+              "heading": "Employer registration",
+              "desc": "Employers who have 20 or more employees are required to register with EPFO. The registration process can be completed online or offline."
+            },
+            {
+              "heading": "Monthly contribution",
+              "desc": "Employers are required to contribute 12% of the basic salary and dearness allowance of each employee to the EPF account. The employer and employee will share the contribution equally. The monthly contribution can be filed online or offline."
+            },
+            {
+              "heading": "Exit claim",
+              "desc": "Employees who have retired, resigned, or been terminated from their job can withdraw their EPF money. The exit claim can be filed online or offline."
+            },
+            {
+              "heading": "Death claim",
+              "desc": "The nominee of an employee who has died while in service can apply for a death claim from EPFO. The death claim can be filed online or offline."
+            },
+            {
+              "heading": "Apply for PF Online",
+              "desc": "The EPFO is a valuable social security scheme for employees in India. It provides a range of benefits to employees and their families. If you are an employer, you should make sure that your company is registered with the EPFO and that you are filing the EPFO returns on time. Connect with Aanoor expert team to start today!"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "title": "HR & Payroll",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "hrPayrollService",
+    "h1": "Best Hr Consultancy In Chennai",
+    "description": "As an HR executive, you know how time-consuming and difficult it is to oversee employees across different territories. Aanoor Global holds experienced professionals who will help to rectify every employment challenge, which includes payroll and outsourcing, hiring, freeing the employees on developing your business.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "HR and Payroll Services",
+        "type": "SPParagraph",
+        "value": [
+          "HR services refer to a broad range of activities that are related to the management of human resources in an organization. These activities can include recruiting and hiring, onboarding and training, performance management, compensation and benefits, employee relations, and HR analytics.",
+          "Payroll services refer to the process of calculating and paying employee salaries and wages. This process can include tracking employee time and attendance, calculating deductions and allowances, and issuing pay checks or direct deposits."
+        ]
+      },
+      {
+        "id": "Activities of HR Services",
+        "header": "Activities of HR Services",
+        "desc": "HR services refer to the range of activities that businesses undertake to manage their employees.",
+        "type": "SPBenefits",
+        "class": "criteria",
+        "value": [
+          {
+            "title": "Recruitment and selection",
+            "value": ["Finding and hiring qualified employees."]
+          },
+          {
+            "title": "Onboarding",
+            "value": ["Orienting new employees to the company and its culture."]
+          },
+          {
+            "title": "Training and development",
+            "value": [
+              "offered for Employees with the skills where they can do their jobs effectively."
+            ]
+          },
+          {
+            "title": "Performance management",
+            "value": [
+              "Setting performance goals for employees and tracking their progress."
+            ]
+          },
+          {
+            "title": "Compensation and benefits",
+            "value": [
+              "Deciding how much to pay employees and what benefits to offer them."
+            ]
+          },
+          {
+            "title": "Employee relations",
+            "value": [
+              "Handling employee complaints and resolving workplace disputes."
+            ]
+          },
+          {
+            "title": "Health and safety",
+            "value": [
+              "Ensuring that the workplace is safe and healthy for employees."
+            ]
+          },
+          {
+            "title": "Compliance",
+            "value": [
+              "Ensuring that the company complies with all applicable laws and regulations."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Payroll activities includes",
+        "header": "Payroll activities includes",
+        "desc": "Payroll services refer to the tasks involved in calculating and paying employee wages and salaries:",
+        "type": "SPBenefits",
+        "class": "important",
+        "value": [
+          {
+            "title": "Recording employee hours worked",
+            "value": ["Tracking the hours that each employee works."]
+          },
+          {
+            "title": "Calculating wages and salaries",
+            "value": [
+              "Calculating the amount of money that each employee is owed."
+            ]
+          },
+          {
+            "title": "Deducting taxes and other deductions",
+            "value": [
+              "Deducting taxes, insurance premiums, and other deductions from employee pay checks."
+            ]
+          },
+          {
+            "title": "Preparing and issuing pay checks",
+            "value": ["Preparing and issuing pay checks to employees."]
+          },
+          {
+            "title": "Reporting payroll information to government agencies",
+            "value": [
+              "Reporting payroll information to the government on a regular basis."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Connect with us",
+        "header": "Connect with us!",
+        "type": "SPParagraph",
+        "value": [
+          "HR and payroll services are essential for any business that employs people. They can help businesses to attract and retain qualified employees, manage performance, and comply with all applicable laws and regulations.",
+          "We provide HR and payroll services which can help businesses to outsource these tasks to us, freeing up the business to focus on its core activities."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Professional Tax Registration",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "ptRegistration",
+    "h1": "Professional Tax Registration in Chennai",
+    "description": "Professional Tax Return Filing is one of the state-level taxes which is applicable for salaried professionals and employees, including doctors, lawyers, and chartered accountants. Professional tax in Tamil Nadu on every type of trade, employment, and profession depends on the income of such trade, work, and business.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "Professional Tax Registration Online",
+        "type": "SPParagraph",
+        "value": "Professional tax is a tax levied by state governments in India on individuals who earn a salary and work in a non-government or government entity, or who are professionals such as lawyers, doctors, and chartered accountants. "
+      },
+      {
+        "id": "includes",
+        "header": "Online professional tax registration package includes the following",
+        "type": "SPIncludes",
+        "value": [
+          "Documentation",
+          "Government fees",
+          "Tax consultation",
+          "Certificate & Receipts"
+        ]
+      },
+      {
+        "id": "Benefits of Professional Registration Certificate",
+        "header": "Benefits of Professional Registration Certificate",
+        "desc": "There are several reasons why you should pay professional tax, including:",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "To avoid penalties",
+            "value": [
+              "If you do not pay professional tax, you may be subject to late payment penalties, which can increase over time."
+            ]
+          },
+          {
+            "title": "To claim deductions",
+            "value": [
+              "You can claim professional tax payments as a deduction on your income tax return."
+            ]
+          },
+          {
+            "title": "It is a legal requirement",
+            "value": [
+              "In most states of India, it is mandatory for salaried individuals to pay professional tax."
+            ]
+          },
+          {
+            "title": "It is easy to comply with",
+            "value": [
+              "The process of registering for and paying professional tax is relatively simple."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "What documents are required for online professional tax registration?",
+        "type": "SPDocuments",
+        "value": [
+          "PAN card of the company or LLP, attested by a director",
+          "Bank account details of the company, including a cancelled cheque and bank statement",
+          "Statement of consent from the partners (board resolutions)",
+          "Attendance register and salary register",
+          "Incorporation certificate, including AoA, LLP, and MoA copies.",
+          "Proof of place of business, along with a no-objection certificate from the premises owner.",
+          "Passport-size photographs, identity proof, and address proof of all directors.",
+          "Shop and establishment certificate."
+        ]
+      },
+      {
+        "id": "Are you ready for the Professional Tax Return Filing ",
+        "header": "Are you ready for the Professional Tax Return Filing? ",
+        "type": "SPParagraph",
+        "value": "Aanoor Team can help you register for professional tax online quickly, affordably, and within 10 days. Contact Aanoor global now if you need to register Professional tax in Tamil Nadu at an affordable rate."
+      }
+    ]
+  },
+  {
+    "title": "Shop & Establishment",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "shopEstRegistration",
+    "h1": "Online Shops and Establishment Registration in Chennai",
+    "description": "The Shop and Establishment Act is a state legislation governing the proper functioning and conduct of businesses, within the state of Tamil Nadu.  Every Business in India should mandatorily register under the Shop and Establishment Act with their corresponding authorities based on the business place.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "Shops Act License in Chennai",
+        "type": "SPParagraph",
+        "value": "Shops and Establishment Registration is a legal requirement for all businesses that employ people in India. The registration process is governed by the Shop and Establishment Act, which is a state-level law. The specific requirements for registration vary from state to state, but there are some general similarities."
+      },
+      {
+        "id": "Key provisions of the Shop and Establishment Act",
+        "header": "Key provisions of the Shop and Establishment Act",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "criteria",
+        "value": [
+          {
+            "title": "Hours of work",
+            "value": [
+              "The Act sets limits on the number of hours that employees can work per day and per week."
+            ]
+          },
+          {
+            "title": "Wages and benefits",
+            "value": [
+              "The Act requires employers to pay employees at least the minimum wage and to provide them with certain benefits, such as paid leave and sick leave."
+            ]
+          },
+          {
+            "title": "Child labor",
+            "value": [
+              "The Act prohibits the employment of children under the age of 14."
+            ]
+          },
+          {
+            "title": "Women's employment",
+            "value": [
+              "The Act sets certain restrictions on the employment of women, such as the prohibition of night work for women."
+            ]
+          },
+          {
+            "title": "Health and safety",
+            "value": [
+              "The Act requires employers to provide a safe and healthy work environment for their employees."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Required documents",
+        "header": "What are the documents required for registering under Shop and Establishment Act?",
+        "type": "SPDocuments",
+        "value": [
+          "Identity Proof of Applicant",
+          "PAN Card of Applicant",
+          "Commercial Address Proof",
+          "Other relevant licenses needed to start a business",
+          "Fee Payment Challans",
+          "Postal Address of the Establishment",
+          "Number of employers employed",
+          "Name of the establishment and employer",
+          "Category of business",
+          "The date on which the establishment commencement has started."
+        ]
+      },
+
+      {
+        "id": "Steps to register",
+        "header": "Steps to register",
+        "type": "SPStep",
+        "value": {
+          "subHeading": "The registration procedure for shops and establishments under the Shop and Establishment Act typically involves the following:",
+          "steps": [
+            {
+              "heading": "",
+              "desc": "Obtain an application form from the Labour Department in the state where the business is located or apply for license through online in labour department portal."
+            },
+            {
+              "heading": "",
+              "desc": "Complete the application form and provide all required information."
+            },
+            {
+              "heading": "",
+              "desc": "Pay the registration fee. The fee for Shop and Establishment act registration is based on the number of workers working in the enterprise."
+            },
+            {
+              "heading": "",
+              "desc": "Submit the application form and payment to the Labour Department."
+            },
+            {
+              "heading": "",
+              "desc": "Wait for approval of the application."
+            },
+            {
+              "heading": "",
+              "desc": "Receive the registration certificate from the Labour Department."
+            },
+            {
+              "heading": "",
+              "desc": "The registration certificate of Shop and establishment act need to be displayed prominently at the established and should be periodically renewed. In case the occupier or the employer is closing the business, then they should notify the district labor workers regarding closing so that the inspector will cancel the registration provided under the shop and establishment act."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "title": "Labour Welfare Fund",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "labourWelfareFund",
+    "h1": "Labour Welfare Fund Act in India - LWF Benefits, Contribution",
+    "description": "The Labour Welfare Fund Act is a state-level law that was enacted in various states of India to provide financial assistance to workers and their dependents for various welfare activities. The Act is applicable to all establishments that employ 5 or more workers.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "LWF Registration in Chennai",
+        "type": "SPParagraph",
+        "value": "The Labour Welfare Fund Act is an important social security measure that provides financial assistance to workers and their dependents in times of need. The Act helps to improve the lives of workers and their families and contributes to the overall well-being of society. The contribution to the Labour Welfare Fund is made by both the employer and the employee. The rate of contribution varies from state to state."
+      },
+      {
+        "id": "Benefits",
+        "header": "Labour Welfare Fund (LWF) benefits that are available in some states of India",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "TMedical benefits",
+            "value": [
+              "LWF provides financial assistance for medical expenses, such as hospitalization, surgery, and medicines."
+            ]
+          },
+          {
+            "title": "Education benefits",
+            "value": [
+              "LWF provides financial assistance for education expenses, such as tuition fees, books, and stationery."
+            ]
+          },
+          {
+            "title": "Housing benefits",
+            "value": [
+              "LWF provides financial assistance for housing expenses, such as rent, mortgage payments, and home improvement."
+            ]
+          },
+          {
+            "title": "Marriage benefits",
+            "value": [
+              "LWF provides financial assistance for marriage expenses, such as wedding ceremony, reception, and honeymoon."
+            ]
+          },
+          {
+            "title": "Funeral benefits",
+            "value": [
+              "LWF provides financial assistance for funeral expenses, such as burial or cremation, and mourning ceremony."
+            ]
+          },
+          {
+            "title": "Recreational and cultural benefits",
+            "value": [
+              "LWF provides financial assistance for recreational and cultural activities, such as sports, games, and music lessons."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Labour Contract License",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "labourContractLicense",
+    "h1": "Registration for Contract labour License",
+    "description": "Labour Contractor License is mandatory for any establishment with 20 or more Labour working on that company. Aanoor HR has a Best Professional team for Labour License Renewal with quick and easy process of registration to your Labour license. ",
+    "template": [
+      {
+        "id": "overview",
+        "header": "CLRA License in Chennai",
+        "type": "SPParagraph",
+        "value": "The Indian Legislature has incorporated the Contract labour or Regulation and Abolition act from 1970. The law enables to forbid the employment of labour contract in specific circumstances and to control the working conditions of the labour contract during the profession. "
+      },
+      {
+        "id": "The Labour Contract License Applicability",
+        "header": "The Labour Contract License Applicability",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "important",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "It applies to any contractor who employed or employed twenty or more workers on any day of the year of accounting.",
+              "It applies to any establishment in which more than twenty workmen are employed on any day of the year of accounting as contract labour.",
+              "It does not apply to the establishments if there is no work performed like intermittent.",
+              "It does not apply to establishments located in the SEZ Special Economic Zone).",
+              "It also does not apply to the establishments if there is no work performed for greater than twenty days in a year.",
+              "It does not apply to the establishments if any performed work like the season is done greater than sixty days in a year."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Act",
+        "header": "Contractor under Section (2) of the act ",
+        "type": "SPParagraph",
+        "value": "A contractor is a person who takes over the chance to form a provided result for the reason of establishment, when compared to the supply of services or goods of manufacturers to such establishments, through the person or contract labour who offers contract labour for any establishment work and also holds a subcontractor. "
+      },
+      {
+        "id": "Advisory Boards ",
+        "header": "Advisory Boards ",
+        "desc": "The central government under section 3 is predicted to set up the Central advisory Labour contract board on different activities relating to the act of administration. The Central board contains the following. ",
+        "type": "SPBenefits",
+        "class": "criteria",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "The chief Labour Commissioner",
+              "The Chairman who is appointed by the Central Government. "
+            ]
+          }
+        ]
+      },
+      {
+        "id": "State Advisory Board ",
+        "header": "State Advisory Board ",
+        "desc": "GST certificate amendment for business refer to the changes that can be made to a GST registration certificate. These changes can be made for a variety of reasons, such as:",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "The Labour Commissioner, if he is not available, then any other can officer can be provided by the State Government. ",
+          "The state government should choose the Chairman. ",
+          "The total members should not exceed eleven similarly less than nine, and this is because the state government has responsibilities to represent the industry, workers, government, contractors, and other sectors with the state government opinion to have a representation of the state board. "
         ]
       },
       {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "",
-            "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "multi-benefits",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "required-documents",
-        "header": "Documents required for Trademark and Logo Registration?",
+        "id": "Required documents",
+        "header": "What are the documents needed for Labour Contract Registration?",
         "type": "SPDocuments",
         "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
+          "The document photograph which shows the company’s legal status.",
+          "The challans copy showing the security deposit remittances.",
+          "The report copy which shows the company legal status.",
+          "The copy of the cover note, receipt, and insurance policy, and other relevant things that are received.",
+          "The fee license to receive the labour license."
         ]
       },
       {
-        "id": "registeration-steps",
-        "header": "How to register a Trademark and Logo Registration?",
-        "type": "SPStep",
-        "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
-          "steps": [
-            {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-            },
-            {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-            },
-            {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-            },
-            {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-            }
-          ]
-        }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "service": "gst-filing",
-    "title": "GST Filing",
-    "price": {
-      "isAvailable": true,
-      "value": "2,800",
-      "note": "with in *5 working days"
-    },
-    "url": "/services/gst-filing",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
-    "template": [
-      {
-        "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "id": "Labour Contract Registration Process ",
+        "header": "Labour Contract Registration Process ",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
-      },
-      {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "Every registration of establishments that proposes to employ various workers as well as contract workers for several works to acquire a registration certificate from the central or state government. Here is the process for employment registration for Labour Contract.",
+          "The employer should contain the registration application in Form no 1 and also the payment receipt of the specified fee when approaching the registering office. If the registration application matches all conditions and aspects, the officer will register the labour contract registration and provide a copy of the registration certificate in Form -II."
         ]
       },
       {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "All Labour Contract registration certificate needs to contain",
+        "header": "All Labour Contract registration certificate needs to contain",
+        "desc": "",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "The maximum number of workers to be contracted as a labour contract in the establishment. ",
+          "The address and name of the establishment.",
+          "The business types.",
+          "Any other relevant and vital particulars if any should also be included."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Factory License",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "factoryLicenseOnline",
+    "h1": "Factory License Registration in Chennai",
+    "description": "Easiest way to register Factory License Registration in Aanoor Global. We will do with Affordable cost to IF Registration in Chennai with Professional Team for more details call us Now!",
+    "template": [
+      {
+        "id": "overview",
+        "header": "IF - Inspector of Factories",
+        "type": "SPParagraph",
+        "value": "The factory registration is proclaimed by the 1984 Factories Act to make sure that the factory follows the agreed safety guidelines and rules. Once the factory is registered, the Government provides a license to the factory, and this license is an authorization document for granting permission for carrying out and regulating the manufacturing pursuits from a specified locality. "
+      },
+      {
+        "id": "Criteria",
+        "header": "Eligibility Criteria",
+        "type": "SPParagraph",
+        "value": [
+          "Factories that hold ten or more workers who are employed in the manufacturing process, as well as the factories which contain twenty or number of workers who are engaged in the manufacturing process, should compulsorily register under the 1948 factories act. ",
+          "If any occupier or owner of the factor needs to extend or use any building as a factory, it's mandatory they get a plan and permission approval. Once the construction is over, the manager or the factory owner needs to register the factory under the 1948 factories act. "
         ]
       },
       {
-        "id": "benefits",
-        "header": "Benefits",
+        "id": "What are the documents required for Factory Renewal",
+        "header": "What are the documents required for Factory Renewal?",
         "desc": "",
         "type": "SPBenefits",
+        "class": "important",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Proof of Occupier Address in case of amendment.",
+              "Proof of Manager address.",
+              "Machinery lists with details of Horse Power.",
+              "Proof of Occupier identity.",
+              "Proof of Manager identity.",
+              "Memorandum and Articles of Association under Companies Act or Partnership Deed."
             ]
           }
         ]
       },
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "id": "Documents needed for Factory License and Registration ",
+        "header": "Documents needed for Factory License and Registration ",
+        "desc": "",
         "type": "SPBenefits",
+        "class": "",
         "value": [
           {
-            "title": "No return Filing",
+            "title": "",
             "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+              "Proof for occupier identity.",
+              "Evidence for Manager identity.",
+              "Machinery lists with the details of Horse Power.",
+              "Supporting documents for the premise occupation namely rental deed, lease deed, and sale deed.",
+              "Proof for occupier address.",
+              "Memorandum of Articles of Association under Partnership Deed or Companies Act.",
+              "Proof for manager address"
             ]
           }
         ]
       },
       {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
+        "id": "Documents needed for Factory Plan Approval ",
+        "header": "Documents needed for Factory Plan Approval ",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "criteria",
         "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
+          {
+            "title": "",
+            "value": [
+              "Process Flowchart",
+              "Proof of occupier identity",
+              "Topo plan, Detailed Plan (1:100 scales), Site plan (1:400 ranges) of building across the details of machinery installation in triplicate.",
+              "Supporting documents for the occupation of the premises like sale deed, rental deed, and lease deed.",
+              "Proof of Address of Occupier."
+            ]
+          }
         ]
       },
       {
         "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
+        "header": "Factory Registration Procedure Online",
         "type": "SPStep",
         "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "subHeading": "Follow the below steps for the successful Factory Registration. ",
           "steps": [
             {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+              "heading": "Login & Apply ",
+              "desc": "Visit DISH (Directorate of Industrial Safety and Health) website. "
             },
             {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+              "heading": "Application Online",
+              "desc": "From the new registration drop-down menu, choose the occupier option on the home page. The user gets redirected to the registration page once clicking on the occupier. Provide every detail of the occupier like name, address, login credential details, and more. "
             },
             {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+              "heading": "Submission & Verification",
+              "desc": "Once you have filled in the appropriate fields, you can save the occupier details and login credentials by clicking on the save registration details button. You will receive email verification on your registered email id with the subject named Mail Verification - DISH. Activate the hyperlink you received by clicking on it. You will get an alert message that you are successfully verified.  Once the Email verification is completed, you can make use of the login credentials to log in to the site."
             },
             {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+              "heading": "Occupier Details",
+              "desc": "You can check out a circle shaped aviator icon on the home page on your right top corner. You need to choose to add a new factory option from the subsequent new pop up. In the case of an occupier, if you have various factories, the details of every new factory should be added separately. Provide factory details like the particulars, Address of Communication, the factory situation, etc. for registration Once you have filled in every detail, you need to click on the Submit button. You will get an alert that every detail of the registration process is saved successfully. "
             }
           ]
         }
       },
       {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
+        "id": "Application for Approval of Factory Plans",
+        "header": "Application for Approval of Factory Plans",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "",
         "value": [
           {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            "title": "",
+            "value": [
+              "Make use of your login credentials to log in to the portal and choose the factory option from the drop-down menu and then select the dashboard link. ",
+              "You will be redirected to the home page of the services once selecting the dashboard link. Now, from the menu choose 'Services offered under the Factories Act' to list the services under the factory act.",
+              "Choose 'plan approval' service. You will now be redirected to the 'plan approval' flow. You already have filled the factory details, and therefore you will have all aspects regarding the factory in the factory details options.",
+              "Once the factories details are listed choose 'particulars of the Occupier' from the plan.",
+              "You will be redirected to the occupier particulars section, and in this part, you need to provide details like present address, occupier particulars, permanent address, address proof, and identity proof.",
+              "Once you have submitted the manager’s details, you need to choose the particulars of the owner of premises from the 'plan approval' flow. You need to offer the details like present address, identity and address proof, owner particulars, and permanent address.",
+              "Now you need to offer the details of the director, namely present address, identity and address proof, permanent address and particulars of the partner of the director.",
+              "Once you have filled in all details, you need to choose the Submit plan from the factory plan approval flow.",
+              "You will be redirected to the approval page of submitting now.",
+              "You need to choose the submit option from the drop-down menu.",
+              "Choose Join director from the drop-down menu to whom the licensing and registration form to be submitted and then click on the submit button. ",
+              "Once you have submitted, you can print the application and then download it."
+            ]
           }
         ]
       }
     ]
   },
   {
-    "service": "ssi-msme-registration",
-    "title": "SSI/MSME Registration",
+    "title": "Fire License",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/ssi-msme-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "fireLicense",
+    "h1": "Fire Extinguisher Certification in Chennai",
+    "description": "Acquire the Fire License through Aanoor Global at an affordable price. The occupiers or owners of any premises in their opinion are utilized for different uses which are likely to cause a fire, and other related risks need to take safeguards as given in the Fire License Registration or No Objection Certificate as per the Fire Service Act. ",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "Fire License",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "The Fire Service director can take action to remove or detain objectionable goods or objects, which can be essential reason for fire occurrence, if the occupier or owner fails to take action as per the notice provided to them, anyone who fails without any valuable reasons will cause to comply with the requirements provided will be charged a fine or with the punishment. "
       },
       {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
-        "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
-        ]
-      },
-      {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
-      },
-      {
-        "id": "benefits",
-        "header": "Facts",
+        "id": "Why do you need a Fire License Registration",
+        "header": "Why do you need a Fire License Registration?",
         "desc": "",
         "type": "SPBenefits",
-        "class": "facts",
+        "class": "important",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "To carry out trading and business activities, as listed under the Fire and Rescue Services Rules. ",
+              "To acquire a license for the individual acts like Indian Explosives Act of 1884 & Others.",
+              "To acquire building plan approval for Multistoried building and this should be received from the Chennai Metropolitan Development Authority. "
             ]
           }
-        ]
-      },
-      {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
-        "type": "SPBenefits",
-        "value": [
-          {
-            "title": "No return Filing",
-            "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
-            ]
-          },
-          {
-            "title": "Proprietors with IE Code",
-            "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
-            ]
-          },
-          {
-            "title": "Exporters with IE Code",
-            "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
-        "type": "SPDocuments",
-        "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
         ]
       },
       {
         "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
+        "header": "How to apply for the Fire License?",
         "type": "SPStep",
         "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "subHeading": "Follow the below steps for the successful Factory Registration. ",
           "steps": [
             {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+              "heading": "",
+              "desc": "The Application for a Fire License needs to be provided to the Divisional Fire Officer, who is in every district headquarters in the specified format. "
             },
             {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+              "heading": "",
+              "desc": "The application forms are available in every fire station (300) in the divisional and state offices. It is also on the website and therefore can be downloaded from the site.  "
             },
             {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+              "heading": "",
+              "desc": "Once you fill in the application form, it can be provided to the nearest fire station of you or else you can directly send the application form to the divisional fire officer. "
             },
             {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-            },
-            {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+              "heading": "",
+              "desc": "Once the divisional fire officer approves the license, the fire license will be provided within 15 days of the application being sent. "
             }
           ]
         }
       },
       {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
+        "id": "overview",
+        "header": "When fire occurrence certificate if provided?",
+        "type": "SPParagraph",
+        "value": [
+          "In case the fire caused a disastrous, destructive, and dangerous incident. The Fire Service department will provide fire occurrence certificate regarding an incident that happened to the insurance companies for the insurance claims to be settled.",
+          "The powers to provide fire occurrence certificates have been deputed to the divisional fire officers, and they are sent directly to the divisional fire officers, they will give the fire occurrence certificate directly to the insurance companies. "
+        ]
+      },
+      {
+        "id": "Documents required for Fire Safety Certificate",
+        "header": "Documents required for Fire Safety Certificate",
+        "type": "SPDocuments",
+        "value": [
+          "Land Ownership documents like Sale Deed, Rental agreement, Chitta copy, Lease deed, patta, etc.",
+          "Fire safety plan measures and details were undertaken in the building. ",
+          "Four copies of a building plan that is approved from the competent authority like Local Body, CMDA, and DTCP. ",
+          "Requisition letter addresses the authority which approves the license, namely the director of the district officer, as applicable with the authorized signature of the signatory. ",
+          "Copy of certificate of compliance provided by the Rescue and Fire Services department. ",
+          "The building’s fire safety plan includes hydrant layout and alarm plan etc. "
+        ]
+      },
+      {
+        "id": "What are the business that requires Fire Licenses",
+        "header": "What are the business that requires Fire Licenses?",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "criteria",
         "value": [
           {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+            "title": "",
+            "value": [
+              "Fish oil-machine power.",
+              "Boiling-campher or oil by machine power.",
+              "Any process of storing, packing, pressing, cleansing, preparing, or manufacturing whatsoever.",
+              "Chlorate mixture.",
+              "Gunpowder.",
+              "Fulminate of mercury.",
+              "Nitro-glycerin.",
+              "Fireworks, preparing or manufacturing or storing.",
+              "Chemical preparations, carbolic acid, hydrochloric acid, nitric acid, pyritic acid, sulphuric acid, caustic potash, caustic soda, chemical fertilizers, benzyl, bromoform, chloroform, iodoform, glycerin, acetone, nitro, nitro, per chloride of mercury, chloride of potash, etc.",
+              "Manufacturing articles from which unwholesome smells, fumes, dust, or noise arise.",
+              "Printing, composing, binding, etc.",
+              "Industries handling Steam engines and boilers to construct or establish any factory or workplace in which it is proposed to employ steam power, water power, or other mechanical power, or electric power.",
+              "To deal with Cinematographic films which may be storing, transporting, handling, examining, repairing, and exhibiting.",
+              "Petroleum products – storing, packing, preparing, or manufacturing by any process.",
+              "Kerosene oil, Furnace oil & Mobile power oil, etc."
+            ]
           }
         ]
       }
     ]
   },
   {
-    "service": "goods-service-tax-registration",
-    "title": "Goods & Service Tax Registration",
+    "title": "Training Programs",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
-    "url": "/services/goods-service-tax-registration",
-    "description": "Do you want to protect your name or brand or slogan or whatever considers it as an intellectual property. Here you are at Aanoorglobal can go for Trademark Registration online helps to protect the brand and establish ownership of an entity. Make online trademark registration simple with affordable rate.",
+    "url": "trainingPrograms",
+    "h1": "Industrial Training Programs in Chennai",
+    "description": "We Aanoor Global provide Training Programs First Aid , Fire Drill, Health & safety For Employee In Chennai with expert trainers at affordable service cost.",
     "template": [
       {
         "id": "overview",
-        "header": "What is Logo Trademark Registration?",
+        "header": "Training Programs for Industries",
         "type": "SPParagraph",
-        "value": "Trademark is significant for any brand or business in India. If you are a business who needs to secure your logo and brand name of the company, then you should make use of the online application for a trademark to make trademark logo registration in India. It provides the security of logo and brand name in their respective trademark class. There are about 45 logo trademark registration classes when you can register your logo and brand in the field type."
+        "value": "Training indicates improving the knowledge and skills of the employees for better performance in a particular job. Training helps in enhancing the performance of the employees in the current employment and also get prepared for future works."
       },
       {
-        "id": "includes",
-        "header": "Includes",
-        "type": "SPIncludes",
+        "id": "Why you need Employee Training Programs",
+        "header": "Why you need Employee Training Programs?",
+        "desc": "",
+        "type": "SPBenefits",
+        "class": "important",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          {
+            "title": "",
+            "value": [
+              "To provide skills and knowledge to new joiners and to help them perform and play a functional role in their job. ",
+              "To educate employees with innovative and new ways as well as intuitive techniques to be followed for better job performance. ",
+              "To prepare every employee to meet challenging and varying needs of the organization and job.",
+              "To coach employees for higher level and complex jobs. "
+            ]
+          }
         ]
       },
       {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
-        "type": "SPParagraph",
-        "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
+        "id": "Advantages of Trained Employees",
+        "header": "Advantages of Trained Employees",
+        "desc": "Training is considered to be an essential tool for employee development. Training includes various importance because of the best rate of change in the external and internal organizational environment. The benefits or usefulness of trained personnel towards the employee and organization development includes:",
+        "type": "SPBenefits",
+        "class": "",
+        "value": [
+          {
+            "title": "",
+            "value": [
+              "A trained employee can show excellent performance by best utilization and making optimum use of tools, materials, equipment, and other kinds of resources offered to them.",
+              "Training makes employees close and committed to the organization as they are offered with advancement, learning opportunities, and growth.",
+              "Trained employees are capable of making them comfortable for any job, and there are fewer rates of turnover and absenteeism. ",
+              "Trained employee allows the organization to face any competition from rival companies.",
+              "Trained employee become more proficient and also have increased earning potentials. ",
+              "Trained employees do not need tight supervision and control, as they are aware of performing any jobs.",
+              "Trained employees lessen the resource wastage in the firm and work both effectively and efficiently.",
+              "Training develops a line of skilled and proficient managers.",
+              "Trained employees product quantity and quality output.",
+              "Trained employees can adopt and also respond to changing technologies."
+            ]
+          }
+        ]
       },
       {
-        "id": "bullets",
-        "header": "Bullets",
+        "id": "Few Steps in Employee Training Program",
+        "header": "Few Steps in Employee Training Program",
         "type": "SPBullet",
         "value": [
-          "Form TM-A",
-          "Power of Attorney Copy",
-          "User Affidavit Copy",
-          "Government Fees",
-          "TM Search Report and Consultation"
+          "Recognizing the training requirements.",
+          "Prepare the trainer.",
+          "Prepare the trainee.",
+          "Explain and demonstrate the operations.",
+          "Follow up and feedback."
         ]
       },
       {
-        "id": "benefits",
-        "header": "Benefits",
-        "desc": "",
+        "id": "Different type of Training Programs",
+        "header": "Different type of Training Programs",
+        "desc": "We at Aanoor EFilings provide various training programs like ",
         "type": "SPBenefits",
+        "class": "criteria",
         "value": [
           {
             "title": "",
             "value": [
-              "Form TM-A",
-              "Power of Attorney Copy",
-              "User Affidavit Copy",
-              "Government Fees",
-              "TM Search Report and Consultation"
+              "Fire Drill And Evacuation Training",
+              "Health And Safety Training",
+              "Waste Management Disposal Training",
+              "Committee Training",
+              "First Aid Training",
+              "Off The Job Training",
+              "Environmental Training",
+              "PPE(Personal Protective Equipment) Training"
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "title": "Digital Signature",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "digitalSignature",
+    "h1": "Digital Signature and Certifications in Chennai",
+    "description": "Digital signatures are a valuable tool for businesses and individuals in India. They offer a high level of security, legal validity, and convenience. If you need to sign electronic documents, reach Aanoor Global to get it quick and at affordable cost.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "DSC Certificate Token in Chennai",
+        "type": "SPParagraph",
+        "value": "Digital signatures are legally valid in India under the Information Technology Act, 2000. They can be used to sign a wide variety of electronic documents, including contracts, invoices, and government forms."
       },
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
-        "desc": "There are multiple advantages of registering an IE Code for both importers and exporters, here you go!",
+        "id": "Purposes of DSC includes",
+        "header": "Purposes of DSC includes",
+        "type": "SPIncludes",
+        "value": [
+          "Signing contracts and agreements",
+          "Filing tax returns",
+          "Applying for government services",
+          "Enrolling in online courses",
+          "Banking and financial transactions"
+        ]
+      },
+      {
+        "id": "Benefits",
+        "header": "Benefits of using digital signatures",
+        "desc": "",
         "type": "SPBenefits",
+        "class": "",
         "value": [
           {
-            "title": "No return Filing",
+            "title": "Security",
             "value": [
-              "IE code does not need any filling of return. There is no other procedure to be followed to maintain the IE Code validity once you have been issued with the IE code. There is no chance for any fillings needed to DGFT even if export or import transaction occurs."
+              "DSC provides a high level of security to electronic documents. They are tamper-proof and cannot be forged, which makes them ideal for signing important documents."
             ]
           },
           {
-            "title": "Proprietors with IE Code",
+            "title": "Legal validity",
             "value": [
-              "Even independent persons who are business proprietors can acquire this IE code in their own name. You need not to start a business entity for acquiring this IE code."
+              "Digital signatures are legally valid in India, which means that they can be used to sign contracts and other legal documents. This gives businesses and individuals the confidence to use digital signatures for their most important transactions."
             ]
           },
           {
-            "title": "Exporters with IE Code",
+            "title": "Convenience",
             "value": [
-              "All exporters who export services or goods from India should mandatorily have an IE code. The code needs to be quoted when sending any shipments. Similarly, the bank needs exporters IE code when receiving the money from foreign countries."
+              "Digital signatures are convenient to use. They can be applied to electronic documents quickly and easily, without the need for physical paperwork. This saves time and money, and it also helps to reduce the environmental impact of paper-based transactions."
             ]
           }
         ]
       },
       {
-        "id": "Required documents",
-        "header": "Documents required for Trademark and Logo Registration?",
+        "id": "Documents required",
+        "header": "Documents required to apply DSC Online",
         "type": "SPDocuments",
         "value": [
-          "Aadhar card",
-          "Address proof and identity proof of directors and promoters with photographs.",
-          "Cancelled cheque and bank account statement.",
-          "Board resolution for authorized signatory and letter of authorization.",
-          "PAN of the application",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
+          "Proof of identity: Aadhaar card, passport, PAN card, driving license, voter ID card, or any other government-issued ID card.",
+          "Proof of address: Aadhaar card, passport, voter ID card, bank statement, or any other government-issued document that shows your address.",
+          "A recent passport-sized photograph."
         ]
       },
       {
         "id": "Steps to register",
-        "header": "How to register a Trademark and Logo Registration?",
+        "header": "Digital Signature Application Procedure Online",
         "type": "SPStep",
         "value": {
-          "subHeading": "Any of the unique name or slogan with logo can be filed with specific class the trademark registration procedure is made easy with Aanoor Global!",
+          "subHeading": "",
           "steps": [
             {
-              "heading": "Apply for Trademark Registration fill our Form",
-              "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
+              "heading": "",
+              "desc": "Share require documents along with contact details to Aanoor team."
             },
             {
-              "heading": "Check your trademark search",
-              "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
+              "heading": "",
+              "desc": "We file online application with RA portal by verifying OTP details provided by the applicant."
             },
             {
-              "heading": "Choose the appropriate class for best trademark Registration Company",
-              "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
+              "heading": "",
+              "desc": "Get the video verification link and should be submitted with due verification with the documents by the applicant."
             },
             {
-              "heading": "Trademark application filing",
-              "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
+              "heading": "",
+              "desc": "After verification by DSC Certifying authority the Digital Signature Certificate will be issued."
             },
             {
-              "heading": "Trademark Registration Online",
-              "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
+              "heading": "",
+              "desc": "DSC certificate will be downloaded with password as prescribed USB tokens. The same will be used for Signing with the DSC."
             }
           ]
         }
-      },
-      {
-        "id": "FAQs",
-        "header": "FAQs on Trademark Registration Online",
-        "type": "SPAccordion",
-        "value": [
-          {
-            "heading": "Apply for Trademark Registration fill our Form",
-            "desc": "You need to complete our simple online logo trademark application form and also submit the required documents to us. Here you can share your complete details such as name of brand, object or trade description with user date to prepare necessary drafts."
-          },
-          {
-            "heading": "Check your trademark search",
-            "desc": "The trademark search is executed by experts to ensure that the brand name and logo name filed is available or not trademark registry. It gives complete observation about your brand application and takes just one working day."
-          },
-          {
-            "heading": "Choose the appropriate class for best trademark Registration Company",
-            "desc": "Based on the business whether products/service nature, we suggest a few specific classes from the 45 classes, and this also takes one day."
-          },
-          {
-            "heading": "Trademark application filing",
-            "desc": "We create your trademark temporary application of logo or word mark. The same will get confirm from client by mail. Based on confirmation Trademark application filed with Govt. fee in three days and get back to you with your ™ number."
-          },
-          {
-            "heading": "Trademark Registration Online",
-            "desc": "Once you receive your ™ number, your trademark is registered if there are no objections of the competitor to your applications of the brand."
-          }
-        ]
       }
     ]
   }
