@@ -6,7 +6,9 @@
   position: relative;
   z-index: 5;
   min-height: 100vh;
-  overflow-x: hidden;
+  .service-content-cont {
+    overflow-x: hidden;
+  }
 }
 h3 {
   font-weight: 700 !important;
@@ -16,6 +18,7 @@ h3 {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 0 !important;
+
   .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
