@@ -47,7 +47,7 @@
             align-items: center;
 
             span {
-              color: $ag-darkblue;
+              color: $ag-blue;
               font-size: 1rem;
 
               .menu-style {
@@ -60,6 +60,7 @@
             }
 
             &.item1 {
+              cursor: pointer;
               .menu-style {
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
@@ -81,6 +82,8 @@
             }
 
             &.item2 {
+              cursor: pointer;
+              padding-right: 111px; // Remove after Blog Implemtation
               .menu-style {
                 margin-right: 10px;
                 margin-top: 10px;
@@ -159,7 +162,7 @@
                   margin-left: 1rem;
                 }
                 img {
-                  width: 30px;
+                  width: 35px;
                 }
                 .first-level-menu {
                   margin-bottom: 30px;
@@ -262,12 +265,16 @@
           > ul {
             flex-direction: column;
             padding-left: 20px;
+            padding-right: 20px;
             > div > li {
-              padding: 10px 0;
+              padding: 15px 0;
               margin: 0;
               display: block;
+              border-bottom: 1px solid #001b2910;
               width: 100%;
-
+              &:last-child {
+                border-bottom: 0px solid #001b2910;
+              }
               .menu-icon {
                 margin-right: 10px;
               }
@@ -279,8 +286,12 @@
                 padding-left: 1rem;
                 // transform: rotate(90deg);
                 position: absolute;
-                right: 2rem;
+                right: 1rem;
                 top: 0.5rem;
+                width: 35px;
+              }
+              &.item2 {
+                padding-right: 0; // Remove after blog added
               }
               .first-level {
                 display: none;
@@ -292,8 +303,11 @@
                 li {
                   list-style: none;
                   padding: 10px 0;
-                  border-bottom: 1px solid $ag-darkgreen;
-                  color: $ag-darkblue;
+                  border-bottom: 1px solid #001b2910;
+                  color: $ag-blue;
+                  &:last-child {
+                    border-bottom: 0px solid #001b2910;
+                  }
                 }
 
                 .menu-wrapper {

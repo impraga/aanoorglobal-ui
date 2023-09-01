@@ -189,6 +189,9 @@
     .benefits-ul {
       padding: 20px 0 20px 60px;
       position: relative;
+      background-image: url(./../../../../public/assets/images/benefits-certificate-bg.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
       &::before {
         content: '';
         background-color: #ffffff10;

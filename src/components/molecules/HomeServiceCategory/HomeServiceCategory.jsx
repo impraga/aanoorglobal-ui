@@ -16,7 +16,7 @@ const HomeServiceCategory = ({ service, selectedCategory }) => (
         </div>
         <div className={`cat-img-bg position-absolute ${service.colorCode}`} />
         {/* <div className="cat-img-bg position-absolute bg-white"/> */}
-        <h3>{service.category}</h3>
+        <h3 className="text-blue">{service.category}</h3>
       </div>
       <div>
         <p className="o-05 mb-0">{service.serviceCount}</p>
