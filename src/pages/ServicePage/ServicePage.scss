@@ -5,6 +5,10 @@
   padding-bottom: 60px;
   position: relative;
   z-index: 5;
+  min-height: 100vh;
+  .service-content-cont {
+    overflow-x: hidden;
+  }
 }
 h3 {
   font-weight: 700 !important;
@@ -14,6 +18,7 @@ h3 {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 0 !important;
+
   .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -25,12 +30,21 @@ h3 {
         .container {
           // max-width: 1375px !important;
         }
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .SPBenefits:nth-child(even) {
+        .row > .col-md-8 {
+          order: -1 !important;
+        }
       }
     }
   }
 }
 
-.startup-center {
+.service-page-cont.startup-center {
   .service-content-cont {
     background-color: white;
     border-radius: $ag-border-radius;
@@ -43,7 +57,7 @@ h3 {
     }
   }
 }
-.intellectual-property {
+.service-page-cont.intellectual-property {
   background-color: $ag-darkblue;
   .serivce-details-cont {
     margin-top: 0px !important;
@@ -55,7 +69,7 @@ h3 {
         box-shadow: $ag-box-shadow;
         padding: 15px 15px 1px 15px;
         margin-bottom: 15px;
-        &.Required.documents {
+        &.SPDocuments {
           padding: 0;
         }
         &:last-child {
@@ -69,8 +83,9 @@ h3 {
     }
   }
 }
-.registration,
-.certification {
+.service-page-cont.registration,
+.service-page-cont.certification,
+.service-page-cont.statuary-compliance {
   background-color: $ag-darkblue;
   .serivce-details-cont {
     margin-top: 0px !important;
@@ -84,16 +99,38 @@ h3 {
           padding-right: 0.75rem !important;
         }
         &.SPParagraph.overview {
-          flex: 0 0 auto;
-          width: 66.66666667%;
+          // flex: 0 0 auto;
+          // width: 66.66666667%;
         }
         &.SPIncludes.includes {
-          flex: 0 0 auto;
-          width: 33.33333333%;
+          // flex: 0 0 auto;
+          // width: 33.33333333%;
         }
         &.SPParagraph,
         &.SPIncludes {
           background-color: $ag-gray;
+          > div {
+            margin-bottom: 0px !important;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            h3 {
+              color: $ag-green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.service-page-cont.statuary-compliance {
+  .serivce-details-cont {
+    .service-content-cont {
+      .component-cont {
+        &.SPParagraph,
+        &.SPIncludes {
+          background-color: $ag-darkblue;
+          color: white;
+          text-align: center;
           > div {
             margin-bottom: 0px !important;
             padding-top: 30px;

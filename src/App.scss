@@ -87,6 +87,7 @@ body {
   color: $ag-blue;
   font-family: 'Quicksand', sans-serif;
   background-color: $ag-gray-dark;
+  overflow-x: hidden;
 }
 .container {
   // max-width: 1150px !important;
@@ -245,7 +246,7 @@ a {
 
 // Scroll Bar css
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   height: 5px;
   border-radius: 10px;
 }

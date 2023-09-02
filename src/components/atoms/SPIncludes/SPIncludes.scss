@@ -15,12 +15,37 @@
 }
 
 .full-panel-template {
-  .includes-cont .tip {
-    padding: 7px 16px 7px 7px;
-    font-size: 0.8rem;
-    img {
-      width: 18px;
-      margin-right: 8px;
+  .component-cont.SPIncludes {
+    > div {
+      padding-top: 0 !important;
+      // text-align: center;
+      .includes-cont {
+        // justify-content: center;
+        .tip {
+          padding: 7px 16px 7px 7px;
+          font-size: 0.9rem;
+          img {
+            width: 22px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.service-page-cont.statuary-compliance {
+  .component-cont.SPIncludes {
+    > div {
+      .includes-cont {
+        justify-content: center;
+      }
+    }
+  }
+}
+.service-page-cont.registration {
+  .component-cont.SPIncludes {
+    > div {
+      padding-bottom: 20px !important;
     }
   }
 }

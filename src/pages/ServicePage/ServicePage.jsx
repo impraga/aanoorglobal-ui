@@ -1,37 +1,46 @@
 import React from 'react'
-import { useParams } from 'react-router'
 
-import serviceList from '../../../public/assets/json/serviceDetails.json'
+import { useParams, useLocation } from 'react-router'
+// import serviceList from '../../../public/assets/json/serviceDetails.json'
 import ServiceHeroBanner from '../../components/molecules/ServicePageHeroBanner/ServiceHeroBanner'
 import ServicePageContent from '../../components/molecules/ServicePageContent/ServicePageContent'
 import ServicePageSidePanel from '../../components/molecules/ServicePageSidePanel/ServicePageSidePanel'
 import NotFound from '../NotFound/NotFound'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
+// import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
+import URLs from '../../constants/urlMapper'
+
 import './ServicePage.scss'
-import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 
 const ServicePage = () => {
-  const { category, serviceName } = useParams()
-  const sidePanelTemplate = ['intellectual-property', 'startup-center']
+  const { category } = useParams()
+  const location = useLocation()
+
+  // eslint-disable-next-line import/no-dynamic-require, global-require
+  const serviceList = require(`../../../public/assets/json/service-${category}.json`)
+
   const serviceDetails = serviceList.filter(
-    (service) => service.service === serviceName
+    (service) => URLs[service.url] === location.pathname
   )[0]
 
-  const inputRefs = React.useRef([])
-
   const metaDetails = {
-    title: `Services | ${serviceDetails?.title} | Aanoor Global`,
-    canonicalUrl: `www.aanoorglobal.com/services/${category}/${serviceName}`,
-    metaDesc:
-      'Aanoor Global provide multiple services like GST, Income tax filing',
-    metaKeywords: 'gst filing, income tax filing'
+    title: serviceDetails.metaTitle,
+    // canonicalUrl: `www.aanoorglobal.com/services/${category}/${serviceName}`,
+    metaDesc: serviceDetails.metaDesc,
+    metaKeywords: serviceDetails.metaKeywords
   }
+
+  // eslint-disable-next-line import/no-dynamic-require, global-require
+  const sidePanelTemplate = ['intellectual-property', 'startup-center']
+
+  const inputRefs = React.useRef([])
 
   return serviceDetails ? (
     <>
       <HelmetWrapper data={metaDetails} />
-      <div className={category}>
+      <div className={`service-page-cont ${category}`}>
+        {serviceDetails?.h1 && <h1 className="d-none">{serviceDetails.h1}</h1>}
         <ServiceHeroBanner
           title={serviceDetails.title}
           desc={serviceDetails.description}
@@ -70,10 +79,13 @@ const ServicePage = () => {
                 data-aos="fade-up"
                 data-aos-delay="150"
               >
-                {serviceDetails.template?.map((data) => (
+                {serviceDetails.template?.map((data, index) => (
                   <div
                     className={`${data.id} ${data.type} component-cont`}
-                    ref={(ref) => inputRefs.current.push(ref)}
+                    ref={(ref) => {
+                      inputRefs.current[index] = ref
+                      return inputRefs
+                    }}
                     key={data.id}
                   >
                     <ServicePageContent template={data.type} data={data} />
@@ -84,7 +96,7 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
-      <RelatedBlogSection />
+      {/* <RelatedBlogSection /> */}
     </>
   ) : (
     <NotFound />

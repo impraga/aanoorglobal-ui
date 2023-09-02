@@ -1,14 +1,13 @@
-import React, { useMemo, useState, useEffect } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
 import { services } from '../../../constants'
 import category from '../../../../public/assets/json/service.json'
 
 import './ServiceDropDown.scss'
 
-const ServiceDropDown = ({ errors, register, updateValue }) => {
+const ServiceDropDown = ({ updateValue }) => {
   const [selectActive, setSelectActive] = useState(false)
   const [selectedService, setSelectedService] = useState(null)
-  const currentUrl = document.location.pathname
 
   const serviceCategory = useMemo(() => {
     const flatCategory = [...services]
@@ -17,9 +16,7 @@ const ServiceDropDown = ({ errors, register, updateValue }) => {
         flatCategory.push({ title: service.title, url: service.url })
       })
     })
-    setSelectedService(
-      flatCategory.find((d) => currentUrl === d.url)?.title || services[0].title
-    )
+    setSelectedService(services[0].title)
 
     return flatCategory
   }, [])
@@ -38,24 +35,13 @@ const ServiceDropDown = ({ errors, register, updateValue }) => {
     <div className={`select ${selectActive ? ' active' : ''}`}>
       <input
         type="text"
-        className={errors.services?.type === 'required' ? 'error' : ' '}
         placeholder="Services looking for?"
         onClick={() => {
           setSelectActive(true)
         }}
         value={selectedService}
-        // eslint-disable-next-line react/jsx-props-no-spreading
-        {...register('services', {
-          required: 'Select atleast one services'
-        })}
-        aria-invalid={errors.services ? 'true' : 'false'}
+        readOnly
       />
-      {/* {errors.services && (
-          <p className="form-error text-danger">
-            {errors.services?.message}
-          </p>
-        )} */}
-      {/* {selectedService} */}
       <ul className="md-whiteframe-z1" name="ul-id">
         {serviceCategory.map((service) => (
           <li
@@ -78,14 +64,10 @@ const ServiceDropDown = ({ errors, register, updateValue }) => {
 }
 
 ServiceDropDown.propTypes = {
-  errors: PropTypes.shape(),
-  register: PropTypes.func,
   updateValue: PropTypes.func
 }
 
 ServiceDropDown.defaultProps = {
-  errors: { services: {} },
-  register: () => {},
   updateValue: () => {}
 }
 

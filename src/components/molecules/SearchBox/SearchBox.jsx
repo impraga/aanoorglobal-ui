@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import './SearchBox.scss'
 import search from '../../../../public/assets/icons/search.svg'
-import category from '../../../../public/assets/json/service.json'
+import menuList from '../../../../public/assets/json/menuList.json'
 import SearchResult from '../../atoms/SearchResult/SearchResult'
 
 const SearchBox = () => {
@@ -11,9 +11,14 @@ const SearchBox = () => {
   // Maniplating the category data for search results
   const serviceCategory = useMemo(() => {
     const flatCategory = []
-    category.forEach((value) => {
-      value.child.forEach((service) => {
-        flatCategory.push({ ...service, category: value.category })
+    const menus = [
+      ...menuList.serviceData[0].children,
+      ...menuList.serviceData[1].children
+    ]
+
+    menus.forEach((value) => {
+      value.children.forEach((service) => {
+        flatCategory.push({ ...service, category: value.title })
       })
     })
     return flatCategory

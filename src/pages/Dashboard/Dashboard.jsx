@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
-import './Dashboard.scss'
-import DashboardMetrics from '../../components/atoms/DashboardMetrics/DashboardMetrics'
+// import DashboardMetrics from '../../components/atoms/DashboardMetrics/DashboardMetrics'
 import DashboardTable from '../../components/atoms/DashboardTable/DashboardTable'
+import { getSessionStorage } from '../../utils/tools'
+import { apiUri, sessionKeys } from '../../constants'
+
+import './Dashboard.scss'
 
 const metaDetails = {
   title: 'Dashboard | Annoor Global',
@@ -15,11 +19,38 @@ const metaDetails = {
 }
 
 const Dashboard = () => {
-  // Value from API
-  const overallStats = [
-    { title: 'Published Blog', value: 120 },
-    { title: 'Draft Blog', value: 10 }
-  ]
+  const [blogList, setBlogList] = useState([])
+  const [blogStatus, setBlogStatus] = useState({ active: 0, inactive: 0 })
+
+  useEffect(() => {
+    getBlog()
+  }, [])
+
+  useEffect(() => {
+    const activeBlogCount = blogList?.filter((d) => d.status === '2').length
+    const inActiveBlogCount = blogList?.filter((d) => d.status === '1').length
+    setBlogStatus({ active: activeBlogCount, inactive: inActiveBlogCount })
+  }, [blogList])
+
+  const getBlog = () => {
+    axios
+      .get(`${apiUri}/getBlogLists`, {
+        // .get('/assets/json/api-mock-bloglist.json', {
+        headers: {
+          Authorization: getSessionStorage(sessionKeys.authorization)
+        }
+      })
+      .then(({ data }) => {
+        console.log(data)
+        if (data.message.length > 0 && data.status === '200') {
+          setBlogList(data.message)
+        }
+      })
+      .catch(() => {
+        console.log('Error in receiving Blog details')
+      })
+  }
+
   return (
     <>
       <HelmetWrapper data={metaDetails} />
@@ -33,21 +64,31 @@ const Dashboard = () => {
                 </div>
               </Link>
               <div className="overall-stat-cont d-flex flex-md-row flex-column">
-                {overallStats.map((stats) => (
-                  <div
-                    key={stats.title}
-                    className="d-stats-cont d-flex br-1 justify-content-between align-items-center"
-                  >
-                    <div>{stats.title}</div>
-                    <div className="bebas value">{stats.value}</div>
-                  </div>
-                ))}
+                <div
+                  key="published"
+                  className="d-stats-cont d-flex br-1 justify-content-between align-items-center"
+                >
+                  <div>Published Blog</div>
+                  <div className="bebas value">{blogStatus.active}</div>
+                </div>
+                <div
+                  key="Draft Blog"
+                  className="d-stats-cont d-flex br-1 justify-content-between align-items-center"
+                >
+                  <div>Draft Blog</div>
+                  <div className="bebas value">{blogStatus.inactive}</div>
+                </div>
               </div>
             </div>
           </div>
-          <DashboardMetrics />
+          {/* Part of enhancemnet */}
+          {/* <DashboardMetrics /> */}
+          {/* Part of enhancemnet */}
           <div className="overlay-text bebas">Dashboard</div>
-          <DashboardTable />
+          <DashboardTable
+            blogListInput={blogList}
+            updateBlog={() => getBlog()}
+          />
         </div>
         <div className="bg-drop bg-db" />
       </div>

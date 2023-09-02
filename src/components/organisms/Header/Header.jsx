@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button'
 
@@ -9,28 +9,116 @@ import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 import './Header.scss'
+import { removeSession } from '../../../utils/tools'
+import {
+  sessionKeys,
+  isUserLoggedIn,
+  isKillSwitchDisabled
+} from '../../../constants'
+import URLs from '../../../constants/urlMapper'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(-1)
 
-  const menuWithLink = (item) => (
-    <li key={item.id}>
-      {item.pageUrl && <Link to={item.pageUrl}>{item.title}</Link>}
-      {item.children && menuWithChildren(item.children, item.title, null, true)}
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    removeSession(sessionKeys.userLoggedStatus)
+    removeSession(sessionKeys.authorization)
+    navigate('/login')
+  }
+
+  const menuWithLink = (item, device, index) => (
+    <li
+      key={item.id || item.title}
+      className={`item${index + 1} ${
+        serviceOpen === item.title ? 'active' : ''
+      }`}
+    >
+      {item.pageUrl && (
+        <Link
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          to={URLs[item.pageUrl]}
+        >
+          {item.title}
+        </Link>
+      )}
+      {item.children &&
+        device === 'mobile' &&
+        menuWithMobileChildren(item.children, item, null, true)}
+      {item.children &&
+        device === 'desktop' &&
+        menuWithDesktopChildren(item.children, item.title, null, true)}
     </li>
   )
 
-  const menuWithChildren = (list, title, clsName, displayExpertBtn = false) => (
+  const menuWithMobileChildren = (list, item, clsName, displayExpertBtn) => (
     <>
-      {title && (
-        <span>
-          {title}
+      {item.title && (
+        <span
+          aria-hidden
+          onClick={() =>
+            setServiceOpen(serviceOpen === item.title ? '' : item.title)
+          }
+        >
+          <img
+            className="menu-icon"
+            src={`/assets/images/${item.icon}`}
+            alt="icon"
+          />
+
+          {item.title}
           <img
             src="/assets/images/chevron-right.svg"
             alt=""
-            className="desktop-chevron d-none d-lg-inline"
+            className="mobile-chevron "
           />
+        </span>
+      )}
+      <div className={clsName || 'first-level'}>
+        <div className="menu-wrapper">
+          {item.title && (
+            <span
+              aria-hidden
+              className="title-first-level"
+              onClick={() =>
+                setServiceOpen(serviceOpen === item.title ? '' : item.title)
+              }
+            >
+              <img
+                className="menu-icon"
+                src={`/assets/images/${item.icon}`}
+                alt="icon"
+              />
+
+              {item.title}
+              <img
+                src="/assets/images/chevron-left.svg"
+                alt=""
+                className="mobile-chevron "
+              />
+            </span>
+          )}
+          <ul>{list.map((d, i) => menuWithLink(d, 'mobile', i))}</ul>
+        </div>
+        {displayExpertBtn && showExpertsButton()}
+      </div>
+    </>
+  )
+
+  const menuWithDesktopChildren = (
+    list,
+    title,
+    clsName,
+    displayExpertBtn = false
+  ) => (
+    <>
+      {title && (
+        <span>
+          {title === 'Step into' ? 'I WANT TO ' : ''}
+          <span className="menu-style">{title.toUpperCase()}</span>
+          {title === 'Manage' ? ' MY BUSINESS ' : ''}
         </span>
       )}
       <div
@@ -41,46 +129,19 @@ const Header = () => {
           className={clsName ? '' : 'menu-wrapper'}
           key={clsName ? 'multi-child' : title}
         >
-          {list?.map((item, index) =>
-            Array.isArray(item) ? (
-              menuWithChildren(item, null, 'first-level-menu')
-            ) : (
-              <div
-                className={`first-level-menu ${
-                  serviceOpen === index ? 'show-service' : ''
-                }`}
-                key={item.id}
-              >
-                <img src={`/assets/images/${item.icon}`} alt="icon" />
-                {item.title && (
-                  <span
-                    aria-hidden
-                    onClick={() =>
-                      serviceOpen >= 0
-                        ? setServiceOpen(-1)
-                        : setServiceOpen(index)
-                    }
-                  >
-                    {item.title}
-                    {isMenuOpen && (
-                      <img
-                        src="/assets/images/chevron-right.svg"
-                        alt=""
-                        className="show-chevron"
-                      />
-                    )}
-                  </span>
-                )}
-                {item.children && (
-                  <ul>
-                    {item.children.map((secondMenu) =>
-                      menuWithLink(secondMenu)
-                    )}
-                  </ul>
-                )}
-              </div>
-            )
-          )}
+          {list?.map((item) => (
+            <div className={`first-level-menu `} key={item.id}>
+              <img src={`/assets/images/${item.icon}`} alt="icon" />
+              {item.title && <span>{item.title}</span>}
+              {item.children && (
+                <ul>
+                  {item.children.map((secondMenu, i) =>
+                    menuWithLink(secondMenu, 'desktop', i)
+                  )}
+                </ul>
+              )}
+            </div>
+          ))}
         </div>
         {displayExpertBtn && showExpertsButton()}
       </div>
@@ -108,7 +169,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className={`lg-container bs ${isMenuOpen ? 'remove-radius' : ''}`}>
-        <header className="container">
+        <header className="container-fluid">
           <div className="logo-wrapper">
             <Link to="/">
               <img src={logo} className="logo-img" alt="logo" />
@@ -117,6 +178,7 @@ const Header = () => {
           <div className="hamburger-menu">
             <AGButton
               buttonObj={{
+                status: isMenuOpen,
                 className: 'menu-icon',
                 imageDetails: {
                   alt: isMenuOpen ? 'menu-close' : 'menu'
@@ -126,14 +188,73 @@ const Header = () => {
             />
           </div>
           <nav className={isMenuOpen ? 'open-menu' : 'close-menu'}>
-            <ul>
-              {menuList?.data.map((item) => menuWithLink(item))}
+            {/* desktop menu */}
+            <ul className="d-none d-lg-flex ps-0">
+              <div />
+              <div className="d-flex">
+                {menuList?.serviceData.map((item, i) =>
+                  menuWithLink(item, 'desktop', i)
+                )}
+              </div>
 
-              <li key="blog">
-                <Button className="blog-btn" variant="success">
-                  Blog
-                </Button>
-              </li>
+              {isKillSwitchDisabled && (
+                <div className="d-flex align-items-center">
+                  <li key="blog">
+                    <Button
+                      className="blog-btn"
+                      variant="success"
+                      onClick={() => navigate('/blog')}
+                    >
+                      Blog
+                    </Button>
+                  </li>
+                </div>
+              )}
+              {isUserLoggedIn && (
+                <li key="logout">
+                  <Button
+                    className="logout"
+                    variant="primary"
+                    onClick={() => handleClick()}
+                  >
+                    Logout
+                  </Button>
+                </li>
+              )}
+            </ul>
+            {/* mobile menu */}
+            <ul className="d-lg-none">
+              <div />
+              <div>
+                {[
+                  // eslint-disable-next-line no-unsafe-optional-chaining
+                  ...menuList?.serviceData[0].children,
+                  // eslint-disable-next-line no-unsafe-optional-chaining
+                  ...menuList?.serviceData[1].children
+                ].map((item, i) => menuWithLink(item, 'mobile', i))}
+                {isKillSwitchDisabled && (
+                  <li key="blog">
+                    <Button
+                      className="blog-btn"
+                      variant="success"
+                      onClick={() => navigate('/blog')}
+                    >
+                      Blog
+                    </Button>
+                  </li>
+                )}
+                {isUserLoggedIn && (
+                  <li key="logout">
+                    <Button
+                      className="logout"
+                      variant="primary"
+                      onClick={() => handleClick()}
+                    >
+                      Logout
+                    </Button>
+                  </li>
+                )}
+              </div>
             </ul>
           </nav>
         </header>

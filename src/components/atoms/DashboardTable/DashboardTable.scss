@@ -1,60 +1,123 @@
 @import '../../../index.scss';
 
-.d-table-header-cont {
-  padding: 10px 16px;
-  h2 {
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 0;
+.dashboard-table-cont {
+  .ag-form {
+    .search-form {
+      font-size: 0.9rem;
+      height: 35px;
+      width: 250px;
+      padding-left: 25px;
+      background-image: url(./../../../../public/assets/icons/search-blue.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      &::placeholder {
+      }
+    }
   }
-}
-.table-responsive {
-  border: 1px solid #001b290c !important;
-  // border-radius: 10px;
-  table {
-    margin-bottom: 0px !important;
-    color: $ag-blue !important;
-    thead {
-      tr {
-        td {
-          padding-left: 15px !important;
-          padding-right: 15px !important;
-          color: $ag-blue !important;
-          background-color: $ag-gray !important;
-          font-weight: 600;
-          border-top: 1px solid #001b290c !important;
-          text-transform: capitalize;
-          &.Title {
-            min-width: 200px;
+  .d-table-header-cont {
+    padding: 10px 16px;
+    h2 {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
+  }
+  .table-responsive {
+    border: 1px solid #001b290c !important;
+    // border-radius: 10px;
+    table {
+      margin-bottom: 0px !important;
+      color: $ag-blue !important;
+      thead {
+        tr {
+          td {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            color: $ag-blue !important;
+            background-color: $ag-gray !important;
+            font-weight: 600;
+            border-top: 1px solid #001b290c !important;
+            text-transform: capitalize;
+            &.title {
+              min-width: 200px;
+              max-width: 400px;
+            }
+            &.options {
+              text-align: center;
+            }
           }
         }
       }
-    }
 
-    tbody {
-      tr {
-        // border-bottom-width: 0 !important;
-        td {
+      tbody {
+        tr {
           // border-bottom-width: 0 !important;
-          padding-left: 15px !important;
-          padding-right: 15px !important;
-          --bs-table-color-type: $ag-blue !important;
-          color: $ag-blue !important;
-
-          &.statusDraft {
-            font-weight: 700;
-            color: $ag-orange !important;
-          }
-          &.statusPublished {
-            font-weight: 700;
-            color: $ag-green !important;
+          td {
+            // border-bottom-width: 0 !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            --bs-table-color-type: $ag-blue !important;
+            color: $ag-blue !important;
+            vertical-align: middle;
+            &.title {
+              min-width: 200px;
+              width: 450px;
+            }
+            &.status {
+              .status-cont {
+                width: fit-content;
+                padding: 5px 10px 5px 35px;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-size: 22px;
+                background-position: 6px center;
+              }
+              &.class1 {
+                font-weight: 700;
+                color: $ag-orange !important;
+                .status-cont {
+                  background-color: #f8950015;
+                  border: 1px solid $ag-orange;
+                  background-image: url(./../../../../public/assets/icons/draft.png);
+                }
+              }
+              &.class2 {
+                font-weight: 700;
+                color: $ag-lightgreen !important;
+                .status-cont {
+                  background-color: #ace62715;
+                  border: 1px solid $ag-lightgreen;
+                  background-image: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='check-circle' class='svg-inline--fa fa-check-circle fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%239FDB0E' d='M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z'></path></svg>");
+                }
+              }
+            }
+            &.options {
+              width: 250px;
+              text-align: center;
+              button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                img {
+                  height: 25px;
+                  margin: 0 15px;
+                  &.view-btn {
+                    height: 28px;
+                  }
+                }
+              }
+            }
           }
         }
-      }
-      tr:nth-of-type(odd) > * {
-        background-color: #001b2902;
-        --bs-table-bg-type: none !important;
+        tr:nth-of-type(odd) > * {
+          background-color: #001b2902;
+          --bs-table-bg-type: none !important;
+        }
       }
     }
+  }
+  .table-hover > tbody > tr:hover > * {
+    background-color: #f7f7f7 !important;
+    box-shadow: none !important;
   }
 }

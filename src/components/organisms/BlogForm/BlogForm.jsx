@@ -1,37 +1,115 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { useForm } from 'react-hook-form'
+import axios from 'axios'
 
-import './BlogForm.scss'
 import RichTextEditor from '../../molecules/RichTextEditor/RichTextEditor'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
-// import Chips, { Chip } from '../src'
+import { getSessionStorage } from '../../../utils/tools'
+import { apiUri, sessionKeys } from '../../../constants'
 
-const BlogForm = () => {
+import './BlogForm.scss'
+
+const BlogForm = ({ edit, blogDetails }) => {
+  const [displayNotification, setDisplayNotification] = useState({})
+  const [updateRTE, updateRTEVal] = useState('')
+  const form = useForm()
   const {
     register,
     formState: { errors },
     handleSubmit,
-    setValue
-    // reset
-  } = useForm()
+    setValue,
+    reset
+  } = form
 
-  const onSubmit = (data) => {
-    console.log(data)
+  useEffect(() => {
+    if (edit) {
+      setValue('title', blogDetails.title)
+      setValue('url', blogDetails.url)
+      setValue('thumbImg', blogDetails.image_name)
+      setValue('tags', blogDetails.tags)
+      setValue('category', blogDetails.category)
+      setValue('services', blogDetails.service)
+      setValue('video', blogDetails.youtube)
+      setValue('date', blogDetails.date)
+      setValue('readTime', blogDetails.read_time)
+      updateRTEVal(blogDetails.content)
+    }
+  }, [blogDetails])
+
+  const onSubmit = (data, e) => {
+    const saveorPublish = e.nativeEvent.submitter.name
+    const formData = new FormData()
+    formData.append('file', data.thumbImg[0])
+    let dd = {
+      ...data,
+      status: saveorPublish === 'save' ? 1 : 2
+    }
+    if (edit) {
+      dd = { ...dd, id: blogDetails.id }
+    }
+    formData.append('postData', JSON.stringify(dd))
+
+    const url = edit ? `${apiUri}/updatePost` : `${apiUri}/createPost`
+    axios
+      .post(url, formData, {
+        headers: {
+          'content-type': 'multipart/form-data',
+          Authorization: getSessionStorage(sessionKeys.authorization)
+        }
+      })
+      .then((res) => {
+        if (res.data.status === '200') {
+          if (
+            res.data.message === 'Blog Updated' ||
+            res.data.message === 'Blog Added'
+          ) {
+            reset()
+            updateRTEVal('')
+            showBlogNotification(
+              'success',
+              `Blog Added and ${
+                saveorPublish === 'save' ? 'saved' : 'published'
+              }`
+            )
+          }
+        } else {
+          showBlogNotification('danger', 'Error while adding blog')
+        }
+      })
+      .catch(() => {
+        showBlogNotification('danger', 'Error while adding blog')
+      })
+  }
+
+  const showBlogNotification = (type, msg) => {
+    setDisplayNotification({
+      type,
+      msg
+    })
+    setTimeout(() => {
+      setDisplayNotification({})
+    }, 5000)
   }
 
   const RTEChange = (value) => {
     if (value) {
-      setValue('rte', value, { shouldValidate: true })
+      setValue('content', value, { shouldValidate: true })
     }
   }
 
   return (
     <div className="container bg-white bs br-1 p-4">
+      {displayNotification && Object.keys(displayNotification).length > 0 && (
+        <div className={`alert alert-${displayNotification.type}`} role="alert">
+          {displayNotification.msg}
+        </div>
+      )}
       <div className="ag-form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-12">
               <input
                 {...register('title', { required: true })}
                 className={`w-100 ${
@@ -41,30 +119,51 @@ const BlogForm = () => {
                 placeholder="Title"
               />
             </div>
-            <div className="col-md-4">
-              <ServiceDropDown errors={errors} register={register} />
+          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <input
+                {...register('url', { required: true })}
+                className={errors.url?.type === 'required' ? 'error' : ' '}
+                type="text"
+                placeholder="Url for the post"
+              />
+            </div>
+            <div className="col-md-6">
+              <input
+                {...register('thumbImg', { required: true })}
+                className={errors.thumbImg?.type === 'required' ? 'error' : ' '}
+                type="file"
+                placeholder="Thumbnail Image"
+              />
             </div>
           </div>
-          <div>
-            <input
-              {...register('image', { required: true })}
-              className={errors.image?.type === 'required' ? 'error' : ' '}
-              type="file"
-              placeholder="Thumbnail Image"
-            />
-          </div>
-          <div>
-            <input
-              {...register('tags', { required: true })}
-              className={errors.tags?.type === 'required' ? 'error' : ' '}
-              type="text"
-              placeholder="Add tags in semicolon separated."
-            />
+          <div className="row">
+            <div className="col-md-6">
+              <input
+                {...register('tags', { required: true })}
+                className={errors.tags?.type === 'required' ? 'error' : ' '}
+                type="text"
+                placeholder="Add tags in semicolon separated."
+              />
+            </div>
+            <div className="col-md-3">
+              <input
+                {...register('category', { required: true })}
+                className={errors.category?.type === 'required' ? 'error' : ' '}
+                type="text"
+                placeholder="Category"
+              />
+            </div>
+
+            <div className="col-md-3">
+              <ServiceDropDown errors={errors} form={form} />
+            </div>
           </div>
           <div className="row">
             <div className="col-md-7">
               <input
-                {...register('video', { required: true })}
+                {...register('video', { required: false })}
                 className={`w-100 ${
                   errors.video?.type === 'required' ? 'error' : ' '
                 }`}
@@ -94,18 +193,24 @@ const BlogForm = () => {
             </div>
           </div>
           <div>
-            <div className={errors.rte?.type === 'required' ? 'error' : ' '}>
-              <RichTextEditor editorValue={RTEChange} />
+            <div
+              className={errors.content?.type === 'required' ? 'error' : ' '}
+            >
+              <RichTextEditor editorValue={RTEChange} updateValue={updateRTE} />
             </div>
             <input
-              {...register('rte', { required: true })}
+              {...register('content', { required: true })}
               type="text"
               hidden
             />
           </div>
           <div>
-            <button type="submit">Save</button>
-            <button type="submit">Save & Publish</button>
+            <button name="save" type="submit">
+              Save
+            </button>
+            <button name="publish" type="submit">
+              Save & Publish
+            </button>
           </div>
         </form>
       </div>
@@ -113,4 +218,12 @@ const BlogForm = () => {
   )
 }
 
-export default BlogForm
+BlogForm.propTypes = {
+  edit: PropTypes.bool.isRequired,
+  blogDetails: PropTypes.shape()
+}
+BlogForm.defaultProps = {
+  blogDetails: {}
+}
+
+export default React.memo(BlogForm)

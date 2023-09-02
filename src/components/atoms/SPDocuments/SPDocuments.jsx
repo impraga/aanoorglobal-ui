@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useParams } from 'react-router'
 
@@ -6,26 +6,31 @@ import folderIcon from '../../../../public/assets/icons/folder.png'
 import clip from '../../../../public/assets/icons/clip-icon.svg'
 import documentRegistration from '../../../../public/assets/icons/Document abstract.svg'
 import documentCertificate from '../../../../public/assets/icons/Document abstract2.svg'
+import documentCompliance from '../../../../public/assets/icons/Document abstract3.svg'
+import circleGreen from '../../../../public/assets/icons/circle-green.svg'
 
 import './SPDocuments.scss'
 
 const SPDocuments = ({ data }) => {
   const { category } = useParams()
-  const [isImage, setIsImage] = useState(true)
+  const [isImage, setIsImage] = useState(false)
+  const [documentPath, setDocumentPath] = useState('')
 
-  // eslint-disable-next-line react/no-unstable-nested-components
-  const DocImage = () => {
+  useEffect(() => {
     if (category === 'registration') {
       setIsImage(true)
-      return <img src={documentRegistration} alt="decorative" />
-    }
-    if (category === 'certification') {
+      setDocumentPath(documentRegistration)
+    } else if (category === 'certification') {
       setIsImage(true)
-      return <img src={documentCertificate} alt="decorative" />
+      setDocumentPath(documentCertificate)
+    } else if (category === 'statuary-compliance') {
+      setIsImage(true)
+      setDocumentPath(documentCompliance)
+    } else {
+      setIsImage(false)
     }
-    setIsImage(false)
-    return null
-  }
+  }, [])
+
   return (
     <div
       className={`row 
@@ -34,21 +39,49 @@ const SPDocuments = ({ data }) => {
     >
       <div
         className={`container ${
-          category === 'registration' || category === 'certification'
+          category === 'registration' ||
+          category === 'certification' ||
+          category === 'statuary-compliance'
             ? 'mt-5 mt-md-0 mb-3'
             : ''
         }`}
       >
         <div
           className={`${
-            category === 'registration' || category === 'certification'
+            category === 'registration' ||
+            category === 'certification' ||
+            category === 'statuary-compliance'
               ? 'row'
               : ''
           }`}
         >
           {isImage && (
-            <div className="doc-main-img-cont col-md-4 d-flex align-items-center justify-content-center">
-              <DocImage />
+            <div className="doc-main-img-cont overflow-hidden col-md-4 d-flex align-items-center justify-content-center position-relative">
+              <div
+                className="main-img-cont"
+                data-aos="fade-top"
+                data-aos-delay="0"
+              >
+                <img
+                  src={documentPath}
+                  alt="decorative"
+                  data-aos="zoom-in-up"
+                  data-aos-delay="50"
+                />
+              </div>
+              <div
+                className="glass"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              />
+              <div className="ring-img-cont">
+                <img
+                  src={circleGreen}
+                  alt="decorative"
+                  data-aos="fade-left"
+                  data-aos-delay="150"
+                />
+              </div>
             </div>
           )}
           <div
@@ -57,7 +90,10 @@ const SPDocuments = ({ data }) => {
             }`}
             id={data.id}
           >
-            <div className="position-relative title-cont d-flex align-item-center mb-4">
+            <div
+              className="position-relative title-cont d-flex align-item-center mb-4"
+              data-aos="fade-left"
+            >
               <div className="img-cont bg-db br-1">
                 <img src={folderIcon} alt="" />
               </div>
@@ -68,8 +104,12 @@ const SPDocuments = ({ data }) => {
             <div className="position-relative file-cont">
               <ol>
                 {data.value &&
-                  data.value.map((list) => (
-                    <div key={list}>
+                  data.value.map((list, index) => (
+                    <div
+                      key={list}
+                      data-aos="fade-left"
+                      data-aos-delay={index * 50 + 50}
+                    >
                       <li>{list}</li>
                       <hr className="" />
                     </div>

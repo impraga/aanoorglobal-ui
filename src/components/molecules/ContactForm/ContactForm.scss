@@ -119,6 +119,9 @@
           &:after {
             content: 'Error, Try again!' !important;
           }
+          &:hover {
+            background: rgb(180, 26, 26);
+          }
         }
 
         input::-webkit-outer-spin-button,

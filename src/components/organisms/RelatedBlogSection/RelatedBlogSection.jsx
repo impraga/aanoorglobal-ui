@@ -1,43 +1,42 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import { apiUri } from '../../../constants/index'
 
 import './RelatedBlogSection.scss'
 import BlogThumbnail from '../../atoms/BlogThumbnail/BlogThumbnail'
 
 const RelatedBlogSection = () => {
-  const blogList = [
-    {
-      title: 'Procedure for Registration of Trademark In India',
-      tag: ['Logo registration', 'Trademark registration', 'Property'],
-      read: '2',
-      imgUrl: '/assets/images/blog.jpg',
-      pageUrl: ''
-    },
-    {
-      title: 'Procedure for GST Filing In India',
-      tag: ['Logo registration', 'Trademark registration', 'Property'],
-      read: '4',
-      imgUrl: '/assets/images/blog.jpg',
-      pageUrl: ''
-    },
-    {
-      title: 'Procedure for Registration of Copyright In India',
-      tag: ['Logo registration', 'Trademark registration', 'Property'],
-      read: '3',
-      imgUrl: '/assets/images/blog.jpg',
-      pageUrl: ''
-    }
-  ]
+  const [blogList, setBlogList] = useState([])
+
+  useEffect(() => {
+    // axios.get(`${apiUri}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
+    axios.get('/assets/json/api-mock-related.json').then(({ data }) => {
+      if (data.message.length > 0 && data.status === '200') {
+        setBlogList(data.message)
+      }
+    })
+  }, [])
 
   return (
     <div className="Related-blog-section-cont mb-5">
       <div className="container my-4">
         <div>
-          <h2 className="mb-4 text-center">Related Blog</h2>
+          <h2
+            className="mb-4 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Related Blog
+          </h2>
         </div>
         <div className="row justify-content-center">
-          {blogList.map((blog) => (
-            <div key={blog.title} className="col-lg-4 col-md-6 mb-4">
+          {blogList.map((blog, index) => (
+            <div
+              key={(blog.title, index)}
+              className="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in-up"
+              data-aos-delay={index * 100 + 100}
+            >
               <BlogThumbnail blog={blog} />
             </div>
           ))}
@@ -46,9 +45,5 @@ const RelatedBlogSection = () => {
     </div>
   )
 }
-
-// RelatedBlogSection.propTypes = {
-//   blogList: PropTypes.shape()
-// }
 
 export default RelatedBlogSection

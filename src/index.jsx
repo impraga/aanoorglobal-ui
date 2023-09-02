@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 // import ReactDOM from 'react-dom'
 // import ReactDOM from 'react-dom/client'
 import { createRoot } from 'react-dom/client'
@@ -12,24 +12,22 @@ import NotFound from './pages/NotFound/NotFound'
 import About from './pages/About/About'
 import Sitemap from './pages/Sitemap/Sitemap'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
-import ServicePage from './pages/ServicePage/ServicePage'
 import ContactPage from './pages/ContactPage/ContactPage'
-import Blog from './pages/Blog/Blog'
+// import Blog from './pages/Blog/Blog'
 import Dashboard from './pages/Dashboard/Dashboard'
 import NewBlog from './pages/NewBlog/NewBlog'
 import LoginPage from './pages/LoginPage/LoginPage'
 
-import { TransitionProvider } from './context/TransitionContext'
-import TransitionComponent from './components/organisms/Transition/Transition'
+// import { TransitionProvider } from './context/TransitionContext'
+// import TransitionComponent from './components/organisms/Transition/Transition'
 import ProtectedComponent from './components/molecules/ProtectedComponent/ProtectedComponent'
 
-import { getSessionStorage } from './utils/tools'
-
 import './index.scss'
+import BlogView from './pages/BlogView/BlogView'
+import ServicePage from './pages/ServicePage/ServicePage'
+import Blog from './pages/Blog/Blog'
 
 const root = createRoot(document.getElementById('root'))
-
-const isLoggedIn = getSessionStorage('isUserLoggedIn') === true
 
 const router = createBrowserRouter([
   {
@@ -38,90 +36,94 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: (
-          <TransitionComponent>
-            <HomePage />
-          </TransitionComponent>
-        ),
+        element: <HomePage />,
         children: [{ path: 'home', element: <HomePage /> }]
       },
       {
         path: 'contact',
-        element: (
-          <TransitionComponent>
-            <ContactPage />
-          </TransitionComponent>
-        )
-        // lazy: () => import('./components/organisms/ContactSection/ContactSection')
-      },
-      {
-        path: 'services/:category/:serviceName',
-        element: (
-          <TransitionComponent>
-            <ServicePage />
-          </TransitionComponent>
-        )
+        element: <ContactPage />
       },
       {
         path: 'about',
-        element: (
-          <TransitionComponent>
-            <About />
-          </TransitionComponent>
-        )
+        element: <About />
       },
       {
         path: 'sitemap',
-        element: (
-          <TransitionComponent>
-            <Sitemap />
-          </TransitionComponent>
-        )
+        element: <Sitemap />
       },
       {
         path: 'privacy-policy',
-        element: (
-          <TransitionComponent>
-            <PrivacyPolicy />
-          </TransitionComponent>
-        )
+        element: <PrivacyPolicy />
+      },
+      {
+        path: 'services/:category/:serviceName',
+        element: <ServicePage />
       },
       {
         path: 'blog',
         element: (
-          <TransitionComponent>
+          <ProtectedComponent>
             <Blog />
-          </TransitionComponent>
+          </ProtectedComponent>
+        )
+      },
+      {
+        path: 'blog/:service',
+        element: (
+          <ProtectedComponent>
+            <Blog />
+          </ProtectedComponent>
+        )
+      },
+      {
+        path: 'blogView',
+        element: (
+          <ProtectedComponent>
+            <Navigate to="/blog" />
+          </ProtectedComponent>
+        )
+      },
+      {
+        path: 'blogView/:postUrl',
+
+        element: (
+          <ProtectedComponent>
+            <BlogView />
+          </ProtectedComponent>
+        )
+      },
+      {
+        path: 'edit-blog/:postUrl',
+        element: (
+          <ProtectedComponent>
+            <NewBlog />
+          </ProtectedComponent>
         )
       },
       {
         path: 'dashboard',
         element: (
-          <ProtectedComponent isLoggedIn={isLoggedIn}>
-            <TransitionComponent>
-              <Dashboard />
-            </TransitionComponent>
+          <ProtectedComponent>
+            <Dashboard />
           </ProtectedComponent>
         )
       },
       {
         path: 'new-blog',
         element: (
-          <ProtectedComponent isLoggedIn={isLoggedIn}>
-            <TransitionComponent>
-              <NewBlog />
-            </TransitionComponent>
+          <ProtectedComponent>
+            <NewBlog />
           </ProtectedComponent>
         )
       },
-      { path: 'login', element: <LoginPage /> },
+      {
+        path: 'login',
+        element: <LoginPage />
+      },
+
       {
         path: '*',
-        element: (
-          <TransitionComponent>
-            <NotFound />
-          </TransitionComponent>
-        )
+        element: <NotFound />
       }
     ]
   }
@@ -131,9 +133,7 @@ root.render(
   // ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundary>
-      <TransitionProvider>
-        <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
-      </TransitionProvider>
+      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
     </ErrorBoundary>
   </React.StrictMode>
   // document.getElementById('root')

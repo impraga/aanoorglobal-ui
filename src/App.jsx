@@ -12,6 +12,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
 // Importing Other components
 import Header from './components/organisms/Header/Header'
+// import HeaderVersionTwo from './components/organisms/HeaderVersionTwo/HeaderVersionTwo'
 import Footer from './components/organisms/Footer/Footer'
 import HandBar from './components/molecules/HandBar/HandBar'
 

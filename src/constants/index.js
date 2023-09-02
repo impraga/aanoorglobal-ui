@@ -1,3 +1,5 @@
+import { getSessionStorage } from '../utils/tools'
+
 export const testimonial = [
   {
     author: 'TCNOM Engineers',
@@ -51,10 +53,33 @@ export const contactDetails = [
   }
 ]
 
-export const footerOrder = [
+export const serviceOrder = [
   'Startup Centre',
   'Intellectual Property',
   'Registration',
   'Certification',
   'Statuary Compliance'
 ]
+
+export const serviceTemplates = {
+  'startup-center': 'STARTUP_CENTER',
+  'intellectual-property': 'INTELLECTUAL_PROPERTY',
+  registration: 'REGISTRATION',
+  certification: 'CERTIFICATION',
+  'statuary-compliance': 'STATUARY_COMPLIANCE'
+}
+
+export const apiUrl = 'http://localhost:8080/assets/json'
+// export const apiUrl = 'http://project.praga.co.in/api/'
+
+export const apiUri = 'http://localhost/Aanoor/aanoor-server/api'
+
+export const sessionKeys = {
+  userLoggedStatus: 'isUserLoggedIn',
+  authorization: 'Authorization'
+}
+
+export const isKillSwitchDisabled =
+  getSessionStorage('isKillSwitchDisabled') === 'true'
+
+export const isUserLoggedIn = getSessionStorage('isUserLoggedIn') === 'true'
