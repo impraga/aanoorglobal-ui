@@ -46,7 +46,7 @@ const ServiceHeroBanner = ({ title, desc, price, category }) => {
 
 ServiceHeroBanner.propTypes = {
   title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
+  desc: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
   price: PropTypes.shape().isRequired,
   category: PropTypes.string.isRequired
 }

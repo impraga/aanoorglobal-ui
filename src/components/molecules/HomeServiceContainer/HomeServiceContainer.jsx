@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import dotted from '../../../../public/assets/images/circle-dotted.png'
 
 import './HomeServiceContainer.scss'
+import URLs from '../../../constants/urlMapper'
 
 const HomeServiceContainer = ({ service, title }) => (
   <div className="service-cont w-100 p-4 bg-gray br-1">
@@ -44,8 +46,11 @@ const HomeServiceContainer = ({ service, title }) => (
         </div>
       </div>
       <div className="view-btn">
-        <button type="button" className="ag-primary-btn" href={service.url}>
-          View Details
+        <button type="button" className="ag-primary-btn">
+          <Link className="d-block" to={URLs[service.url]}>
+            {' '}
+            View Details
+          </Link>
         </button>
       </div>
     </div>

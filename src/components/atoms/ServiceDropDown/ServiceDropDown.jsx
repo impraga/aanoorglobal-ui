@@ -1,22 +1,34 @@
 import React, { useEffect, useMemo, useState } from 'react'
+import { useLocation } from 'react-router'
 import PropTypes from 'prop-types'
 import { services } from '../../../constants'
-import category from '../../../../public/assets/json/service.json'
+import menuList from '../../../../public/assets/json/menuList.json'
+import URLs from '../../../constants/urlMapper'
 
 import './ServiceDropDown.scss'
 
 const ServiceDropDown = ({ updateValue }) => {
+  const location = useLocation()
   const [selectActive, setSelectActive] = useState(false)
   const [selectedService, setSelectedService] = useState(null)
 
   const serviceCategory = useMemo(() => {
-    const flatCategory = [...services]
-    category.forEach((value) => {
-      value.child.forEach((service) => {
-        flatCategory.push({ title: service.title, url: service.url })
+    const flatCategory = []
+    const menu = [
+      ...menuList.serviceData[0].children,
+      ...menuList.serviceData[1].children
+    ]
+
+    menu.forEach((value) => {
+      value.children.forEach((service) => {
+        flatCategory.push({ title: service.title, url: URLs[service.pageUrl] })
       })
     })
-    setSelectedService(services[0].title)
+
+    setSelectedService(
+      flatCategory.find((d) => d.url === location.pathname)?.title ||
+        services[0].title
+    )
 
     return flatCategory
   }, [])

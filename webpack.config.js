@@ -2,7 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const sassLoader = require('sass')
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const IS_DEV = process.env.NODE_ENV === 'development'
 // const IS_ANALYZE = typeof process.env.BUNDLE_ANALYZE !== 'undefined';
@@ -17,9 +17,8 @@ module.exports = {
   devServer: {
     // port: 8080,
     historyApiFallback: true
-    // contentBase: path.join(__dirname, "public"),
+    // contentBase: './',
     // hot: true
-    // proxy: {}
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx']
@@ -81,10 +80,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.html'),
       filename: 'index.html'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'public/assets', to: 'assets' }]
     })
-    // new CopyWebpackPlugin({
-    //   patterns: [{ from: 'public/json' }],
-    // }),
 
     // new CopyWebpackPlugin({
     //   patterns: [{ from: 'public/mock', to: 'mock' }],

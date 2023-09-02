@@ -31,13 +31,11 @@ const ContactForm = () => {
 
     const url = `${apiUri}/updateContact`
     axios
-      .get(url, {
+      .post(url, JSON.stringify(data), {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
-        },
-        method: 'post',
-        body: JSON.stringify(data)
+        }
       })
       .then((res) => {
         if (res.status === 200) {
@@ -53,12 +51,6 @@ const ContactForm = () => {
         console.log('error in uploading2')
         setOnSubmitForm('error')
       })
-
-    // setTimeout(() => {
-    //   setTimeout(() => {
-    //     setOnSubmitForm('empty')
-    //   }, 2000)
-    // }, 5000)
   }
 
   return (

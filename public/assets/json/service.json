@@ -12,7 +12,7 @@
           "value": "1,800",
           "note": "with in *5 working days"
         },
-        "url": "/services/sole-proprietorship",
+        "url": "soleProprietorship",
         "includes": [
           "Udyam Registration",
           "GST Registration",
@@ -33,7 +33,7 @@
           "value": "6,300",
           "note": "with in *10 working days"
         },
-        "url": "/services/name",
+        "url": "onePersonCompany",
         "includes": [
           "Certificate of Incorporation",
           "Memorandum & Articles",
@@ -55,7 +55,7 @@
           "value": "7,200",
           "note": "with in *10 working days"
         },
-        "url": "/services/name",
+        "url": "privateLimitedCompany",
         "includes": [
           "Certificate of Incorporation",
           "Memorandum & Articles",
@@ -85,7 +85,7 @@
           "value": "6,300",
           "note": "with in *5 working days"
         },
-        "url": "/services/name",
+        "url": "trademarkRegistration",
         "includes": [
           "Form TM-A",
           "PoA & User Affidavit Copy",
@@ -107,7 +107,7 @@
           "value": "9,900",
           "note": "with in *5 working days"
         },
-        "url": "/services/name",
+        "url": "copyrightRegistration",
         "includes": [
           "Consultation and Guidance",
           "Application Drafting and Filing",
@@ -130,7 +130,7 @@
           "value": "",
           "note": ""
         },
-        "url": "/services/name",
+        "url": "patentRegistration",
         "includes": [
           "Application drafting",
           "Prior Art Search",
@@ -161,7 +161,7 @@
           "value": "1,800",
           "note": "with in *5 working days"
         },
-        "url": "/services/name",
+        "url": "gstRegistration",
         "includes": [
           "GST Certificate",
           "Consultation and Guidance",
@@ -183,7 +183,7 @@
           "value": "14,500",
           "note": "with in *10 working days"
         },
-        "url": "/services/name",
+        "url": "ngoRegistration",
         "includes": [
           "Registered Documents",
           "Deed of the Trust",
@@ -206,7 +206,7 @@
           "value": "2,500",
           "note": "with in *5 working days"
         },
-        "url": "/services/name",
+        "url": "importExportCode",
         "includes": [
           "Import & Export License",
           "DGFT Portal Credentials",
@@ -234,7 +234,7 @@
           "value": "11,700",
           "note": ""
         },
-        "url": "/services/name",
+        "url": "iso2015",
         "includes": [],
         "benefits": [
           "Continuous improvement & Customer satisfaction",
@@ -251,7 +251,7 @@
           "value": "",
           "note": ""
         },
-        "url": "/services/name",
+        "url": "iso22000",
         "includes": [],
         "benefits": [
           "Improved food safety",
@@ -268,7 +268,7 @@
           "value": "",
           "note": ""
         },
-        "url": "/services/name",
+        "url": "iso45001",
         "includes": [],
         "benefits": [
           "Improves workplace safety.",
@@ -293,7 +293,7 @@
           "value": "",
           "note": ""
         },
-        "url": "/services/name",
+        "url": "bookKeeping",
         "includes": [],
         "benefits": [
           "Track your income and expenses.",
@@ -310,7 +310,7 @@
           "value": "",
           "note": ""
         },
-        "url": "/services/name",
+        "url": "incometaxFilling",
         "includes": [],
         "benefits": [
           "Plan your finances for the future.",
@@ -327,7 +327,7 @@
           "value": "",
           "note": ""
         },
-        "url": "/services/name",
+        "url": "gstFilling",
         "includes": [],
         "benefits": [
           "Reduced compliance burden.",

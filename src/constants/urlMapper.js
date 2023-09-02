@@ -64,4 +64,14 @@ const URLs = {
   businessLoan: '/services/startup-center/bussiness-funding'
 }
 
+export const nonServiceUrls = [
+  { title: 'Home', pageUrl: '/' },
+  { title: 'Contact Us', pageUrl: '/contact' },
+  { title: 'About', pageUrl: '/about' },
+  {
+    title: 'Privacy policy',
+    pageUrl: '/privacy-policy'
+  }
+]
+
 export default URLs
