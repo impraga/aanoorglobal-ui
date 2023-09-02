@@ -8,9 +8,10 @@ import ServicePageSidePanel from '../../components/molecules/ServicePageSidePane
 import NotFound from '../NotFound/NotFound'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
-import './ServicePage.scss'
-import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
+// import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 import URLs from '../../constants/urlMapper'
+
+import './ServicePage.scss'
 
 const ServicePage = () => {
   const { category } = useParams()
@@ -95,7 +96,7 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
-      <RelatedBlogSection />
+      {/* <RelatedBlogSection /> */}
     </>
   ) : (
     <NotFound />

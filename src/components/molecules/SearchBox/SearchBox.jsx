@@ -11,7 +11,12 @@ const SearchBox = () => {
   // Maniplating the category data for search results
   const serviceCategory = useMemo(() => {
     const flatCategory = []
-    menuList.serviceData.forEach((value) => {
+    const menus = [
+      ...menuList.serviceData[0].children,
+      ...menuList.serviceData[1].children
+    ]
+
+    menus.forEach((value) => {
       value.children.forEach((service) => {
         flatCategory.push({ ...service, category: value.title })
       })
