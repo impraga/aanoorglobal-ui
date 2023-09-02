@@ -53,12 +53,6 @@ const ContactForm = () => {
         console.log('error in uploading2')
         setOnSubmitForm('error')
       })
-
-    // setTimeout(() => {
-    //   setTimeout(() => {
-    //     setOnSubmitForm('empty')
-    //   }, 2000)
-    // }, 5000)
   }
 
   return (
