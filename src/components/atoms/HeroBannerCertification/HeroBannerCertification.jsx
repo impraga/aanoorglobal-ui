@@ -75,20 +75,20 @@ const HeroBannerCertification = ({ title, desc, price }) => (
           </div>
         </div>
       </div>
-      {/* <div
+      <div
         className="container hero-text-cont text-white mb-md-5 mb-3 overflow-hidden"
         data-aos="fade-up"
         data-aos-delay="150"
       >
         <div className="row">
           <div className="col-md-8 px-0 title-cont my-2 my-md-0">
-            <h1
+            {/* <h1
               className="text-white mt-5"
               data-aos="fade-up"
               data-aos-delay="200"
             >
               {title}
-            </h1>
+            </h1> */}
             <p className="mb-0" data-aos="fade-up" data-aos-delay="250">
               {desc}
             </p>
@@ -111,8 +111,8 @@ const HeroBannerCertification = ({ title, desc, price }) => (
               </p>
             </div>
           )}
-        </div> 
-      </div> */}
+        </div>
+      </div>
     </div>
     {/* <div className="IntellectualProperty-bg">
       <img src={IntellectualProperty} alt="decorative" />
@@ -122,7 +122,7 @@ const HeroBannerCertification = ({ title, desc, price }) => (
 
 HeroBannerCertification.propTypes = {
   title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
+  desc: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
   price: PropTypes.shape().isRequired
 }
 

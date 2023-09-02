@@ -31,13 +31,11 @@ const ContactForm = () => {
 
     const url = `${apiUri}/updateContact`
     axios
-      .get(url, {
+      .post(url, JSON.stringify(data), {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
-        },
-        method: 'post',
-        body: JSON.stringify(data)
+        }
       })
       .then((res) => {
         if (res.status === 200) {

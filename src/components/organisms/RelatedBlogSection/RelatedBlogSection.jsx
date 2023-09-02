@@ -9,8 +9,8 @@ const RelatedBlogSection = () => {
   const [blogList, setBlogList] = useState([])
 
   useEffect(() => {
-    // axios.get(`${apiUri}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
-    axios.get('/assets/json/api-mock-related.json').then(({ data }) => {
+    axios.get(`${apiUri}/moreBlogInfo?url=${apiUri}`).then(({ data }) => {
+      // axios.get('/assets/json/api-mock-related.json').then(({ data }) => {
       if (data.message.length > 0 && data.status === '200') {
         setBlogList(data.message)
       }
