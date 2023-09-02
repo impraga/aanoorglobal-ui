@@ -470,23 +470,23 @@
           "subHeading": "",
           "steps": [
             {
-              "heading": "",
+              "heading": "Login",
               "desc": "Need to create a Login in DGFT"
             },
             {
-              "heading": "",
+              "heading": "Application submission",
               "desc": "After Login creation, Need to fill the Online Form"
             },
             {
-              "heading": "",
+              "heading": "Verify using Digital signature",
               "desc": "After Online form Filled need to process Aadhaar Sign or Digital Signature sign to Submit the application"
             },
             {
-              "heading": "",
+              "heading": "Payment",
               "desc": "After Successful Signing, the payment page is reflected."
             },
             {
-              "heading": "",
+              "heading": "Issuance",
               "desc": "Once Payment is made, the documents will be verified and Certificate will be issued."
             }
           ]
@@ -603,7 +603,7 @@
         }
       },
       {
-        "id": "Benefits",
+        "id": "Benefits1",
         "header": "Important aspects of Trust/NGO",
         "desc": "",
         "type": "SPBenefits",
@@ -899,7 +899,6 @@
           "Partnership deed or registration certificate (for companies)",
           "List of employees working in the establishment",
           "Employees' compensation details",
-          "List of company directors",
           "Register of employee attendance",
           "Registration certificate under the shop and establishment act, factories act",
           "MoA and AoA of the company",
@@ -1312,31 +1311,31 @@
           "subHeading": "The registration procedure for shops and establishments under the Shop and Establishment Act typically involves the following:",
           "steps": [
             {
-              "heading": "",
+              "heading": "Apply",
               "desc": "Obtain an application form from the Labour Department in the state where the business is located or apply for license through online in labour department portal."
             },
             {
-              "heading": "",
+              "heading": "Complete",
               "desc": "Complete the application form and provide all required information."
             },
             {
-              "heading": "",
+              "heading": "Payment",
               "desc": "Pay the registration fee. The fee for Shop and Establishment act registration is based on the number of workers working in the enterprise."
             },
             {
-              "heading": "",
+              "heading": "Submission",
               "desc": "Submit the application form and payment to the Labour Department."
             },
             {
-              "heading": "",
+              "heading": "Approval",
               "desc": "Wait for approval of the application."
             },
             {
-              "heading": "",
+              "heading": "Certificate",
               "desc": "Receive the registration certificate from the Labour Department."
             },
             {
-              "heading": "",
+              "heading": "Renewal",
               "desc": "The registration certificate of Shop and establishment act need to be displayed prominently at the established and should be periodically renewed. In case the occupier or the employer is closing the business, then they should notify the district labor workers regarding closing so that the inspector will cancel the registration provided under the shop and establishment act."
             }
           ]
@@ -1695,26 +1694,26 @@
           "subHeading": "Follow the below steps for the successful Factory Registration. ",
           "steps": [
             {
-              "heading": "",
+              "heading": "Offline application",
               "desc": "The Application for a Fire License needs to be provided to the Divisional Fire Officer, who is in every district headquarters in the specified format. "
             },
             {
-              "heading": "",
-              "desc": "The application forms are available in every fire station (300) in the divisional and state offices. It is also on the website and therefore can be downloaded from the site.  "
+              "heading": "Online application",
+              "desc": "The application forms are available in every fire station (300) in the divisional and state offices. It is also on the website and therefore can be downloaded from the site."
             },
             {
-              "heading": "",
+              "heading": "Application submission",
               "desc": "Once you fill in the application form, it can be provided to the nearest fire station of you or else you can directly send the application form to the divisional fire officer. "
             },
             {
-              "heading": "",
+              "heading": "Application approval",
               "desc": "Once the divisional fire officer approves the license, the fire license will be provided within 15 days of the application being sent. "
             }
           ]
         }
       },
       {
-        "id": "overview",
+        "id": "certificate-provided",
         "header": "When fire occurrence certificate if provided?",
         "type": "SPParagraph",
         "value": [
@@ -1935,23 +1934,23 @@
           "subHeading": "",
           "steps": [
             {
-              "heading": "",
+              "heading": "Documents",
               "desc": "Share require documents along with contact details to Aanoor team."
             },
             {
-              "heading": "",
+              "heading": "Filing & Submission",
               "desc": "We file online application with RA portal by verifying OTP details provided by the applicant."
             },
             {
-              "heading": "",
+              "heading": "Video verification",
               "desc": "Get the video verification link and should be submitted with due verification with the documents by the applicant."
             },
             {
-              "heading": "",
+              "heading": "DSC issuance",
               "desc": "After verification by DSC Certifying authority the Digital Signature Certificate will be issued."
             },
             {
-              "heading": "",
+              "heading": "Procure DSC",
               "desc": "DSC certificate will be downloaded with password as prescribed USB tokens. The same will be used for Signing with the DSC."
             }
           ]

@@ -24,8 +24,9 @@ const ServiceDropDown = ({ updateValue }) => {
         flatCategory.push({ title: service.title, url: URLs[service.pageUrl] })
       })
     })
+
     setSelectedService(
-      flatCategory.find((d) => d.url === location.pathname).title ||
+      flatCategory.find((d) => d.url === location.pathname)?.title ||
         services[0].title
     )
 
