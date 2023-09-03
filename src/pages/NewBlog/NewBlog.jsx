@@ -3,8 +3,9 @@ import axios from 'axios'
 
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 import BlogForm from '../../components/organisms/BlogForm/BlogForm'
-import { apiUri, sessionKeys } from '../../constants'
+import { sessionKeys } from '../../constants'
 import { getSessionStorage } from '../../utils/tools'
+import getEnvUrl from '../../constants/envUrl'
 
 // import './.scss'
 
@@ -23,7 +24,7 @@ const NewBlog = () => {
 
   useEffect(() => {
     axios
-      .get(`${apiUri}/editBlog?id=${editId}`, {
+      .get(`${getEnvUrl}/editBlog?id=${editId}`, {
         headers: {
           Authorization: getSessionStorage(sessionKeys.authorization)
         }

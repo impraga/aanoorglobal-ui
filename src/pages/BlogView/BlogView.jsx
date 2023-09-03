@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import * as DOMPurify from 'dompurify'
 import axios from 'axios'
-import { apiUri } from '../../constants/index'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 import tagIcon from '../../../public/assets/icons/tag.svg'
@@ -9,6 +8,7 @@ import blogFb from '../../../public/assets/icons/blog-fb.png'
 import blogWhatsapp from '../../../public/assets/icons/blog-whatsapp.png'
 import './BlogView.scss'
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
+import getEnvUrl from '../../constants/envUrl'
 
 const metaDetails = {
   title: 'Blog | Annoor Global',
@@ -25,7 +25,7 @@ const BlogView = () => {
   const cleanHTML = DOMPurify.sanitize(blogList.content)
 
   useEffect(() => {
-    axios.get(`${apiUri}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
+    axios.get(`${getEnvUrl}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
       // axios.get('/assets/json/api-mock-blogView.json').then(({ data }) => {
       if (data.message.length > 0 && data.status === '200') {
         setBlogList(data.message[0])

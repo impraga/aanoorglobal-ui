@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { apiUri } from '../../../constants/index'
 
 import './RelatedBlogSection.scss'
 import BlogThumbnail from '../../atoms/BlogThumbnail/BlogThumbnail'
+import getEnvUrl from '../../../constants/envUrl'
 
 const RelatedBlogSection = () => {
   const [blogList, setBlogList] = useState([])
 
   useEffect(() => {
-    axios.get(`${apiUri}/moreBlogInfo?url=${apiUri}`).then(({ data }) => {
+    axios.get(`${getEnvUrl}/moreBlogInfo?url=`).then(({ data }) => {
       // axios.get('/assets/json/api-mock-related.json').then(({ data }) => {
       if (data.message.length > 0 && data.status === '200') {
         setBlogList(data.message)

@@ -6,12 +6,13 @@ import { useNavigate } from 'react-router-dom'
 
 import './DashboardTable.scss'
 import axios from 'axios'
-import { apiUri, sessionKeys } from '../../../constants'
+import { sessionKeys } from '../../../constants'
 import { getSessionStorage } from '../../../utils/tools'
 
 import editImage from '../../../../public/assets/icons/edit-button.png'
 import viewImage from '../../../../public/assets/icons/view-button.png'
 import deleteImage from '../../../../public/assets/icons/delete-button.png'
+import getEnvUrl from '../../../constants/envUrl'
 
 const DashboardTable = ({ blogListInput, updateBlog }) => {
   const navigate = useNavigate()
@@ -59,7 +60,7 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
 
   const deletePost = (id) => {
     axios
-      .post(`${apiUri}/deletePost`, JSON.stringify({ id }), {
+      .post(`${getEnvUrl}/deletePost`, JSON.stringify({ id }), {
         headers: {
           Authorization: getSessionStorage(sessionKeys.authorization)
         }

@@ -1,16 +1,17 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-console */
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import { FormProvider, useForm } from 'react-hook-form'
 import axios from 'axios'
 
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
-import { apiUri } from '../../../constants'
+import getEnvUrl from '../../../constants/envUrl'
 
 import './ContactForm.scss'
 
-const ContactForm = () => {
+const ContactForm = ({ hideMessage }) => {
   const [onSubmitForm, setOnSubmitForm] = useState('empty')
   const methods = useForm()
 
@@ -29,7 +30,7 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     setOnSubmitForm('onclick')
 
-    const url = `${apiUri}/updateContact`
+    const url = `${getEnvUrl}/updateContact`
     axios
       .post(url, JSON.stringify(data), {
         headers: {
@@ -38,7 +39,7 @@ const ContactForm = () => {
         }
       })
       .then((res) => {
-        if (res.status === 200) {
+        if (res.data.status === '200') {
           console.log('contact added')
           reset()
           setOnSubmitForm('Validated')
@@ -158,24 +159,26 @@ const ContactForm = () => {
                       <ServiceDropDown updateValue={updateServiceValue} />
                     </div>
                   </div>
-                  <div className="row">
-                    <div
-                      className="col-12"
-                      data-aos="fade-up"
-                      data-aos-delay="250"
-                    >
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="3"
-                        placeholder="Message"
-                        // eslint-disable-next-line react/jsx-props-no-spreading
-                        {...register('message', {
-                          required: false
-                        })}
-                      />
+                  {!hideMessage && (
+                    <div className="row">
+                      <div
+                        className="col-12"
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                      >
+                        <textarea
+                          id="message"
+                          name="message"
+                          rows="5"
+                          placeholder="Message"
+                          // eslint-disable-next-line react/jsx-props-no-spreading
+                          {...register('message', {
+                            required: false
+                          })}
+                        />
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
 
                 <div className="row">
@@ -211,9 +214,12 @@ const ContactForm = () => {
   )
 }
 
-// ServiceCategory.propTypes = {
-//   service: PropTypes.shape().isRequired,
-//   selectedCategory: PropTypes.string.isRequired
-// }
+ContactForm.propTypes = {
+  hideMessage: PropTypes.bool
+}
+
+ContactForm.defaultProps = {
+  hideMessage: false
+}
 
 export default ContactForm

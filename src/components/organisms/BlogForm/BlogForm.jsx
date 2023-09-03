@@ -7,9 +7,10 @@ import axios from 'axios'
 import RichTextEditor from '../../molecules/RichTextEditor/RichTextEditor'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
 import { getSessionStorage } from '../../../utils/tools'
-import { apiUri, sessionKeys } from '../../../constants'
+import { sessionKeys } from '../../../constants'
 
 import './BlogForm.scss'
+import getEnvUrl from '../../../constants/envUrl'
 
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
@@ -51,7 +52,7 @@ const BlogForm = ({ edit, blogDetails }) => {
     }
     formData.append('postData', JSON.stringify(dd))
 
-    const url = edit ? `${apiUri}/updatePost` : `${apiUri}/createPost`
+    const url = edit ? `${getEnvUrl}/updatePost` : `${getEnvUrl}/createPost`
     axios
       .post(url, formData, {
         headers: {
