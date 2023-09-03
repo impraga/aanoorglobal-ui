@@ -3,11 +3,12 @@ import axios from 'axios'
 
 import { Link, useParams } from 'react-router-dom'
 import './Blog.scss'
-import { serviceOrder, apiUri } from '../../constants'
+import { serviceOrder } from '../../constants'
 
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 import BlogThumbnail from '../../components/atoms/BlogThumbnail/BlogThumbnail'
 import BlogHeroBanner from '../../components/organisms/BlogHeroBanner/BlogHeroBanner'
+import getEnvUrl from '../../constants/envUrl'
 
 const metaDetails = {
   title: 'Blog | Annoor Global',
@@ -26,7 +27,7 @@ const Blog = () => {
   // BlogList API Call
   useEffect(() => {
     setBlogList([])
-    axios.get(`${apiUri}/getBlogLists`).then(({ data }) => {
+    axios.get(`${getEnvUrl}/getBlogLists`).then(({ data }) => {
       // Only for Data mocking - Remove Below line
       // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
       if (data.message.length > 0 && data.status === '200') {

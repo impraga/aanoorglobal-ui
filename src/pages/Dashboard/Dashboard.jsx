@@ -6,9 +6,10 @@ import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 // import DashboardMetrics from '../../components/atoms/DashboardMetrics/DashboardMetrics'
 import DashboardTable from '../../components/atoms/DashboardTable/DashboardTable'
 import { getSessionStorage } from '../../utils/tools'
-import { apiUri, sessionKeys } from '../../constants'
+import { sessionKeys } from '../../constants'
 
 import './Dashboard.scss'
+import getEnvUrl from '../../constants/envUrl'
 
 const metaDetails = {
   title: 'Dashboard | Annoor Global',
@@ -34,7 +35,7 @@ const Dashboard = () => {
 
   const getBlog = () => {
     axios
-      .get(`${apiUri}/getBlogLists`, {
+      .get(`${getEnvUrl}/getBlogLists`, {
         // .get('/assets/json/api-mock-bloglist.json', {
         headers: {
           Authorization: getSessionStorage(sessionKeys.authorization)

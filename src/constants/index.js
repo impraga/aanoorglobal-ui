@@ -69,15 +69,6 @@ export const serviceTemplates = {
   'statuary-compliance': 'STATUARY_COMPLIANCE'
 }
 
-export const apiUrl = 'http://localhost:8080/assets/json'
-// export const apiUrl = 'http://project.praga.co.in/api/'
-
-const isLocalhost = false
-
-export const apiUri = isLocalhost
-  ? 'http://localhost/Aanoor/aanoor-server/api'
-  : 'https://uat.roonaa.com/api'
-
 export const sessionKeys = {
   userLoggedStatus: 'isUserLoggedIn',
   authorization: 'Authorization'
