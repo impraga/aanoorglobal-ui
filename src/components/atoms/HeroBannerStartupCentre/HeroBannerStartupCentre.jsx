@@ -16,24 +16,36 @@ const HeroBannerStartupCentre = ({ title, desc, price }) => (
       <div className="centre">
         <span className="bebas text-white">centre</span>
       </div> */}
-      <div className="bg-img-cont">
+      <div className="bg-img-cont" data-aos="zoom-in-up" data-aos-delay="100">
         <img src={startup} alt="Design" />
       </div>
     </div>
     <div className="container hero-text-cont text-white pb-5 mb-5">
       <div className="row">
-        <div className="col-md-8 title-cont my-4 my-md-0">
-          <h1>{title}</h1>
-          <p>{desc}</p>
+        <div className="col-md-8 title-cont my-4 my-md-0 overflow-hidden">
+          <h1 data-aos="fade-left" data-aos-delay="150">
+            {title}
+          </h1>
+          <p data-aos="fade-left" data-aos-delay="250">
+            {desc}
+          </p>
         </div>
         {price.isAvailable && (
-          <div className="col-md-4 price-cont text-start text-md-end mb-0 mb-md-0">
-            <p className="just mb-0">Just</p>
-            <p className="price bebas mb-0">
+          <div className="col-md-4 price-cont text-start text-md-end mb-0 mb-md-0 overflow-hidden">
+            <p className="just mb-0" data-aos="fade-left" data-aos-delay="300">
+              Just
+            </p>
+            <p
+              className="price bebas mb-0"
+              data-aos="fade-left"
+              data-aos-delay="350"
+            >
               <span className="text-green">₹ </span>
               {price.value}
             </p>
-            <p className="note">{price.note}</p>
+            <p className="note" data-aos="fade-left" data-aos-delay="400">
+              {price.note}
+            </p>
           </div>
         )}
       </div>

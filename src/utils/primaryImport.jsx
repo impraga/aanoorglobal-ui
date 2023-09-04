@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 // importing aos
@@ -28,3 +28,4 @@ const PrimaryImport = () => {
     })
   }, [])
 }
+export default PrimaryImport

@@ -1,14 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
-
-import { useLocation } from 'react-router-dom'
-
-// importing aos
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-// Importing GSAP for animation
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+import React from 'react'
 
 import './LandingPage.scss'
 
@@ -19,25 +9,9 @@ import ContactForm from '../../components/molecules/ContactForm/ContactForm'
 import ContactSection from '../../components/organisms/ContactSection/ContactSection'
 import LandingHeader from '../../components/atoms/LandingHeader/LandingHeader'
 import SPAccordion from '../../components/atoms/SPAccordion/SPAccordion'
+import PrimaryImport from '../../utils/primaryImport'
 
 const LandingPage = () => {
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
-  const location = useLocation()
-  // Scroll to top if path changes
-  useLayoutEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-  }, [location.pathname])
-
-  // AOS Animation
-  useEffect(() => {
-    AOS.init({
-      duration: 400,
-      offset: 80,
-      useClassNames: false,
-      once: true
-    })
-  }, [])
-
   // Sample data - will replace later
   const benefitsData = {
     id: 'benefits',
@@ -89,6 +63,7 @@ const LandingPage = () => {
 
   return (
     <>
+      <PrimaryImport />
       <LandingHeader />
       <div className="landing-page-cont bg-gray">
         <div className="lp-herobanner position-relative">

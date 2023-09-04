@@ -102,27 +102,30 @@
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
   .statuary-hero-banner-cont {
+    .hero-text-cont {
+      padding: 6.5rem 10px 50px 10px;
+    }
     .banner-holder {
       .title-cont {
         font-size: 6rem;
       }
-      .decorative-img {
-        .shield {
-          top: 10%;
-          left: 40%;
-        }
-        .file {
-          top: 40%;
-          left: 5%;
-        }
-        .hammer {
-          top: 30%;
-          right: 5%;
-        }
-        .correct {
-          top: 80%;
-          left: 60%;
-        }
+    }
+    .decorative-img {
+      .shield {
+        top: 10%;
+        left: 40%;
+      }
+      .file {
+        top: 40%;
+        left: 5%;
+      }
+      .hammer {
+        top: 30%;
+        right: 5%;
+      }
+      .correct {
+        top: 80%;
+        left: 60%;
       }
     }
   }
@@ -130,6 +133,9 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   .statuary-hero-banner-cont {
+    .hero-text-cont {
+      padding: 5.5rem 10px 50px 10px;
+    }
     .banner-holder {
       .title-cont {
         font-size: 5.8rem;
@@ -171,6 +177,9 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .statuary-hero-banner-cont {
+    .hero-text-cont {
+      padding: 4rem 10px 50px 10px;
+    }
     .banner-holder {
       .title-cont {
         font-size: 4.5rem;
