@@ -26,6 +26,7 @@ import './index.scss'
 import BlogView from './pages/BlogView/BlogView'
 import ServicePage from './pages/ServicePage/ServicePage'
 import Blog from './pages/Blog/Blog'
+import LandingPage from './pages/LandingPage/LandingPage'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -126,6 +127,11 @@ const router = createBrowserRouter([
         element: <NotFound />
       }
     ]
+  },
+  {
+    element: <LandingPage />,
+    errorElement: <NotFound />,
+    path: 'landing-page'
   }
 ])
 

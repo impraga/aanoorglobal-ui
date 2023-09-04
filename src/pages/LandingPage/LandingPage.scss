@@ -1,0 +1,133 @@
+@import '../../index.scss';
+
+.lp-footer {
+  height: 70px;
+}
+.landing-page-cont {
+  padding-top: 70px;
+  .lp-herobanner {
+    min-height: 400px;
+    .lp-hero-cont {
+      z-index: 1;
+      position: relative;
+      .lp-hero-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        h1 {
+          font-weight: 600;
+        }
+        div {
+          overflow: visible;
+        }
+        .benefits-cont {
+          padding: 0;
+          margin-bottom: 0 !important;
+          li {
+            background-color: white;
+            width: fit-content;
+            box-shadow: $ag-box-shadow;
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+      .lp-contact-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .contform-cont {
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: $ag-box-shadow;
+          height: auto;
+          width: 100%;
+          padding-top: 20px;
+          position: relative;
+          overflow: visible;
+          .row {
+            min-height: 0 !important;
+          }
+        }
+      }
+    }
+    .lp-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      max-width: 450px;
+      background-color: $ag-darkblue;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .aanoor-a-logo {
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+    }
+  }
+  .lp-price {
+    min-height: 90px;
+    position: relative;
+    background: linear-gradient(91deg, #9fdb0e 17.85%, #c4fc3d 90.73%);
+    flex-wrap: wrap;
+    .text {
+      font-weight: 600;
+    }
+    .price {
+      font-size: 3rem;
+    }
+    .lp-hr {
+      width: 200px;
+      height: 2px;
+      background-color: $ag-darkblue;
+      opacity: 1;
+    }
+  }
+
+  .lg-accordion-cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .accordion-cont {
+      margin-bottom: 0 !important;
+      background-color: white;
+      border-radius: 20px;
+      padding-bottom: 5px !important;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .landing-page-cont {
+    .lp-herobanner {
+      .lp-bg {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: auto;
+        height: auto;
+        max-height: 300px;
+        width: 100vw;
+        max-width: none;
+        img {
+          width: auto;
+          height: 100%;
+          transform: rotateZ(90deg);
+          float: right;
+        }
+      }
+      .aanoor-a-logo {
+        position: absolute;
+        bottom: auto;
+        top: 10%;
+        left: auto;
+        right: 20px;
+      }
+    }
+  }
+}
