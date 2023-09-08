@@ -59,7 +59,7 @@ const Dashboard = () => {
         <div className="d-cont px-2 py-5 mt-5 position-relative">
           <div className="d-flex align-items-end justify-content-center justify-content-lg-end w-100">
             <div className="btn-cont d-flex flex-column ">
-              <Link to="/new-blog">
+              <Link to="/admin/new-blog">
                 <div className="create-btn bg-green text-white br-1">
                   Create New Blog
                 </div>
