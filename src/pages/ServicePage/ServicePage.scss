@@ -27,9 +27,9 @@ h3 {
         // padding-left: .75rem !important;
         // padding-right: .75rem !important;
         width: 100%;
-        .container {
-          // max-width: 1375px !important;
-        }
+        // .container {
+        // max-width: 1375px !important;
+        // }
         &:last-child {
           margin-bottom: 0 !important;
         }
@@ -85,7 +85,7 @@ h3 {
 }
 .service-page-cont.registration,
 .service-page-cont.certification,
-.service-page-cont.statuary-compliance {
+.service-page-cont.statutory-compliance {
   background-color: $ag-darkblue;
   .serivce-details-cont {
     margin-top: 0px !important;
@@ -98,14 +98,14 @@ h3 {
           padding-left: 0.75rem !important;
           padding-right: 0.75rem !important;
         }
-        &.SPParagraph.overview {
-          // flex: 0 0 auto;
-          // width: 66.66666667%;
-        }
-        &.SPIncludes.includes {
-          // flex: 0 0 auto;
-          // width: 33.33333333%;
-        }
+        // &.SPParagraph.overview {
+        // flex: 0 0 auto;
+        // width: 66.66666667%;
+        // }
+        // &.SPIncludes.includes {
+        // flex: 0 0 auto;
+        // width: 33.33333333%;
+        // }
         &.SPParagraph,
         &.SPIncludes {
           background-color: $ag-gray;
@@ -122,7 +122,7 @@ h3 {
     }
   }
 }
-.service-page-cont.statuary-compliance {
+.service-page-cont.statutory-compliance {
   .serivce-details-cont {
     .service-content-cont {
       .component-cont {

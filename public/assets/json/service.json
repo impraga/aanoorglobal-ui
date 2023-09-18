@@ -1,7 +1,7 @@
 [
   {
     "category": "Startup Centre",
-    "serviceCount": "12 Services available",
+    "serviceCount": "10 Services available",
     "imgUrl": "startup.png",
     "colorCode": "bg-lb",
     "child": [
@@ -13,11 +13,7 @@
           "note": "with in *5 working days"
         },
         "url": "soleProprietorship",
-        "includes": [
-          "Udyam Registration",
-          "GST Registration",
-          "Shop & Establishment"
-        ],
+        "includes": ["Udyam Registration", "GST Registration"],
         "benefits": [
           "One person required.",
           "Easy to start and close.",
@@ -74,7 +70,7 @@
   },
   {
     "category": "Intellectual Property",
-    "serviceCount": "8 Services available",
+    "serviceCount": "7 Services available",
     "imgUrl": "property.png",
     "colorCode": "bg-green",
     "child": [
@@ -150,7 +146,7 @@
   },
   {
     "category": "Registration & Liaison Works",
-    "serviceCount": "6 Services available",
+    "serviceCount": "18 Services available",
     "imgUrl": "registration.png",
     "colorCode": "bg-orange",
     "child": [
@@ -223,7 +219,7 @@
   },
   {
     "category": "Certification & SEC Audits",
-    "serviceCount": "10 Services available",
+    "serviceCount": "7 Services available",
     "imgUrl": "certificate.png",
     "colorCode": "bg-purple",
     "child": [
@@ -282,7 +278,7 @@
   },
   {
     "category": "Statutory Compliance",
-    "serviceCount": "4 Services available",
+    "serviceCount": "5 Services available",
     "imgUrl": "statutory.png",
     "colorCode": "bg-red",
     "child": [

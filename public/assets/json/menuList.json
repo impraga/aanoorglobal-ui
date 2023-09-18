@@ -19,6 +19,14 @@
               ]
             },
             {
+              "pageUrl": "onePersonCompany",
+              "title": "One Person Company",
+              "className": "second-level",
+              "searchkeyword": [
+                "one person company registration, opc registration online, one man company"
+              ]
+            },
+            {
               "pageUrl": "partnershipFirm",
               "title": "Partnership firm",
               "className": "second-level",
@@ -27,12 +35,10 @@
               ]
             },
             {
-              "pageUrl": "onePersonCompany",
-              "title": "One Person Company",
+              "pageUrl": "limitedLiabilityPartnership",
+              "title": "Limited Liability Partnership",
               "className": "second-level",
-              "searchkeyword": [
-                "one person company registration, opc registration online, one man company"
-              ]
+              "searchkeyword": ["llp, llp firm, llp deed, partnership llp"]
             },
             {
               "pageUrl": "privateLimitedCompany",
@@ -49,12 +55,6 @@
               "searchkeyword": ["limited company, public company registration"]
             },
 
-            {
-              "pageUrl": "limitedLiabilityPartnership",
-              "title": "Limited Liability Partnership",
-              "className": "second-level",
-              "searchkeyword": ["llp, llp firm, llp deed, partnership llp"]
-            },
             {
               "pageUrl": "nidhiCompany",
               "title": "Nidhi Company",
@@ -148,8 +148,8 @@
       "id": "manage",
       "children": [
         {
-          "title": "Statuary Compliance",
-          "id": "statuary-compliance",
+          "title": "Statutory Compliance",
+          "id": "statutory-compliance",
           "icon": "statutory-compliance.svg",
           "className": "first-level",
           "children": [

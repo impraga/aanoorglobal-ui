@@ -1,6 +1,6 @@
 [
   {
-    "title": "Udyam Registration",
+    "title": "Udyam MSME Registration Certificate - Apply Now!",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "title": "Goods & Services Tax (GST)",
+    "title": "GST Filing Registration Company",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -249,25 +249,20 @@
           "subHeading": "",
           "steps": [
             {
-              "heading": "Application submission",
               "desc": "Changes to a GST registration certificate can be made by filing an application with the GST authorities."
             },
 
             {
-              "heading": "Form GST REG-14",
               "desc": "The application must be made in Form GST REG-14."
             },
 
             {
-              "heading": "Approval",
               "desc": "The GST authorities will then verify the application and approve the same."
             },
             {
-              "heading": "Certificate",
               "desc": "GST amended certificate will be generated."
             },
             {
-              "heading": "Completion",
               "desc": "It is important to note that not all changes to a Goods and Services Tax registration certificate can be made reach Aanoor team for more details!"
             }
           ]
@@ -276,7 +271,7 @@
     ]
   },
   {
-    "title": "Food & Catering License",
+    "title": "FSSAI Food & Catering License Registration",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -302,7 +297,8 @@
           "Document Preparation",
           "Application Filing",
           "Eligibility Consultation",
-          "Application Drafting"
+          "Application Drafting",
+          "Government Fees"
         ]
       },
       {
@@ -337,14 +333,14 @@
         "header": "Required documents for FSSAI online in Chennai",
         "type": "SPDocuments",
         "value": [
-          "Authority Letter: This is a letter from the owner of the food business authorizing the person who will be filling out the application form.",
-          "Copy of Rent Agreement:  If the food business is located in a rented premises, you will need to submit a copy of the rent agreement.",
-          "Water or Electricity Bill: This is to prove that the food business is located in a commercial property.",
-          "Form IX: This is a form that nominates a person to be responsible for the food safety management system of the food business.",
-          "Declaration Form: This is a form that declares that the information provided in the application form is true and correct.",
-          "Copy of Property Paper: If the food business is located in a owned premises, you will need to submit a copy of the property papers.",
-          "Food Safety Management Certificate or Plan: This is a certificate or plan that shows that the food business has a food safety management system in place.",
-          "KYC Proofs: Copy of ID proof like Aadhar card of partners, directors, or proprietor: This is to prove the identity of the owners of the food business. In addition to these documents, you may also need to submit other documents depending on the type of food business you are operating. For example, if you are manufacturing food products, you will need to submit a list of machinery and equipment, a pesticide residues report of water, and a layout plan or blueprint of the processing unit."
+          "<b>Authority Letter:</b> This is a letter from the owner of the food business authorizing the person who will be filling out the application form.",
+          "<b>Copy of Rent Agreement:</b> If the food business is located in a rented premises, you will need to submit a copy of the rent agreement.",
+          "<b>Water or Electricity Bill:</b> This is to prove that the food business is located in a commercial property.",
+          "<b>Form IX</b>: This is a form that nominates a person to be responsible for the food safety management system of the food business.",
+          "<b>Declaration Form</b>: This is a form that declares that the information provided in the application form is true and correct.",
+          "<b>Copy of Property Paper</b>: If the food business is located in a owned premises, you will need to submit a copy of the property papers.",
+          "<b>Food Safety Management Certificate or Plan:</b> This is a certificate or plan that shows that the food business has a food safety management system in place.",
+          "<b>KYC Proofs</b>: Copy of ID proof like Aadhar card of partners, directors, or proprietor: This is to prove the identity of the owners of the food business. In addition to these documents, you may also need to submit other documents depending on the type of food business you are operating. For example, if you are manufacturing food products, you will need to submit a list of machinery and equipment, a pesticide residues report of water, and a layout plan or blueprint of the processing unit."
         ]
       },
       {
@@ -383,8 +379,8 @@
       },
       {
         "id": "requirements",
-        "header": "Requirements",
-        "desc": "The requirements for obtaining a catering license vary from state to state, but they typically include the following:",
+        "header": "The requirements for obtaining a catering license vary from state to state, but they typically include the following:",
+        "desc": "",
         "type": "SPBullet",
         "value": [
           "A business license from the local government.",
@@ -397,7 +393,7 @@
     ]
   },
   {
-    "title": "Import Export Code",
+    "title": "Apply Import Export Code Online in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -414,6 +410,21 @@
         "value": "An Import Export Code (IEC) is a 10-digit alpha-numeric code issued by the Directorate General of Foreign Trade (DGFT) in India. It is a mandatory requirement for all entities engaged in import or export of goods or services from India. The IEC code is used to track and regulate all import and export activities in India."
       },
 
+      {
+        "id": "Documents Required",
+        "header": "Documents required for IEC Code Registration",
+        "type": "SPDocuments",
+        "value": [
+          "PAN and Aadhaar Copy of Proprietor/Directors/Partners",
+          "Passport Size Photos of Proprietor/Directors/Partners",
+          "Office Address Proof – EB Bill and Property Tax Receipt or Legal Ownership Document",
+          "Rental Agreement with Commercial Purpose",
+          "Contact Number and Mail ID details of Proprietor/Directors/Partners",
+          "Cancelled Cheque Leaf",
+          "GST Certificate (If applicable)",
+          "Digital Signature (If any)"
+        ]
+      },
       {
         "id": "Benefits",
         "header": "Benefits of registering an Import Export Code (IEC)",
@@ -448,21 +459,6 @@
         ]
       },
       {
-        "id": "Documents Required",
-        "header": "Documents required for IEC Code Registration",
-        "type": "SPDocuments",
-        "value": [
-          "PAN and Aadhaar Copy of Proprietor/Directors/Partners",
-          "Passport Size Photos of Proprietor/Directors/Partners",
-          "Office Address Proof – EB Bill and Property Tax Receipt or Legal Ownership Document",
-          "Rental Agreement with Commercial Purpose",
-          "Contact Number and Mail ID details of Proprietor/Directors/Partners",
-          "Cancelled Cheque Leaf",
-          "GST Certificate (If applicable)",
-          "Digital Signature (If any)"
-        ]
-      },
-      {
         "id": "Steps to register",
         "header": "How to Apply IEC code",
         "type": "SPStep",
@@ -470,23 +466,18 @@
           "subHeading": "",
           "steps": [
             {
-              "heading": "Login",
               "desc": "Need to create a Login in DGFT"
             },
             {
-              "heading": "Application submission",
               "desc": "After Login creation, Need to fill the Online Form"
             },
             {
-              "heading": "Verify using Digital signature",
               "desc": "After Online form Filled need to process Aadhaar Sign or Digital Signature sign to Submit the application"
             },
             {
-              "heading": "Payment",
               "desc": "After Successful Signing, the payment page is reflected."
             },
             {
-              "heading": "Issuance",
               "desc": "Once Payment is made, the documents will be verified and Certificate will be issued."
             }
           ]
@@ -511,7 +502,7 @@
     ]
   },
   {
-    "title": "Trust/NGO Registration",
+    "title": "Charitable Trust, NGO Registration in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -526,6 +517,17 @@
         "header": "What is the Trust Registration?",
         "type": "SPParagraph",
         "value": "Trust is registered and managed by the act of the Indian trust. Trust registration is the process of legally establishing a trust in India. A trust is a legal entity that holds assets for the benefit of a beneficiary or beneficiaries. Trusts can be used for a variety of purposes, such as charitable giving, managing assets for minors, or providing for the elderly."
+      },
+      {
+        "id": "Trust/NGO Registration Includes",
+        "header": "Trust/NGO Registration Includes",
+        "type": "SPIncludes",
+        "value": [
+          "Trust Registration Copy.",
+          "Deed of the Trust.",
+          "Trust PAN Copy.",
+          "Consultation and guidance"
+        ]
       },
       {
         "id": "Benefits",
@@ -642,22 +644,21 @@
         ]
       },
       {
-        "id": "Amendment/Changes in GST",
-        "header": "Amendment/Changes in GST",
-        "desc": "GST certificate amendment for business refer to the changes that can be made to a GST registration certificate. These changes can be made for a variety of reasons, such as:",
+        "id": "Why Aanoor Global for Trust/NGO Registration?",
+        "header": "Why Aanoor Global for Trust/NGO Registration?",
+        "desc": "",
         "type": "SPBullet",
         "value": [
-          "A change in the business name.",
-          "Business location/ address change.",
-          "Business constitution change.",
-          "A change in the type of business.",
-          "A change in the taxable turnover of the business."
+          "Approach us with your ideas.",
+          "We will provide legal and financial perspectives for formation and assist obtaining all the required documents mentioned.",
+          "Online registration of Newly formed Trusts/NGOs",
+          "Expert advice and End to end solutions to all your queries."
         ]
       }
     ]
   },
   {
-    "title": "PAN Registration",
+    "title": "Business PAN Registration",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -740,7 +741,7 @@
     ]
   },
   {
-    "title": "TAN Registration",
+    "title": "TIN Facilitation Centre Registration in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -826,7 +827,7 @@
     ]
   },
   {
-    "title": "Employee State Insurance",
+    "title": "Esi Registration Online in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -933,7 +934,7 @@
     ]
   },
   {
-    "title": "Employee Provident Fund",
+    "title": "PF Filing Online in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1027,7 +1028,7 @@
     ]
   },
   {
-    "title": "HR & Payroll",
+    "title": "Best Hr Consultancy In Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1146,7 +1147,7 @@
     ]
   },
   {
-    "title": "Professional Tax Registration",
+    "title": "Professional Tax Registration in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1230,7 +1231,7 @@
     ]
   },
   {
-    "title": "Shop & Establishment",
+    "title": "Online Shops and Establishment Registration in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1344,7 +1345,7 @@
     ]
   },
   {
-    "title": "Labour Welfare Fund",
+    "title": "Labour Welfare Fund Act in India - LWF Benefits, Contribution",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1408,7 +1409,7 @@
     ]
   },
   {
-    "title": "Labour Contract License",
+    "title": "Registration for Contract labour License",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1513,7 +1514,7 @@
     ]
   },
   {
-    "title": "Factory License",
+    "title": "Factory License Registration in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1653,7 +1654,7 @@
     ]
   },
   {
-    "title": "Fire License",
+    "title": "Fire Extinguisher Certification in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1861,7 +1862,7 @@
     ]
   },
   {
-    "title": "Digital Signature",
+    "title": "Digital Signature and Certifications in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",

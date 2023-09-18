@@ -17,9 +17,9 @@ const TemplateLoader = {
     ),
   CERTIFICATION: () =>
     import('../../atoms/HeroBannerCertification/HeroBannerCertification'),
-  STATUARY_COMPLIANCE: () =>
+  STATUTORY_COMPLIANCE: () =>
     import(
-      '../../atoms/HeroBannerStatuaryCompliance/HeroBannerStatuaryCompliance'
+      '../../atoms/HeroBannerStatutoryCompliance/HeroBannerStatutoryCompliance'
     )
 }
 

@@ -5,11 +5,11 @@ import shield from '../../../../public/assets/icons/shield.svg'
 import file from '../../../../public/assets/icons/file.svg'
 import hammer from '../../../../public/assets/icons/hammer.svg'
 import correct from '../../../../public/assets/icons/correct.svg'
-import heroBg from '../../../../public/assets/images/statuary-compliance-hero-bg.svg'
+import heroBg from '../../../../public/assets/images/statutory-compliance-hero-bg.svg'
 
-import './HeroBannerStatuaryCompliance.scss'
+import './HeroBannerStatutoryCompliance.scss'
 
-const HeroBannerStatuaryCompliance = ({ title, desc, price }) => (
+const HeroBannerStatutoryCompliance = ({ title, desc }) => (
   <div className="statuary-hero-banner-cont d-flex flex-column overflow-hidden position-relative">
     <div>
       <div className="banner-holder position-relative container">
@@ -69,10 +69,9 @@ const HeroBannerStatuaryCompliance = ({ title, desc, price }) => (
   </div>
 )
 
-HeroBannerStatuaryCompliance.propTypes = {
+HeroBannerStatutoryCompliance.propTypes = {
   title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  price: PropTypes.shape().isRequired
+  desc: PropTypes.string.isRequired
 }
 
-export default HeroBannerStatuaryCompliance
+export default HeroBannerStatutoryCompliance
