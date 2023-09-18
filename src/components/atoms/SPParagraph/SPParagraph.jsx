@@ -8,10 +8,10 @@ const SPParagraph = ({ data }) => (
     <h3 data-aos="fade-left">{data.header}</h3>
     {Array.isArray(data.value) ? (
       data.value.map((d, i) => (
-        // eslint-disable-next-line react/no-array-index-key
         <p
           data-aos="fade-left"
           data-aos-delay={i * 50 + 100}
+          // eslint-disable-next-line react/no-array-index-key
           key={`para_${i}`}
           className={i > 0 ? 'mb-0' : 'mb-3'}
         >

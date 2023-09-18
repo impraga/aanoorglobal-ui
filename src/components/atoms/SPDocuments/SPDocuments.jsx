@@ -23,7 +23,7 @@ const SPDocuments = ({ data }) => {
     } else if (category === 'certification') {
       setIsImage(true)
       setDocumentPath(documentCertificate)
-    } else if (category === 'statuary-compliance') {
+    } else if (category === 'statutory-compliance') {
       setIsImage(true)
       setDocumentPath(documentCompliance)
     } else {
@@ -41,7 +41,7 @@ const SPDocuments = ({ data }) => {
         className={`container ${
           category === 'registration' ||
           category === 'certification' ||
-          category === 'statuary-compliance'
+          category === 'statutory-compliance'
             ? 'mt-5 mt-md-0 mb-3'
             : ''
         }`}
@@ -50,7 +50,7 @@ const SPDocuments = ({ data }) => {
           className={`${
             category === 'registration' ||
             category === 'certification' ||
-            category === 'statuary-compliance'
+            category === 'statutory-compliance'
               ? 'row'
               : ''
           }`}
@@ -110,7 +110,7 @@ const SPDocuments = ({ data }) => {
                       data-aos="fade-left"
                       data-aos-delay={index * 50 + 50}
                     >
-                      <li>{list}</li>
+                      <li dangerouslySetInnerHTML={{ __html: list }} />
                       <hr className="" />
                     </div>
                   ))}

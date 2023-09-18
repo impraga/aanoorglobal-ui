@@ -10,14 +10,15 @@ const URLs = {
     '/services/intellectual-property/copyright-registration',
   designrightRegistration:
     '/services/intellectual-property/design-right-registration',
-  patentRegistration: '/services/intellectual-property/patent-registration',
+  patentRegistration:
+    '/services/intellectual-property/patent-application-online',
 
-  // STATUARY COMPLIANCE
-  bookKeeping: '/services/statuary-compliance/book-keeping',
-  incometaxFilling: '/services/statuary-compliance/income-tax-filling',
-  gstFilling: '/services/statuary-compliance/gst-filing',
-  rocannualCompliance: '/services/statuary-compliance/roc-annual-compliance/',
-  tdsReturns: '/services/statuary-compliance/roc-annual-compiance/',
+  // STATUTORY COMPLIANCE
+  bookKeeping: '/services/statutory-compliance/monthly-accounting',
+  incometaxFilling: '/services/statutory-compliance/income-tax-filling',
+  gstFilling: '/services/statutory-compliance/gst-filing-online',
+  rocannualCompliance: '/services/statutory-compliance/roc-annual-filing',
+  tdsReturns: '/services/statutory-compliance/tds-returns',
 
   // CERTIFICATIONS
   iso2015: '/services/certification/iso-9001-2015-qms',
@@ -51,7 +52,7 @@ const URLs = {
 
   // STARTUP CENTER
   soleProprietorship: '/services/startup-center/sole-proprietorship',
-  partnershipFirm: '/services/startup-center/partnership-firm',
+  partnershipFirm: '/services/startup-center/partnership-firm-registration',
   onePersonCompany: '/services/startup-center/opc-registration',
   limitedLiabilityPartnership: '/services/startup-center/llp-registration',
   privateLimitedCompany:

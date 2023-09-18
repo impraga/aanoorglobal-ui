@@ -31,6 +31,52 @@
     }
     .accordion-body {
       color: $ag-blue;
+      ul {
+        margin-bottom: 0 !important;
+        padding-left: 5px !important;
+        li {
+          list-style: none;
+          font-weight: 600;
+          line-height: 1.8;
+          font-size: 1.1rem;
+          &::before {
+            content: '';
+            display: inline-block;
+            height: 18px;
+            width: 27px;
+            background-image: url(./../../../../public/assets/icons/bullet-icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+            margin-top: 9px;
+            margin-bottom: -4px;
+          }
+
+          &::marker {
+            color: $ag-green;
+          }
+        }
+        &.information {
+          li:before {
+            background-image: url(./../../../../public/assets/icons/information.png);
+          }
+        }
+        &.benefits {
+          li:before {
+            background-image: url(./../../../../public/assets/icons/correct.svg);
+          }
+        }
+        &.criteria {
+          li:before {
+            background-image: url(./../../../../public/assets/icons/clipboard.png);
+          }
+        }
+        &.facts {
+          li:before {
+            background-image: url(./../../../../public/assets/icons/facts.svg);
+          }
+        }
+      }
     }
   }
 }

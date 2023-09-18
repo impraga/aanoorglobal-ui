@@ -6,13 +6,23 @@ import './SPAccordion.scss'
 
 const SPAccordion = ({ data }) => (
   <div className="p-2 pb-0 mb-4 accordion-cont container" id={data.id}>
-    <h3 className="mb-3">{data.header}</h3>
+    {data.header && <h3 className="mb-3">{data.header}</h3>}
     <Accordion defaultActiveKey="0">
       {data.value &&
         data.value.map((accordion, index) => (
-          <Accordion.Item key={accordion.heading} eventKey={index}>
+          <Accordion.Item key={(accordion.heading, index)} eventKey={index}>
             <Accordion.Header>{accordion.heading}</Accordion.Header>
-            <Accordion.Body>{accordion.desc}</Accordion.Body>
+            <Accordion.Body>
+              {Array.isArray(accordion.desc) ? (
+                <ul className={accordion?.class}>
+                  {accordion.desc.map((desc, liIndex) => (
+                    <li key={(accordion.desc, liIndex)}>{desc}</li>
+                  ))}
+                </ul>
+              ) : (
+                <div>{accordion.desc}</div>
+              )}
+            </Accordion.Body>
           </Accordion.Item>
         ))}
     </Accordion>

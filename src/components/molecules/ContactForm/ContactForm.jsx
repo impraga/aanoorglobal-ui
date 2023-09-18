@@ -57,14 +57,16 @@ const ContactForm = ({ hideMessage }) => {
   return (
     <div className="container px-0 contform-cont">
       <div className="row w-100 mx-0">
-        <div className="col-md-5 d-md-block d-none left-cont">
-          <div className="artbord-cont bg-db h-100 d-flex flex-column justify-content-center">
-            <div data-aos="fade-up" data-aos-delay="50">
-              Just <span className="text-green">one step away</span>
-              <br /> from connecting
+        {!hideMessage && (
+          <div className="col-md-5 d-md-block d-none left-cont">
+            <div className="artbord-cont bg-db h-100 d-flex flex-column justify-content-center">
+              <div data-aos="fade-up" data-aos-delay="50">
+                Just <span className="text-green">one step away</span>
+                <br /> from connecting
+              </div>
             </div>
           </div>
-        </div>
+        )}
         <div className="col form-cont d-flex flex-column justify-content-center">
           <div className="header-form mt-2" data-aos="fade-up">
             <h1>

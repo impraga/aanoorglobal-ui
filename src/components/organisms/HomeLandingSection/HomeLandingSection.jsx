@@ -53,7 +53,7 @@ const HomeLandingSection = () => {
                     data-aos="fade-up"
                     data-aos-delay="100"
                   >
-                    journey with Aanoor.
+                    journey with Aanoor
                   </span>
                 </h1>
                 <p

@@ -3,7 +3,7 @@
     "metaTitle": "Trademark Registration Online in Chennai |Brand/tm Registration in Chennai",
     "metaDesc": "Get your trademark registration online in Aanoor Global  chennai. One stop solution for your  Brand/tm registration with  most trusted legal documentation portal in Chennai.",
     "metaKeywords": "Trademark Registration,Brand/tm Registration",
-    "title": "Trademark Registration",
+    "title": "Trademark and Logo Registration in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -21,7 +21,7 @@
       },
       {
         "id": "includes",
-        "header": "Includes",
+        "header": "Startup Trademark Registration includes",
         "type": "SPIncludes",
         "value": [
           "Form TM-A",
@@ -91,7 +91,7 @@
         "header": "Documents Required for Company Trademark Registration",
         "type": "SPDocuments",
         "value": [
-          "Filled Basic Information Requirement Document – TMQ shared from Aanor team",
+          "Filled Basic Information Requirement Document – TMQ shared from Aanoor team",
           "Power of Attorney document from applicant.",
           "User Affidavit copy from applicant.",
           "Board resolution for authorized signatory and letter of authorization for companies."
@@ -137,9 +137,9 @@
     "metaTitle": "Trademark Objection Services in Chennai | Trademark Objection Reply in Online",
     "metaDesc": "Get your Trademark objection reply in Aanoor Global with a Professional team with free guidance.Trademark objection services is to protect your visual or word used for your business from other product or service.",
     "metaKeywords": "Trademark Objection Services, Trademark Objection Reply",
-    "title": "Trademark Objection",
+    "title": "Trademark Objection Reply in Chennai",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
@@ -214,9 +214,12 @@
       {
         "id": "Reply Process",
         "header": "TM Objection Reply Process",
-        "desc": "It is important to note that trademark objections are common and do not necessarily mean that your application will be rejected. If you receive an objection, it is important to carefully review the examination report and file a strong reply. With careful preparation, you can overcome most trademark objections and register your trademark. Here is a more detailed explanation of the services included in our trademark objection reply service:",
         "type": "SPStep",
         "value": {
+          "subHeading": [
+            "It is important to note that trademark objections are common and do not necessarily mean that your application will be rejected. If you receive an objection, it is important to carefully review the examination report and file a strong reply. With careful preparation, you can overcome most trademark objections and register your trademark.",
+            "Here is a more detailed explanation of the services included in our trademark objection reply service:"
+          ],
           "steps": [
             {
               "heading": "Object drafting",
@@ -247,7 +250,7 @@
     "metaTitle": "",
     "metaDesc": "",
     "metaKeywords": "",
-    "title": "Trademark Hearing",
+    "title": "Trademark Objection Hearing in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -340,7 +343,7 @@
     "metaTitle": "Trademark Renewal Online in Chennai | Apply for Renew Trademark Registration Chennai",
     "metaDesc": "Trademark Renewal online we have expert team to guide you with quick process.Trademark should be Renew for every ten years. We are the best in this service for more details call us!",
     "metaKeywords": "Trademark Renewal , Renew Trademark Registration ",
-    "title": "TM Renewal",
+    "title": "Renewal of Trademark Registration in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -432,7 +435,7 @@
     "metaTitle": "Online Copyright Registration in Chennai | File Register Copyright in Chennai",
     "metaDesc": "Online Copyright Registration is to check company name and LLP name in the Trademark database and verify the account.File Register Copyright we have a best legal team to advice and guide you.Contact us now!",
     "metaKeywords": "Copyright Registration,  File Register Copyright",
-    "title": "Copyright Registration",
+    "title": " Apply for Copyright Registration in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -449,7 +452,7 @@
         "value": "The Copyright Act, 1957 (the Act) is the primary legislation that governs copyright in India. To be eligible for copyright protection, a work must be original and fixed in a tangible form. This means that the work must be the product of the author's own creative labor and that it must be recorded in some way, such as in writing, on film, or in audio form."
       },
       {
-        "id": " Defines ",
+        "id": " Defines",
         "header": "The Act defines copyright as",
         "desc": "The exclusive right to do or authorize the doing of any of the following acts in respect of a work:",
         "type": "SPBullet",
@@ -522,7 +525,7 @@
         "header": "Documents Required for Copyright Protection",
         "type": "SPDocuments",
         "value": [
-          "Filled Basic Information Requirement Document – COPYQ shared from Aanor team.",
+          "Filled Basic Information Requirement Document – COPYQ shared from Aanoor team.",
           "Evidence of works like printed book or content for literary work, any artistic work etc.,",
           "Power of Attorney document from applicant.",
           "Board resolution for authorized signatory and letter of authorization for companies."
@@ -533,6 +536,7 @@
         "header": "Copyright application online process",
         "type": "SPStep",
         "value": {
+          "subHeading": "The copyright application online in Chennai includes the following steps:",
           "steps": [
             {
               "heading": "Consultation and guidance",
@@ -720,7 +724,7 @@
     "metaTitle": "Online Patent Registration in Chennai | Brand Patent Registration Company in Chennai",
     "metaDesc": "Get your patent registration in Aanoor global Chennai with cost effective registration to all our clients with good support and guidance during registration.We offer brand patent registration, logo registration with affordable cost, Call Today!",
     "metaKeywords": "Patent Registration, Brand Patent Registration",
-    "title": "Patent Registration",
+    "title": "Patent Registration in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -740,7 +744,7 @@
       {
         "id": "Criteria",
         "header": "Criteria for filing a Patent right registration",
-        "desc": "",
+        "desc": "In order to be eligible for patent registration in Chennai, an invention must meet the following criteria:",
         "type": "SPBenefits",
         "class": "important",
         "value": [
