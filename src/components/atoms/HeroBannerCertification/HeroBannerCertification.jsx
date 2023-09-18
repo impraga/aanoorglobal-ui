@@ -29,11 +29,11 @@ const HeroBannerCertification = ({ title, desc, price }) => (
                 </div>
               </div>
               <div className="col-sm-4 mt-4 mt-md-0 d-flex align-items-center justify-content-center position-relative badge-cont">
-                <div
+                {/* <div
                   className="glass d-none d-sm-block"
                   data-aos="fade-right"
                   data-aos-delay="100"
-                />
+                /> */}
                 <img
                   src={badge}
                   alt="decorative"
@@ -61,7 +61,7 @@ const HeroBannerCertification = ({ title, desc, price }) => (
               <img className="mr-2" src={certified} alt="certified" />
               <p className="ms-2 mb-0">Let’s get certified</p>
             </div>
-            <div className="glass" data-aos="fade-up" data-aos-delay="150" />
+            {/* <div className="glass" data-aos="fade-up" data-aos-delay="150" /> */}
             <div
               className="dot-img-cont"
               data-aos="fade-up"

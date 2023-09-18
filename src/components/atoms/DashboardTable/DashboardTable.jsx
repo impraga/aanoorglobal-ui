@@ -30,7 +30,7 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
         <>
           <button
             type="button"
-            onClick={() => navigate(`/edit-blog/${row.id}`)}
+            onClick={() => navigate(`/admin/edit-blog/${row.id}`)}
           >
             <img src={editImage} alt="Edit Button" />
           </button>

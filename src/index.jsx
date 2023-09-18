@@ -27,6 +27,7 @@ import BlogView from './pages/BlogView/BlogView'
 import ServicePage from './pages/ServicePage/ServicePage'
 import Blog from './pages/Blog/Blog'
 import LandingPage from './pages/LandingPage/LandingPage'
+import AdminPage from './pages/AdminPage/AdminPage'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -93,6 +94,32 @@ const router = createBrowserRouter([
           </ProtectedComponent>
         )
       },
+
+      {
+        path: '*',
+        element: <NotFound />
+      }
+    ]
+  },
+  {
+    element: <LandingPage />,
+    errorElement: <NotFound />,
+    path: 'landing-page'
+  },
+  {
+    element: <LoginPage />,
+    errorElement: <NotFound />,
+    path: 'login'
+  },
+  {
+    path: 'admin',
+    errorElement: <NotFound />,
+    element: (
+      <ProtectedComponent>
+        <AdminPage />
+      </ProtectedComponent>
+    ),
+    children: [
       {
         path: 'edit-blog/:postUrl',
         element: (
@@ -109,6 +136,7 @@ const router = createBrowserRouter([
           </ProtectedComponent>
         )
       },
+
       {
         path: 'new-blog',
         element: (
@@ -116,22 +144,8 @@ const router = createBrowserRouter([
             <NewBlog />
           </ProtectedComponent>
         )
-      },
-      {
-        path: 'login',
-        element: <LoginPage />
-      },
-
-      {
-        path: '*',
-        element: <NotFound />
       }
     ]
-  },
-  {
-    element: <LandingPage />,
-    errorElement: <NotFound />,
-    path: 'landing-page'
   }
 ])
 
