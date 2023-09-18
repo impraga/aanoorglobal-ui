@@ -25,7 +25,7 @@ const HeroBannerIntellectualProperty = ({ title, desc, price }) => (
             <br />
             <span className="text-green">Property</span>
           </h1>
-          <div className="glass" data-aos="fade-up" data-aos-delay="350" />
+          {/* <div className="glass" data-aos="fade-up" data-aos-delay="350" /> */}
           <img
             src={IntellectualPropertyALogo}
             className="a-logo"
