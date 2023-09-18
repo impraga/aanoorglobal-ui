@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 
-import gsap from 'gsap'
-
 import whiteStripes from '../../../../public/assets/icons/lines-white.svg'
 import circleGreen from '../../../../public/assets/icons/circle-green.svg'
 
@@ -24,7 +22,7 @@ const Stats = () => {
       <div className="d-flex flex-column align-items-center justify-content-evenly text-white text-center px-5 h-100 position-relative">
         <div>
           <div className="count bebas d-flex justify-content-center">
-            <div id="counter">10</div>+
+            <div id="counter">12</div>+
           </div>
           <div className="count-name">Years Of Experience</div>
         </div>
@@ -32,13 +30,13 @@ const Stats = () => {
           <div className="count bebas d-flex justify-content-center">
             <div id="counter">100</div>%
           </div>
-          <div className="count-name">Satisfaction</div>
+          <div className="count-name">Service Accuracy</div>
         </div>
         <div>
           <div className="count bebas d-flex justify-content-center">
-            <div id="counter">5000</div>+
+            <div id="counter">60K</div>+
           </div>
-          <div className="count-name">Happy Clients</div>
+          <div className="count-name">Satisfied Customers</div>
         </div>
       </div>
       <img className="whites-stripes" src={whiteStripes} alt="white stripes" />

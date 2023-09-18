@@ -3,7 +3,7 @@
     "metaTitle": "Monthly Accounting Services in Chennai | Virtual Accountant in Chennai | Aanoor Global",
     "metaDesc": "Aanoor Global, monthly accounting service provider in Chennai, India. Bookkeeping Service with team of professionals. Simple & affordable virtul accountant for startup. Contact us now!",
     "metaKeywords": "",
-    "title": "Book Keeping",
+    "title": "Best Small Business Bookkeeping and Accounting",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -120,13 +120,13 @@
           {
             "title": "The auditing process",
             "value": [
-              "The Institute of Chartered Accountants of India (ICAI) has issued a set of accounting standards that must be followed by all businesses in India. These standards provide guidance on how to record and report financial transactions."
+              "All businesses in India are required to have their financial statements audited by a qualified accountant at least once a year. This ensures that the statements are accurate and compliant with the law."
             ]
           },
           {
             "title": "Connect with us for Monthly Accounting",
             "value": [
-              "Businesses are considering outsourcing your monthly accounting services, we recommend that you get affordable and professional approach and consistency from our Aanoor Team. "
+              "Businesses are considering outsourcing your monthly accounting services, we recommend that you get affordable and professional approach and consistency from our Aanoor Team."
             ]
           }
         ]
@@ -137,7 +137,7 @@
     "metaTitle": "Income Tax Filing Service in Chennai | Income Tax Return Filing Service in Chennai",
     "metaDesc": "To file your Income Tax so easy and quick with professional Auditors for all type of Business and Individuals. Income Tax Return filing we are best service provider in Chennai, Tamilnadu",
     "metaKeywords": "Income Tax Filing,  Income Tax Return Filing",
-    "title": "Income Tax Filing",
+    "title": "Best Tax Preparation Services in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -221,14 +221,11 @@
         "header": "Documents require for Income Tax Filing",
         "type": "SPDocuments",
         "value": [
-          "PAN card",
-          "Form 16: ",
-          "Bank statement",
-          "Investment proofs",
-          "Other documents",
-          "Proof of Incorporation certificate and business registration.",
-          "Address proof of the business place.",
-          "Digital Signatures."
+          "<b>PAN card:</b> Your PAN card is a unique 10-digit alphanumeric number that is issued by the Income Tax Department. It is required for all income tax transactions.",
+          "<b>Form 16:</b> Form 16 is a certificate issued by your employer that shows your salary income and deductions for the financial year.",
+          "<b>Bank statement:</b> Your bank statement shows your interest income and other income credited to your bank account during the financial year.",
+          "<b>Investment proofs:</b> If you claim deductions for investments, you will need to provide proofs of these investments. For example, if you claim a deduction for your home loan interest, you will need to provide a copy of your home loan statement.",
+          "<b>Other documents:</b> Depending on your income and deductions, you may need to provide other documents as well. For example, if you are self-employed, you may need to provide a copy of your business registration certificate."
         ]
       },
       {
@@ -240,7 +237,7 @@
           "steps": [
             {
               "heading": "Create an account on the Income Tax Department's website.",
-              "desc": "Visit the Income Tax website and clicking on the Register tab.Y ou will need to provide your personal information, such as your name, address, PAN number, and Aadhaar number."
+              "desc": "Visit the Income Tax website and clicking on the \"Register\" tab. You will need to provide your personal information, such as your name, address, PAN number, and Aadhaar number."
             },
             {
               "heading": "Select the appropriate ITR form.",
@@ -271,7 +268,7 @@
     "metaTitle": "GST Registration Online in Chennai | Apply New GST Registration Chennai",
     "metaDesc": "File your GST Registration application online with Aanoor Global. To Apply New GST Registration contact our team to get easy and quick guidance to apply in online.",
     "metaKeywords": "GST Registration Online , Apply New GST Registration",
-    "title": "GST Filing",
+    "title": "GST Return Filing Services in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -288,8 +285,8 @@
         "value": "GST filing in India is the process of submitting GST returns to the government. GST returns are documents that contain information about a business's sales, purchases, and taxes collected and paid. They are filed electronically through the GST portal."
       },
       {
-        "id": "what can be trademarked?",
-        "header": "What can be trademarked?",
+        "id": "What are the types of GST returns?",
+        "header": "What are the types of GST returns?",
         "type": "SPParagraph",
         "value": "Any business or person claiming to be owner can apply for logo trademark, and this includes company, society, individual, and proprietor. It is good to apply for a trademark as a single person. If you change or close the business as a company or proprietor, then your logo trademark is considered to be invalid. If you are an individual, there is no chance for any problem to arise."
       },
@@ -359,10 +356,8 @@
           "Navigate to GST return menu you want to file online.",
           "Enter the details of your business transactions for the relevant period.",
           "Calculate the GST payable or the ITC you are eligible to claim.",
-
           "Pay the GST payable, if any.",
-          "Submit the return.",
-          "Digital Signatures."
+          "Submit the return."
         ]
       }
     ]
@@ -435,7 +430,10 @@
             },
             {
               "heading": "Tax payment challans",
-              "desc": "Tax payment challans are issued by the government to confirm the payment of TDS.Bank statements: Bank statements can be used to verify the payment of TDS."
+              "desc": [
+                "Tax payment challans are issued by the government to confirm the payment of TDS.",
+                "Bank statements: Bank statements can be used to verify the payment of TDS."
+              ]
             },
             {
               "heading": "Other supporting documents",
@@ -464,10 +462,10 @@
     ]
   },
   {
-    "metaTitle": "ROC Annual Compliance | ROC Filing in Chennai | Annual Filing of ROC - Aanoor Global",
+    "metaTitle": "RoC Annual Compliance | ROC Filing in Chennai | Annual Filing of ROC - Aanoor Global",
     "metaDesc": "Get your ROC Annual Compliance easy and quick process for Register with Aanoor Global in Chennai. ROC Filing and  Annual Filing for ROC  is done with our expert team  is easy online registration process.",
     "metaKeywords": "ROC Annual Compliance, ROC Filing ",
-    "title": "roc-annual-filing",
+    "title": "Annual Filing of ROC Compliance in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",

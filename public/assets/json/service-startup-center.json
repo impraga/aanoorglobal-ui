@@ -3,7 +3,7 @@
     "metaTitle": "Proprietorship Registration Company in Chennai |Udyam Registration and  MSME Registration in Chennai",
     "metaDesc": "Aanoor Global is a leading proprietorship registration company in chennai.Sole proprietorship is quick and easy to start business you need not to elborate the legal formalities.For more details call us now!",
     "metaKeywords": "proprietorship registration,msme registration ,ssi registration",
-    "title": "Sole Proprietorship",
+    "title": " Individual Proprietorship Firm Registration in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -65,7 +65,7 @@
         ]
       },
       {
-        "id": "benefits Multi",
+        "id": "Benefits",
         "header": "Sole proprietorship firm registration benefits",
         "desc": "",
         "type": "SPBenefits",
@@ -190,7 +190,7 @@
     "metaTitle": "Partnership Firm Registration Company in chennai | Online Registration for Partnershipfirm in Chennai",
     "metaDesc": "Register the partnership firm registration in Aanoor global chennai. Quick&Easy registration process. Online registration for partnershipfirm services also provide by us for more details contact to our office to register now.",
     "metaKeywords": "partnership firm registration,Online registration for partnershipfirm",
-    "title": "Partnership Firm",
+    "title": "Best Partnership Firm Registration Services in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -245,8 +245,7 @@
               "It is a relatively simple and inexpensive business structure to set up.",
               "Partners can pool their resources and expertise to create a more successful business.",
               "Partners can share the workload and responsibilities to run the business.",
-              "Partners can make decisions more quickly than in a larger corporation.",
-              ""
+              "Partners can make decisions more quickly than in a larger corporation."
             ]
           }
         ]
@@ -301,7 +300,6 @@
               "heading": "Form-C Registration",
               "desc": [
                 "Create a login as a firm registration. Fill the online form after login creation.",
-                "Create a login as a firm registration. Fill the online form after login creation.",
                 "The signed copy of Form I should be uploaded in the online application form. Once the payment is successful, the form will be processed.",
                 "After verification, Form-C will be issued."
               ]
@@ -330,7 +328,7 @@
     "metaTitle": "Limited Liability Partnership Registration in Chennai | LLP Firm Registration Chennai",
     "metaDesc": "According to corporate affairs Limited Liability Partnership registration is with of two partners minimum and can have maximum number  of partners. Contact us now!",
     "metaKeywords": "Limited Liability Partnership Registration,LLP Firm Registration",
-    "title": "Limited Liability Partnership",
+    "title": "Limited Liability Partnership (LLP) Company Registration in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -361,7 +359,7 @@
       },
 
       {
-        "id": "benefits Multi",
+        "id": "benefits",
         "header": "Benefits of LLP",
         "desc": "Benefits of forming an LLP Firm Registration in Chennai",
         "type": "SPBenefits",
@@ -450,7 +448,7 @@
     "metaTitle": "One Person Company Registration in Chennai | OPC Registration Online in Chennai",
     "metaDesc": "Looking for a one person company registration in chennai,  Aanoor global is here for you to get registration within 5 days. Small entrepreneurs can easily convert from proprietorship business to opc registration model for more details visit our site.",
     "metaKeywords": "one person company registration, opc registration ",
-    "title": "One Person Company",
+    "title": "One Person Company Registration Services Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -481,21 +479,8 @@
           "Establishment ESI & EPF"
         ]
       },
-
       {
-        "id": "bullets",
-        "header": "OPC Registration Concerns",
-        "type": "SPBullet",
-        "value": [
-          "Only Indian citizens and non-resident Indians residing in India at least 120 days in the preceding financial year can be a member or nominee of an OPC.",
-          "Foreign individuals cannot set up an OPC.",
-          "An authorized capital of INR 1 lakh is required, but there is no mandatory requirement for paid-up capital.",
-          "The owner has full responsibility and cannot raise funds by inducting promoters into the business."
-        ]
-      },
-
-      {
-        "id": "multi-benefits",
+        "id": "benefits",
         "header": "Benefits of OPC Registration Online",
         "desc": "",
         "type": "SPBenefits",
@@ -526,6 +511,19 @@
           }
         ]
       },
+
+      {
+        "id": "Registration concerns",
+        "header": "OPC Registration Concerns",
+        "type": "SPBullet",
+        "value": [
+          "Only Indian citizens and non-resident Indians residing in India at least 120 days in the preceding financial year can be a member or nominee of an OPC.",
+          "Foreign individuals cannot set up an OPC.",
+          "An authorized capital of INR 1 lakh is required, but there is no mandatory requirement for paid-up capital.",
+          "The owner has full responsibility and cannot raise funds by inducting promoters into the business."
+        ]
+      },
+
       {
         "id": "required-documents",
         "header": "Documents Required for OPC Company Registration:",
@@ -620,7 +618,7 @@
       },
 
       {
-        "id": "benefits Multi",
+        "id": "benefits",
         "header": "Benefits of private limited registration online:",
         "desc": "",
         "type": "SPBenefits",
@@ -711,9 +709,9 @@
     "metaTitle": "Limited Company Registration in Chennai | Public Limited Company Registration in Chennai",
     "metaDesc": "Register your Limited company registration with Quick and affordable cost. Get Public Limited Company Registration in online for your business within Min contact our office.",
     "metaKeywords": "Limited Company Registration, Public Limited Company Registration ",
-    "title": "Public Limited Company Registration",
+    "title": "Best Public Limited Company Registration",
     "price": {
-      "isAvailable": true,
+      "isAvailable": false,
       "value": "2,800",
       "note": "with in *5 working days"
     },
@@ -847,7 +845,7 @@
       },
       {
         "id": "includes",
-        "header": "Nidhi Company includes",
+        "header": "Includes",
         "type": "SPIncludes",
         "value": [
           "Digital signature for three directors",
@@ -873,8 +871,8 @@
       },
 
       {
-        "id": "benefits Multi",
-        "header": "Benefits with multiple values",
+        "id": "benefits",
+        "header": "Benefits",
         "desc": "Here are some of the benefits of Nidhi company:",
         "type": "SPBenefits",
         "value": [
@@ -985,7 +983,7 @@
       },
       {
         "id": "includes",
-        "header": "Nidhi Company includes",
+        "header": "Includes",
         "type": "SPIncludes",
         "value": [
           "Digital signature for three directors",
@@ -1010,14 +1008,16 @@
       },
 
       {
-        "id": "benefits Multi",
+        "id": "benefits",
         "header": "Benefits of Farmer Company",
         "desc": "Producer companies have been playing an important role in the agricultural sector in India. They have helped farmers to improve their incomes, access to inputs and credit, and market their produce at better prices. These companies have also helped to promote value addition to agricultural produce and improve the bargaining power of farmers in the market. Here are some of the benefits of forming,",
         "type": "SPBenefits",
         "value": [
           {
             "title": "Increased bargaining power",
-            "value": ["Increased bargaining power."]
+            "value": [
+              "By aggregating their produce, farmers can bargain for better prices from buyers."
+            ]
           },
           {
             "title": "Reduced transaction costs",
@@ -1060,7 +1060,7 @@
     "metaTitle": "Online Section 8 Company Registration in Chennai - Aanoor Global",
     "metaDesc": "Make the Online Section 8 Company Registration with easy and quick process just call us now ! Aanoor global is the best place to register Section 8.",
     "metaKeywords": "Section 8 Company Registration",
-    "title": "Section 8 Company",
+    "title": "Section 8 Company Registration in Chennai",
     "price": {
       "isAvailable": true,
       "value": "2,800",
@@ -1092,6 +1092,17 @@
           "Company PAN Card"
         ]
       },
+      {
+        "id": "Required documents",
+        "header": "Requirements to register a Section 8 company",
+        "type": "SPDocuments",
+        "value": [
+          "Filled in document shared from our team with name and address details of company.",
+          "The company must have at least two directors with their KYC (PAN, Aadhaar& others)",
+          "The company's name must end with the words Foundation, federation etc.,",
+          "The company's objectives must be approved by the Central Government."
+        ]
+      },
 
       {
         "id": "benefits",
@@ -1108,18 +1119,6 @@
               "Tax deduction to the company donors."
             ]
           }
-        ]
-      },
-
-      {
-        "id": "Required documents",
-        "header": "Requirements to register a Section 8 company",
-        "type": "SPDocuments",
-        "value": [
-          "Filled in document shared from our team with name and address details of company.",
-          "The company must have at least two directors with their KYC (PAN, Aadhaar& others)",
-          "The company's name must end with the words Foundation, federation etc.,",
-          "The company's objectives must be approved by the Central Government."
         ]
       }
     ]
@@ -1144,20 +1143,6 @@
           "We Aanoor group are expertise with small business loan for all type of entities which thrives to sustain with funds and expecting government subsidiary to their machineries and factory setup."
         ]
       },
-
-      {
-        "id": "Key factors",
-        "header": "Key factors of business loan",
-        "type": "SPBullet",
-        "value": [
-          "Funds used for business may be released with various options based on business proposals.",
-          "Purchase of properties to new factory setup.",
-          "Expanding business by erecting new machineries.",
-          "Financing for new projects.",
-          "Expansion and marketing of new brands."
-        ]
-      },
-
       {
         "id": "Types of business loan facility",
         "header": "Types of business loan facility",
@@ -1195,6 +1180,18 @@
               "This facility is considered to be a true form of working capital for any firm as it involves the total amount of circulating funds required for the continuous operation of the unit on an ongoing basis. It may be applicable only for the manufacturing sector and companies deal with stocks and inventories."
             ]
           }
+        ]
+      },
+      {
+        "id": "Key factors",
+        "header": "Key factors of business loan",
+        "type": "SPBullet",
+        "value": [
+          "Funds used for business may be released with various options based on business proposals.",
+          "Purchase of properties to new factory setup.",
+          "Expanding business by erecting new machineries.",
+          "Financing for new projects.",
+          "Expansion and marketing of new brands."
         ]
       },
       {

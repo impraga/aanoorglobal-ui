@@ -24,7 +24,7 @@ const HomeServiceSection = () => {
           Our Services
         </h2>
         <p className="section-text" data-aos="fade-up" data-aos-delay="100">
-          <b>Save Time</b> Managing your business with our <b>best services</b>
+          <b>Your Statutory Registration and Compliance Partner</b>
         </p>
       </div>
       <div className="container services-cont">
