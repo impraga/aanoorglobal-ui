@@ -63,36 +63,17 @@ const router = createBrowserRouter([
       },
       {
         path: 'blog',
-        element: (
-          <ProtectedComponent>
-            <Blog />
-          </ProtectedComponent>
-        )
+        element: <Blog />,
+        children: [{ path: '/blog:service', element: <Blog /> }]
       },
       {
-        path: 'blog/:service',
-        element: (
-          <ProtectedComponent>
-            <Blog />
-          </ProtectedComponent>
-        )
+        path: 'post',
+        element: <Navigate to="/blog" />
       },
       {
-        path: 'blogView',
-        element: (
-          <ProtectedComponent>
-            <Navigate to="/blog" />
-          </ProtectedComponent>
-        )
-      },
-      {
-        path: 'blogView/:postUrl',
+        path: 'post/:postUrl',
 
-        element: (
-          <ProtectedComponent>
-            <BlogView />
-          </ProtectedComponent>
-        )
+        element: <BlogView />
       },
 
       {
@@ -109,7 +90,7 @@ const router = createBrowserRouter([
   {
     element: <LoginPage />,
     errorElement: <NotFound />,
-    path: 'login'
+    path: 'ar-admin/login'
   },
   {
     path: 'admin',

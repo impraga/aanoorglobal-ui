@@ -17,7 +17,14 @@ import getEnvUrl from '../../../constants/envUrl'
 const DashboardTable = ({ blogListInput, updateBlog }) => {
   const navigate = useNavigate()
   const [blogList, setBlogList] = useState([])
-  const displayColumns = ['title', 'service', 'date', 'status', 'options']
+  const displayColumns = [
+    { title: 'title', width: '35' },
+    { title: 'service', width: '15' },
+    { title: 'category', width: '20' },
+    { title: 'date', width: '10' },
+    { title: 'status', width: '5' },
+    { title: 'options', width: '15' }
+  ]
 
   // Updating Blog List in UseState
   useEffect(() => {
@@ -37,7 +44,7 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
           <button
             type="button"
             onClick={() =>
-              window.open(`/blogView/${row.url}`, '', 'noopener, noreferrer')
+              window.open(`/post/${row.url}`, '', 'noopener, noreferrer')
             }
           >
             <img src={viewImage} className="view-btn" alt="View Button" />
@@ -53,7 +60,7 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
       let res = ''
       if (cellValue === '1') res = 'Draft'
       if (cellValue === '2') res = 'Published'
-      return <div className="status-cont">{res}</div>
+      return <div className="status-cont" title={res} />
     }
     return cellValue
   }
@@ -89,7 +96,7 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
     <div className="dashboard-table-cont mt-4 bg-white bs br-1 overflow-hidden">
       <div className="d-table-header-cont d-flex align-items-center justify-content-between">
         <div>
-          <h2>Blogs</h2>
+          <h2>Posts</h2>
         </div>
         {/* Enhancement */}
         {/* <div className="ag-form">
@@ -106,8 +113,12 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
           <thead>
             <tr>
               {displayColumns.map((col) => (
-                <td key={col} className={col}>
-                  {col}
+                <td
+                  key={col.title}
+                  className={col.title}
+                  width={`${col.width}%`}
+                >
+                  {col.title}
                 </td>
               ))}
             </tr>
@@ -116,12 +127,12 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
             {blogList &&
               blogList.map((row, rowIndex) => (
                 <tr key={(row.id, rowIndex)}>
-                  {displayColumns.map((col, colIndex) => (
+                  {displayColumns.map(({ title }, colIndex) => (
                     <td
-                      key={(row[col], colIndex)}
-                      className={`${col} class${row[col]}`}
+                      key={(row[title], colIndex)}
+                      className={`${title} class${row[title]}`}
                     >
-                      {tableCellData(row[col], col, row)}
+                      {tableCellData(row[title], title, row)}
                     </td>
                   ))}
                 </tr>

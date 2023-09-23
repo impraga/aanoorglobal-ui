@@ -58,7 +58,8 @@ export const serviceOrder = [
   'Intellectual Property',
   'Registration',
   'Certification',
-  'Statutory Compliance'
+  'Statutory Compliance',
+  'General'
 ]
 
 export const serviceTemplates = {

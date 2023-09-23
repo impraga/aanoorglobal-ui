@@ -8,6 +8,7 @@ const HelmetWrapper = ({ data }) => (
     {data.canonicalUrl && <link rel="canonical" href={data.canonicalUrl} />}
     {data.metaDesc && <meta name="description" content={data.metaDesc} />}
     {data.keywords && <meta name="keywords" content={data.keywords} />}
+    {data.dontCrawl && <meta name="robots" content="noindex, nofollow" />}
   </Helmet>
 )
 

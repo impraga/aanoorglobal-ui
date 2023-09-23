@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom'
 
 import clockSvg from '../../../../public/assets/icons/clock.svg'
 
+import { getEnvUploadPath } from '../../../constants/envUrl'
+
 import './BlogThumbnail.scss'
 
 const BlogThumbnail = ({ blog }) => (
-  <Link to={`/blogView/${blog.url}`}>
+  <Link to={`/post/${blog.url}`}>
     <div className="blogthumbnail-cont br-1 overflow-hidden bs h-100">
       <div className="thumbnail-img position-relative">
-        <img src={blog.image_name} alt="" />
+        <img src={getEnvUploadPath + blog.image_name} alt={blog.title} />
         <div className="img-overlay" />
         <div className="read-time-cont d-flex text-white align-items-center">
           <div className="img-cont">

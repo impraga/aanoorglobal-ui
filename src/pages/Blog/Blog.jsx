@@ -19,21 +19,25 @@ const metaDetails = {
 }
 
 const Blog = () => {
-  // const location = useLocation()
   const { service } = useParams()
   const [blogList, setBlogList] = useState([])
   const [blogRawList, setBlogRawList] = useState([])
+  const [showNoBlog, setShowNoBlog] = useState(false)
 
   // BlogList API Call
   useEffect(() => {
     setBlogList([])
-    axios.get(`${getEnvUrl}/getBlogLists`).then(({ data }) => {
-      // Only for Data mocking - Remove Below line
-      // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
-      if (data.message.length > 0 && data.status === '200') {
-        setBlogRawList(data.message)
-      }
-    })
+    axios
+      .get(`${getEnvUrl}/getActiveBlogLists`)
+      .then(({ data }) => {
+        // Only for Data mocking - Remove Below line
+        // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
+        if (data.message.length > 0 && data.status === '200') {
+          setShowNoBlog(false)
+          setBlogRawList(data.message)
+        }
+      })
+      .catch(setShowNoBlog(true))
   }, [])
 
   // To Update Blog List on Service Change
@@ -77,7 +81,7 @@ const Blog = () => {
       <BlogHeroBanner />
       <div className="blog-cat-cont bg-gray-dark">
         <div className="container">
-          {blogList.length > 0 &&
+          {!showNoBlog && blogList.length > 0 ? (
             blogList.map(
               (blogCat, index) =>
                 blogCat.data?.length > 0 && (
@@ -105,7 +109,10 @@ const Blog = () => {
                     </div>
                   </div>
                 )
-            )}
+            )
+          ) : (
+            <h2>No Blog available</h2>
+          )}
         </div>
       </div>
     </>

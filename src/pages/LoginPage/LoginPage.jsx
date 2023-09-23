@@ -88,7 +88,7 @@ const LoginPage = () => {
   return (
     <>
       {(loginVerified || isUserLoggedIn) && (
-        <Navigate to="/dashboard" replace />
+        <Navigate to="/admin/dashboard" replace />
       )}
       {userAddedNotfication && <p>User Added successfully</p>}
       <div className="login-page-cont pe-0 pe-md-5 justify-content-center justify-content-md-end position-relative">

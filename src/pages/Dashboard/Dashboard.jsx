@@ -16,7 +16,8 @@ const metaDetails = {
   canonicalUrl: 'www.aanoorglobal.com/dashboard/',
   metaDesc:
     'Aanoor Global provide multiple services like GST, Income tax filing',
-  metaKeywords: 'gst filing, income tax filing'
+  metaKeywords: 'gst filing, income tax filing',
+  dontCrawl: true
 }
 
 const Dashboard = () => {
@@ -35,19 +36,21 @@ const Dashboard = () => {
 
   const getBlog = () => {
     axios
-      .get(`${getEnvUrl}/getBlogLists`, {
+      .post(`${getEnvUrl}/getBlogLists`, '', {
         // .get('/assets/json/api-mock-bloglist.json', {
         headers: {
           Authorization: getSessionStorage(sessionKeys.authorization)
         }
       })
       .then(({ data }) => {
+        // eslint-disable-next-line no-console
         console.log(data)
         if (data.message.length > 0 && data.status === '200') {
           setBlogList(data.message)
         }
       })
       .catch(() => {
+        // eslint-disable-next-line no-console
         console.log('Error in receiving Blog details')
       })
   }

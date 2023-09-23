@@ -11,6 +11,7 @@ import { sessionKeys } from '../../../constants'
 
 import './BlogForm.scss'
 import getEnvUrl from '../../../constants/envUrl'
+import CategoryDropDown from '../../atoms/CategoryDropDown/CategoryDropDown'
 
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
@@ -78,9 +79,11 @@ const BlogForm = ({ edit, blogDetails }) => {
         } else {
           showBlogNotification('danger', 'Error while adding blog')
         }
+        window.scrollTo(0, 0)
       })
       .catch(() => {
         showBlogNotification('danger', 'Error while adding blog')
+        window.scrollTo(0, 0)
       })
   }
 
@@ -127,7 +130,7 @@ const BlogForm = ({ edit, blogDetails }) => {
                 {...register('url', { required: true })}
                 className={errors.url?.type === 'required' ? 'error' : ' '}
                 type="text"
-                placeholder="Url for the post"
+                placeholder="Blog URL"
               />
             </div>
             <div className="col-md-6">
@@ -149,12 +152,7 @@ const BlogForm = ({ edit, blogDetails }) => {
               />
             </div>
             <div className="col-md-3">
-              <input
-                {...register('category', { required: true })}
-                className={errors.category?.type === 'required' ? 'error' : ' '}
-                type="text"
-                placeholder="Category"
-              />
+              <CategoryDropDown errors={errors} form={form} />
             </div>
 
             <div className="col-md-3">

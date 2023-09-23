@@ -9,12 +9,6 @@ import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 import './Header.scss'
-import { removeSession } from '../../../utils/tools'
-import {
-  sessionKeys,
-  isUserLoggedIn,
-  isKillSwitchDisabled
-} from '../../../constants'
 import URLs from '../../../constants/urlMapper'
 
 const Header = () => {
@@ -22,12 +16,6 @@ const Header = () => {
   const [serviceOpen, setServiceOpen] = useState(-1)
 
   const navigate = useNavigate()
-
-  const handleClick = () => {
-    removeSession(sessionKeys.userLoggedStatus)
-    removeSession(sessionKeys.authorization)
-    navigate('/login')
-  }
 
   const menuWithLink = (item, device, index) => (
     <li
@@ -197,30 +185,17 @@ const Header = () => {
                 )}
               </div>
 
-              {isKillSwitchDisabled && (
-                <div className="d-flex align-items-center">
-                  <li key="blog">
-                    <Button
-                      className="blog-btn"
-                      variant="success"
-                      onClick={() => navigate('/blog')}
-                    >
-                      Blog
-                    </Button>
-                  </li>
-                </div>
-              )}
-              {isUserLoggedIn && (
-                <li key="logout">
+              <div className="d-flex align-items-center">
+                <li key="blog">
                   <Button
-                    className="logout"
-                    variant="primary"
-                    onClick={() => handleClick()}
+                    className="blog-btn"
+                    variant="success"
+                    onClick={() => navigate('/blog')}
                   >
-                    Logout
+                    Blog
                   </Button>
                 </li>
-              )}
+              </div>
             </ul>
             {/* mobile menu */}
             <ul className="d-lg-none">
@@ -232,28 +207,16 @@ const Header = () => {
                   // eslint-disable-next-line no-unsafe-optional-chaining
                   ...menuList?.serviceData[1].children
                 ].map((item, i) => menuWithLink(item, 'mobile', i))}
-                {isKillSwitchDisabled && (
-                  <li key="blog">
-                    <Button
-                      className="blog-btn"
-                      variant="success"
-                      onClick={() => navigate('/blog')}
-                    >
-                      Blog
-                    </Button>
-                  </li>
-                )}
-                {isUserLoggedIn && (
-                  <li key="logout">
-                    <Button
-                      className="logout"
-                      variant="primary"
-                      onClick={() => handleClick()}
-                    >
-                      Logout
-                    </Button>
-                  </li>
-                )}
+
+                <li key="blog">
+                  <Button
+                    className="blog-btn"
+                    variant="success"
+                    onClick={() => navigate('/blog')}
+                  >
+                    Blog
+                  </Button>
+                </li>
               </div>
             </ul>
           </nav>
