@@ -69,7 +69,7 @@ const URLs = {
 export const nonServiceUrls = [
   { title: 'Home', pageUrl: '/' },
   { title: 'Contact Us', pageUrl: '/contact' },
-  { title: 'About', pageUrl: '/about' },
+  { title: 'About Us', pageUrl: '/about' },
   {
     title: 'Privacy policy',
     pageUrl: '/privacy-policy'

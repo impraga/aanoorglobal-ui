@@ -15,6 +15,11 @@ import twitter from '../../../../public/assets/icons/twitter.png'
 import './Footer.scss'
 import URLs from '../../../constants/urlMapper'
 
+const primarylist = [
+  { title: 'About Us', pageUrl: '/about' },
+  { title: 'Contact Us', pageUrl: '/contact' }
+]
+
 const Footer = () => (
   <footer className="main-footer">
     <ContactSection />
@@ -30,19 +35,19 @@ const Footer = () => (
               <img src={logo} alt="Aanoor Logo" />
             </div>
             {/* Commented below code for Removing About and contact page */}
-            {/* <div className="primary-link d-flex text-white pt-4 px-3">
-                {primarylist.map((list, index) => (
-                  <Link
-                    className="px-3"
-                    data-aos="fade-up"
-                    data-aos-delay={50 * (index + 1)}
-                    key={list.title}
-                    to={list.pageUrl}
-                  >
-                    {list.title}
-                  </Link>
-                ))}
-              </div> */}
+            <div className="primary-link d-flex text-white pt-4 px-3">
+              {primarylist.map((list, index) => (
+                <Link
+                  className="px-3"
+                  data-aos="fade-up"
+                  data-aos-delay={50 * (index + 1)}
+                  key={list.title}
+                  to={list.pageUrl}
+                >
+                  {list.title}
+                </Link>
+              ))}
+            </div>
           </div>
           <div className="social-link-cont d-flex align-items-center pt-4">
             <div data-aos="fade-up" data-aos-delay="250">
