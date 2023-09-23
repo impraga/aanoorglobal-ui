@@ -1,17 +1,11 @@
-import React, { useEffect, useMemo, useState } from 'react'
-import { useLocation } from 'react-router'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
-import { services } from '../../../constants'
 import menuList from '../../../../public/assets/json/menuList.json'
 import URLs from '../../../constants/urlMapper'
 
 import './ServiceDropDown.scss'
 
-const ServiceDropDown = ({ updateValue }) => {
-  const location = useLocation()
-  const [selectActive, setSelectActive] = useState(false)
-  const [selectedService, setSelectedService] = useState(null)
-
+const ServiceDropDown = ({ updateService, selectedService }) => {
   const serviceCategory = useMemo(() => {
     const flatCategory = []
     const menu = [
@@ -25,62 +19,40 @@ const ServiceDropDown = ({ updateValue }) => {
       })
     })
 
-    setSelectedService(
-      flatCategory.find((d) => d.url === location.pathname)?.title ||
-        services[0].title
-    )
-
     return flatCategory
   }, [])
 
   // To Update Service value after Page renders
-  useEffect(() => {
-    updateValue(selectedService)
-  }, [selectedService])
-
-  const changeService = (service) => {
-    setSelectedService(service)
-    setSelectActive(false)
-  }
 
   return (
-    <div className={`select ${selectActive ? ' active' : ''}`}>
-      <input
-        type="text"
-        placeholder="Services looking for?"
-        onClick={() => {
-          setSelectActive(true)
-        }}
-        value={selectedService}
-        readOnly
-      />
-      <ul className="md-whiteframe-z1" name="ul-id">
-        {serviceCategory.map((service) => (
-          <li
-            // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
-            role="option"
-            key={service.title}
-            onClick={() => {
-              changeService(service.title)
-            }}
-            className={`${selectedService === service.title ? ' active' : ''}`}
-            tabIndex="-1"
-            aria-hidden
-          >
-            {service.title}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="md-whiteframe-z1" name="ul-id">
+      {serviceCategory.map((service) => (
+        <li
+          // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
+          role="option"
+          key={service.title}
+          onClick={() => {
+            updateService(service.title)
+          }}
+          className={`${selectedService === service.title ? ' active' : ''}`}
+          tabIndex="-1"
+          aria-hidden
+        >
+          {service.title}
+        </li>
+      ))}
+    </ul>
   )
 }
 
 ServiceDropDown.propTypes = {
-  updateValue: PropTypes.func
+  updateService: PropTypes.func,
+  selectedService: PropTypes.string
 }
 
 ServiceDropDown.defaultProps = {
-  updateValue: () => {}
+  updateService: () => {},
+  selectedService: ''
 }
 
 export default React.memo(ServiceDropDown)

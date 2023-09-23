@@ -16,6 +16,10 @@ import CategoryDropDown from '../../atoms/CategoryDropDown/CategoryDropDown'
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
   const [updateRTE, updateRTEVal] = useState('')
+  const [selectedService, setSelectedService] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('')
+  const [selectServiceActive, setSelectServiceActive] = useState(false)
+  const [selectCategoryActive, setSelectCategoryActive] = useState(false)
   const form = useForm()
   const {
     register,
@@ -37,6 +41,8 @@ const BlogForm = ({ edit, blogDetails }) => {
       setValue('date', blogDetails.date)
       setValue('readTime', blogDetails.read_time)
       updateRTEVal(blogDetails.content)
+      setSelectedService(blogDetails.service)
+      setSelectedCategory(blogDetails.category)
     }
   }, [blogDetails])
 
@@ -46,7 +52,9 @@ const BlogForm = ({ edit, blogDetails }) => {
     formData.append('file', data.thumbImg[0])
     let dd = {
       ...data,
-      status: saveorPublish === 'save' ? 1 : 2
+      status: saveorPublish === 'save' ? 1 : 2,
+      services: selectedService,
+      category: selectedCategory
     }
     if (edit) {
       dd = { ...dd, id: blogDetails.id }
@@ -68,7 +76,7 @@ const BlogForm = ({ edit, blogDetails }) => {
             res.data.message === 'Blog Added'
           ) {
             reset()
-            updateRTEVal('')
+            updateRTEVal(' ')
             showBlogNotification(
               'success',
               `Blog Added and ${
@@ -152,11 +160,55 @@ const BlogForm = ({ edit, blogDetails }) => {
               />
             </div>
             <div className="col-md-3">
-              <CategoryDropDown errors={errors} form={form} />
+              <div
+                className={`select ${selectCategoryActive ? ' active' : ''}`}
+              >
+                <input
+                  {...register('category', { required: true })}
+                  className={
+                    errors.category?.type === 'required' ? 'error' : ' '
+                  }
+                  type="text"
+                  placeholder="Select Category"
+                  onClick={() => {
+                    setSelectCategoryActive(true)
+                  }}
+                  value={selectedCategory}
+                  readOnly
+                />
+                <CategoryDropDown
+                  updateCategory={(val) => {
+                    setSelectedCategory(val)
+                    setSelectCategoryActive(false)
+                  }}
+                  selectedCategory={selectedCategory}
+                />
+              </div>
             </div>
 
             <div className="col-md-3">
-              <ServiceDropDown errors={errors} form={form} />
+              <div className={`select ${selectServiceActive ? ' active' : ''}`}>
+                <input
+                  {...register('services', { required: true })}
+                  className={
+                    errors.services?.type === 'required' ? 'error' : ' '
+                  }
+                  type="text"
+                  placeholder="Services looking for?"
+                  onClick={() => {
+                    setSelectServiceActive(true)
+                  }}
+                  value={selectedService}
+                  readOnly
+                />
+                <ServiceDropDown
+                  updateService={(val) => {
+                    setSelectedService(val)
+                    setSelectServiceActive(false)
+                  }}
+                  selectedService={selectedService}
+                />
+              </div>
             </div>
           </div>
           <div className="row">
