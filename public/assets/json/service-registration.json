@@ -1248,6 +1248,23 @@
         "value": "Shops and Establishment Registration is a legal requirement for all businesses that employ people in India. The registration process is governed by the Shop and Establishment Act, which is a state-level law. The specific requirements for registration vary from state to state, but there are some general similarities."
       },
       {
+        "id": "Required documents",
+        "header": "What are the documents required for registering under Shop and Establishment Act?",
+        "type": "SPDocuments",
+        "value": [
+          "Identity Proof of Applicant",
+          "PAN Card of Applicant",
+          "Commercial Address Proof",
+          "Other relevant licenses needed to start a business",
+          "Fee Payment Challans",
+          "Postal Address of the Establishment",
+          "Number of employers employed",
+          "Name of the establishment and employer",
+          "Category of business",
+          "The date on which the establishment commencement has started."
+        ]
+      },
+      {
         "id": "Key provisions of the Shop and Establishment Act",
         "header": "Key provisions of the Shop and Establishment Act",
         "desc": "",
@@ -1286,30 +1303,12 @@
           }
         ]
       },
-      {
-        "id": "Required documents",
-        "header": "What are the documents required for registering under Shop and Establishment Act?",
-        "type": "SPDocuments",
-        "value": [
-          "Identity Proof of Applicant",
-          "PAN Card of Applicant",
-          "Commercial Address Proof",
-          "Other relevant licenses needed to start a business",
-          "Fee Payment Challans",
-          "Postal Address of the Establishment",
-          "Number of employers employed",
-          "Name of the establishment and employer",
-          "Category of business",
-          "The date on which the establishment commencement has started."
-        ]
-      },
 
       {
         "id": "Steps to register",
-        "header": "Steps to register",
+        "header": "The registration procedure for shops and establishments under the Shop and Establishment Act typically involves the following",
         "type": "SPStep",
         "value": {
-          "subHeading": "The registration procedure for shops and establishments under the Shop and Establishment Act typically involves the following:",
           "steps": [
             {
               "heading": "Apply",
@@ -1369,7 +1368,7 @@
         "class": "",
         "value": [
           {
-            "title": "TMedical benefits",
+            "title": "Medical benefits",
             "value": [
               "LWF provides financial assistance for medical expenses, such as hospitalization, surgery, and medicines."
             ]
@@ -1468,9 +1467,15 @@
         ]
       },
       {
+        "id": "Central Advisory Board",
+        "header": "Central Advisory Board",
+        "value": "The total members that are not more than seventeen but also should not be less than eleven. This is because the central government will stipulate to embody the government, the coal industry, the contractors, the railway sector, the workmen, and other sectors who have an idea of the central government to embody the central board.",
+        "type": "SPParagraph"
+      },
+      {
         "id": "State Advisory Board ",
         "header": "State Advisory Board ",
-        "desc": "GST certificate amendment for business refer to the changes that can be made to a GST registration certificate. These changes can be made for a variety of reasons, such as:",
+        "desc": "",
         "type": "SPBullet",
         "value": [
           "The Labour Commissioner, if he is not available, then any other can officer can be provided by the State Government. ",
@@ -1692,22 +1697,18 @@
         "header": "How to apply for the Fire License?",
         "type": "SPStep",
         "value": {
-          "subHeading": "Follow the below steps for the successful Factory Registration. ",
+          "subHeading": "",
           "steps": [
             {
-              "heading": "Offline application",
               "desc": "The Application for a Fire License needs to be provided to the Divisional Fire Officer, who is in every district headquarters in the specified format. "
             },
             {
-              "heading": "Online application",
               "desc": "The application forms are available in every fire station (300) in the divisional and state offices. It is also on the website and therefore can be downloaded from the site."
             },
             {
-              "heading": "Application submission",
               "desc": "Once you fill in the application form, it can be provided to the nearest fire station of you or else you can directly send the application form to the divisional fire officer. "
             },
             {
-              "heading": "Application approval",
               "desc": "Once the divisional fire officer approves the license, the fire license will be provided within 15 days of the application being sent. "
             }
           ]
@@ -1753,7 +1754,7 @@
               "Fulminate of mercury.",
               "Nitro-glycerin.",
               "Fireworks, preparing or manufacturing or storing.",
-              "Chemical preparations, carbolic acid, hydrochloric acid, nitric acid, pyritic acid, sulphuric acid, caustic potash, caustic soda, chemical fertilizers, benzyl, bromoform, chloroform, iodoform, glycerin, acetone, nitro, nitro, per chloride of mercury, chloride of potash, etc.",
+              "Chemical preparations, carbolic acid, hydrochloric acid, nitric acid, pyritic acid, sulphuric acid, caustic potash, caustic soda, chemical fertilizers, benzyl, bromoform, chloroform, iodoform, glycerin, acetone, nitro, per chloride of mercury, chloride of potash, etc.",
               "Manufacturing articles from which unwholesome smells, fumes, dust, or noise arise.",
               "Printing, composing, binding, etc.",
               "Industries handling Steam engines and boilers to construct or establish any factory or workplace in which it is proposed to employ steam power, water power, or other mechanical power, or electric power.",
@@ -1767,7 +1768,7 @@
     ]
   },
   {
-    "title": "Training Programs",
+    "title": "Industrial Training Programs in Chennai",
     "price": {
       "isAvailable": false,
       "value": "2,800",
@@ -1935,23 +1936,18 @@
           "subHeading": "",
           "steps": [
             {
-              "heading": "Documents",
               "desc": "Share require documents along with contact details to Aanoor team."
             },
             {
-              "heading": "Filing & Submission",
               "desc": "We file online application with RA portal by verifying OTP details provided by the applicant."
             },
             {
-              "heading": "Video verification",
               "desc": "Get the video verification link and should be submitted with due verification with the documents by the applicant."
             },
             {
-              "heading": "DSC issuance",
               "desc": "After verification by DSC Certifying authority the Digital Signature Certificate will be issued."
             },
             {
-              "heading": "Procure DSC",
               "desc": "DSC certificate will be downloaded with password as prescribed USB tokens. The same will be used for Signing with the DSC."
             }
           ]

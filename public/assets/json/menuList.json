@@ -266,7 +266,7 @@
               "pageUrl": "labourContractLicense"
             },
             {
-              "title": "Inspector of Factories",
+              "title": "Factory License",
               "className": "second-level",
               "pageUrl": "factoryLicenseOnline"
             },
@@ -302,7 +302,7 @@
               ]
             },
             {
-              "title": "ISO 14001:2004 EMS",
+              "title": "ISO 14001:2015 EMS",
               "className": "second-level",
               "pageUrl": "iso14001",
               "searchkeyword": [
