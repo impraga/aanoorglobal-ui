@@ -40,7 +40,7 @@ const ServicePage = () => {
     <>
       <HelmetWrapper data={metaDetails} />
       <div className={`service-page-cont ${category}`}>
-        {serviceDetails?.h1 && <h1 className="d-none">{serviceDetails.h1}</h1>}
+        {serviceDetails?.h1 && <h1 className="sr-only">{serviceDetails.h1}</h1>}
         <ServiceHeroBanner
           title={serviceDetails.title}
           desc={serviceDetails.description}

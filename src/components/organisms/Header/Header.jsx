@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-
-import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom'
 
 import logo from '../../../../public/assets/icons/aanoor-logo.svg'
 import menuList from '../../../../public/assets/json/menuList.json'
@@ -14,8 +12,6 @@ import URLs from '../../../constants/urlMapper'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(-1)
-
-  const navigate = useNavigate()
 
   const menuWithLink = (item, device, index) => (
     <li
@@ -187,13 +183,14 @@ const Header = () => {
 
               <div className="d-flex align-items-center">
                 <li key="blog">
-                  <Button
-                    className="blog-btn"
-                    variant="success"
-                    onClick={() => navigate('/blog')}
-                  >
-                    Blog
-                  </Button>
+                  <Link to="/blog">
+                    <img
+                      className="menu-icon mx-2 d-inline-block"
+                      src="/assets/images/intellectual-property.svg"
+                      alt="icon"
+                    />
+                    Knowledge factory
+                  </Link>
                 </li>
               </div>
             </ul>
@@ -209,13 +206,13 @@ const Header = () => {
                 ].map((item, i) => menuWithLink(item, 'mobile', i))}
 
                 <li key="blog">
-                  <Button
-                    className="blog-btn"
-                    variant="success"
-                    onClick={() => navigate('/blog')}
-                  >
-                    Blog
-                  </Button>
+                  <Link to="/blog">
+                    <img
+                      src="/assets/images/intellectual-property.svg"
+                      alt="icon"
+                    />
+                    Knowledge factory
+                  </Link>
                 </li>
               </div>
             </ul>
