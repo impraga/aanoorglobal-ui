@@ -53,7 +53,7 @@ const BlogView = () => {
                   ))}
               </div>
               <div className="col-md-4 share-cont d-flex align-items-center justify-content-md-end justify-content-start text-white">
-                <div>{blogList.date}</div> <div>•</div>{' '}
+                <div>{blogList.posted_date}</div> <div>•</div>{' '}
                 <div className="o-05">Share</div>
                 <div className="d-flex icon-cont align-items-center">
                   <img className="fb" src={blogFb} alt="Facebook" />
@@ -68,17 +68,17 @@ const BlogView = () => {
         </div>
         <div className="container blog-content">
           <div className="herobanner-cont br-1 overflow-hidden">
-            {blogList.youtube && (
+            {blogList.youtube_url && (
               <iframe
                 width="100%"
                 height="auto"
-                src={blogList.youtube}
+                src={blogList.youtube_url}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             )}
-            {!blogList.youtube && blogList.image_name && (
+            {!blogList.youtube_url && blogList.image_name && (
               <img
                 src={`${getEnvUploadPath + blogList.image_name}`}
                 alt="herobanner"
@@ -90,7 +90,12 @@ const BlogView = () => {
           </div>
         </div>
       </div>
-      <RelatedBlogSection />
+      {(blogList.sub_service || blogList.main_service) && (
+        <RelatedBlogSection
+          serviceName={blogList.sub_service}
+          categoryName={blogList.main_service}
+        />
+      )}
     </>
   )
 }

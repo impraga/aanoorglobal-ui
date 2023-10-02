@@ -16,8 +16,8 @@ import CategoryDropDown from '../../atoms/CategoryDropDown/CategoryDropDown'
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
   const [updateRTE, updateRTEVal] = useState('')
-  const [selectedService, setSelectedService] = useState('General')
-  const [selectedCategory, setSelectedCategory] = useState('General')
+  const [selectedService, setSelectedService] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('general')
   const form = useForm()
   const {
     register,
@@ -30,17 +30,17 @@ const BlogForm = ({ edit, blogDetails }) => {
   useEffect(() => {
     if (edit) {
       setValue('title', blogDetails.title)
-      setValue('url', blogDetails.url)
+      setValue('postUrl', blogDetails.post_url)
       setValue('thumbImg', blogDetails.image_name)
       setValue('tags', blogDetails.tags)
-      setValue('category', blogDetails.category)
-      setValue('services', blogDetails.service)
-      setValue('video', blogDetails.youtube)
-      setValue('date', blogDetails.date)
+      setValue('category', blogDetails.main_service)
+      setValue('services', blogDetails.sub_service)
+      setValue('youtubeUrl', blogDetails.youtube_url)
+      setValue('postedDate', blogDetails.posted_date)
       setValue('readTime', blogDetails.read_time)
       updateRTEVal(blogDetails.content)
-      setSelectedService(blogDetails.service)
-      setSelectedCategory(blogDetails.category)
+      setSelectedService(blogDetails.sub_service)
+      setSelectedCategory(blogDetails.main_service)
     }
   }, [blogDetails])
 
@@ -100,7 +100,7 @@ const BlogForm = ({ edit, blogDetails }) => {
     })
     setTimeout(() => {
       setDisplayNotification({})
-    }, 5000)
+    }, 15000)
   }
 
   const RTEChange = (value) => {
@@ -133,8 +133,8 @@ const BlogForm = ({ edit, blogDetails }) => {
           <div className="row">
             <div className="col-md-6">
               <input
-                {...register('url', { required: true })}
-                className={errors.url?.type === 'required' ? 'error' : ' '}
+                {...register('postUrl', { required: true })}
+                className={errors.postUrl?.type === 'required' ? 'error' : ' '}
                 type="text"
                 placeholder="Blog URL"
               />
@@ -178,9 +178,9 @@ const BlogForm = ({ edit, blogDetails }) => {
           <div className="row">
             <div className="col-md-7">
               <input
-                {...register('video', { required: false })}
+                {...register('youtubeUrl', { required: false })}
                 className={`w-100 ${
-                  errors.video?.type === 'required' ? 'error' : ' '
+                  errors.youtubeUrl?.type === 'required' ? 'error' : ' '
                 }`}
                 type="text"
                 placeholder="Youtube Url"
@@ -188,9 +188,9 @@ const BlogForm = ({ edit, blogDetails }) => {
             </div>
             <div className="col-md-3">
               <input
-                {...register('date', { required: true })}
+                {...register('postedDate', { required: true })}
                 className={`w-100 ${
-                  errors.date?.type === 'required' ? 'error' : ' '
+                  errors.postedDate?.type === 'required' ? 'error' : ' '
                 }`}
                 type="date"
                 defaultValue={new Date().toISOString().substring(0, 10)}

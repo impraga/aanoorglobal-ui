@@ -8,13 +8,13 @@ import ServicePageSidePanel from '../../components/molecules/ServicePageSidePane
 import NotFound from '../NotFound/NotFound'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
-// import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
+import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 import URLs from '../../constants/urlMapper'
 
 import './ServicePage.scss'
 
 const ServicePage = () => {
-  const { category } = useParams()
+  const { category, serviceName } = useParams()
   const location = useLocation()
 
   // eslint-disable-next-line import/no-dynamic-require, global-require
@@ -96,7 +96,7 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
-      {/* <RelatedBlogSection /> */}
+      <RelatedBlogSection serviceName={serviceName} categoryName={category} />
     </>
   ) : (
     <NotFound />

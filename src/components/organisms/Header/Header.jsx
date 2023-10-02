@@ -200,9 +200,9 @@ const Header = () => {
               <div>
                 {[
                   // eslint-disable-next-line no-unsafe-optional-chaining
-                  ...menuList?.serviceData[0].children,
+                  ...menuList.serviceData[0].children,
                   // eslint-disable-next-line no-unsafe-optional-chaining
-                  ...menuList?.serviceData[1].children
+                  ...menuList.serviceData[1].children
                 ].map((item, i) => menuWithLink(item, 'mobile', i))}
 
                 <li key="blog">

@@ -15,11 +15,11 @@ const CategoryDropDown = ({ updateCategory, selectedCategory }) => {
         onClick={() => {
           setSelectActive(true)
         }}
-        value={selectedCategory}
+        value={serviceOrder[selectedCategory]}
         readOnly
       />
       <ul className="md-whiteframe-z1" name="ul-id">
-        {serviceOrder.map((cat) => (
+        {Object.keys(serviceOrder).map((cat) => (
           <li
             // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
             role="option"
@@ -32,7 +32,7 @@ const CategoryDropDown = ({ updateCategory, selectedCategory }) => {
             tabIndex="-1"
             aria-hidden
           >
-            {cat}
+            {serviceOrder[cat]}
           </li>
         ))}
       </ul>

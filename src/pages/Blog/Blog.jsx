@@ -32,9 +32,9 @@ const Blog = () => {
       .then(({ data }) => {
         // Only for Data mocking - Remove Below line
         // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
-        if (data.message.length > 0 && data.status === '200') {
+        if (data.response.length > 0 && data.status === '200') {
           setShowNoBlog(false)
-          setBlogRawList(data.message)
+          setBlogRawList(data.response)
         }
       })
       .catch(setShowNoBlog(true))
@@ -51,7 +51,7 @@ const Blog = () => {
         {
           service,
           data: blogRawList.filter(
-            (blog) => blog.category.toLowerCase() === service.toLowerCase()
+            (blog) => blog.main_service.toLowerCase() === service.toLowerCase()
           )
         }
       ])
@@ -60,9 +60,9 @@ const Blog = () => {
 
   // To get Latest 3 Blog List with Service Category
   const updateBlogList = (value) => {
-    serviceOrder.forEach((serviceList) => {
+    Object.keys(serviceOrder).forEach((serviceList) => {
       const list = value
-        .filter((blog) => blog.category === serviceList) // Filter the Blog List by serviceList
+        .filter((blog) => blog.main_service === serviceList) // Filter the Blog List by serviceList
         .sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1)) // Sorting the blog list by Date
         .slice(0, 3) // Splicing the Top 3 Blog list
       setBlogList((prev) => [
@@ -88,7 +88,9 @@ const Blog = () => {
                   <div key={(blogCat.service, index)}>
                     <div className="my-3 d-flex justify-content-between align-items-center">
                       <div>
-                        <h2 className="mb-0">{blogCat.service}</h2>
+                        <h2 className="mb-0">
+                          {serviceOrder[blogCat.service]}
+                        </h2>
                       </div>
                       <div>
                         {!service && (

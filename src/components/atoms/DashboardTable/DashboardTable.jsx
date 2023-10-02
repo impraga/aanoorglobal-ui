@@ -1,30 +1,56 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import Table from 'react-bootstrap/Table'
 import PropTypes from 'prop-types'
 
 import { useNavigate } from 'react-router-dom'
 
-import './DashboardTable.scss'
 import axios from 'axios'
-import { sessionKeys } from '../../../constants'
+import { serviceOrder, sessionKeys } from '../../../constants'
 import { getSessionStorage } from '../../../utils/tools'
 
 import editImage from '../../../../public/assets/icons/edit-button.png'
 import viewImage from '../../../../public/assets/icons/view-button.png'
 import deleteImage from '../../../../public/assets/icons/delete-button.png'
 import getEnvUrl from '../../../constants/envUrl'
+import URLs from '../../../constants/urlMapper'
+import menuList from '../../../../public/assets/json/menuList.json'
+
+import './DashboardTable.scss'
 
 const DashboardTable = ({ blogListInput, updateBlog }) => {
   const navigate = useNavigate()
   const [blogList, setBlogList] = useState([])
   const displayColumns = [
-    { title: 'title', width: '35' },
-    { title: 'service', width: '15' },
-    { title: 'category', width: '20' },
-    { title: 'date', width: '10' },
-    { title: 'status', width: '5' },
+    { title: 'title', fieldName: 'title', width: '35' },
+    { title: 'service', fieldName: 'sub_service', width: '15' },
+    { title: 'category', fieldName: 'main_service', width: '20' },
+    { title: 'date', fieldName: 'posted_date', width: '10' },
+    { title: 'status', fieldName: 'post_status', width: '5' },
     { title: 'options', width: '15' }
   ]
+
+  const serviceCategory = useMemo(() => {
+    const flatCategory = [{ title: 'General', url: '', shortUrl: '' }]
+    const menu = [
+      ...menuList.serviceData[0].children,
+      ...menuList.serviceData[1].children
+    ]
+
+    menu.forEach((value) => {
+      value.children.forEach((page) => {
+        flatCategory.push({
+          title: page.title,
+          url: URLs[page.pageUrl],
+          shortUrl: URLs[page.pageUrl].split('/')[3]
+        })
+      })
+    })
+
+    return flatCategory
+  }, [])
+
+  const showTitleFromUrl = (url) =>
+    serviceCategory.find((d) => d.shortUrl === url)?.title
 
   // Updating Blog List in UseState
   useEffect(() => {
@@ -54,6 +80,14 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
           </button>
         </>
       )
+    }
+
+    if (col === 'category') {
+      return serviceOrder[cellValue]
+    }
+
+    if (col === 'service') {
+      return showTitleFromUrl(cellValue)
     }
 
     if (col === 'status') {
@@ -127,12 +161,12 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
             {blogList &&
               blogList.map((row, rowIndex) => (
                 <tr key={(row.id, rowIndex)}>
-                  {displayColumns.map(({ title }, colIndex) => (
+                  {displayColumns.map(({ title, fieldName }, colIndex) => (
                     <td
-                      key={(row[title], colIndex)}
-                      className={`${title} class${row[title]}`}
+                      key={(row[fieldName], colIndex)}
+                      className={`${title} class${row[fieldName]}`}
                     >
-                      {tableCellData(row[title], title, row)}
+                      {tableCellData(row[fieldName], title, row)}
                     </td>
                   ))}
                 </tr>
