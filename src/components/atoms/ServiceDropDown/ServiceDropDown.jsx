@@ -8,7 +8,7 @@ import './ServiceDropDown.scss'
 const ServiceDropDown = ({ updateService, selectedService }) => {
   const [selectActive, setSelectActive] = useState(false)
   const serviceCategory = useMemo(() => {
-    const flatCategory = [{ title: 'General', url: '', shortUrl: '' }]
+    const flatCategory = [{ title: 'General', url: '', shortUrl: 'general' }]
     const menu = [
       ...menuList.serviceData[0].children,
       ...menuList.serviceData[1].children

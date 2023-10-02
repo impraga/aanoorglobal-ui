@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable no-console */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { useParams } from 'react-router'
 
 import { FormProvider, useForm } from 'react-hook-form'
 import axios from 'axios'
@@ -12,8 +12,12 @@ import getEnvUrl from '../../../constants/envUrl'
 import './ContactForm.scss'
 
 const ContactForm = ({ hideMessage }) => {
+  const { serviceName } = useParams()
+
   const [onSubmitForm, setOnSubmitForm] = useState('empty')
-  const [selectedService, setSelectedService] = useState('')
+  const [selectedService, setSelectedService] = useState(
+    serviceName || 'general'
+  )
   const methods = useForm()
 
   const {
@@ -24,12 +28,18 @@ const ContactForm = ({ hideMessage }) => {
     setValue
   } = methods
 
+  useEffect(() => {}, [])
+
   const onSubmit = (data) => {
     setOnSubmitForm('onclick')
+    const dd = {
+      ...data,
+      services: selectedService
+    }
 
     const url = `${getEnvUrl}/updateContact`
     axios
-      .post(url, JSON.stringify(data), {
+      .post(url, JSON.stringify(dd), {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
@@ -37,16 +47,13 @@ const ContactForm = ({ hideMessage }) => {
       })
       .then((res) => {
         if (res.data.status === '200') {
-          console.log('contact added')
           reset()
           setOnSubmitForm('Validated')
         } else {
           setOnSubmitForm('error')
-          console.log('error in uploading')
         }
       })
       .catch(() => {
-        console.log('error in uploading2')
         setOnSubmitForm('error')
       })
   }

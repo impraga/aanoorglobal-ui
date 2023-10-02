@@ -16,7 +16,7 @@ import CategoryDropDown from '../../atoms/CategoryDropDown/CategoryDropDown'
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
   const [updateRTE, updateRTEVal] = useState('')
-  const [selectedService, setSelectedService] = useState('')
+  const [selectedService, setSelectedService] = useState('general')
   const [selectedCategory, setSelectedCategory] = useState('general')
   const form = useForm()
   const {

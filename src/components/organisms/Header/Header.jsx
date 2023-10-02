@@ -208,6 +208,7 @@ const Header = () => {
                 <li key="blog">
                   <Link to="/blog">
                     <img
+                      className="menu-icon d-inline-block"
                       src="/assets/images/intellectual-property.svg"
                       alt="icon"
                     />

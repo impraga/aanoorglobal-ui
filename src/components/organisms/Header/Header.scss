@@ -27,6 +27,7 @@
       .logo-wrapper {
         height: 70px;
         padding: 5px 0;
+        padding-left: 15px;
         img {
           height: 100%;
         }
@@ -172,7 +173,7 @@
                 ul {
                   list-style: none;
                   li {
-                    font-size: 12px;
+                    font-size: 14px;
                     margin: 0 1rem;
                     color: $ag-blue;
                   }
