@@ -21,13 +21,14 @@ const URLs = {
   tdsReturns: '/services/statutory-compliance/tds-returns',
 
   // CERTIFICATIONS
-  iso2015: '/services/certification/iso-9001-2015-qms',
-  iso14001: '/services/certification/iso-14001-2015-ems',
-  iso22000: '/services/certification/iso-22000-2018-fsms',
-  iso45001: '/services/certification/iso-45001-2018-ohsms',
-  iso27001: '/services/certification/iso-27001-2013-isms',
-  iso13485: '/services/certification/iso-13485-2016-isms',
-  gmpCertification: '/services/certification/good-manufacturing-practice',
+  iso2015: '/services/certification/iso-9001-2015',
+  iso14001:
+    '/services/certification/environment-management-system-registration',
+  iso22000: '/services/certification/iso-fsms',
+  iso45001: '/services/certification/iso-ohsms',
+  iso27001: '/services/certification/iso-isms',
+  iso13485: '/services/certification/iso-medical-devices',
+  gmpCertification: '/services/certification/gmp-certification',
 
   // REGISTRATIONS
   udayamMSME: '/services/registration/udyam-msme-registration-online',
@@ -68,7 +69,7 @@ const URLs = {
 export const nonServiceUrls = [
   { title: 'Home', pageUrl: '/' },
   { title: 'Contact Us', pageUrl: '/contact' },
-  { title: 'About', pageUrl: '/about' },
+  { title: 'About Us', pageUrl: '/about' },
   {
     title: 'Privacy policy',
     pageUrl: '/privacy-policy'

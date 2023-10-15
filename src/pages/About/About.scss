@@ -1,6 +1,13 @@
+@import '../../index.scss';
+
 .about-cont {
   min-height: 400px;
   margin-top: -60px;
+
+  h2 {
+    color: $ag-darkgreen;
+    font-weight: 500;
+  }
 }
 .about-stats {
   .stats-cont > div {

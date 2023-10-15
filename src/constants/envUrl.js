@@ -10,9 +10,9 @@ const getEnv = () => {
 const endpoints = {
   uat: 'https://uat.roonaa.com/api',
   localhost: 'http://localhost/Aanoor/aanoor-server/api',
-  prod: 'https://www.roonaa.com/api'
+  prod: 'https://aanoorglobal.com/api'
 }
 
-const getEnvUrl = endpoints[getEnv()]
+const getEnvUrl = endpoints[getEnv()] || endpoints.prod
 
 export default getEnvUrl
