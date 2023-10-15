@@ -8,7 +8,7 @@ import blogFb from '../../../public/assets/icons/blog-fb.png'
 import blogWhatsapp from '../../../public/assets/icons/blog-whatsapp.png'
 import './BlogView.scss'
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
-import getEnvUrl from '../../constants/envUrl'
+import getEnvUrl, { getEnvUploadPath } from '../../constants/envUrl'
 
 const metaDetails = {
   title: 'Blog | Annoor Global',
@@ -27,8 +27,8 @@ const BlogView = () => {
   useEffect(() => {
     axios.get(`${getEnvUrl}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
       // axios.get('/assets/json/api-mock-blogView.json').then(({ data }) => {
-      if (data.message.length > 0 && data.status === '200') {
-        setBlogList(data.message[0])
+      if (data.response.length > 0 && data.status === '200') {
+        setBlogList(data.response[0])
       }
     })
   }, [])
@@ -53,7 +53,7 @@ const BlogView = () => {
                   ))}
               </div>
               <div className="col-md-4 share-cont d-flex align-items-center justify-content-md-end justify-content-start text-white">
-                <div>{blogList.date}</div> <div>•</div>{' '}
+                <div>{blogList.posted_date}</div> <div>•</div>{' '}
                 <div className="o-05">Share</div>
                 <div className="d-flex icon-cont align-items-center">
                   <img className="fb" src={blogFb} alt="Facebook" />
@@ -68,18 +68,21 @@ const BlogView = () => {
         </div>
         <div className="container blog-content">
           <div className="herobanner-cont br-1 overflow-hidden">
-            {blogList.youtube && (
+            {blogList.youtube_url && (
               <iframe
                 width="100%"
                 height="auto"
-                src={blogList.youtube}
+                src={blogList.youtube_url}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             )}
-            {!blogList.youtube && blogList.image_name && (
-              <img src={blogList.image_name} alt="herobanner" />
+            {!blogList.youtube_url && blogList.image_name && (
+              <img
+                src={`${getEnvUploadPath + blogList.image_name}`}
+                alt="herobanner"
+              />
             )}
           </div>
           <div className="mt-4">
@@ -87,7 +90,12 @@ const BlogView = () => {
           </div>
         </div>
       </div>
-      <RelatedBlogSection />
+      {(blogList.sub_service || blogList.main_service) && (
+        <RelatedBlogSection
+          serviceName={blogList.sub_service}
+          categoryName={blogList.main_service}
+        />
+      )}
     </>
   )
 }

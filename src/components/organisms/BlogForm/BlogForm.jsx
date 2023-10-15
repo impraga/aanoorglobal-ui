@@ -11,10 +11,13 @@ import { sessionKeys } from '../../../constants'
 
 import './BlogForm.scss'
 import getEnvUrl from '../../../constants/envUrl'
+import CategoryDropDown from '../../atoms/CategoryDropDown/CategoryDropDown'
 
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
   const [updateRTE, updateRTEVal] = useState('')
+  const [selectedService, setSelectedService] = useState('general')
+  const [selectedCategory, setSelectedCategory] = useState('general')
   const form = useForm()
   const {
     register,
@@ -27,15 +30,17 @@ const BlogForm = ({ edit, blogDetails }) => {
   useEffect(() => {
     if (edit) {
       setValue('title', blogDetails.title)
-      setValue('url', blogDetails.url)
+      setValue('postUrl', blogDetails.post_url)
       setValue('thumbImg', blogDetails.image_name)
       setValue('tags', blogDetails.tags)
-      setValue('category', blogDetails.category)
-      setValue('services', blogDetails.service)
-      setValue('video', blogDetails.youtube)
-      setValue('date', blogDetails.date)
+      setValue('category', blogDetails.main_service)
+      setValue('services', blogDetails.sub_service)
+      setValue('youtubeUrl', blogDetails.youtube_url)
+      setValue('postedDate', blogDetails.posted_date)
       setValue('readTime', blogDetails.read_time)
       updateRTEVal(blogDetails.content)
+      setSelectedService(blogDetails.sub_service)
+      setSelectedCategory(blogDetails.main_service)
     }
   }, [blogDetails])
 
@@ -45,7 +50,9 @@ const BlogForm = ({ edit, blogDetails }) => {
     formData.append('file', data.thumbImg[0])
     let dd = {
       ...data,
-      status: saveorPublish === 'save' ? 1 : 2
+      status: saveorPublish === 'save' ? 1 : 2,
+      services: selectedService,
+      category: selectedCategory
     }
     if (edit) {
       dd = { ...dd, id: blogDetails.id }
@@ -67,7 +74,7 @@ const BlogForm = ({ edit, blogDetails }) => {
             res.data.message === 'Blog Added'
           ) {
             reset()
-            updateRTEVal('')
+            updateRTEVal(' ')
             showBlogNotification(
               'success',
               `Blog Added and ${
@@ -78,9 +85,11 @@ const BlogForm = ({ edit, blogDetails }) => {
         } else {
           showBlogNotification('danger', 'Error while adding blog')
         }
+        window.scrollTo(0, 0)
       })
       .catch(() => {
         showBlogNotification('danger', 'Error while adding blog')
+        window.scrollTo(0, 0)
       })
   }
 
@@ -91,7 +100,7 @@ const BlogForm = ({ edit, blogDetails }) => {
     })
     setTimeout(() => {
       setDisplayNotification({})
-    }, 5000)
+    }, 15000)
   }
 
   const RTEChange = (value) => {
@@ -124,15 +133,15 @@ const BlogForm = ({ edit, blogDetails }) => {
           <div className="row">
             <div className="col-md-6">
               <input
-                {...register('url', { required: true })}
-                className={errors.url?.type === 'required' ? 'error' : ' '}
+                {...register('postUrl', { required: true })}
+                className={errors.postUrl?.type === 'required' ? 'error' : ' '}
                 type="text"
-                placeholder="Url for the post"
+                placeholder="Blog URL"
               />
             </div>
             <div className="col-md-6">
               <input
-                {...register('thumbImg', { required: true })}
+                {...register('thumbImg', { required: false })}
                 className={errors.thumbImg?.type === 'required' ? 'error' : ' '}
                 type="file"
                 placeholder="Thumbnail Image"
@@ -142,31 +151,36 @@ const BlogForm = ({ edit, blogDetails }) => {
           <div className="row">
             <div className="col-md-6">
               <input
-                {...register('tags', { required: true })}
+                {...register('tags', { required: false })}
                 className={errors.tags?.type === 'required' ? 'error' : ' '}
                 type="text"
                 placeholder="Add tags in semicolon separated."
               />
             </div>
             <div className="col-md-3">
-              <input
-                {...register('category', { required: true })}
-                className={errors.category?.type === 'required' ? 'error' : ' '}
-                type="text"
-                placeholder="Category"
+              <CategoryDropDown
+                updateCategory={(val) => {
+                  setSelectedCategory(val)
+                }}
+                selectedCategory={selectedCategory}
               />
             </div>
 
             <div className="col-md-3">
-              <ServiceDropDown errors={errors} form={form} />
+              <ServiceDropDown
+                updateService={(val) => {
+                  setSelectedService(val)
+                }}
+                selectedService={selectedService}
+              />
             </div>
           </div>
           <div className="row">
             <div className="col-md-7">
               <input
-                {...register('video', { required: false })}
+                {...register('youtubeUrl', { required: false })}
                 className={`w-100 ${
-                  errors.video?.type === 'required' ? 'error' : ' '
+                  errors.youtubeUrl?.type === 'required' ? 'error' : ' '
                 }`}
                 type="text"
                 placeholder="Youtube Url"
@@ -174,9 +188,9 @@ const BlogForm = ({ edit, blogDetails }) => {
             </div>
             <div className="col-md-3">
               <input
-                {...register('date', { required: true })}
+                {...register('postedDate', { required: true })}
                 className={`w-100 ${
-                  errors.date?.type === 'required' ? 'error' : ' '
+                  errors.postedDate?.type === 'required' ? 'error' : ' '
                 }`}
                 type="date"
                 defaultValue={new Date().toISOString().substring(0, 10)}

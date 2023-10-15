@@ -3,8 +3,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
-import Button from 'react-bootstrap/Button'
-
 import blogIcon from '../../../../public/assets/icons/blog.png'
 import logo from '../../../../public/assets/icons/aanoor-logo.svg'
 import menuList from '../../../../public/assets/json/menuList.json'
@@ -12,26 +10,12 @@ import AGButton from '../../atoms/AGButton/AGButton'
 import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 
 import './Header.scss'
-import { removeSession } from '../../../utils/tools'
-import {
-  sessionKeys,
-  isUserLoggedIn,
-  isKillSwitchDisabled
-} from '../../../constants'
 import URLs from '../../../constants/urlMapper'
 import ButtonPrimary from '../../atoms/ButtonPrimary/ButtonPrimary'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(-1)
-
-  const navigate = useNavigate()
-
-  const handleClick = () => {
-    removeSession(sessionKeys.userLoggedStatus)
-    removeSession(sessionKeys.authorization)
-    navigate('/login')
-  }
 
   const menuWithLink = (item, device, index) => (
     <li
@@ -194,33 +178,32 @@ const Header = () => {
           <nav className={isMenuOpen ? 'open-menu' : 'close-menu'}>
             {/* desktop menu */}
             <ul className="d-none d-lg-flex ps-0">
-              {isKillSwitchDisabled && <div />}
+              <div />
               <div className="d-flex">
                 {menuList?.serviceData.map((item, i) =>
                   menuWithLink(item, 'desktop', i)
                 )}
               </div>
 
-              {isKillSwitchDisabled && (
-                <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center">
+                <li key="blog">
+                  <Link to="/blog">
+                    <img
+                      className="menu-icon mx-2 d-inline-block"
+                      src="/assets/images/intellectual-property.svg"
+                      alt="icon"
+                    />
+                    Knowledge factory
+                  </Link>
+                </li>
+              </div>
+              {/* <div className="d-flex align-items-center">
                   <li key="blog">
                     <div onClick={() => navigate('/blog')}>
                       <ButtonPrimary text="Blog" icon={blogIcon} />
                     </div>
                   </li>
-                </div>
-              )}
-              {isUserLoggedIn && (
-                <li key="logout">
-                  <Button
-                    className="logout"
-                    variant="primary"
-                    onClick={() => handleClick()}
-                  >
-                    Logout
-                  </Button>
-                </li>
-              )}
+                </div> */}
             </ul>
             {/* mobile menu */}
             <ul className="d-lg-none">
@@ -228,28 +211,27 @@ const Header = () => {
               <div>
                 {[
                   // eslint-disable-next-line no-unsafe-optional-chaining
-                  ...menuList?.serviceData[0].children,
+                  ...menuList.serviceData[0].children,
                   // eslint-disable-next-line no-unsafe-optional-chaining
-                  ...menuList?.serviceData[1].children
+                  ...menuList.serviceData[1].children
                 ].map((item, i) => menuWithLink(item, 'mobile', i))}
-                {isKillSwitchDisabled && (
-                  <li key="blog">
+
+                <li key="blog">
+                  <Link to="/blog">
+                    <img
+                      className="menu-icon d-inline-block"
+                      src="/assets/images/intellectual-property.svg"
+                      alt="icon"
+                    />
+                    Knowledge factory
+                  </Link>
+                </li>
+
+                {/* <li key="blog">
                     <div onClick={() => navigate('/blog')}>
                       <ButtonPrimary text="Blog" icon={blogIcon} />
                     </div>
-                  </li>
-                )}
-                {isUserLoggedIn && (
-                  <li key="logout">
-                    <Button
-                      className="logout"
-                      variant="primary"
-                      onClick={() => handleClick()}
-                    >
-                      Logout
-                    </Button>
-                  </li>
-                )}
+                  </li> */}
               </div>
             </ul>
           </nav>

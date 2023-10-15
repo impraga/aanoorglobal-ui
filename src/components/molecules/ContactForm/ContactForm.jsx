@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable no-console */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { useParams } from 'react-router'
 
 import { FormProvider, useForm } from 'react-hook-form'
 import axios from 'axios'
@@ -12,7 +12,12 @@ import getEnvUrl from '../../../constants/envUrl'
 import './ContactForm.scss'
 
 const ContactForm = ({ hideMessage }) => {
+  const { serviceName } = useParams()
+
   const [onSubmitForm, setOnSubmitForm] = useState('empty')
+  const [selectedService, setSelectedService] = useState(
+    serviceName || 'general'
+  )
   const methods = useForm()
 
   const {
@@ -23,16 +28,18 @@ const ContactForm = ({ hideMessage }) => {
     setValue
   } = methods
 
-  const updateServiceValue = (value) => {
-    if (value) setValue('services', value, { shouldValidate: true })
-  }
+  useEffect(() => {}, [])
 
   const onSubmit = (data) => {
     setOnSubmitForm('onclick')
+    const dd = {
+      ...data,
+      services: selectedService
+    }
 
     const url = `${getEnvUrl}/updateContact`
     axios
-      .post(url, JSON.stringify(data), {
+      .post(url, JSON.stringify(dd), {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
@@ -40,16 +47,13 @@ const ContactForm = ({ hideMessage }) => {
       })
       .then((res) => {
         if (res.data.status === '200') {
-          console.log('contact added')
           reset()
           setOnSubmitForm('Validated')
         } else {
           setOnSubmitForm('error')
-          console.log('error in uploading')
         }
       })
       .catch(() => {
-        console.log('error in uploading2')
         setOnSubmitForm('error')
       })
   }
@@ -68,148 +72,182 @@ const ContactForm = ({ hideMessage }) => {
           </div>
         )}
         <div className="col form-cont d-flex flex-column justify-content-center">
-          <div className="header-form mt-2" data-aos="fade-up">
-            <h1>
-              Get in <span>touch with us</span> for more information
-            </h1>
-          </div>
-          <div className="container form ag-form px-0 d-flex flex-column justify-content-between">
-            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-            <FormProvider {...methods}>
-              <form onSubmit={handleSubmit(onSubmit)}>
-                <div>
-                  <div className="row">
-                    <div
-                      className="col-12"
-                      data-aos="fade-up"
-                      data-aos-delay="50"
-                    >
-                      <input
-                        type="hidden"
-                        name="page"
-                        value={document.location.href}
-                        // eslint-disable-next-line react/jsx-props-no-spreading
-                        {...register('page', {})}
-                      />
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        className={
-                          errors.firstName?.type === 'required' ? 'error' : ' '
-                        }
-                        // eslint-disable-next-line react/jsx-props-no-spreading
-                        {...register('firstName', { required: true })}
-                        aria-invalid={errors.firstName ? 'true' : 'false'}
-                      />
-                      {/* {errors.firstName?.type === 'required' && (
+          {onSubmitForm === 'Validated' ? (
+            <div>
+              <h3 className="text-green">
+                Thanks for your interest. Your request has been received, we
+                will reach you shortly. <br />
+                <br />
+                Would you like to more about our services click&nbsp;
+                <a
+                  href="javacript:void(0)"
+                  className="text-underline"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setOnSubmitForm('empty')
+                  }}
+                >
+                  here
+                </a>
+              </h3>
+            </div>
+          ) : (
+            <>
+              <div className="header-form mt-2" data-aos="fade-up">
+                <h1>
+                  Get in <span>touch with us</span> for more information
+                </h1>
+              </div>
+              <div className="container form ag-form px-0 d-flex flex-column justify-content-between">
+                {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+                <FormProvider {...methods}>
+                  <form onSubmit={handleSubmit(onSubmit)}>
+                    <div>
+                      <div className="row">
+                        <div
+                          className="col-12"
+                          data-aos="fade-up"
+                          data-aos-delay="50"
+                        >
+                          <input
+                            type="hidden"
+                            name="page"
+                            value={document.location.href}
+                            // eslint-disable-next-line react/jsx-props-no-spreading
+                            {...register('page', {})}
+                          />
+                          <input
+                            type="text"
+                            placeholder="Name"
+                            className={
+                              errors.firstName?.type === 'required'
+                                ? 'error'
+                                : ' '
+                            }
+                            // eslint-disable-next-line react/jsx-props-no-spreading
+                            {...register('firstName', { required: true })}
+                            aria-invalid={errors.firstName ? 'true' : 'false'}
+                          />
+                          {/* {errors.firstName?.type === 'required' && (
                     <p className="form-error text-danger">Name is required</p>
                   )} */}
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div
-                      className="col-sm-6"
-                      data-aos="fade-up"
-                      data-aos-delay="150"
-                    >
-                      <input
-                        type="email"
-                        placeholder="E-Mail"
-                        className={
-                          errors.mail?.type === 'required' ? 'error' : ' '
-                        }
-                        // eslint-disable-next-line react/jsx-props-no-spreading
-                        {...register('mail', {
-                          required: 'Email address is required'
-                        })}
-                        aria-invalid={errors.mail ? 'true' : 'false'}
-                      />
-                      {/* {errors.mail && (
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div
+                          className="col-sm-6"
+                          data-aos="fade-up"
+                          data-aos-delay="150"
+                        >
+                          <input
+                            type="email"
+                            placeholder="E-Mail"
+                            className={
+                              errors.mail?.type === 'required' ? 'error' : ' '
+                            }
+                            // eslint-disable-next-line react/jsx-props-no-spreading
+                            {...register('mail', {
+                              required: 'Email address is required'
+                            })}
+                            aria-invalid={errors.mail ? 'true' : 'false'}
+                          />
+                          {/* {errors.mail && (
                     <p className="form-error text-danger">
                       {errors.mail?.message}
                     </p>
                   )} */}
-                    </div>
-                    <div
-                      className="col-sm-6"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                    >
-                      <input
-                        type="number"
-                        placeholder="Phone Number"
-                        className={
-                          errors.number?.type === 'required' ? 'error' : ' '
-                        }
-                        // eslint-disable-next-line react/jsx-props-no-spreading
-                        {...register('number', { required: true })}
-                        aria-invalid={errors.number ? 'true' : 'false'}
-                      />
-                      {/* {errors.number?.type === 'required' && (
+                        </div>
+                        <div
+                          className="col-sm-6"
+                          data-aos="fade-up"
+                          data-aos-delay="100"
+                        >
+                          <input
+                            type="number"
+                            placeholder="Phone Number"
+                            className={
+                              errors.number?.type === 'required' ? 'error' : ' '
+                            }
+                            // eslint-disable-next-line react/jsx-props-no-spreading
+                            {...register('number', { required: true })}
+                            aria-invalid={errors.number ? 'true' : 'false'}
+                          />
+                          {/* {errors.number?.type === 'required' && (
                     <p className="form-error text-danger">
                       Phone number is required
                     </p>
                   )} */}
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div
-                      className="col-12"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
-                      <ServiceDropDown updateValue={updateServiceValue} />
-                    </div>
-                  </div>
-                  {!hideMessage && (
-                    <div className="row">
-                      <div
-                        className="col-12"
-                        data-aos="fade-up"
-                        data-aos-delay="250"
-                      >
-                        <textarea
-                          id="message"
-                          name="message"
-                          rows="5"
-                          placeholder="Message"
-                          // eslint-disable-next-line react/jsx-props-no-spreading
-                          {...register('message', {
-                            required: false
-                          })}
-                        />
+                        </div>
                       </div>
+                      <div className="row">
+                        <div
+                          className="col-12"
+                          data-aos="fade-up"
+                          data-aos-delay="200"
+                        >
+                          <ServiceDropDown
+                            updateService={(val) => {
+                              setSelectedService(val)
+                              if (val)
+                                setValue('services', val, {
+                                  shouldValidate: true
+                                })
+                            }}
+                            selectedService={selectedService}
+                          />
+                        </div>
+                      </div>
+                      {!hideMessage && (
+                        <div className="row">
+                          <div
+                            className="col-12"
+                            data-aos="fade-up"
+                            data-aos-delay="250"
+                          >
+                            <textarea
+                              id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Message"
+                              // eslint-disable-next-line react/jsx-props-no-spreading
+                              {...register('message', {
+                                required: false
+                              })}
+                            />
+                          </div>
+                        </div>
+                      )}
                     </div>
-                  )}
-                </div>
 
-                <div className="row">
-                  {/* <div className="col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div className="row">
+                      {/* <div className="col-6" data-aos="fade-up" data-aos-delay="300">
                   <input
                     type="button"
                     className="btn btn-secondary"
                     value="Cancel"
                   />
                 </div> */}
-                  <div
-                    className="col-6 pb-3"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <button
-                      type="submit"
-                      className={`btn-submit ${
-                        onSubmitForm === 'onclick' ? 'onclick' : ''
-                      } ${onSubmitForm === 'Validated' ? 'validated' : ''} ${
-                        onSubmitForm === 'error' ? 'errorMail' : ''
-                      }`}
-                      // value="Submit"
-                    />
-                  </div>
-                </div>
-              </form>
-            </FormProvider>
-          </div>
+                      <div
+                        className="col-6 pb-3"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                      >
+                        <button
+                          type="submit"
+                          className={`btn-submit ${
+                            onSubmitForm === 'onclick' ? 'onclick' : ''
+                          } ${
+                            onSubmitForm === 'Validated' ? 'validated' : ''
+                          } ${onSubmitForm === 'error' ? 'errorMail' : ''}`}
+                          // value="Submit"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </FormProvider>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>

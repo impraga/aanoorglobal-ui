@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom'
 
 import clockSvg from '../../../../public/assets/icons/clock.svg'
 
+import { getEnvUploadPath } from '../../../constants/envUrl'
+
 import './BlogThumbnail.scss'
 
 const BlogThumbnail = ({ blog }) => (
-  <Link to={`/blogView/${blog.url}`}>
+  <Link to={`/post/${blog.post_url}`}>
     <div className="blogthumbnail-cont br-1 overflow-hidden bs h-100">
       <div className="thumbnail-img position-relative">
-        <img src={blog.image_name} alt="" />
+        <img src={getEnvUploadPath + blog.image_name} alt={blog.title} />
         <div className="img-overlay" />
         <div className="read-time-cont d-flex text-white align-items-center">
           <div className="img-cont">
@@ -23,11 +25,14 @@ const BlogThumbnail = ({ blog }) => (
         <h3>{blog.title}</h3>
         <div className="tag-cont d-flex flex-wrap ">
           {blog.tags?.split(';') &&
-            blog.tags?.split(';').map((tag, index) => (
-              <div key={(tag, index)} className="tag br-1 text-white bg-db">
-                {tag}
-              </div>
-            ))}
+            blog.tags?.split(';').map(
+              (tag, index) =>
+                tag && (
+                  <div key={(tag, index)} className="tag br-1 text-white bg-db">
+                    {tag}
+                  </div>
+                )
+            )}
         </div>
       </div>
     </div>

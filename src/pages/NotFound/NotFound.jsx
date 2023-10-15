@@ -9,7 +9,7 @@ const NotFound = () => (
       <img src={img404} alt="404 Warning" />
     </div>
     <div className="text-center my-5">
-      <h1 className="d-none">Page not found</h1>
+      <h1 className="sr-only">Page not found</h1>
       <Link to="/">
         <button type="button" className="home-btn ag-primary-btn">
           Go Back to Home

@@ -53,13 +53,14 @@ export const contactDetails = [
   // }
 ]
 
-export const serviceOrder = [
-  'Startup Centre',
-  'Intellectual Property',
-  'Registration',
-  'Certification',
-  'Statutory Compliance'
-]
+export const serviceOrder = {
+  'startup-center': 'Startup Centre',
+  'intellectual-property': 'Intellectual Property',
+  registration: 'Registration',
+  certification: 'Certification',
+  'statutory-compliance': 'Statutory Compliance',
+  general: 'General'
+}
 
 export const serviceTemplates = {
   'startup-center': 'STARTUP_CENTER',

@@ -27,7 +27,7 @@ const HeaderVersionTwo = () => {
   const handleClick = () => {
     removeSession(sessionKeys.userLoggedStatus)
     removeSession(sessionKeys.authorization)
-    navigate('/login')
+    navigate('/ar-admin/login')
   }
 
   const menuWithLink = (item) => (

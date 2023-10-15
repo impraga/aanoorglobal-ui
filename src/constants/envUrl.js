@@ -13,6 +13,14 @@ const endpoints = {
   prod: 'https://aanoorglobal.com/api'
 }
 
+const uploadPath = {
+  uat: 'https://uat.roonaa.com/global-uploads/',
+  localhost: 'http://localhost/Aanoor/uploads/',
+  prod: 'https://aanoorglobal.com/global-uploads/'
+}
+
+export const getEnvUploadPath = uploadPath[getEnv()] || uploadPath.prod
+
 const getEnvUrl = endpoints[getEnv()] || endpoints.prod
 
 export default getEnvUrl

@@ -1,47 +1,36 @@
-import React, { useEffect, useMemo, useState } from 'react'
-import { useLocation } from 'react-router'
+import React, { useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
-import { services } from '../../../constants'
 import menuList from '../../../../public/assets/json/menuList.json'
 import URLs from '../../../constants/urlMapper'
 
 import './ServiceDropDown.scss'
 
-const ServiceDropDown = ({ updateValue }) => {
-  const location = useLocation()
+const ServiceDropDown = ({ updateService, selectedService }) => {
   const [selectActive, setSelectActive] = useState(false)
-  const [selectedService, setSelectedService] = useState(null)
-
   const serviceCategory = useMemo(() => {
-    const flatCategory = []
+    const flatCategory = [{ title: 'General', url: '', shortUrl: 'general' }]
     const menu = [
       ...menuList.serviceData[0].children,
       ...menuList.serviceData[1].children
     ]
 
     menu.forEach((value) => {
-      value.children.forEach((service) => {
-        flatCategory.push({ title: service.title, url: URLs[service.pageUrl] })
+      value.children.forEach((page) => {
+        flatCategory.push({
+          title: page.title,
+          url: URLs[page.pageUrl],
+          shortUrl: URLs[page.pageUrl].split('/')[3]
+        })
       })
     })
-
-    setSelectedService(
-      flatCategory.find((d) => d.url === location.pathname)?.title ||
-        services[0].title
-    )
 
     return flatCategory
   }, [])
 
-  // To Update Service value after Page renders
-  useEffect(() => {
-    updateValue(selectedService)
-  }, [selectedService])
+  const showTitleFromUrl = (url) =>
+    serviceCategory.find((d) => d.shortUrl === url)?.title
 
-  const changeService = (service) => {
-    setSelectedService(service)
-    setSelectActive(false)
-  }
+  // To Update Service value after Page renders
 
   return (
     <div className={`select ${selectActive ? ' active' : ''}`}>
@@ -51,7 +40,7 @@ const ServiceDropDown = ({ updateValue }) => {
         onClick={() => {
           setSelectActive(true)
         }}
-        value={selectedService}
+        value={showTitleFromUrl(selectedService)}
         readOnly
       />
       <ul className="md-whiteframe-z1" name="ul-id">
@@ -61,9 +50,12 @@ const ServiceDropDown = ({ updateValue }) => {
             role="option"
             key={service.title}
             onClick={() => {
-              changeService(service.title)
+              updateService(service.shortUrl)
+              setSelectActive(false)
             }}
-            className={`${selectedService === service.title ? ' active' : ''}`}
+            className={`${
+              selectedService === service.shortUrl ? ' active' : ''
+            }`}
             tabIndex="-1"
             aria-hidden
           >
@@ -76,11 +68,13 @@ const ServiceDropDown = ({ updateValue }) => {
 }
 
 ServiceDropDown.propTypes = {
-  updateValue: PropTypes.func
+  updateService: PropTypes.func,
+  selectedService: PropTypes.string
 }
 
 ServiceDropDown.defaultProps = {
-  updateValue: () => {}
+  updateService: () => {},
+  selectedService: ''
 }
 
 export default React.memo(ServiceDropDown)
