@@ -29,22 +29,23 @@ const Dashboard = () => {
   }, [])
 
   useEffect(() => {
-    const activeBlogCount = blogList?.filter((d) => d.status === '2').length
-    const inActiveBlogCount = blogList?.filter((d) => d.status === '1').length
+    const activeBlogCount = blogList?.filter(
+      (d) => d.post_status === '2'
+    ).length
+    const inActiveBlogCount = blogList?.filter(
+      (d) => d.post_status === '1'
+    ).length
     setBlogStatus({ active: activeBlogCount, inactive: inActiveBlogCount })
   }, [blogList])
 
   const getBlog = () => {
     axios
       .post(`${getEnvUrl}/getBlogLists`, '', {
-        // .get('/assets/json/api-mock-bloglist.json', {
         headers: {
           Authorization: getSessionStorage(sessionKeys.authorization)
         }
       })
       .then(({ data }) => {
-        // eslint-disable-next-line no-console
-        console.log(data)
         if (data.message.length > 0 && data.status === '200') {
           setBlogList(data.message)
         }

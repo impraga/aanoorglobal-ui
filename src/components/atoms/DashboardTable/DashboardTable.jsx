@@ -70,7 +70,7 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
           <button
             type="button"
             onClick={() =>
-              window.open(`/post/${row.url}`, '', 'noopener, noreferrer')
+              window.open(`/post/${row.post_url}`, '', 'noopener, noreferrer')
             }
           >
             <img src={viewImage} className="view-btn" alt="View Button" />

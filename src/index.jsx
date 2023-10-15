@@ -64,12 +64,18 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog />,
-        children: [{ path: '/blog:service', element: <Blog /> }]
-      },
-      {
-        path: 'blog/tag',
-        element: <Blog />,
-        children: [{ path: '/blog/tag:tag', element: <Blog /> }]
+        children: [
+          { path: ':service', element: <Blog /> },
+          {
+            path: 'tag',
+            element: <Blog />,
+            children: [
+              {
+                path: ':tag'
+              }
+            ]
+          }
+        ]
       },
       {
         path: 'post',

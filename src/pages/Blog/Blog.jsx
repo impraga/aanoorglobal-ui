@@ -29,41 +29,25 @@ const Blog = () => {
   // BlogList API Call
   useEffect(() => {
     setBlogList([])
-    if (!tag) {
-      axios
-        .get(`${getEnvUrl}/getActiveBlogLists`)
-        .then(({ data }) => {
-          // Only for Data mocking - Remove Below line
-          // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
-          if (data.response.length > 0 && data.status === '200') {
-            setShowNoBlog(false)
-            setBlogRawList(data.response)
-          }
-        })
-        .catch(setShowNoBlog(true))
-    } else {
-      // TO DO - replace the new URL
-      // axios.get(`${getEnvUrl}/getActiveBlogLists`)
-      axios
-        .get('/assets/json/api-mock-bloglist.json')
-        .then(({ data }) => {
-          // Only for Data mocking - Remove Below line
-          if (data.response.length > 0 && data.status === '200') {
-            setShowNoBlog(false)
-            setBlogRawList(data.response)
-          }
-        })
-        .catch(setShowNoBlog(true))
-    }
+
+    axios
+      .get(`${getEnvUrl}/getActiveBlogLists`)
+      .then(({ data }) => {
+        // Only for Data mocking - Remove Below line
+        // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
+        if (data.response.length > 0 && data.status === '200') {
+          setShowNoBlog(false)
+          setBlogRawList(data.response)
+        }
+      })
+      .catch(setShowNoBlog(true))
   }, [paramsUrl])
 
   // To Update Blog List on Service Change
   useEffect(() => {
     setBlogList([])
-    if (!service) {
+    if (service) {
       // If Service Is not selected - Full Blog list will be rendered
-      updateBlogList(blogRawList)
-    } else {
       setBlogList([
         {
           service,
@@ -72,6 +56,18 @@ const Blog = () => {
           )
         }
       ])
+    } else if (tag) {
+      setBlogList([
+        {
+          service,
+          data: blogRawList.filter(
+            (blog) =>
+              blog.tags.toLowerCase().split(';').indexOf(tag.toLowerCase()) > -1
+          )
+        }
+      ])
+    } else {
+      updateBlogList(blogRawList)
     }
   }, [blogRawList, service, tag, paramsUrl])
 
@@ -110,7 +106,7 @@ const Blog = () => {
                         </h2>
                       </div>
                       <div>
-                        {!service && (
+                        {!service && !tag && (
                           <Link to={`/blog/${blogCat.service}`}>View more</Link>
                         )}
                         {service && <Link to="/blog">Back</Link>}
