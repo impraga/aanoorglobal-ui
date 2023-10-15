@@ -52,6 +52,7 @@ const URLs = {
   digitalSignature: '/services/registration/apply-digital-signature-online',
 
   // STARTUP CENTER
+  companyRegistration: '/services/startup-center/company-registration',
   soleProprietorship: '/services/startup-center/sole-proprietorship',
   partnershipFirm: '/services/startup-center/partnership-firm-registration',
   onePersonCompany: '/services/startup-center/opc-registration',

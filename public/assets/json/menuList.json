@@ -11,6 +11,14 @@
           "className": "first-level",
           "children": [
             {
+              "pageUrl": "companyRegistration",
+              "title": "Company Registration",
+              "className": "second-level",
+              "searchkeyword": [
+                "company registration, business registration, company formation, new company formation"
+              ]
+            },
+            {
               "pageUrl": "soleProprietorship",
               "title": "Sole Proprietorship",
               "className": "second-level",

@@ -1,7 +1,8 @@
+@import './../../../index.scss';
 .blogthumbnail-cont {
   min-height: 330px;
   width: 100%;
-  cursor: pointer;
+  // cursor: pointer;
   max-width: 500px;
   margin: auto;
   &:hover {
@@ -65,6 +66,12 @@
         padding: 10px 20px;
         font-size: 0.9rem;
         font-weight: 500;
+        z-index: 5;
+        text-transform: capitalize;
+        &:hover {
+          transition: 0.3s ease-in-out;
+          color: $ag-green !important;
+        }
       }
     }
   }

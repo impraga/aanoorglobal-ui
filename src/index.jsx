@@ -67,6 +67,11 @@ const router = createBrowserRouter([
         children: [{ path: '/blog:service', element: <Blog /> }]
       },
       {
+        path: 'blog/tag',
+        element: <Blog />,
+        children: [{ path: '/blog/tag:tag', element: <Blog /> }]
+      },
+      {
         path: 'post',
         element: <Navigate to="/blog" />
       },

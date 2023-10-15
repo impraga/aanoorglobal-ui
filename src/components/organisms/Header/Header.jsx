@@ -16,6 +16,7 @@ import ButtonPrimary from '../../atoms/ButtonPrimary/ButtonPrimary'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(-1)
+  const navigate = useNavigate()
 
   const menuWithLink = (item, device, index) => (
     <li
@@ -185,7 +186,7 @@ const Header = () => {
                 )}
               </div>
 
-              <div className="d-flex align-items-center">
+              {/* <div className="d-flex align-items-center">
                 <li key="blog">
                   <Link to="/blog">
                     <img
@@ -196,14 +197,14 @@ const Header = () => {
                     Knowledge factory
                   </Link>
                 </li>
+              </div> */}
+              <div className="d-flex align-items-center">
+                <li key="blog">
+                  <div onClick={() => navigate('/blog')}>
+                    <ButtonPrimary text="Knowledge factory" icon={blogIcon} />
+                  </div>
+                </li>
               </div>
-              {/* <div className="d-flex align-items-center">
-                  <li key="blog">
-                    <div onClick={() => navigate('/blog')}>
-                      <ButtonPrimary text="Blog" icon={blogIcon} />
-                    </div>
-                  </li>
-                </div> */}
             </ul>
             {/* mobile menu */}
             <ul className="d-lg-none">
@@ -216,7 +217,7 @@ const Header = () => {
                   ...menuList.serviceData[1].children
                 ].map((item, i) => menuWithLink(item, 'mobile', i))}
 
-                <li key="blog">
+                {/* <li key="blog">
                   <Link to="/blog">
                     <img
                       className="menu-icon d-inline-block"
@@ -225,13 +226,13 @@ const Header = () => {
                     />
                     Knowledge factory
                   </Link>
-                </li>
+                </li> */}
 
-                {/* <li key="blog">
-                    <div onClick={() => navigate('/blog')}>
-                      <ButtonPrimary text="Blog" icon={blogIcon} />
-                    </div>
-                  </li> */}
+                <li key="blog">
+                  <div onClick={() => navigate('/blog')}>
+                    <ButtonPrimary text="Knowledge factory" icon={blogIcon} />
+                  </div>
+                </li>
               </div>
             </ul>
           </nav>

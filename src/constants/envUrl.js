@@ -9,13 +9,13 @@ const getEnv = () => {
 
 const endpoints = {
   uat: 'https://uat.roonaa.com/api',
-  localhost: 'http://localhost/Aanoor/aanoor-server/api',
+  localhost: 'https://uat.roonaa.com/api',
   prod: 'https://aanoorglobal.com/api'
 }
 
 const uploadPath = {
   uat: 'https://uat.roonaa.com/global-uploads/',
-  localhost: 'http://localhost/Aanoor/uploads/',
+  localhost: 'https://uat.roonaa.com/global-uploads/',
   prod: 'https://aanoorglobal.com/global-uploads/'
 }
 

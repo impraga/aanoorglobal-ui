@@ -9,8 +9,8 @@ import { getEnvUploadPath } from '../../../constants/envUrl'
 import './BlogThumbnail.scss'
 
 const BlogThumbnail = ({ blog }) => (
-  <Link to={`/post/${blog.post_url}`}>
-    <div className="blogthumbnail-cont br-1 overflow-hidden bs h-100">
+  <div className="blogthumbnail-cont br-1 overflow-hidden bs h-100">
+    <Link to={`/post/${blog.post_url}`}>
       <div className="thumbnail-img position-relative">
         <img src={getEnvUploadPath + blog.image_name} alt={blog.title} />
         <div className="img-overlay" />
@@ -21,22 +21,27 @@ const BlogThumbnail = ({ blog }) => (
           <div>{blog.read_time} mins read</div>
         </div>
       </div>
-      <div className="card-cont bg-white h-100 p-3">
+    </Link>
+
+    <div className="card-cont bg-white h-100 p-3">
+      <Link to={`/post/${blog.post_url}`}>
         <h3>{blog.title}</h3>
-        <div className="tag-cont d-flex flex-wrap ">
-          {blog.tags?.split(';') &&
-            blog.tags?.split(';').map(
-              (tag, index) =>
-                tag && (
+      </Link>
+      <div className="tag-cont d-flex flex-wrap ">
+        {blog.tags?.split(';') &&
+          blog.tags?.split(';').map(
+            (tag, index) =>
+              tag && (
+                <Link key={(tag, index)} to={`/blog/tag/${tag}`}>
                   <div key={(tag, index)} className="tag br-1 text-white bg-db">
                     {tag}
                   </div>
-                )
-            )}
-        </div>
+                </Link>
+              )
+          )}
       </div>
     </div>
-  </Link>
+  </div>
 )
 
 BlogThumbnail.propTypes = {

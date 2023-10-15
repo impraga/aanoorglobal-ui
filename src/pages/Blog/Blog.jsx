@@ -20,12 +20,15 @@ const metaDetails = {
 
 const Blog = () => {
   const { service } = useParams()
+  const { tag } = useParams()
   const [blogList, setBlogList] = useState([])
   const [blogRawList, setBlogRawList] = useState([])
   const [showNoBlog, setShowNoBlog] = useState(false)
 
   // BlogList API Call
   useEffect(() => {
+    console.log(service)
+    console.log(tag)
     setBlogList([])
     axios
       .get(`${getEnvUrl}/getActiveBlogLists`)

@@ -2,6 +2,117 @@
   {
     "metaTitle": "Proprietorship Registration Company in Chennai |Udyam Registration and  MSME Registration in Chennai",
     "metaDesc": "Aanoor Global is a leading proprietorship registration company in chennai.Sole proprietorship is quick and easy to start business you need not to elborate the legal formalities.For more details call us now!",
+    "metaKeywords": "company registration, business registration, company formation, new company formation",
+    "title": "Company Registration in Chennai",
+    "price": {
+      "isAvailable": false,
+      "value": "2,800",
+      "note": "with in *5 working days"
+    },
+    "url": "companyRegistration",
+    "h1": "Company Registration in Chennai",
+    "description": "Company registration is the process of legally forming a company and obtaining a company registration number. This process is typically done with the government agency that is responsible for registering companies in the relevant jurisdiction.",
+    "template": [
+      {
+        "id": "overview",
+        "header": "Business Registration",
+        "type": "SPParagraph",
+        "value": "When you are starting a new business venture, then it is mandatory for registering the company through a simple process. If you have the relevant documents, then you can easily register your company online at the MCA – Ministry of Corporate Affairs portal."
+      },
+      {
+        "id": "Types of Companies",
+        "header": "Types of Companies",
+        "desc": "Getting by the process of new company registration helps you in more ways than one.",
+        "type": "SPBenefits",
+        "class": "important",
+        "value": [
+          {
+            "title": "Sole Proprietorship",
+            "value": [
+              "Sole proprietorship is a business structure in India that is owned and operated by a single individual. The proprietor is responsible for all aspects of the business, including management, financing, and liability. Sole proprietorships are the simplest and most common form of business in India, and they are relatively easy to set up and maintain."
+            ]
+          },
+          {
+            "title": "One Person Company (OPC)",
+            "value": [
+              "OPC registration is the process of registering a one-person company (OPC) with the Ministry of Corporate Affairs (MCA) in India. An OPC is a private limited company that can be formed by a single individual."
+            ]
+          },
+          {
+            "title": "Private Limited Company",
+            "value": [
+              "Private limited registration is the process of registering a private limited company with the Ministry of Corporate Affairs (MCA) in India. A private limited company is a type of business entity that is owned by a limited number of shareholders and has limited liability for its owners."
+            ]
+          },
+          {
+            "title": "Public Limited Company",
+            "value": [
+              "limited company in India is a type of business entity that is considered a separate legal entity from its owners. This means that the owners' liability for the company's debts and obligations is limited to the amount of their investment in the company. Limited companies in India are governed by the Companies Act, 2013. They are allowed to invite the public to subscribe to their shares or debentures."
+            ]
+          },
+          {
+            "title": "Limited Liability Partnership (LLP)",
+            "value": [
+              "The Limited Liability Partnership (LLP) Act, 2008 governs the partnership form of business in India. LLP company registration in India is a popular option for businesses that want the benefits of limited liability and minimal maintenance."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Benefits",
+        "header": "Benefits of new company registration",
+        "desc": "",
+        "type": "SPBenefits",
+        "value": [
+          {
+            "title": "Legal status",
+            "value": [
+              "A registered company has a legal status that is separate from its owners. This means that the company's assets are protected from the personal creditors of its owners."
+            ]
+          },
+          {
+            "title": "Limited liability",
+            "value": [
+              "The liability of the owners of a registered company is limited to the amount of their investment in the company. Which means that the owners are not personally liable for debts the company."
+            ]
+          },
+          {
+            "title": "Credibility",
+            "value": [
+              "A registered company is more credible than an unregistered business. This is because it has been through a legal process and has been granted a company registration number."
+            ]
+          },
+          {
+            "title": "Access to finance",
+            "value": [
+              "A registered company is more likely to be able to obtain finance from banks and other lenders. This is because banks and other lenders are more likely to lend money to a business that has a legal status and limited liability."
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "Required documents",
+        "header": "What are the required documents for the online registration of a new company?",
+        "type": "SPDocuments",
+        "value": [
+          "The name of the company",
+          "The address of the company's registered office",
+          "The names and addresses of the company's directors and shareholders",
+          "Certificate of Incorporation (COI), Memorandum and Articles of association (MOA, AOA)"
+        ]
+      },
+      {
+        "id": "Where to register company?",
+        "header": "Where to register company?",
+        "type": "SPParagraph",
+        "value": "Once a company is registered, it is considered a legal entity and is able to conduct business. In India, company registration is done with the Ministry of Corporate Affairs (MCA). The MCA website provides a comprehensive guide to the company registration process, including the required documents and fees. Contact Aanoor team for further assistance to formation of new business in India."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Proprietorship Registration Company in Chennai |Udyam Registration and  MSME Registration in Chennai",
+    "metaDesc": "Aanoor Global is a leading proprietorship registration company in chennai.Sole proprietorship is quick and easy to start business you need not to elborate the legal formalities.For more details call us now!",
     "metaKeywords": "proprietorship registration,msme registration ,ssi registration",
     "title": " Individual Proprietorship Firm Registration in Chennai",
     "price": {
