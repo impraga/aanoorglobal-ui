@@ -7,6 +7,7 @@ import SearchResult from '../../atoms/SearchResult/SearchResult'
 const SearchBox = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchResult, setSearchResult] = useState([])
+  const [searchText, setSearchText] = useState('')
 
   // Maniplating the category data for search results
   const serviceCategory = useMemo(() => {
@@ -33,11 +34,14 @@ const SearchBox = () => {
     )
   }
 
-  const searchValue = (event) => {
+  const searchValue = (event, fromSearch) => {
     const { value } = event.target
-    if (value) {
+    if (value || (fromSearch && searchText !== '')) {
       setIsSearchOpen(true)
-      setSearchResult(searchService(serviceCategory, value.toLowerCase()))
+      setSearchResult(searchService(serviceCategory, searchText.toLowerCase()))
+    } else if (fromSearch && searchText === '') {
+      setIsSearchOpen(true)
+      setSearchResult(serviceCategory)
     } else {
       setIsSearchOpen(false)
       setSearchResult([])
@@ -49,13 +53,20 @@ const SearchBox = () => {
       <div className={`search-main-cont  ${isSearchOpen ? 'active' : ''}`}>
         <div data-aos="fade-up" data-aos-delay="450">
           <input
-            onChange={(event) => searchValue(event)}
+            onChange={(event) => {
+              searchValue(event)
+              setSearchText(event?.target?.value || '')
+            }}
             type="text"
             className="form-control search-input br-1 bs"
             id=""
             placeholder="Search Service"
           />
-          <button type="submit" className="search-btn bg-green">
+          <button
+            type="submit"
+            className="search-btn bg-green"
+            onClick={(event) => searchValue(event, true)}
+          >
             <img src={search} alt="search button" />
           </button>
         </div>

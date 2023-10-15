@@ -32,25 +32,25 @@ export const contactDetails = [
     phone: '+91 44 4355 4445',
     gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
     callto: '+914443554445'
-  },
-  {
-    city: 'Erode',
-    img: 'erode.png',
-    address:
-      '117/2, Sai Bhanvan, Habibullah Rd, T. Nagar, Chennai - 600017, TamilNadu, India',
-    phone: '+91 44 4355 4445',
-    gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
-    callto: '+914443554445'
-  },
-  {
-    city: 'Pune',
-    img: 'pune.svg',
-    address:
-      '117/2, Sai Bhanvan, Habibullah Rd, T. Nagar, Chennai - 600017, TamilNadu, India',
-    phone: '+91 44 4355 4445',
-    gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
-    callto: '+914443554445'
   }
+  // {
+  //   city: 'Erode',
+  //   img: 'erode.png',
+  //   address:
+  //     '117/2, Sai Bhanvan, Habibullah Rd, T. Nagar, Chennai - 600017, TamilNadu, India',
+  //   phone: '+91 44 4355 4445',
+  //   gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
+  //   callto: '+914443554445'
+  // },
+  // {
+  //   city: 'Pune',
+  //   img: 'pune.svg',
+  //   address:
+  //     '117/2, Sai Bhanvan, Habibullah Rd, T. Nagar, Chennai - 600017, TamilNadu, India',
+  //   phone: '+91 44 4355 4445',
+  //   gmap: 'https://goo.gl/maps/PEeoQJtABTWwGdU4A',
+  //   callto: '+914443554445'
+  // }
 ]
 
 export const serviceOrder = [

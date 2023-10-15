@@ -1,8 +1,11 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button'
 
+import blogIcon from '../../../../public/assets/icons/blog.png'
 import logo from '../../../../public/assets/icons/aanoor-logo.svg'
 import menuList from '../../../../public/assets/json/menuList.json'
 import AGButton from '../../atoms/AGButton/AGButton'
@@ -16,6 +19,7 @@ import {
   isKillSwitchDisabled
 } from '../../../constants'
 import URLs from '../../../constants/urlMapper'
+import ButtonPrimary from '../../atoms/ButtonPrimary/ButtonPrimary'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -190,7 +194,7 @@ const Header = () => {
           <nav className={isMenuOpen ? 'open-menu' : 'close-menu'}>
             {/* desktop menu */}
             <ul className="d-none d-lg-flex ps-0">
-              <div />
+              {isKillSwitchDisabled && <div />}
               <div className="d-flex">
                 {menuList?.serviceData.map((item, i) =>
                   menuWithLink(item, 'desktop', i)
@@ -200,13 +204,9 @@ const Header = () => {
               {isKillSwitchDisabled && (
                 <div className="d-flex align-items-center">
                   <li key="blog">
-                    <Button
-                      className="blog-btn"
-                      variant="success"
-                      onClick={() => navigate('/blog')}
-                    >
-                      Blog
-                    </Button>
+                    <div onClick={() => navigate('/blog')}>
+                      <ButtonPrimary text="Blog" icon={blogIcon} />
+                    </div>
                   </li>
                 </div>
               )}
@@ -234,13 +234,9 @@ const Header = () => {
                 ].map((item, i) => menuWithLink(item, 'mobile', i))}
                 {isKillSwitchDisabled && (
                   <li key="blog">
-                    <Button
-                      className="blog-btn"
-                      variant="success"
-                      onClick={() => navigate('/blog')}
-                    >
-                      Blog
-                    </Button>
+                    <div onClick={() => navigate('/blog')}>
+                      <ButtonPrimary text="Blog" icon={blogIcon} />
+                    </div>
                   </li>
                 )}
                 {isUserLoggedIn && (

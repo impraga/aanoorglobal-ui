@@ -39,6 +39,16 @@
       transform: translateX(100%);
     }
   }
+  .branch-contact-container {
+    .img-cont {
+      img {
+        width: 90px;
+      }
+    }
+    .city {
+      text-align: center;
+    }
+  }
 
   .cc-cont {
     z-index: 2;

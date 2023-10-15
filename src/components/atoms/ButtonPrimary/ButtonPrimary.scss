@@ -1,0 +1,66 @@
+@import './../../../index.scss';
+.primary-button {
+  background-color: $ag-green;
+  padding: 0px 80px 0px 30px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: $ag-darkblue;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  .text {
+    position: relative;
+    z-index: 10;
+    min-width: 0px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: $ag-darkgreen;
+    border-radius: 50%;
+    position: absolute;
+    right: -37px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .icon-cont {
+    background-color: $ag-darkblue;
+    border-radius: 11px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    img {
+      width: 20px;
+    }
+  }
+
+  &:hover {
+    // background-color: $ag-darkgreen;
+
+    .circle {
+      width: 320px;
+      height: 320px;
+    }
+
+    .icon-cont {
+      width: 56px;
+      height: 56px;
+      right: 0px;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+}

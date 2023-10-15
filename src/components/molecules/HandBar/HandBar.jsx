@@ -8,7 +8,7 @@ import whatsapp from '../../../../public/assets/icons/whatsapp.png'
 import phone from '../../../../public/assets/icons/phone.png'
 
 const HandBar = () => (
-  <div className="handbar-cont d-lg-none d-block">
+  <div className="handbar-cont d-block">
     <nav className="menu ">
       <input
         type="checkbox"

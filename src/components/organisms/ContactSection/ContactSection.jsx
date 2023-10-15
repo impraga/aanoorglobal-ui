@@ -8,6 +8,9 @@ import ExpertButton from '../../atoms/ExpertButton/ExpertButton'
 import './ContactSection.scss'
 import { contactDetails } from '../../../constants'
 
+import erodeIcon from '../../../../public/assets/icons/erode.png'
+import puneIcon from '../../../../public/assets/icons/pune.svg'
+
 const ContactSection = () => (
   <div className="position-relative">
     <div className="contact-cont px-2 pb-4 overflow-hidden">
@@ -47,6 +50,40 @@ const ContactSection = () => (
               {/* </ScrollAnimation> */}
             </div>
           ))}
+          <div
+            className="col-sm-8 col-md-6 col-lg-6 mx-auto mt-4 cc-cont"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div className="bg-white br-1 h-100 branch-contact-container position-relative overflow-hidden">
+              <div className="info-cont d-flex flex-column align-items-center p-3 position-relative">
+                <div>
+                  <h5 className="text-center mb-3">
+                    <b>We also have branches on</b>
+                  </h5>
+                </div>
+                <div className="d-flex w-100 justify-content-evenly">
+                  <div>
+                    <div className="img-cont">
+                      <img src={erodeIcon} alt="Erode City" />
+                    </div>
+                    <div className="links-cont">
+                      <h5 className="city mb-0">Erode</h5>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="img-cont">
+                      <img src={puneIcon} alt="Pune City" />
+                    </div>
+                    <div className="links-cont">
+                      <h5 className="city mb-0">Pune</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="contact-bg bg-gray" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

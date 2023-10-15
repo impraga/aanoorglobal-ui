@@ -20,7 +20,7 @@ const ContactUsContainer = ({ contactInfo }) => (
             {contactInfo.address}
           </a>
         </p>
-        <p className="phone-no">
+        <p className="phone-no mb-1">
           <a target="blank" href={`tel:${contactInfo.callto}`}>
             {contactInfo.phone}
           </a>
