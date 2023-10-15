@@ -19,6 +19,7 @@ const metaDetails = {
 }
 
 const Blog = () => {
+  const paramsUrl = useParams()
   const { service } = useParams()
   const { tag } = useParams()
   const [blogList, setBlogList] = useState([])
@@ -27,21 +28,34 @@ const Blog = () => {
 
   // BlogList API Call
   useEffect(() => {
-    console.log(service)
-    console.log(tag)
     setBlogList([])
-    axios
-      .get(`${getEnvUrl}/getActiveBlogLists`)
-      .then(({ data }) => {
-        // Only for Data mocking - Remove Below line
-        // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
-        if (data.response.length > 0 && data.status === '200') {
-          setShowNoBlog(false)
-          setBlogRawList(data.response)
-        }
-      })
-      .catch(setShowNoBlog(true))
-  }, [])
+    if (!tag) {
+      axios
+        .get(`${getEnvUrl}/getActiveBlogLists`)
+        .then(({ data }) => {
+          // Only for Data mocking - Remove Below line
+          // axios.get('/assets/json/api-mock-bloglist.json').then(({ data }) => {
+          if (data.response.length > 0 && data.status === '200') {
+            setShowNoBlog(false)
+            setBlogRawList(data.response)
+          }
+        })
+        .catch(setShowNoBlog(true))
+    } else {
+      // TO DO - replace the new URL
+      // axios.get(`${getEnvUrl}/getActiveBlogLists`)
+      axios
+        .get('/assets/json/api-mock-bloglist.json')
+        .then(({ data }) => {
+          // Only for Data mocking - Remove Below line
+          if (data.response.length > 0 && data.status === '200') {
+            setShowNoBlog(false)
+            setBlogRawList(data.response)
+          }
+        })
+        .catch(setShowNoBlog(true))
+    }
+  }, [paramsUrl])
 
   // To Update Blog List on Service Change
   useEffect(() => {
@@ -59,7 +73,7 @@ const Blog = () => {
         }
       ])
     }
-  }, [blogRawList, service])
+  }, [blogRawList, service, tag, paramsUrl])
 
   // To get Latest 3 Blog List with Service Category
   const updateBlogList = (value) => {

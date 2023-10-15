@@ -13,6 +13,10 @@
           padding: 10px 20px;
           border-radius: 20px;
           font-weight: 600;
+          &:hover {
+            transition: 0.3s ease-in-out;
+            background-color: rgba(39, 146, 192, 0.358);
+          }
         }
       }
       .share-cont {

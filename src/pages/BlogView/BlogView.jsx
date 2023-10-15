@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import * as DOMPurify from 'dompurify'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 import tagIcon from '../../../public/assets/icons/tag.svg'
 import blogFb from '../../../public/assets/icons/blog-fb.png'
 import blogWhatsapp from '../../../public/assets/icons/blog-whatsapp.png'
 import './BlogView.scss'
+
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
 import getEnvUrl, { getEnvUploadPath } from '../../constants/envUrl'
 
@@ -43,13 +45,15 @@ const BlogView = () => {
               <div className="col-md-8 tag-cont d-flex flex-wrap align-items-center">
                 {blogList.tags?.split(';') &&
                   blogList.tags?.split(';').map((tag) => (
-                    <div
-                      key={tag}
-                      className="tag-tip d-flex align-items-center"
-                    >
-                      <img src={tagIcon} className="me-2" alt="tag" />
-                      <div className="text-white">{tag}</div>
-                    </div>
+                    <Link key={tag} to={`/blog/tag/${tag}`}>
+                      <div
+                        key={tag}
+                        className="tag-tip d-flex align-items-center"
+                      >
+                        <img src={tagIcon} className="me-2" alt="tag" />
+                        <div className="text-white">{tag}</div>
+                      </div>
+                    </Link>
                   ))}
               </div>
               <div className="col-md-4 share-cont d-flex align-items-center justify-content-md-end justify-content-start text-white">
