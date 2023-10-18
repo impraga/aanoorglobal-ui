@@ -58,7 +58,7 @@
             },
             {
               "pageUrl": "publicLimitedCompany",
-              "title": "Public Limited Company",
+              "title": "Limited Company",
               "className": "second-level",
               "searchkeyword": ["limited company, public company registration"]
             },
@@ -155,48 +155,6 @@
       "title": "Manage",
       "id": "manage",
       "children": [
-        {
-          "title": "Statutory Compliance",
-          "id": "statutory-compliance",
-          "icon": "statutory-compliance.svg",
-          "className": "first-level",
-          "children": [
-            {
-              "pageUrl": "bookKeeping",
-              "title": "Book keeping",
-              "className": "second-level",
-              "searchkeyword": [
-                "monthly accounting, bookkeeping, virtual accounting"
-              ]
-            },
-            {
-              "pageUrl": "incometaxFilling",
-              "title": "Income Tax Filing",
-              "className": "second-level",
-              "searchkeyword": [""]
-            },
-            {
-              "pageUrl": "gstFilling",
-              "title": "GST Filing",
-              "className": "second-level",
-              "searchkeyword": [
-                "gst return, gst filing, gstr filing, gstr online "
-              ]
-            },
-            {
-              "pageUrl": "tdsReturns",
-              "title": "TDS Returns",
-              "className": "second-level",
-              "searchkeyword": ["tds online, tds returns, tds filing"]
-            },
-            {
-              "pageUrl": "rocannualCompliance",
-              "title": "roc annual Compliance",
-              "className": "second-level",
-              "searchkeyword": ["roc filing, roc annual compliance"]
-            }
-          ]
-        },
         {
           "title": "Registration & Liaison Works",
           "id": "registration",
@@ -348,6 +306,48 @@
               "className": "second-level",
               "pageUrl": "gmpCertification",
               "searchkeyword": ["gmp certification, iso manufacturing"]
+            }
+          ]
+        },
+        {
+          "title": "Statutory Compliance",
+          "id": "statutory-compliance",
+          "icon": "statutory-compliance.svg",
+          "className": "first-level",
+          "children": [
+            {
+              "pageUrl": "bookKeeping",
+              "title": "Book keeping",
+              "className": "second-level",
+              "searchkeyword": [
+                "monthly accounting, bookkeeping, virtual accounting"
+              ]
+            },
+            {
+              "pageUrl": "incometaxFilling",
+              "title": "Income Tax Filing",
+              "className": "second-level",
+              "searchkeyword": [""]
+            },
+            {
+              "pageUrl": "gstFilling",
+              "title": "GST Filing",
+              "className": "second-level",
+              "searchkeyword": [
+                "gst return, gst filing, gstr filing, gstr online "
+              ]
+            },
+            {
+              "pageUrl": "tdsReturns",
+              "title": "TDS Returns",
+              "className": "second-level",
+              "searchkeyword": ["tds online, tds returns, tds filing"]
+            },
+            {
+              "pageUrl": "rocannualCompliance",
+              "title": "roc annual Compliance",
+              "className": "second-level",
+              "searchkeyword": ["roc filing, roc annual compliance"]
             }
           ]
         }

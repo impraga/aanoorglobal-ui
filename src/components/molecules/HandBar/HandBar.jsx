@@ -24,7 +24,7 @@ const HandBar = () => (
       </label>
 
       <a
-        href="https://api.whatsapp.com/send?phone=919884046456=&text=Hello"
+        href="https://api.whatsapp.com/send?phone=917401565656=&text=Hi"
         target="_blank"
         rel="noreferrer"
         className="menu-item bs  whatsapp"
