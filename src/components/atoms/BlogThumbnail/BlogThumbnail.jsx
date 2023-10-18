@@ -31,7 +31,7 @@ const BlogThumbnail = ({ blog }) => (
         {blog.tags?.split(';') &&
           blog.tags?.split(';').map(
             (tag, index) =>
-              tag && (
+              tag.trim() && (
                 <Link key={(tag, index)} to={`/blog/tag/${tag}`}>
                   <div key={(tag, index)} className="tag br-1 text-white bg-db">
                     {tag}
