@@ -18,12 +18,23 @@ const Header = () => {
   const [serviceOpen, setServiceOpen] = useState(-1)
   const navigate = useNavigate()
 
+  const hoverRemove = (id) => {
+    const ele = window.document.getElementById(id)
+    if (ele) ele.style.pointerEvents = 'none'
+    setTimeout(() => {
+      ele.style.pointerEvents = 'auto'
+    }, 10)
+  }
+
   const menuWithLink = (item, device, index) => (
+    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
     <li
       key={item.id || item.title}
+      id={item.id}
       className={`item${index + 1} ${
         serviceOpen === item.title ? 'active' : ''
       }`}
+      onClick={() => hoverRemove(item.id)}
     >
       {item.pageUrl && (
         <Link

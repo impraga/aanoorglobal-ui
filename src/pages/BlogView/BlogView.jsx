@@ -25,7 +25,6 @@ const BlogView = () => {
   const postUrl = path[2]
   const [blogList, setBlogList] = useState({})
   const cleanHTML = DOMPurify.sanitize(blogList.content)
-
   useEffect(() => {
     axios.get(`${getEnvUrl}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
       // axios.get('/assets/json/api-mock-blogView.json').then(({ data }) => {
@@ -44,24 +43,44 @@ const BlogView = () => {
             <div className="row mt-md-5 mt-0">
               <div className="col-md-8 tag-cont d-flex flex-wrap align-items-center">
                 {blogList.tags?.split(';') &&
-                  blogList.tags?.split(';').map((tag) => (
-                    <Link key={tag} to={`/blog/tag/${tag}`}>
-                      <div
-                        key={tag}
-                        className="tag-tip d-flex align-items-center"
-                      >
-                        <img src={tagIcon} className="me-2" alt="tag" />
-                        <div className="text-white">{tag}</div>
-                      </div>
-                    </Link>
-                  ))}
+                  blogList.tags?.split(';').map(
+                    (tag) =>
+                      tag.trim() && (
+                        <Link key={tag.trim()} to={`/blog/tag/${tag.trim()}`}>
+                          <div
+                            key={tag.trim()}
+                            className="tag-tip d-flex align-items-center"
+                          >
+                            <img src={tagIcon} className="me-2" alt="tag" />
+                            <div className="text-white">{tag.trim()}</div>
+                          </div>
+                        </Link>
+                      )
+                  )}
               </div>
               <div className="col-md-4 share-cont d-flex align-items-center justify-content-md-end justify-content-start text-white">
                 <div>{blogList.posted_date}</div> <div>•</div>{' '}
                 <div className="o-05">Share</div>
                 <div className="d-flex icon-cont align-items-center">
-                  <img className="fb" src={blogFb} alt="Facebook" />
-                  <img className="whatsapp" src={blogWhatsapp} alt="Whatsapp" />
+                  <Link
+                    target="_blank"
+                    to={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                      window.location.href
+                    )}`}
+                  >
+                    <img className="fb" src={blogFb} alt="Facebook" />
+                  </Link>
+                  {/* <Link
+                    target="_blank"
+                    to={`https://wa.me/?text=&${encodeURIComponent(sampleUrl)}`}
+                    data-action="share/whatsapp/share"
+                  >
+                    <img
+                      className="whatsapp"
+                      src={blogWhatsapp}
+                      alt="Whatsapp"
+                    />
+                  </Link> */}
                 </div>
               </div>
             </div>
