@@ -240,7 +240,12 @@ const Header = () => {
                 </li> */}
 
                 <li key="blog">
-                  <div onClick={() => navigate('/blog')}>
+                  <div
+                    onClick={() => {
+                      setIsMenuOpen(!isMenuOpen)
+                      navigate('/blog')
+                    }}
+                  >
                     <ButtonPrimary text="Knowledge factory" icon={blogIcon} />
                   </div>
                 </li>
