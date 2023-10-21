@@ -17,6 +17,7 @@ const SPStep = ({ data }) => (
             {Array.isArray(data.value.subHeading) ? (
               data.value.subHeading.map((d, index) => (
                 <p
+                  key={(d, index)}
                   className={`${
                     data.value.subHeading.length === index + 1 ? 'mb-4' : 'mb-2'
                   } main-desc`}

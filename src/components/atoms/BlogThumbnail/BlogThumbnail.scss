@@ -60,6 +60,14 @@
       font-weight: 700;
       margin-bottom: 15px;
     }
+    .bt-blog-content {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin-bottom: 15px;
+    }
     .tag-cont {
       gap: 10px;
       .tag {
