@@ -28,6 +28,7 @@ import ServicePage from './pages/ServicePage/ServicePage'
 import Blog from './pages/Blog/Blog'
 import LandingPage from './pages/LandingPage/LandingPage'
 import AdminPage from './pages/AdminPage/AdminPage'
+import Loader from './components/atoms/Loader/Loader'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -145,7 +146,7 @@ root.render(
   // ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundary>
-      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
+      <RouterProvider router={router} fallbackElement={<Loader />} />
     </ErrorBoundary>
   </React.StrictMode>
   // document.getElementById('root')

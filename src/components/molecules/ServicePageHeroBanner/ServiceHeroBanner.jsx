@@ -3,6 +3,7 @@ import React, { Suspense, lazy } from 'react'
 import PropTypes from 'prop-types'
 import './ServiceHeroBanner.scss'
 import { serviceTemplates } from '../../../constants'
+import Loader from '../../atoms/Loader/Loader'
 
 const TemplateLoader = {
   STARTUP_CENTER: () =>
@@ -38,7 +39,7 @@ const ServiceHeroBanner = ({ title, desc, price, category }) => {
   const ComponentLoader = loadTemplate(serviceTemplates[category])
 
   return (
-    <Suspense fallback="loading">
+    <Suspense fallback={<Loader />}>
       <ComponentLoader title={title} desc={desc} price={price} />
     </Suspense>
   )
