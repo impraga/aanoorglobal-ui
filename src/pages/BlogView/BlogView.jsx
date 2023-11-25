@@ -6,7 +6,7 @@ import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 import tagIcon from '../../../public/assets/icons/tag.svg'
 import blogFb from '../../../public/assets/icons/blog-fb.png'
-import blogWhatsapp from '../../../public/assets/icons/blog-whatsapp.png'
+// import blogWhatsapp from '../../../public/assets/icons/blog-whatsapp.png'
 import './BlogView.scss'
 
 import RelatedBlogSection from '../../components/organisms/RelatedBlogSection/RelatedBlogSection'
@@ -113,14 +113,14 @@ const BlogView = () => {
           </div>
         </div>
       </div>
-      {(blogList.sub_service || blogList.main_service) && (
+      {(blogList.service_type || blogList.category) && (
         <RelatedBlogSection
-          serviceName={blogList.sub_service}
-          categoryName={blogList.main_service}
+          serviceName={blogList.service_type}
+          categoryName={blogList.category}
         />
       )}
     </>
   )
 }
 
-export default BlogView
+export default React.memo(BlogView)

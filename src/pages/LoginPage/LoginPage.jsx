@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable no-console */
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -380,7 +381,7 @@ const LoginPage = () => {
               </form>
             </div>
           </div>
-          <div className="mt-3 text-white">
+          {/* <div className="mt-3 text-white">
             Developed with <span className="love">♥</span> by{' '}
             <a
               className="text-green"
@@ -390,7 +391,7 @@ const LoginPage = () => {
             >
               Praga.co.in
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="right-bg d-none d-md-flex">
           <img src={rightBg} alt="decorative" />
@@ -400,4 +401,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default React.memo(LoginPage)

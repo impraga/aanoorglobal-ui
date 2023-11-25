@@ -125,12 +125,12 @@ const Footer = () => (
           <div className="copyright mb-2">
             © 2010 - 2023 Aanoor Global. All Right Reserved.
           </div>
-          <div className="mb-3">
+          {/* <div className="mb-3">
             Developed with <span className="love">♥</span> by{' '}
             <a href="https://www.praga.co.in" rel="noreferrer" target="_blank">
               Praga.co.in
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="stripes">
@@ -143,4 +143,4 @@ const Footer = () => (
   </footer>
 )
 
-export default Footer
+export default React.memo(Footer)

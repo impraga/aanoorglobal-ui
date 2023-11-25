@@ -90,10 +90,7 @@ const Dashboard = () => {
           {/* <DashboardMetrics /> */}
           {/* Part of enhancemnet */}
           <div className="overlay-text bebas">Dashboard</div>
-          <DashboardTable
-            blogListInput={blogList}
-            updateBlog={() => getBlog()}
-          />
+          <DashboardTable blogList={blogList} updateBlog={() => getBlog()} />
         </div>
         <div className="bg-drop bg-db" />
       </div>
@@ -101,4 +98,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default React.memo(Dashboard)

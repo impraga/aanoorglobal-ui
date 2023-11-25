@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import Table from 'react-bootstrap/Table'
 import PropTypes from 'prop-types'
 
@@ -17,20 +17,20 @@ import menuList from '../../../../public/assets/json/menuList.json'
 
 import './DashboardTable.scss'
 
-const DashboardTable = ({ blogListInput, updateBlog }) => {
+const DashboardTable = ({ blogList, updateBlog }) => {
   const navigate = useNavigate()
-  const [blogList, setBlogList] = useState([])
+  // const [blogList] = useState(blogList)
   const displayColumns = [
     { title: 'title', fieldName: 'title', width: '35' },
-    { title: 'service', fieldName: 'sub_service', width: '15' },
-    { title: 'category', fieldName: 'main_service', width: '20' },
+    { title: 'category', fieldName: 'category', width: '20' },
+    { title: 'service', fieldName: 'service_type', width: '15' },
     { title: 'date', fieldName: 'posted_date', width: '10' },
     { title: 'status', fieldName: 'post_status', width: '5' },
     { title: 'options', width: '15' }
   ]
 
   const serviceCategory = useMemo(() => {
-    const flatCategory = [{ title: 'General', url: '', shortUrl: '' }]
+    const flatCategory = [{ title: 'General', url: '', shortUrl: 'general' }]
     const menu = [
       ...menuList.serviceData[0].children,
       ...menuList.serviceData[1].children
@@ -52,10 +52,10 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
   const showTitleFromUrl = (url) =>
     serviceCategory.find((d) => d.shortUrl === url)?.title
 
-  // Updating Blog List in UseState
-  useEffect(() => {
-    setBlogList(blogListInput)
-  }, [blogListInput])
+  // // Updating Blog List in UseState
+  // useEffect(() => {
+  //   setBlogList(blogListInput)
+  // }, [blogListInput])
 
   const tableCellData = (cellValue, col, row) => {
     if (col === 'options') {
@@ -179,13 +179,13 @@ const DashboardTable = ({ blogListInput, updateBlog }) => {
 }
 
 DashboardTable.propTypes = {
-  blogListInput: PropTypes.arrayOf(PropTypes.shape()),
+  blogList: PropTypes.arrayOf(PropTypes.shape()),
   updateBlog: PropTypes.func
 }
 
 DashboardTable.defaultProps = {
-  blogListInput: [{}],
+  blogList: [{}],
   updateBlog: () => {}
 }
 
-export default DashboardTable
+export default React.memo(DashboardTable)

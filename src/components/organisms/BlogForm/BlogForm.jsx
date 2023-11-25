@@ -4,21 +4,24 @@ import PropTypes from 'prop-types'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
+import { useNavigate } from 'react-router'
 import RichTextEditor from '../../molecules/RichTextEditor/RichTextEditor'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
 import { getSessionStorage } from '../../../utils/tools'
 import { sessionKeys } from '../../../constants'
 
-import './BlogForm.scss'
 import getEnvUrl from '../../../constants/envUrl'
 import CategoryDropDown from '../../atoms/CategoryDropDown/CategoryDropDown'
+
+import './BlogForm.scss'
 
 const BlogForm = ({ edit, blogDetails }) => {
   const [displayNotification, setDisplayNotification] = useState({})
   const [updateRTE, updateRTEVal] = useState('')
-  const [selectedService, setSelectedService] = useState('general')
-  const [selectedCategory, setSelectedCategory] = useState('general')
+  const [selectedService, setSelectedService] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('')
   const form = useForm()
+  const navigate = useNavigate()
   const {
     register,
     formState: { errors },
@@ -33,14 +36,14 @@ const BlogForm = ({ edit, blogDetails }) => {
       setValue('postUrl', blogDetails.post_url)
       setValue('thumbImg', blogDetails.image_name)
       setValue('tags', blogDetails.tags)
-      setValue('category', blogDetails.main_service)
-      setValue('services', blogDetails.sub_service)
+      setValue('category', blogDetails.category)
+      setValue('services', blogDetails.service_type)
       setValue('youtubeUrl', blogDetails.youtube_url)
       setValue('postedDate', blogDetails.posted_date)
       setValue('readTime', blogDetails.read_time)
       updateRTEVal(blogDetails.content)
-      setSelectedService(blogDetails.sub_service)
-      setSelectedCategory(blogDetails.main_service)
+      setSelectedService(blogDetails.service_type)
+      setSelectedCategory(blogDetails.category)
     }
   }, [blogDetails])
 
@@ -81,6 +84,9 @@ const BlogForm = ({ edit, blogDetails }) => {
                 saveorPublish === 'save' ? 'saved' : 'published'
               }`
             )
+            if (saveorPublish !== 'save') {
+              navigate('/admin/dashboard')
+            }
           }
         } else {
           showBlogNotification('danger', 'Error while adding blog')
@@ -209,7 +215,9 @@ const BlogForm = ({ edit, blogDetails }) => {
           </div>
           <div>
             <div
-              className={errors.content?.type === 'required' ? 'error' : ' '}
+              className={
+                errors.content?.type === 'required' ? 'editor-error' : ' '
+              }
             >
               <RichTextEditor editorValue={RTEChange} updateValue={updateRTE} />
             </div>

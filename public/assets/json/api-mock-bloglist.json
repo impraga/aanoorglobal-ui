@@ -3,8 +3,8 @@
     {
       "id": "12",
       "title": "Tag check",
-      "main_service": "registration",
-      "sub_service": "labour-welfare-fund",
+      "category": "registration",
+      "service_type": "labour-welfare-fund",
       "image_name": "1696282158-download1png.png",
       "tags": "welfare;labour",
       "youtube_url": "",
