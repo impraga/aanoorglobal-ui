@@ -6,15 +6,15 @@ CREATE TABLE `blog` (
   `id` int(11) NOT NULL,
   `title` text NOT NULL,
   `category` varchar(255) NOT NULL,
-  `service` varchar(100) NOT NULL,
+  `service_type` varchar(100) NOT NULL,
   `image_name` varchar(150) NOT NULL,
   `tags` text NOT NULL,
-  `youtube` text NOT NULL,
-  `date` varchar(50) NOT NULL,
+  `youtube_url` text NOT NULL,
+  `posted_date` varchar(50) NOT NULL,
   `read_time` int(3) NOT NULL,
   `content` text NOT NULL,
-  `status` enum('0','1','2') NOT NULL DEFAULT '0',
-  `url` varchar(255) NOT NULL
+  `post_status` enum('0','1','2') NOT NULL DEFAULT '0',
+  `post_url` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `contact` (
@@ -24,7 +24,8 @@ CREATE TABLE `contact` (
   `email_id` varchar(50) NOT NULL,
   `services_opted` text NOT NULL,
   `message` text NOT NULL,
-  `source` varchar(255) NOT NULL
+  `source` varchar(255) NOT NULL,
+  `created_date` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `users` (
@@ -41,7 +42,7 @@ CREATE TABLE `users` (
 
 ALTER TABLE `blog`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `url` (`url`);
+  ADD UNIQUE KEY `url` (`post_url`);
 
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
