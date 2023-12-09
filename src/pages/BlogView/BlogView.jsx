@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import * as DOMPurify from 'dompurify'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import HelmetWrapper from '../../components/atoms/HelmetWrapper/HelmetWrapper'
 
 import tagIcon from '../../../public/assets/icons/tag.svg'
@@ -21,18 +21,16 @@ const metaDetails = {
 }
 
 const BlogView = () => {
-  const path = window.location.pathname.split('/')
-  const postUrl = path[2]
+  const { postUrl } = useParams()
   const [blogList, setBlogList] = useState({})
   const cleanHTML = DOMPurify.sanitize(blogList.content)
   useEffect(() => {
     axios.get(`${getEnvUrl}/moreBlogInfo?url=${postUrl}`).then(({ data }) => {
-      // axios.get('/assets/json/api-mock-blogView.json').then(({ data }) => {
       if (data.response.length > 0 && data.status === '200') {
         setBlogList(data.response[0])
       }
     })
-  }, [])
+  }, [postUrl])
 
   return (
     <>
@@ -108,7 +106,7 @@ const BlogView = () => {
               />
             )}
           </div>
-          <div className="mt-4">
+          <div className="mt-4 ql-editor">
             <div dangerouslySetInnerHTML={{ __html: cleanHTML }} />
           </div>
         </div>
@@ -123,4 +121,4 @@ const BlogView = () => {
   )
 }
 
-export default React.memo(BlogView)
+export default BlogView

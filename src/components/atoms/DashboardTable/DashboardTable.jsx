@@ -1,10 +1,12 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useState } from 'react'
 import Table from 'react-bootstrap/Table'
 import PropTypes from 'prop-types'
 
 import { useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 import { serviceOrder, sessionKeys } from '../../../constants'
 import { getSessionStorage } from '../../../utils/tools'
 
@@ -20,6 +22,7 @@ import './DashboardTable.scss'
 const DashboardTable = ({ blogList, updateBlog }) => {
   const navigate = useNavigate()
   // const [blogList] = useState(blogList)
+  const [info, setInfo] = useState({ display: false, id: 0 })
   const displayColumns = [
     { title: 'title', fieldName: 'title', width: '35' },
     { title: 'category', fieldName: 'category', width: '20' },
@@ -75,7 +78,10 @@ const DashboardTable = ({ blogList, updateBlog }) => {
           >
             <img src={viewImage} className="view-btn" alt="View Button" />
           </button>
-          <button type="button" onClick={() => deletePost(row.id)}>
+          <button
+            type="button"
+            onClick={() => setInfo({ display: true, id: row.id })}
+          >
             <img src={deleteImage} alt="Delete Button" />
           </button>
         </>
@@ -109,6 +115,7 @@ const DashboardTable = ({ blogList, updateBlog }) => {
       .then(({ data }) => {
         if (data.status === '200') {
           updateBlog(data.response)
+          setInfo({ display: false, id: 0 })
         }
       })
   }
@@ -173,6 +180,33 @@ const DashboardTable = ({ blogList, updateBlog }) => {
               ))}
           </tbody>
         </Table>
+      </div>
+      <div>
+        <Modal
+          show={info.display}
+          onHide={() => setInfo({ display: false, id: 0 })}
+          centered
+          dialogClassName="delete-modal"
+        >
+          {/* <Modal.Header closeButton /> */}
+          <Modal.Title className="h-100 position-relative p-0  overflow-hidden ">
+            <p>Are you sure want to delete?</p>
+          </Modal.Title>
+          <Modal.Footer>
+            <Button
+              variant="secondary"
+              onClick={() => setInfo({ display: false, id: 0 })}
+            >
+              Cancel
+            </Button>
+            <Button
+              variant="primary-button"
+              onClick={() => deletePost(info.id)}
+            >
+              Delete
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </div>
   )

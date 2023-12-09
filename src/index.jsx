@@ -84,7 +84,6 @@ const router = createBrowserRouter([
       },
       {
         path: 'post/:postUrl',
-
         element: <BlogView />
       },
 

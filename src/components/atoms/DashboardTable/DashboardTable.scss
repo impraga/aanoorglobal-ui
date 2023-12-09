@@ -122,3 +122,15 @@
     box-shadow: none !important;
   }
 }
+.delete-modal {
+  .modal-content {
+    text-align: center;
+    height: 190px;
+    border-radius: 20px;
+    padding-top: 40px;
+  }
+  .btn-primary-button {
+    background-color: $ag-green;
+    color: #fff;
+  }
+}
