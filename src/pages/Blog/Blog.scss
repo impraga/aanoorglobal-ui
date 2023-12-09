@@ -1,5 +1,14 @@
+@import '../../index.scss';
 .blog-cat-cont {
-  .blog-list-cont {
-    // gap: 20px;
+  .no-blog {
+    margin-bottom: 300px;
+    padding: 50px 100px;
+  }
+  .more-btn {
+    background-color: $ag-gray;
+    color: $ag-blue;
+    border-radius: 5px;
+    border-color: $ag-blue;
+    padding: 3px 8px;
   }
 }

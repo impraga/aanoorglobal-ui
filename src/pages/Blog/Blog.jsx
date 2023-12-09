@@ -107,9 +107,17 @@ const Blog = () => {
                       </div>
                       <div>
                         {!service && !tag && (
-                          <Link to={`/blog/${blogCat.service}`}>View more</Link>
+                          <button type="button" className="more-btn">
+                            <Link to={`/blog/${blogCat.service}`}>
+                              View more
+                            </Link>
+                          </button>
                         )}
-                        {service && <Link to="/blog">Back</Link>}
+                        {service && (
+                          <button type="button" className="more-btn">
+                            <Link to="/blog">Back</Link>
+                          </button>
+                        )}
                       </div>
                     </div>
                     <div className="blog-list-cont row mb-4 d-flex align-items-center">
@@ -126,7 +134,7 @@ const Blog = () => {
                 )
             )
           ) : (
-            <h2>No Blog available</h2>
+            <h2 className="no-blog">No Blog available</h2>
           )}
         </div>
       </div>
