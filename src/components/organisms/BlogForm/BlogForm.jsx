@@ -7,7 +7,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router'
 import RichTextEditor from '../../molecules/RichTextEditor/RichTextEditor'
 import ServiceDropDown from '../../atoms/ServiceDropDown/ServiceDropDown'
-import { getSessionStorage } from '../../../utils/tools'
+import { getSessionStorage, removeSession } from '../../../utils/tools'
 import { sessionKeys } from '../../../constants'
 
 import getEnvUrl from '../../../constants/envUrl'
@@ -48,55 +48,67 @@ const BlogForm = ({ edit, blogDetails }) => {
   }, [blogDetails])
 
   const onSubmit = (data, e) => {
-    const saveorPublish = e.nativeEvent.submitter.name
-    const formData = new FormData()
-    formData.append('file', data.thumbImg[0])
-    let dd = {
-      ...data,
-      status: saveorPublish === 'save' ? 1 : 2,
-      services: selectedService,
-      category: selectedCategory
-    }
-    if (edit) {
-      dd = { ...dd, id: blogDetails.id }
-    }
-    formData.append('postData', JSON.stringify(dd))
+    try {
+      const saveorPublish = e.nativeEvent.submitter.name
+      const formData = new FormData()
+      formData.append('file', data.thumbImg[0])
+      let dd = {
+        ...data,
+        status: saveorPublish === 'save' ? 1 : 2,
+        services: selectedService,
+        category: selectedCategory
+      }
+      if (edit) {
+        dd = { ...dd, id: blogDetails.id }
+      }
+      formData.append('postData', JSON.stringify(dd))
 
-    const url = edit ? `${getEnvUrl}/updatePost` : `${getEnvUrl}/createPost`
-    axios
-      .post(url, formData, {
-        headers: {
-          'content-type': 'multipart/form-data',
-          Authorization: getSessionStorage(sessionKeys.authorization)
-        }
-      })
-      .then((res) => {
-        if (res.data.status === '200') {
-          if (
-            res.data.message === 'Blog Updated' ||
-            res.data.message === 'Blog Added'
-          ) {
-            reset()
-            updateRTEVal(' ')
-            showBlogNotification(
-              'success',
-              `Blog Added and ${
-                saveorPublish === 'save' ? 'saved' : 'published'
-              }`
-            )
-            if (saveorPublish !== 'save') {
-              navigate('/admin/dashboard')
-            }
+      const url = edit ? `${getEnvUrl}/updatePost` : `${getEnvUrl}/createPost`
+      axios
+        .post(url, formData, {
+          headers: {
+            'content-type': 'multipart/form-data',
+            Authorization: getSessionStorage(sessionKeys.authorization)
           }
-        } else {
+        })
+        .then((res) => {
+          if (res.data.status === '200') {
+            if (
+              res.data.message === 'Blog Updated' ||
+              res.data.message === 'Blog Added'
+            ) {
+              reset()
+              updateRTEVal(' ')
+              showBlogNotification(
+                'success',
+                `Blog Added and ${
+                  saveorPublish === 'save' ? 'saved' : 'published'
+                }`
+              )
+              if (saveorPublish !== 'save') {
+                navigate('/admin/dashboard')
+              }
+            }
+          } else {
+            showBlogNotification('danger', 'Error while adding blog')
+          }
+          window.scrollTo(0, 0)
+        })
+        .catch((err) => {
           showBlogNotification('danger', 'Error while adding blog')
-        }
-        window.scrollTo(0, 0)
-      })
-      .catch(() => {
-        showBlogNotification('danger', 'Error while adding blog')
-        window.scrollTo(0, 0)
-      })
+          if (
+            err.response.data.status === '400' &&
+            err.response.data.message === 'Missing Token or Expired'
+          ) {
+            removeSession(sessionKeys.userLoggedStatus)
+            removeSession(sessionKeys.authorization)
+            navigate('/ar-admin/login')
+          }
+          window.scrollTo(0, 0)
+        })
+    } catch (err) {
+      showBlogNotification('danger', 'Error while adding blog')
+    }
   }
 
   const showBlogNotification = (type, msg) => {
